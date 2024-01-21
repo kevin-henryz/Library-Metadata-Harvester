@@ -9,7 +9,7 @@ if src_dir not in sys.path:
     sys.path.append(src_dir)
 
 # Now you can import file_processor from util
-from src.util import file_processor
+from util import file_processor
 
 class LibraryMetadataHarvesterApp(tk.Tk):
     def __init__(self):
@@ -116,6 +116,21 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.file_entry.delete(0, tk.END)
         self.file_entry.insert(0, filename)
 
+
+    def get_current_options(self):
+        """Retrieve and return the current selected options in the UI."""
+        options = {
+            'input_file_type': 'ISBN' if self.input_file_type.get() == 1 else 'OCN',
+            'output_values': {
+                'isbn': self.output_value_isbn.get(),
+                'ocn': self.output_value_ocn.get(),
+                'lccn': self.output_value_lccn.get(),
+                'lccn_source': self.output_value_lccn_source.get(),
+                'doi': self.output_value_doi.get()
+            }
+        }
+        return options    
+
     def start_search(self):
         # Retrieve selected priorities
 
@@ -129,8 +144,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         else:
             self.log_message(f"File contains valid {file_type} entries.")
             # Continue with the search logic using the data
-            priorities = self.get_priorities()
-            self.log_message("Search started with priorities: " + ", ".join(priorities))
+            self.log_message(str(self.get_current_options()))
         
 
     def stop_search(self):

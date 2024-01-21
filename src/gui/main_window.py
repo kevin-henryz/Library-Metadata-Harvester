@@ -9,7 +9,7 @@ if src_dir not in sys.path:
     sys.path.append(src_dir)
 
 # Now you can import file_processor from util
-from util import file_processor
+from src.util import file_processor
 
 class LibraryMetadataHarvesterApp(tk.Tk):
     def __init__(self):
@@ -26,6 +26,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         # Configure the colors for the widgets
         self.style.configure('TButton', background='#555555', foreground='white', borderwidth=1)
         self.style.configure('TFrame', background='#333333')
+        self.style.configure('TCheckbutton', background='#333333', foreground='white')
+        self.style.configure('TRadioButton', background='#333333', foreground='white')
         self.style.configure('TLabel', background='#333333', foreground='white')
         self.style.configure('TEntry', background='#555555', foreground='white', fieldbackground='#555555', borderwidth=1)
         self.style.map('TEntry', fieldbackground=[('focus', '#555555')], foreground=[('focus', 'white')])
@@ -42,48 +44,58 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.input_frame = ttk.Frame(self.top_frame, style='TFrame')
         self.input_frame.pack(side='left', fill='x', expand=True)
 
+        # Data Type of Input File
+        self.lable_input_file_type = ttk.Label(self.input_frame, text="Data Type of Input File:", style='TLabel')
+        self.lable_input_file_type.grid(row=0, column=0, sticky='w',)
+
+        self.input_file_type = tk.IntVar()
+
+        self.rdb_input_file_type_isbn = ttk.Radiobutton(self.input_frame, text="ISBN", style='TRadiobutton', variable=self.input_file_type, value=1)
+        self.rdb_input_file_type_isbn.grid(row=1, column=0, sticky='w', padx=(0, 5), pady=(5, 0))
+
+        self.rdb_input_file_type_ocn = ttk.Radiobutton(self.input_frame, text="OCN", style='TRadiobutton', variable=self.input_file_type, value=0)
+        self.rdb_input_file_type_ocn.grid(row=1, column=0, sticky='e', padx=(0, 5), pady=(5, 0))
+
         # Input Frame Widgets
-        self.file_entry = ttk.Entry(self.input_frame, width=50)
-        self.file_entry.grid(row=0, column=0, sticky='ew', padx=(0, 5))
+        self.lable_browse_file = ttk.Label(self.input_frame, text="Browse Input File:", style='TLabel')
+        self.lable_browse_file.grid(row=2, column=0, sticky='w', padx=(0, 5), pady=(30, 0))
+
+        self.file_entry = ttk.Entry(self.input_frame, font=(35, 20))
+        self.file_entry.grid(row=3, column=0, sticky='w', padx=(0, 5))
 
         self.browse_button = ttk.Button(self.input_frame, text="Browse", command=self.browse_file)
-        self.browse_button.grid(row=0, column=1, sticky='ew')
+        self.browse_button.grid(row=3, column=1)
+
+        # Values included in output file
+        self.output_value_isbn = tk.BooleanVar()
+        self.output_value_ocn = tk.BooleanVar()
+        self.output_value_lccn = tk.BooleanVar()
+        self.output_value_lccn_source = tk.BooleanVar()
+        self.output_value_doi = tk.BooleanVar()
+
+        self.label_output_file_values = ttk.Label(self.input_frame, text="Values included in output file:", style='TLabel')
+        self.label_output_file_values.grid(row=4, column=0, sticky='w',  padx=(0, 5), pady=(30, 0))
+
+        self.checkbutton_output_value_isbn = ttk.Checkbutton(self.input_frame, text="ISBN", style='TCheckbutton', variable=self.output_value_isbn, onvalue=True, offvalue=False)
+        self.checkbutton_output_value_isbn.grid(row=5, column=0, sticky='w', padx=(0, 5), pady=(5, 0))
+
+        self.checkbutton_output_value_ocn = ttk.Checkbutton(self.input_frame, text="OCN ", style='TCheckbutton', variable=self.output_value_ocn, onvalue=True, offvalue=False)
+        self.checkbutton_output_value_ocn.grid(row=5, column=0, padx=(0, 72), pady=(5, 0))
+
+        self.checkbutton_output_value_lccn = ttk.Checkbutton(self.input_frame, text="LCCN", style='TCheckbutton', variable=self.output_value_lccn, onvalue=True, offvalue=False)
+        self.checkbutton_output_value_lccn.grid(row=6, column=0, sticky='w', padx=(0, 5), pady=(5, 0))
+
+        self.checkbutton_output_value_lccn_source = ttk.Checkbutton(self.input_frame, text="LCCN_source", style='TCheckbutton', variable=self.output_value_lccn_source, onvalue=True, offvalue=False)
+        self.checkbutton_output_value_lccn_source.grid(row=6, column=0, padx=(0, 20), pady=(5, 0))
+
+        self.checkbutton_output_value_doi = ttk.Checkbutton(self.input_frame, text="DOI", style='TCheckbutton', variable=self.output_value_doi, onvalue=True, offvalue=False)
+        self.checkbutton_output_value_doi.grid(row=7, column=0, sticky='w', padx=(0, 5), pady=(5, 0))
 
         self.start_button = ttk.Button(self.input_frame, text="Start Search", command=self.start_search)
-        self.start_button.grid(row=1, column=0, sticky='ew', padx=(0, 5), pady=(5, 0))
+        self.start_button.grid(row=8, column=0, sticky='w', padx=(0, 5), pady=(15, 0))
 
-        self.stop_button = ttk.Button(self.input_frame, text="Stop", command=self.stop_search)
-        self.stop_button.grid(row=1, column=1, sticky='ew', pady=(5, 0))
-
-        # OCN Key entry
-        self.ocn_frame = ttk.Frame(self.input_frame, style='TFrame')
-        self.ocn_frame.grid(row=2, columnspan=2, pady=20, padx=10, sticky='ew')
-
-        self.ocn_label = ttk.Label(self.ocn_frame, text="OCN Key:", style='TLabel')
-        self.ocn_label.pack(anchor='w')
-
-        self.ocn_entry = ttk.Entry(self.ocn_frame, width=50)
-        self.ocn_entry.pack(side='left', padx=(0, 5))
-
-        self.enter_button = ttk.Button(self.ocn_frame, text="Enter", command=self.enter_ocn_key)
-        self.enter_button.pack(side='left')
-        
-        # Right Side - Priority Frame
-        self.priority_frame = ttk.Frame(self.top_frame, style='TFrame')
-        self.priority_frame.pack(side='right', fill='x', expand=True)
-
-        # Priority List
-        ttk.Label(self.priority_frame, text="Set Source Priorities", style='TLabel').pack()
-
-        self.sources = ["Source A", "Source B", "Source C"]
-        self.priority_comboboxes = []
-
-        for i in range(1, 4):
-            ttk.Label(self.priority_frame, text=f"Priority {i}:", style='TLabel').pack(pady=(5, 0))
-            priority_box = ttk.Combobox(self.priority_frame, values=self.sources, state="readonly")
-            priority_box.pack()
-            priority_box.set(self.sources[i-1])  # Set default value
-            self.priority_comboboxes.append(priority_box)
+        self.stop_button = ttk.Button(self.input_frame, text="Stop Search", command=self.stop_search)
+        self.stop_button.grid(row=8, column=0, padx=(170, 0), pady=(15, 0))
         
         # Log area
         self.log_frame = ttk.Frame(self, style='TFrame')
@@ -103,11 +115,6 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         filename = filedialog.askopenfilename()
         self.file_entry.delete(0, tk.END)
         self.file_entry.insert(0, filename)
-
-    def get_priorities(self):
-        """Retrieves the selected priorities from the comboboxes."""
-        selected_priorities = [box.get() for box in self.priority_comboboxes]
-        return selected_priorities    
 
     def start_search(self):
         # Retrieve selected priorities
@@ -129,9 +136,6 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def stop_search(self):
         self.log_message("Search stopped...")
 
-    def enter_ocn_key(self):
-        self.log_message("OCN Key entered.")
-
     def export_data(self):
         self.log_message("Data exported successfully.")
 
@@ -139,6 +143,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.log_text.insert(tk.END, message + '\n')
         self.log_text.see(tk.END)
         self.log_text.update_idletasks()
+
 
 if __name__ == "__main__":
     app = LibraryMetadataHarvesterApp()

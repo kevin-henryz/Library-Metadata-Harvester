@@ -24,7 +24,7 @@ class DatabaseManager:
             columns (str): A string containing column definitions.
 
         Example:
-            columns = "id INTEGER PRIMARY KEY, name TEXT, age INTEGER"
+            columns = "isbn INTEGER PRIMARY KEY, ocn INTEGER, lccn TEXT, source TEXT PRIMARY KEY, doi TEXT"
             create_table("book_data", columns)
         """
         self.connect()
@@ -41,7 +41,7 @@ class DatabaseManager:
             data (tuple): A tuple containing values to be inserted.
 
         Example:
-            data = (1, 'John Doe', 25)
+            data = (0000000000, 1111111111, 'lccn00id', 'oclc', 'doi00id')
             insert_data("book_data", data)
         """
         self.connect()
@@ -82,8 +82,8 @@ class DatabaseManager:
             condition (str): A condition to filter the data to be updated.
 
         Example:
-            update_values = "name='Updated Name', age=30"
-            condition = "id=1"
+            update_values = "ocn=000updatedocn, lccn='updatedLCCN'"
+            condition = "isnb=0000000000"
             update_data("book_data", update_values, condition)
         """
         self.connect()
@@ -100,8 +100,8 @@ class DatabaseManager:
             condition (str): A condition to filter the data to be deleted.
 
         Example:
-            condition = "id=1"
-            delete_data("mytable", condition)
+            condition = "isbn=0000000000"
+            delete_data("book_data", condition)
         """
         self.connect()
         self.cursor.execute(f"DELETE FROM {table_name} WHERE {condition}")
@@ -112,7 +112,7 @@ class DatabaseManager:
 if __name__ == "__main__":
 # Example Usage:
     db = DatabaseManager()
-    db.create_table("book_data", "Isbn INTEGER PRIMARY KEY, Ocn INTEGER, Lccn TEXT, Doi TEXT")
+    db.create_table("book_data", "Isbn INTEGER PRIMARY KEY, Ocn INTEGER, Lccn TEXT, source TEXT, Doi TEXT")
     db.create_table("lccn_data", "Lccn TEXT PRIMARY KEY, Source TEXT")
 
     # db.insert_data("book_data", (1, 'John Doe', 25))

@@ -1,122 +1,72 @@
-# Manages SQLite database interactions
-
 import sqlite3
+import os
+
 class DatabaseManager:
-    def __init__(self, db_name='book_data.db'):
-        self.db_name = db_name
-        self.connection = None
-        self.cursor = None
+    def __init__(self, db_name='metadata.db'):
+        directory = os.path.dirname(os.path.abspath(__file__))
+        self.db_name = os.path.join(directory, db_name)
 
-    def connect(self):
-        self.connection = sqlite3.connect(self.db_name)
-        self.cursor = self.connection.cursor()
-
-    def disconnect(self):
-        if self.connection:
-            self.connection.close()
+    def execute_query(self, query, params=(), fetch=False):
+        """General purpose method to execute database queries."""
+        with sqlite3.connect(self.db_name) as conn:
+            cursor = conn.cursor()
+            try:
+                cursor.execute(query, params)
+                if fetch:
+                    return cursor.fetchall()
+                conn.commit()
+            except sqlite3.Error as e:
+                print(f"Database error: {e}")
+            except Exception as e:
+                print(f"Exception in query execution: {e}")
 
     def create_table(self, table_name, columns):
-        """
-        Create a table in the database.
-
-        Args:
-            table_name (str): The name of the table.
-            columns (str): A string containing column definitions.
-
-        Example:
-            columns = "isbn INTEGER PRIMARY KEY, ocn INTEGER, lccn TEXT, source TEXT PRIMARY KEY, doi TEXT"
-            create_table("book_data", columns)
-        """
-        self.connect()
-        self.cursor.execute(f"CREATE TABLE IF NOT EXISTS {table_name} ({columns})")
-        self.connection.commit()
-        self.disconnect()
+        query = f"CREATE TABLE IF NOT EXISTS {table_name} ({columns})"
+        self.execute_query(query)
 
     def insert_data(self, table_name, data):
-        """
-        Insert data into the specified table.
-
-        Args:
-            table_name (str): The name of the table.
-            data (tuple): A tuple containing values to be inserted.
-
-        Example:
-            data = (0000000000, 1111111111, 'lccn00id', 'oclc', 'doi00id')
-            insert_data("book_data", data)
-        """
-        self.connect()
         placeholders = ', '.join(['?' for _ in data])
-        self.cursor.execute(f"INSERT INTO {table_name} VALUES ({placeholders})", data)
-        self.connection.commit()
-        self.disconnect()
+        query = f"INSERT INTO {table_name} VALUES ({placeholders})"
+        self.execute_query(query, data)
 
-    def fetch_data(self, table_name, condition=None):
-        """
-        Fetch data from the specified table.
-
-        Args:
-            table_name (str): The name of the table.
-            condition (str): A condition to filter the data (optional).
-
-        Returns:
-            list: A list of tuples containing the fetched data.
-        """
-        self.connect()
-        if condition:
-            query = f"SELECT * FROM {table_name} WHERE {condition}"
-        else:
-            query = f"SELECT * FROM {table_name}"
-
-        self.cursor.execute(query)
-        result = self.cursor.fetchall()
-        self.disconnect()
-        return result
+    def fetch_data(self, table_name, condition=''):
+        query = f"SELECT * FROM {table_name} {condition}"
+        return self.execute_query(query, fetch=True)
 
     def update_data(self, table_name, update_values, condition):
-        """
-        Update data in the specified table.
-
-        Args:
-            table_name (str): The name of the table.
-            update_values (str): A string containing column-value pairs to be updated.
-            condition (str): A condition to filter the data to be updated.
-
-        Example:
-            update_values = "ocn=000updatedocn, lccn='updatedLCCN'"
-            condition = "isnb=0000000000"
-            update_data("book_data", update_values, condition)
-        """
-        self.connect()
-        self.cursor.execute(f"UPDATE {table_name} SET {update_values} WHERE {condition}")
-        self.connection.commit()
-        self.disconnect()
+        query = f"UPDATE {table_name} SET {update_values} WHERE {condition}"
+        self.execute_query(query)
 
     def delete_data(self, table_name, condition):
-        """
-        Delete data from the specified table.
+        query = f"DELETE FROM {table_name} WHERE {condition}"
+        self.execute_query(query)
 
-        Args:
-            table_name (str): The name of the table.
-            condition (str): A condition to filter the data to be deleted.
+    def data_exists(self, table_name, condition):
+        """Check if data exists in the table matching the condition."""
+        result = self.fetch_data(table_name, f"WHERE {condition}")
+        return len(result) > 0
 
-        Example:
-            condition = "isbn=0000000000"
-            delete_data("book_data", condition)
-        """
-        self.connect()
-        self.cursor.execute(f"DELETE FROM {table_name} WHERE {condition}")
-        self.connection.commit()
-        self.disconnect()
-
-
+# Example Usage
 if __name__ == "__main__":
-# Example Usage:
     db = DatabaseManager()
-    db.create_table("book_data", "Isbn INTEGER PRIMARY KEY, Ocn INTEGER, Lccn TEXT, source TEXT, Doi TEXT")
-    db.create_table("lccn_data", "Lccn TEXT PRIMARY KEY, Source TEXT")
+    db.create_table("book_data", "Isbn INTEGER PRIMARY KEY, Ocn INTEGER, Lccn TEXT, Source TEXT, Doi TEXT")
 
-    # db.insert_data("book_data", (1, 'John Doe', 25))
-    # data = db.fetch_data("book_data")
-    # print(data)
-    # db.update_data("book_data", "name='Updated Name', age=30", "id=1")
-    # db.delete_data("book_data", "id=1")
+    # Insert data
+    isbn_to_insert = 123456789
+    data_to_insert = (isbn_to_insert, 123, 'lccn123', 'source123', 'doi123')
+    db.insert_data("book_data", data_to_insert)
+
+    # Check if data was inserted
+    if db.data_exists("book_data", f"Isbn = {isbn_to_insert}"):
+        print("Insertion successful: Data exists")
+    else:
+        print("Insertion failed: Data does not exist")
+
+    # Delete the inserted data
+    db.delete_data("book_data", f"Isbn = {isbn_to_insert}")
+
+    # Check if data was deleted
+    if db.data_exists("book_data", f"Isbn = {isbn_to_insert}"):
+        print("Deletion failed: Data still exists")
+    else:
+        print("Deletion successful: Data does not exist")

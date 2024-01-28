@@ -8,8 +8,9 @@ src_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if src_dir not in sys.path:
     sys.path.append(src_dir)
 
-# Now you can import file_processor from util
-from util import file_processor
+from util.file_processor import *
+from db.database_manager import DatabaseManager
+
 
 class LibraryMetadataHarvesterApp(tk.Tk):
     def __init__(self):
@@ -34,6 +35,10 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
         # Define main UI components
         self.setup_ui()
+
+        # Initialize DatabaseManager
+        self.db_manager = DatabaseManager()
+        self.db_manager.create_table("book_data", "Isbn INTEGER PRIMARY KEY, Ocn INTEGER, Lccn TEXT, Source TEXT, Doi TEXT")
 
     def setup_ui(self):
         # Container for Input and Priority Frames
@@ -132,19 +137,33 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         return options    
 
     def start_search(self):
-        # Retrieve selected priorities
-
-        # Get the file path from the entry widget
+        
+        # Retrieve selected priorities and get the file path from the entry widget
         file_path = self.file_entry.get()
+        options = self.get_current_options()
+        file_type = 'ISBN' if options['input_file_type'] == 'ISBN' else 'OCN'
 
         # Process the file
-        file_type, data = file_processor.read_and_validate_file(file_path)
-        if file_type == 'Invalid':
+        # Assuming file_processor.read_and_validate_file returns a list of ISBNs/OCNs
+        identifiers = read_and_validate_file(file_path)
+        if not identifiers:
             self.log_message("Invalid file or file format.")
-        else:
-            self.log_message(f"File contains valid {file_type} entries.")
-            # Continue with the search logic using the data
-            self.log_message(str(self.get_current_options()))
+            return
+
+        self.log_message(f"File contains valid {file_type} entries.")
+        
+        # Check each identifier in the database and process accordingly
+        for identifier in identifiers:
+            if self.db_manager.data_exists("book_data", f"Isbn = {identifier}" if file_type == 'ISBN' else f"Ocn = {identifier}"):
+                self.log_message(f"Data for {identifier} already exists in the database.")
+                # Fetch and process data from the database if necessary
+            else:
+                self.log_message(f"Fetching data for {identifier} from external sources.")
+                # Fetch data from API and insert it into the database
+                # Example: metadata = fetch_metadata_from_api(identifier)
+                # self.db_manager.insert_data("book_data", (identifier, metadata['Ocn'], metadata['Lccn'], ...))
+
+        self.log_message("Search completed.")
         
 
     def stop_search(self):

@@ -44,7 +44,7 @@ class DatabaseManager:
     def data_exists(self, table_name, condition):
         """Check if data exists in the table matching the condition."""
         result = self.fetch_data(table_name, f"WHERE {condition}")
-        return len(result) > 0
+        return result is not None and len(result) > 0
 
 # Example Usage
 if __name__ == "__main__":

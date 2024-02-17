@@ -1,15 +1,20 @@
 import tkinter as tk
 from tkinter import filedialog
+from tkinter.filedialog import asksaveasfile
 from tkinter import ttk
 import sys
 import os
+import logging
+import subprocess
+
+from src.gui.priority_list import PriorityListApp
 
 src_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if src_dir not in sys.path:
     sys.path.append(src_dir)
 
 # Now you can import file_processor from util
-from util import file_processor
+from src.util import file_processor
 
 class LibraryMetadataHarvesterApp(tk.Tk):
     def __init__(self):
@@ -17,7 +22,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
         self.title('Library Metadata Harvester')
         self.configure(bg='#333333')  # Set a dark background color
-        self.geometry('800x600')  # Adjust the size
+        self.geometry('600x500')  # Adjust the size
 
         # Define the style for the dark theme
         self.style = ttk.Style(self)
@@ -91,25 +96,25 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.checkbutton_output_value_doi = ttk.Checkbutton(self.input_frame, text="DOI", style='TCheckbutton', variable=self.output_value_doi, onvalue=True, offvalue=False)
         self.checkbutton_output_value_doi.grid(row=7, column=0, sticky='w', padx=(0, 5), pady=(5, 0))
 
-        self.start_button = ttk.Button(self.input_frame, text="Start Search", command=self.start_search)
-        self.start_button.grid(row=8, column=0, sticky='w', padx=(0, 5), pady=(15, 0))
+        self.set_priority = ttk.Button(self.input_frame, text="Set Searching Priority", command=self.set_priority)
+        self.set_priority.grid(row=8, column=0, sticky='w', padx=(0, 5), pady=(5, 0))
 
-        self.stop_button = ttk.Button(self.input_frame, text="Stop Search", command=self.stop_search)
-        self.stop_button.grid(row=8, column=0, padx=(170, 0), pady=(15, 0))
-        
-        # Log area
-        self.log_frame = ttk.Frame(self, style='TFrame')
-        self.log_frame.pack(fill='both', expand=True, padx=10, pady=10)
+        # buttons area
+        self.button_frame = ttk.Frame(self, style='TFrame')
+        self.button_frame.pack(fill='both', expand=True, padx=10, pady=10)
 
-        self.log_label = ttk.Label(self.log_frame, text="Logs:", style='TLabel')
-        self.log_label.pack(anchor='nw', padx=5, pady=(0, 5))
+        self.start_button = ttk.Button(self.button_frame, text="Start Search", command=self.start_search)
+        self.start_button.pack(side='left',pady=10, padx=4)
 
-        self.log_text = tk.Text(self.log_frame, height=10, bg='#222222', fg='white', borderwidth=1)
-        self.log_text.pack(fill='both', expand=True)
+        self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=self.stop_search)
+        self.stop_button.pack(side='left', pady=10, padx=8)
 
+        #Open Log Button
+        self.open_log_button = ttk.Button(self.button_frame, text="Open Detailed Log", command=self.open_log('../logs/example.log'))
+        self.open_log_button.pack(side='left', pady=10, padx=4)
         # Export button
-        self.export_button = ttk.Button(self, text="Export Metadata", command=self.export_data)
-        self.export_button.pack(side='bottom', pady=10, padx=10)
+        self.export_button = ttk.Button(self.button_frame, text="Export Output File", command=self.export_data)
+        self.export_button.pack(side='left', pady=10, padx=8)
 
     def browse_file(self):
         filename = filedialog.askopenfilename()
@@ -134,30 +139,52 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def start_search(self):
         # Retrieve selected priorities
 
+        # Generate a log
+        self.generate_log('../logs/example.log')
+
         # Get the file path from the entry widget
         file_path = self.file_entry.get()
 
         # Process the file
         file_type, data = file_processor.read_and_validate_file(file_path)
         if file_type == 'Invalid':
-            self.log_message("Invalid file or file format.")
+             logging.info("Invalid file or file format.")
         else:
-            self.log_message(f"File contains valid {file_type} entries.")
+             logging.info(f"File contains valid {file_type} entries.")
             # Continue with the search logic using the data
-            self.log_message(str(self.get_current_options()))
+             logging.info(str(self.get_current_options()))
         
 
     def stop_search(self):
-        self.log_message("Search stopped...")
+        logging.info("Search stopped...")
+
+
+    def set_priority(self):
+        root = tk.Tk()
+        app = PriorityListApp(root)
+        root.mainloop()
+
+    def generate_log(self, log_file_path):
+        logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+    def open_log(self, log_path):
+        # Create the Tkinter root widget
+        root = tk.Tk()
+        root.title("Log Viewer")
+
+        # Create a text widget to display file content
+        text = tk.Text(root, wrap="word")
+        text.pack(expand=True, fill="both")
+        if log_path:
+            with open(log_path, 'r') as file:
+                content = file.read()
+                text.delete('1.0', tk.END)  # Clear previous content
+                text.insert(tk.END, content)
+
+
 
     def export_data(self):
-        self.log_message("Data exported successfully.")
-
-    def log_message(self, message):
-        self.log_text.insert(tk.END, message + '\n')
-        self.log_text.see(tk.END)
-        self.log_text.update_idletasks()
-
+        f = asksaveasfile(initialfile='Untitled.txt', defaultextension=".txt", filetypes=[("All Files", "*.*"), ("Text Documents", "*.txt")])
 
 if __name__ == "__main__":
     app = LibraryMetadataHarvesterApp()

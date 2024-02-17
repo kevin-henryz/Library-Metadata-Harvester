@@ -5,7 +5,6 @@ from tkinter import ttk
 import sys
 import os
 import logging
-import subprocess
 
 from src.gui.priority_list import PriorityListApp
 
@@ -96,6 +95,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.checkbutton_output_value_doi = ttk.Checkbutton(self.input_frame, text="DOI", style='TCheckbutton', variable=self.output_value_doi, onvalue=True, offvalue=False)
         self.checkbutton_output_value_doi.grid(row=7, column=0, sticky='w', padx=(0, 5), pady=(5, 0))
 
+        # set searching priority
         self.set_priority = ttk.Button(self.input_frame, text="Set Searching Priority", command=self.set_priority)
         self.set_priority.grid(row=8, column=0, sticky='w', padx=(0, 5), pady=(5, 0))
 
@@ -103,15 +103,18 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.button_frame = ttk.Frame(self, style='TFrame')
         self.button_frame.pack(fill='both', expand=True, padx=10, pady=10)
 
+        # start searching
         self.start_button = ttk.Button(self.button_frame, text="Start Search", command=self.start_search)
         self.start_button.pack(side='left',pady=10, padx=4)
 
+        # stop searching
         self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=self.stop_search)
         self.stop_button.pack(side='left', pady=10, padx=8)
 
         #Open Log Button
-        self.open_log_button = ttk.Button(self.button_frame, text="Open Detailed Log", command=self.open_log('../logs/example.log'))
+        self.open_log_button = ttk.Button(self.button_frame, text="Open Detailed Log", command=lambda: self.open_log('../logs/example.log'))
         self.open_log_button.pack(side='left', pady=10, padx=4)
+
         # Export button
         self.export_button = ttk.Button(self.button_frame, text="Export Output File", command=self.export_data)
         self.export_button.pack(side='left', pady=10, padx=8)
@@ -135,6 +138,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             }
         }
         return options    
+
 
     def start_search(self):
         # Retrieve selected priorities
@@ -164,8 +168,10 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         app = PriorityListApp(root)
         root.mainloop()
 
+
     def generate_log(self, log_file_path):
         logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 
     def open_log(self, log_path):
         # Create the Tkinter root widget
@@ -180,7 +186,6 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 content = file.read()
                 text.delete('1.0', tk.END)  # Clear previous content
                 text.insert(tk.END, content)
-
 
 
     def export_data(self):

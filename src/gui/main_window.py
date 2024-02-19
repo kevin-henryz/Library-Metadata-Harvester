@@ -116,8 +116,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.open_log_button.pack(side='left', pady=10, padx=4)
 
         # Export button
-        self.export_button = ttk.Button(self.button_frame, text="Export Output File", command=self.export_data)
-        self.export_button.pack(side='left', pady=10, padx=8)
+        self.choose_output_file_button = ttk.Button(self.button_frame, text="Choose Output File", command=self.choose_output_file)
+        self.choose_output_file_button.pack(side='left', pady=10, padx=8)
 
     def browse_file(self):
         filename = filedialog.askopenfilename()
@@ -188,7 +188,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 text.insert(tk.END, content)
 
 
-    def export_data(self):
+    def choose_output_file(self):
+        # create a file 'Untitled.txt' under the directory that client chose
         f = asksaveasfile(initialfile='Untitled.txt', defaultextension=".txt", filetypes=[("All Files", "*.*"), ("Text Documents", "*.txt")])
 
 if __name__ == "__main__":

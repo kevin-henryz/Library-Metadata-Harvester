@@ -117,3 +117,864 @@
 2024-02-23 23:58:49,171 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
 2024-02-23 23:58:55,801 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
 2024-02-23 23:58:57,679 - INFO - Search stopped
+2024-02-24 00:15:11,083 - INFO - Application started
+2024-02-24 00:15:24,074 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA', 'Google Books API']
+2024-02-24 00:17:03,401 - INFO - Application started
+2024-02-24 00:17:07,672 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 00:17:32,607 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 00:17:33,956 - INFO - Search stopped
+2024-02-24 00:40:15,228 - INFO - Application started
+2024-02-24 01:15:52,142 - INFO - Application started
+2024-02-24 01:16:03,305 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:17:16,704 - INFO - Application started
+2024-02-24 01:17:31,014 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:17:43,687 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:19:54,933 - INFO - Application started
+2024-02-24 01:19:57,991 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:20:09,253 - INFO - Search started for ISBN with 1003 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:20:09,262 - INFO - 0/1003. Searching metadata for 1018149197
+2024-02-24 01:20:10,274 - INFO - 1/1003. Searching metadata for 1024269765
+2024-02-24 01:20:11,277 - INFO - 2/1003. Searching metadata for 1012881805
+2024-02-24 01:20:12,279 - INFO - 3/1003. Searching metadata for 1022787915
+2024-02-24 01:20:13,281 - INFO - 4/1003. Searching metadata for 1021804020
+2024-02-24 01:20:14,291 - INFO - 5/1003. Searching metadata for 1019843084
+2024-02-24 01:20:15,293 - INFO - 6/1003. Searching metadata for 1003081401
+2024-02-24 01:20:16,295 - INFO - 7/1003. Searching metadata for 1055048000
+2024-02-24 01:20:17,297 - INFO - 8/1003. Searching metadata for 1024278538
+2024-02-24 01:20:18,314 - INFO - 9/1003. Searching metadata for 1013827459
+2024-02-24 01:20:19,321 - INFO - 10/1003. Searching metadata for 1027174487
+2024-02-24 01:20:19,929 - INFO - Search stopped
+2024-02-24 01:20:20,322 - INFO - 11/1003. Searching metadata for 1000128538
+2024-02-24 01:22:46,838 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:23:06,129 - INFO - Search started for OCN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:23:06,136 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-02-24 01:23:07,141 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-02-24 01:23:08,144 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-02-24 01:23:09,150 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-02-24 01:23:10,154 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-02-24 01:23:11,157 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-02-24 01:23:12,161 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-02-24 01:23:13,169 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-02-24 01:23:14,174 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-02-24 01:23:15,177 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-02-24 01:23:16,181 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-02-24 01:23:17,185 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-02-24 01:23:18,189 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-02-24 01:23:19,200 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-02-24 01:23:20,203 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-02-24 01:23:21,206 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-02-24 01:23:22,209 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-02-24 01:23:23,211 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-02-24 01:23:24,217 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-02-24 01:23:25,220 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-02-24 01:23:26,222 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-02-24 01:23:27,225 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-02-24 01:23:28,228 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-02-24 01:23:29,237 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-02-24 01:23:30,239 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-02-24 01:23:31,246 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-02-24 01:23:32,254 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-02-24 01:23:33,256 - INFO - 27/7524. Searching metadata for 9780191514463
+2024-02-24 01:23:34,258 - INFO - 28/7524. Searching metadata for 9780191514470
+2024-02-24 01:23:35,260 - INFO - 29/7524. Searching metadata for 9780191514487
+2024-02-24 01:23:36,265 - INFO - 30/7524. Searching metadata for 9780191514500
+2024-02-24 01:23:37,271 - INFO - 31/7524. Searching metadata for 9780191514517
+2024-02-24 01:23:37,494 - INFO - Search stopped
+2024-02-24 01:23:38,274 - INFO - 32/7524. Searching metadata for 9780191514524
+2024-02-24 01:32:52,330 - INFO - Application started
+2024-02-24 01:35:16,695 - INFO - Application started
+2024-02-24 01:37:35,073 - INFO - Application started
+2024-02-24 01:38:39,554 - INFO - Application started
+2024-02-24 01:39:04,192 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Google Books API', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:39:28,864 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Google Books API', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:39:28,868 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-02-24 01:39:29,874 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-02-24 01:39:30,881 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-02-24 01:39:31,883 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-02-24 01:39:32,887 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-02-24 01:39:33,890 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-02-24 01:39:34,898 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-02-24 01:39:35,156 - INFO - Search stopped
+2024-02-24 01:39:35,903 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-02-24 01:40:27,803 - INFO - Updated priority list: ['Yale', 'OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:40:55,678 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:41:07,318 - INFO - Search started for OCN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:41:07,322 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-02-24 01:41:08,337 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-02-24 01:41:09,339 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-02-24 01:41:10,342 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-02-24 01:41:11,349 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-02-24 01:41:12,352 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-02-24 01:41:13,355 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-02-24 01:41:14,359 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-02-24 01:41:15,363 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-02-24 01:41:16,365 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-02-24 01:41:17,367 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-02-24 01:41:18,370 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-02-24 01:41:19,372 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-02-24 01:41:20,381 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-02-24 01:41:21,095 - INFO - Search stopped
+2024-02-24 01:41:21,384 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-02-24 01:47:02,015 - INFO - Application started
+2024-02-24 01:48:49,812 - INFO - Application started
+2024-02-24 01:49:31,118 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:49:45,845 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:49:45,848 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-02-24 01:49:45,854 - INFO - Written metadata for 9780191513015 to file
+2024-02-24 01:49:46,855 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-02-24 01:49:46,857 - INFO - Written metadata for 9780191513022 to file
+2024-02-24 01:49:47,858 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-02-24 01:49:47,860 - INFO - Written metadata for 9780191513039 to file
+2024-02-24 01:49:48,861 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-02-24 01:49:48,862 - INFO - Written metadata for 9780191513183 to file
+2024-02-24 01:49:49,863 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-02-24 01:49:49,873 - INFO - Written metadata for 9780191513213 to file
+2024-02-24 01:49:50,874 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-02-24 01:49:50,876 - INFO - Written metadata for 9780191513275 to file
+2024-02-24 01:49:51,876 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-02-24 01:49:51,877 - INFO - Written metadata for 9780191513329 to file
+2024-02-24 01:49:52,879 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-02-24 01:49:52,891 - INFO - Written metadata for 9780191513336 to file
+2024-02-24 01:49:53,892 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-02-24 01:49:53,894 - INFO - Written metadata for 9780191513428 to file
+2024-02-24 01:49:54,894 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-02-24 01:49:54,895 - INFO - Written metadata for 9780191513435 to file
+2024-02-24 01:49:55,897 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-02-24 01:49:55,898 - INFO - Written metadata for 9780191513459 to file
+2024-02-24 01:49:56,899 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-02-24 01:49:56,901 - INFO - Written metadata for 9780191513466 to file
+2024-02-24 01:49:57,901 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-02-24 01:49:57,905 - INFO - Written metadata for 9780191513473 to file
+2024-02-24 01:49:58,907 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-02-24 01:49:58,908 - INFO - Written metadata for 9780191513480 to file
+2024-02-24 01:49:59,909 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-02-24 01:49:59,910 - INFO - Written metadata for 9780191513503 to file
+2024-02-24 01:50:00,912 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-02-24 01:50:00,912 - INFO - Written metadata for 9780191513510 to file
+2024-02-24 01:50:01,915 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-02-24 01:50:01,917 - INFO - Written metadata for 9780191513572 to file
+2024-02-24 01:50:02,918 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-02-24 01:50:02,921 - INFO - Written metadata for 9780191513589 to file
+2024-02-24 01:50:03,922 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-02-24 01:50:03,924 - INFO - Written metadata for 9780191513688 to file
+2024-02-24 01:50:04,925 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-02-24 01:50:04,926 - INFO - Written metadata for 9780191513732 to file
+2024-02-24 01:50:05,927 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-02-24 01:50:05,928 - INFO - Written metadata for 9780191514012 to file
+2024-02-24 01:50:06,929 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-02-24 01:50:06,933 - INFO - Written metadata for 9780191514166 to file
+2024-02-24 01:50:07,935 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-02-24 01:50:07,944 - INFO - Written metadata for 9780191514210 to file
+2024-02-24 01:50:08,944 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-02-24 01:50:08,947 - INFO - Written metadata for 9780191514227 to file
+2024-02-24 01:50:09,947 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-02-24 01:50:09,956 - INFO - Written metadata for 9780191514302 to file
+2024-02-24 01:50:10,956 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-02-24 01:50:10,957 - INFO - Written metadata for 9780191514395 to file
+2024-02-24 01:50:11,959 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-02-24 01:50:11,960 - INFO - Written metadata for 9780191514418 to file
+2024-02-24 01:50:12,961 - INFO - 27/7524. Searching metadata for 9780191514463
+2024-02-24 01:50:12,962 - INFO - Written metadata for 9780191514463 to file
+2024-02-24 01:50:13,963 - INFO - 28/7524. Searching metadata for 9780191514470
+2024-02-24 01:50:13,965 - INFO - Written metadata for 9780191514470 to file
+2024-02-24 01:50:14,966 - INFO - 29/7524. Searching metadata for 9780191514487
+2024-02-24 01:50:14,968 - INFO - Written metadata for 9780191514487 to file
+2024-02-24 01:50:15,969 - INFO - 30/7524. Searching metadata for 9780191514500
+2024-02-24 01:50:15,970 - INFO - Written metadata for 9780191514500 to file
+2024-02-24 01:50:16,971 - INFO - 31/7524. Searching metadata for 9780191514517
+2024-02-24 01:50:16,973 - INFO - Written metadata for 9780191514517 to file
+2024-02-24 01:50:17,975 - INFO - 32/7524. Searching metadata for 9780191514524
+2024-02-24 01:50:17,976 - INFO - Written metadata for 9780191514524 to file
+2024-02-24 01:50:18,977 - INFO - 33/7524. Searching metadata for 9780191514531
+2024-02-24 01:50:18,978 - INFO - Written metadata for 9780191514531 to file
+2024-02-24 01:50:19,979 - INFO - 34/7524. Searching metadata for 9780191514548
+2024-02-24 01:50:19,983 - INFO - Written metadata for 9780191514548 to file
+2024-02-24 01:50:20,985 - INFO - 35/7524. Searching metadata for 9780191514593
+2024-02-24 01:50:20,986 - INFO - Written metadata for 9780191514593 to file
+2024-02-24 01:50:21,987 - INFO - 36/7524. Searching metadata for 9780191514616
+2024-02-24 01:50:21,988 - INFO - Written metadata for 9780191514616 to file
+2024-02-24 01:50:22,990 - INFO - 37/7524. Searching metadata for 9780191514708
+2024-02-24 01:50:22,991 - INFO - Written metadata for 9780191514708 to file
+2024-02-24 01:50:23,992 - INFO - 38/7524. Searching metadata for 9780191514715
+2024-02-24 01:50:24,018 - INFO - Written metadata for 9780191514715 to file
+2024-02-24 01:50:25,019 - INFO - 39/7524. Searching metadata for 9780191514753
+2024-02-24 01:50:25,023 - INFO - Written metadata for 9780191514753 to file
+2024-02-24 01:50:27,198 - INFO - Application started
+2024-02-24 01:50:59,781 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:51:13,957 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:51:13,965 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-02-24 01:51:13,976 - INFO - Write completed
+2024-02-24 01:51:14,977 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-02-24 01:51:14,986 - INFO - Write completed
+2024-02-24 01:51:15,987 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-02-24 01:51:15,990 - INFO - Write completed
+2024-02-24 01:51:16,991 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-02-24 01:51:16,992 - INFO - Write completed
+2024-02-24 01:51:17,993 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-02-24 01:51:17,994 - INFO - Write completed
+2024-02-24 01:51:18,995 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-02-24 01:51:19,003 - INFO - Write completed
+2024-02-24 01:51:20,003 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-02-24 01:51:20,008 - INFO - Write completed
+2024-02-24 01:51:21,010 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-02-24 01:51:21,011 - INFO - Write completed
+2024-02-24 01:51:22,012 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-02-24 01:51:22,016 - INFO - Write completed
+2024-02-24 01:51:23,016 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-02-24 01:51:23,017 - INFO - Write completed
+2024-02-24 01:51:24,018 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-02-24 01:51:24,019 - INFO - Write completed
+2024-02-24 01:51:25,021 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-02-24 01:51:25,022 - INFO - Write completed
+2024-02-24 01:51:26,023 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-02-24 01:51:26,024 - INFO - Write completed
+2024-02-24 01:51:27,025 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-02-24 01:51:27,026 - INFO - Write completed
+2024-02-24 01:51:28,027 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-02-24 01:51:28,030 - INFO - Write completed
+2024-02-24 01:51:29,033 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-02-24 01:51:29,034 - INFO - Write completed
+2024-02-24 01:51:30,038 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-02-24 01:51:30,039 - INFO - Write completed
+2024-02-24 01:51:31,040 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-02-24 01:51:31,041 - INFO - Write completed
+2024-02-24 01:51:32,042 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-02-24 01:51:32,043 - INFO - Write completed
+2024-02-24 01:51:33,044 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-02-24 01:51:33,049 - INFO - Write completed
+2024-02-24 01:51:34,053 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-02-24 01:51:34,054 - INFO - Write completed
+2024-02-24 01:51:35,055 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-02-24 01:51:35,056 - INFO - Write completed
+2024-02-24 01:51:36,057 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-02-24 01:51:36,058 - INFO - Write completed
+2024-02-24 01:51:37,059 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-02-24 01:51:37,060 - INFO - Write completed
+2024-02-24 01:51:38,061 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-02-24 01:51:38,069 - INFO - Write completed
+2024-02-24 01:51:39,070 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-02-24 01:51:39,072 - INFO - Write completed
+2024-02-24 01:51:40,072 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-02-24 01:51:40,072 - INFO - Write completed
+2024-02-24 01:51:41,074 - INFO - 27/7524. Searching metadata for 9780191514463
+2024-02-24 01:51:41,075 - INFO - Write completed
+2024-02-24 01:51:42,077 - INFO - 28/7524. Searching metadata for 9780191514470
+2024-02-24 01:51:42,084 - INFO - Write completed
+2024-02-24 01:51:43,086 - INFO - 29/7524. Searching metadata for 9780191514487
+2024-02-24 01:51:43,087 - INFO - Write completed
+2024-02-24 01:51:44,088 - INFO - 30/7524. Searching metadata for 9780191514500
+2024-02-24 01:51:44,089 - INFO - Write completed
+2024-02-24 01:51:45,090 - INFO - 31/7524. Searching metadata for 9780191514517
+2024-02-24 01:51:45,091 - INFO - Write completed
+2024-02-24 01:51:46,092 - INFO - 32/7524. Searching metadata for 9780191514524
+2024-02-24 01:51:46,093 - INFO - Write completed
+2024-02-24 01:51:47,096 - INFO - 33/7524. Searching metadata for 9780191514531
+2024-02-24 01:51:47,100 - INFO - Write completed
+2024-02-24 01:51:48,101 - INFO - 34/7524. Searching metadata for 9780191514548
+2024-02-24 01:51:48,103 - INFO - Write completed
+2024-02-24 01:51:49,104 - INFO - 35/7524. Searching metadata for 9780191514593
+2024-02-24 01:51:49,105 - INFO - Write completed
+2024-02-24 01:51:50,106 - INFO - 36/7524. Searching metadata for 9780191514616
+2024-02-24 01:51:50,107 - INFO - Write completed
+2024-02-24 01:51:51,108 - INFO - 37/7524. Searching metadata for 9780191514708
+2024-02-24 01:51:51,109 - INFO - Write completed
+2024-02-24 01:51:52,110 - INFO - 38/7524. Searching metadata for 9780191514715
+2024-02-24 01:51:52,116 - INFO - Write completed
+2024-02-24 01:51:53,117 - INFO - 39/7524. Searching metadata for 9780191514753
+2024-02-24 01:51:53,118 - INFO - Write completed
+2024-02-24 01:51:54,119 - INFO - 40/7524. Searching metadata for 9780191514791
+2024-02-24 01:51:54,120 - INFO - Write completed
+2024-02-24 01:51:55,121 - INFO - 41/7524. Searching metadata for 9780191514876
+2024-02-24 01:51:55,122 - INFO - Write completed
+2024-02-24 01:51:56,123 - INFO - 42/7524. Searching metadata for 9780191514999
+2024-02-24 01:51:56,125 - INFO - Write completed
+2024-02-24 01:51:57,126 - INFO - 43/7524. Searching metadata for 9780191515002
+2024-02-24 01:51:57,126 - INFO - Write completed
+2024-02-24 01:51:58,128 - INFO - 44/7524. Searching metadata for 9780191515071
+2024-02-24 01:51:58,134 - INFO - Write completed
+2024-02-24 01:51:59,135 - INFO - 45/7524. Searching metadata for 9780191515163
+2024-02-24 01:51:59,136 - INFO - Write completed
+2024-02-24 01:52:00,139 - INFO - 46/7524. Searching metadata for 9780191515170
+2024-02-24 01:52:00,141 - INFO - Write completed
+2024-02-24 01:52:01,143 - INFO - 47/7524. Searching metadata for 9780191515200
+2024-02-24 01:52:01,145 - INFO - Write completed
+2024-02-24 01:52:02,147 - INFO - 48/7524. Searching metadata for 9780191515217
+2024-02-24 01:52:02,149 - INFO - Write completed
+2024-02-24 01:52:03,150 - INFO - 49/7524. Searching metadata for 9780191515224
+2024-02-24 01:52:03,152 - INFO - Write completed
+2024-02-24 01:52:04,153 - INFO - 50/7524. Searching metadata for 9780191515279
+2024-02-24 01:52:04,155 - INFO - Write completed
+2024-02-24 01:52:05,155 - INFO - 51/7524. Searching metadata for 9780191515316
+2024-02-24 01:52:05,157 - INFO - Write completed
+2024-02-24 01:52:06,158 - INFO - 52/7524. Searching metadata for 9780191515323
+2024-02-24 01:52:06,159 - INFO - Write completed
+2024-02-24 01:52:07,160 - INFO - 53/7524. Searching metadata for 9780191515330
+2024-02-24 01:52:07,167 - INFO - Write completed
+2024-02-24 01:52:08,167 - INFO - 54/7524. Searching metadata for 9780191515354
+2024-02-24 01:52:08,169 - INFO - Write completed
+2024-02-24 01:52:09,170 - INFO - 55/7524. Searching metadata for 9780191515453
+2024-02-24 01:52:09,171 - INFO - Write completed
+2024-02-24 01:52:10,172 - INFO - 56/7524. Searching metadata for 9780191515477
+2024-02-24 01:52:10,173 - INFO - Write completed
+2024-02-24 01:52:11,174 - INFO - 57/7524. Searching metadata for 9780191515514
+2024-02-24 01:52:11,176 - INFO - Write completed
+2024-02-24 01:52:12,177 - INFO - 58/7524. Searching metadata for 9780191515545
+2024-02-24 01:52:12,185 - INFO - Write completed
+2024-02-24 01:52:13,185 - INFO - 59/7524. Searching metadata for 9780191515613
+2024-02-24 01:52:13,186 - INFO - Write completed
+2024-02-24 01:52:14,187 - INFO - 60/7524. Searching metadata for 9780191515651
+2024-02-24 01:52:14,188 - INFO - Write completed
+2024-02-24 01:52:15,190 - INFO - 61/7524. Searching metadata for 9780191515866
+2024-02-24 01:52:15,191 - INFO - Write completed
+2024-02-24 01:52:16,192 - INFO - 62/7524. Searching metadata for 9780191515965
+2024-02-24 01:52:16,201 - INFO - Write completed
+2024-02-24 01:52:17,202 - INFO - 63/7524. Searching metadata for 9780191515972
+2024-02-24 01:52:17,204 - INFO - Write completed
+2024-02-24 01:52:18,209 - INFO - 64/7524. Searching metadata for 9780191516085
+2024-02-24 01:52:18,210 - INFO - Write completed
+2024-02-24 01:52:19,217 - INFO - 65/7524. Searching metadata for 9780191516269
+2024-02-24 01:52:19,218 - INFO - Write completed
+2024-02-24 01:52:20,220 - INFO - 66/7524. Searching metadata for 9780191516474
+2024-02-24 01:52:20,223 - INFO - Write completed
+2024-02-24 01:52:21,223 - INFO - 67/7524. Searching metadata for 9780191516757
+2024-02-24 01:52:21,225 - INFO - Write completed
+2024-02-24 01:52:22,226 - INFO - 68/7524. Searching metadata for 9780191516771
+2024-02-24 01:52:22,234 - INFO - Write completed
+2024-02-24 01:52:23,236 - INFO - 69/7524. Searching metadata for 9780191516795
+2024-02-24 01:52:23,237 - INFO - Write completed
+2024-02-24 01:52:24,238 - INFO - 70/7524. Searching metadata for 9780191516801
+2024-02-24 01:52:24,239 - INFO - Write completed
+2024-02-24 01:52:25,240 - INFO - 71/7524. Searching metadata for 9780191516856
+2024-02-24 01:52:25,242 - INFO - Write completed
+2024-02-24 01:52:26,242 - INFO - 72/7524. Searching metadata for 9780191516900
+2024-02-24 01:52:26,245 - INFO - Write completed
+2024-02-24 01:52:27,249 - INFO - 73/7524. Searching metadata for 9780191516948
+2024-02-24 01:52:27,250 - INFO - Write completed
+2024-02-24 01:52:28,251 - INFO - 74/7524. Searching metadata for 9780191516962
+2024-02-24 01:52:28,253 - INFO - Write completed
+2024-02-24 01:52:29,254 - INFO - 75/7524. Searching metadata for 9780191516986
+2024-02-24 01:52:29,255 - INFO - Write completed
+2024-02-24 01:52:30,256 - INFO - 76/7524. Searching metadata for 9780191516993
+2024-02-24 01:52:30,257 - INFO - Write completed
+2024-02-24 01:52:31,259 - INFO - 77/7524. Searching metadata for 9780191517013
+2024-02-24 01:52:31,261 - INFO - Write completed
+2024-02-24 01:52:32,265 - INFO - 78/7524. Searching metadata for 9780191517020
+2024-02-24 01:52:32,266 - INFO - Write completed
+2024-02-24 01:52:33,268 - INFO - 79/7524. Searching metadata for 9780191517068
+2024-02-24 01:52:33,269 - INFO - Write completed
+2024-02-24 01:52:34,270 - INFO - 80/7524. Searching metadata for 9780191517075
+2024-02-24 01:52:34,271 - INFO - Write completed
+2024-02-24 01:52:35,272 - INFO - 81/7524. Searching metadata for 9780191517112
+2024-02-24 01:52:35,273 - INFO - Write completed
+2024-02-24 01:52:36,275 - INFO - 82/7524. Searching metadata for 9780191517259
+2024-02-24 01:52:36,276 - INFO - Write completed
+2024-02-24 01:52:37,278 - INFO - 83/7524. Searching metadata for 9780191517440
+2024-02-24 01:52:37,282 - INFO - Write completed
+2024-02-24 01:52:38,283 - INFO - 84/7524. Searching metadata for 9780191517495
+2024-02-24 01:52:38,284 - INFO - Write completed
+2024-02-24 01:52:39,285 - INFO - 85/7524. Searching metadata for 9780191517556
+2024-02-24 01:52:39,287 - INFO - Write completed
+2024-02-24 01:52:40,287 - INFO - 86/7524. Searching metadata for 9780191517747
+2024-02-24 01:52:40,288 - INFO - Write completed
+2024-02-24 01:52:41,290 - INFO - 87/7524. Searching metadata for 9780191517921
+2024-02-24 01:52:41,291 - INFO - Write completed
+2024-02-24 01:52:42,292 - INFO - 88/7524. Searching metadata for 9780191517945
+2024-02-24 01:52:42,293 - INFO - Write completed
+2024-02-24 01:52:43,298 - INFO - 89/7524. Searching metadata for 9780191518010
+2024-02-24 01:52:43,300 - INFO - Write completed
+2024-02-24 01:52:44,300 - INFO - 90/7524. Searching metadata for 9780191518331
+2024-02-24 01:52:44,301 - INFO - Write completed
+2024-02-24 01:52:45,302 - INFO - 91/7524. Searching metadata for 9780191518355
+2024-02-24 01:52:45,304 - INFO - Write completed
+2024-02-24 01:52:46,305 - INFO - 92/7524. Searching metadata for 9780191518362
+2024-02-24 01:52:46,307 - INFO - Write completed
+2024-02-24 01:52:47,307 - INFO - 93/7524. Searching metadata for 9780191518577
+2024-02-24 01:52:47,312 - INFO - Write completed
+2024-02-24 01:52:48,314 - INFO - 94/7524. Searching metadata for 9780191518621
+2024-02-24 01:52:48,317 - INFO - Write completed
+2024-02-24 01:52:49,318 - INFO - 95/7524. Searching metadata for 9780191519321
+2024-02-24 01:52:49,319 - INFO - Write completed
+2024-02-24 01:52:50,320 - INFO - 96/7524. Searching metadata for 9780191519437
+2024-02-24 01:52:50,321 - INFO - Write completed
+2024-02-24 01:52:51,323 - INFO - 97/7524. Searching metadata for 9780191519680
+2024-02-24 01:52:51,324 - INFO - Write completed
+2024-02-24 01:52:52,325 - INFO - 98/7524. Searching metadata for 9780191523021
+2024-02-24 01:52:52,326 - INFO - Write completed
+2024-02-24 01:52:53,332 - INFO - 99/7524. Searching metadata for 9780191523076
+2024-02-24 01:52:53,333 - INFO - Write completed
+2024-02-24 01:52:54,334 - INFO - 100/7524. Searching metadata for 9780191523182
+2024-02-24 01:52:54,336 - INFO - Write completed
+2024-02-24 01:52:55,337 - INFO - 101/7524. Searching metadata for 9780191523243
+2024-02-24 01:52:55,339 - INFO - Write completed
+2024-02-24 01:52:56,340 - INFO - 102/7524. Searching metadata for 9780191523489
+2024-02-24 01:52:56,343 - INFO - Write completed
+2024-02-24 01:52:57,345 - INFO - 103/7524. Searching metadata for 9780191523557
+2024-02-24 01:52:57,346 - INFO - Write completed
+2024-02-24 01:52:58,349 - INFO - 104/7524. Searching metadata for 9780191523632
+2024-02-24 01:52:58,351 - INFO - Write completed
+2024-02-24 01:52:59,352 - INFO - 105/7524. Searching metadata for 9780191523762
+2024-02-24 01:52:59,353 - INFO - Write completed
+2024-02-24 01:53:00,354 - INFO - 106/7524. Searching metadata for 9780191523786
+2024-02-24 01:53:00,356 - INFO - Write completed
+2024-02-24 01:53:01,358 - INFO - 107/7524. Searching metadata for 9780191523823
+2024-02-24 01:53:01,366 - INFO - Write completed
+2024-02-24 01:53:02,367 - INFO - 108/7524. Searching metadata for 9780191523915
+2024-02-24 01:53:02,368 - INFO - Write completed
+2024-02-24 01:53:03,369 - INFO - 109/7524. Searching metadata for 9780191523953
+2024-02-24 01:53:03,370 - INFO - Write completed
+2024-02-24 01:53:04,372 - INFO - 110/7524. Searching metadata for 9780191523977
+2024-02-24 01:53:04,373 - INFO - Write completed
+2024-02-24 01:53:05,374 - INFO - 111/7524. Searching metadata for 9780191523991
+2024-02-24 01:53:05,376 - INFO - Write completed
+2024-02-24 01:53:06,377 - INFO - 112/7524. Searching metadata for 9780191524349
+2024-02-24 01:53:06,380 - INFO - Write completed
+2024-02-24 01:53:07,382 - INFO - 113/7524. Searching metadata for 9780191524448
+2024-02-24 01:53:07,385 - INFO - Write completed
+2024-02-24 01:53:08,386 - INFO - 114/7524. Searching metadata for 9780191524516
+2024-02-24 01:53:08,387 - INFO - Write completed
+2024-02-24 01:53:09,389 - INFO - 115/7524. Searching metadata for 9780191524554
+2024-02-24 01:53:09,390 - INFO - Write completed
+2024-02-24 01:53:10,391 - INFO - 116/7524. Searching metadata for 9780191524684
+2024-02-24 01:53:10,399 - INFO - Write completed
+2024-02-24 01:53:11,400 - INFO - 117/7524. Searching metadata for 9780191524721
+2024-02-24 01:53:11,401 - INFO - Write completed
+2024-02-24 01:53:12,402 - INFO - 118/7524. Searching metadata for 9780191525346
+2024-02-24 01:53:12,404 - INFO - Write completed
+2024-02-24 01:53:13,404 - INFO - 119/7524. Searching metadata for 9780191525384
+2024-02-24 01:53:13,405 - INFO - Write completed
+2024-02-24 01:53:14,407 - INFO - 120/7524. Searching metadata for 9780191525995
+2024-02-24 01:53:14,408 - INFO - Write completed
+2024-02-24 01:53:15,412 - INFO - 121/7524. Searching metadata for 9780191526657
+2024-02-24 01:53:15,415 - INFO - Write completed
+2024-02-24 01:53:16,417 - INFO - 122/7524. Searching metadata for 9780191527395
+2024-02-24 01:53:16,418 - INFO - Write completed
+2024-02-24 01:53:17,418 - INFO - 123/7524. Searching metadata for 9780191527760
+2024-02-24 01:53:17,419 - INFO - Write completed
+2024-02-24 01:53:18,421 - INFO - 124/7524. Searching metadata for 9780191527814
+2024-02-24 01:53:18,423 - INFO - Write completed
+2024-02-24 01:53:19,424 - INFO - 125/7524. Searching metadata for 9780191529146
+2024-02-24 01:53:19,425 - INFO - Write completed
+2024-02-24 01:53:20,426 - INFO - 126/7524. Searching metadata for 9780191529276
+2024-02-24 01:53:20,432 - INFO - Write completed
+2024-02-24 01:53:21,433 - INFO - 127/7524. Searching metadata for 9780191529870
+2024-02-24 01:53:21,441 - INFO - Write completed
+2024-02-24 01:53:22,450 - INFO - 128/7524. Searching metadata for 9780191530197
+2024-02-24 01:53:22,452 - INFO - Write completed
+2024-02-24 01:53:23,453 - INFO - 129/7524. Searching metadata for 9780191530456
+2024-02-24 01:53:23,455 - INFO - Write completed
+2024-02-24 01:53:24,455 - INFO - 130/7524. Searching metadata for 9780191530524
+2024-02-24 01:53:24,458 - INFO - Write completed
+2024-02-24 01:53:25,461 - INFO - 131/7524. Searching metadata for 9780191530975
+2024-02-24 01:53:25,462 - INFO - Write completed
+2024-02-24 01:53:26,464 - INFO - 132/7524. Searching metadata for 9780191531248
+2024-02-24 01:53:26,472 - INFO - Write completed
+2024-02-24 01:53:27,473 - INFO - 133/7524. Searching metadata for 9780191531422
+2024-02-24 01:53:27,475 - INFO - Write completed
+2024-02-24 01:53:28,476 - INFO - 134/7524. Searching metadata for 9780191531590
+2024-02-24 01:53:28,479 - INFO - Write completed
+2024-02-24 01:53:29,480 - INFO - 135/7524. Searching metadata for 9780191531750
+2024-02-24 01:53:29,482 - INFO - Write completed
+2024-02-24 01:53:30,483 - INFO - 136/7524. Searching metadata for 9780191531774
+2024-02-24 01:53:30,484 - INFO - Write completed
+2024-02-24 01:53:31,486 - INFO - 137/7524. Searching metadata for 9780191531873
+2024-02-24 01:53:31,487 - INFO - Write completed
+2024-02-24 01:53:32,489 - INFO - 138/7524. Searching metadata for 9780191532283
+2024-02-24 01:53:32,491 - INFO - Write completed
+2024-02-24 01:53:33,493 - INFO - 139/7524. Searching metadata for 9780191532573
+2024-02-24 01:53:33,496 - INFO - Write completed
+2024-02-24 01:53:34,498 - INFO - 140/7524. Searching metadata for 9780191532627
+2024-02-24 01:53:34,499 - INFO - Write completed
+2024-02-24 01:53:35,501 - INFO - 141/7524. Searching metadata for 9780191533105
+2024-02-24 01:53:35,503 - INFO - Write completed
+2024-02-24 01:53:36,504 - INFO - 142/7524. Searching metadata for 9780191533198
+2024-02-24 01:53:36,505 - INFO - Write completed
+2024-02-24 01:53:37,506 - INFO - 143/7524. Searching metadata for 9780191533372
+2024-02-24 01:53:37,507 - INFO - Write completed
+2024-02-24 01:53:38,508 - INFO - 144/7524. Searching metadata for 9780191533587
+2024-02-24 01:53:38,514 - INFO - Write completed
+2024-02-24 01:53:39,516 - INFO - 145/7524. Searching metadata for 9780191533815
+2024-02-24 01:53:39,517 - INFO - Write completed
+2024-02-24 01:53:40,518 - INFO - 146/7524. Searching metadata for 9780191534065
+2024-02-24 01:53:40,519 - INFO - Write completed
+2024-02-24 01:53:41,520 - INFO - 147/7524. Searching metadata for 9780191534126
+2024-02-24 01:53:41,521 - INFO - Write completed
+2024-02-24 01:53:42,523 - INFO - 148/7524. Searching metadata for 9780191534461
+2024-02-24 01:53:42,524 - INFO - Write completed
+2024-02-24 01:53:43,525 - INFO - 149/7524. Searching metadata for 9780191534492
+2024-02-24 01:53:43,530 - INFO - Write completed
+2024-02-24 01:53:44,530 - INFO - 150/7524. Searching metadata for 9780191534560
+2024-02-24 01:53:44,532 - INFO - Write completed
+2024-02-24 01:53:45,533 - INFO - 151/7524. Searching metadata for 9780191534607
+2024-02-24 01:53:45,535 - INFO - Write completed
+2024-02-24 01:53:46,537 - INFO - 152/7524. Searching metadata for 9780191534829
+2024-02-24 01:53:46,538 - INFO - Write completed
+2024-02-24 01:53:47,539 - INFO - 153/7524. Searching metadata for 9780191534843
+2024-02-24 01:53:47,540 - INFO - Write completed
+2024-02-24 01:53:48,552 - INFO - 154/7524. Searching metadata for 9780191535079
+2024-02-24 01:53:48,553 - INFO - Write completed
+2024-02-24 01:53:49,554 - INFO - 155/7524. Searching metadata for 9780191535369
+2024-02-24 01:53:49,555 - INFO - Write completed
+2024-02-24 01:53:50,557 - INFO - 156/7524. Searching metadata for 9780191535697
+2024-02-24 01:53:50,563 - INFO - Write completed
+2024-02-24 01:53:51,564 - INFO - 157/7524. Searching metadata for 9780191536151
+2024-02-24 01:53:51,567 - INFO - Write completed
+2024-02-24 01:53:52,568 - INFO - 158/7524. Searching metadata for 9780191536175
+2024-02-24 01:53:52,569 - INFO - Write completed
+2024-02-24 01:53:53,570 - INFO - 159/7524. Searching metadata for 9780191536984
+2024-02-24 01:53:53,573 - INFO - Write completed
+2024-02-24 01:53:54,574 - INFO - 160/7524. Searching metadata for 9780191537127
+2024-02-24 01:53:54,577 - INFO - Write completed
+2024-02-24 01:53:55,579 - INFO - 161/7524. Searching metadata for 9780191537646
+2024-02-24 01:53:55,580 - INFO - Write completed
+2024-02-24 01:53:56,580 - INFO - 162/7524. Searching metadata for 9780191538124
+2024-02-24 01:53:56,581 - INFO - Write completed
+2024-02-24 01:53:57,583 - INFO - 163/7524. Searching metadata for 9780191538360
+2024-02-24 01:53:57,584 - INFO - Write completed
+2024-02-24 01:53:58,585 - INFO - 164/7524. Searching metadata for 9780191539510
+2024-02-24 01:53:58,586 - INFO - Write completed
+2024-02-24 01:53:59,588 - INFO - 165/7524. Searching metadata for 9780191541407
+2024-02-24 01:53:59,589 - INFO - Write completed
+2024-02-24 01:54:00,590 - INFO - 166/7524. Searching metadata for 9780191542497
+2024-02-24 01:54:00,595 - INFO - Write completed
+2024-02-24 01:54:01,596 - INFO - 167/7524. Searching metadata for 9780191543074
+2024-02-24 01:54:01,597 - INFO - Write completed
+2024-02-24 01:54:02,599 - INFO - 168/7524. Searching metadata for 9780191547447
+2024-02-24 01:54:02,601 - INFO - Write completed
+2024-02-24 01:54:03,602 - INFO - 169/7524. Searching metadata for 9780191551161
+2024-02-24 01:54:03,603 - INFO - Write completed
+2024-02-24 01:54:04,604 - INFO - 170/7524. Searching metadata for 9780191555237
+2024-02-24 01:54:04,605 - INFO - Write completed
+2024-02-24 01:54:05,607 - INFO - 171/7524. Searching metadata for 9780191556296
+2024-02-24 01:54:05,612 - INFO - Write completed
+2024-02-24 01:54:06,613 - INFO - 172/7524. Searching metadata for 9780191556388
+2024-02-24 01:54:06,615 - INFO - Write completed
+2024-02-24 01:54:07,616 - INFO - 173/7524. Searching metadata for 9780191556463
+2024-02-24 01:54:07,617 - INFO - Write completed
+2024-02-24 01:54:08,619 - INFO - 174/7524. Searching metadata for 9780191556791
+2024-02-24 01:54:08,620 - INFO - Write completed
+2024-02-24 01:54:09,621 - INFO - 175/7524. Searching metadata for 9780191565212
+2024-02-24 01:54:09,626 - INFO - Write completed
+2024-02-24 01:54:10,628 - INFO - 176/7524. Searching metadata for 9780191567193
+2024-02-24 01:54:10,630 - INFO - Write completed
+2024-02-24 01:54:11,631 - INFO - 177/7524. Searching metadata for 9780191567223
+2024-02-24 01:54:11,632 - INFO - Write completed
+2024-02-24 01:54:12,634 - INFO - 178/7524. Searching metadata for 9780191568466
+2024-02-24 01:54:12,635 - INFO - Write completed
+2024-02-24 01:54:13,636 - INFO - 179/7524. Searching metadata for 9780191568985
+2024-02-24 01:54:13,640 - INFO - Write completed
+2024-02-24 01:54:14,642 - INFO - 180/7524. Searching metadata for 9780191578526
+2024-02-24 01:54:14,647 - INFO - Write completed
+2024-02-24 01:54:15,648 - INFO - 181/7524. Searching metadata for 9780191587665
+2024-02-24 01:54:15,652 - INFO - Write completed
+2024-02-24 01:54:16,653 - INFO - 182/7524. Searching metadata for 9780191587719
+2024-02-24 01:54:16,654 - INFO - Write completed
+2024-02-24 01:54:17,655 - INFO - 183/7524. Searching metadata for 9780191606762
+2024-02-24 01:54:17,656 - INFO - Write completed
+2024-02-24 01:54:18,657 - INFO - 184/7524. Searching metadata for 9780191622472
+2024-02-24 01:54:18,660 - INFO - Write completed
+2024-02-24 01:54:19,662 - INFO - 185/7524. Searching metadata for 9780195106039
+2024-02-24 01:54:19,663 - INFO - Write completed
+2024-02-24 01:54:20,664 - INFO - 186/7524. Searching metadata for 9780195152715
+2024-02-24 01:54:20,665 - INFO - Write completed
+2024-02-24 01:54:21,666 - INFO - 187/7524. Searching metadata for 9780195184679
+2024-02-24 01:54:21,667 - INFO - Write completed
+2024-02-24 01:54:22,669 - INFO - 188/7524. Searching metadata for 9780195302004
+2024-02-24 01:54:22,670 - INFO - Write completed
+2024-02-24 01:54:23,671 - INFO - 189/7524. Searching metadata for 9780195302011
+2024-02-24 01:54:23,672 - INFO - Write completed
+2024-02-24 01:54:24,674 - INFO - 190/7524. Searching metadata for 9780195303834
+2024-02-24 01:54:24,679 - INFO - Write completed
+2024-02-24 01:54:25,680 - INFO - 191/7524. Searching metadata for 9780195313567
+2024-02-24 01:54:25,683 - INFO - Write completed
+2024-02-24 01:54:26,683 - INFO - 192/7524. Searching metadata for 9780195313574
+2024-02-24 01:54:26,684 - INFO - Write completed
+2024-02-24 01:54:27,686 - INFO - 193/7524. Searching metadata for 9780195313604
+2024-02-24 01:54:27,687 - INFO - Write completed
+2024-02-24 01:54:28,688 - INFO - 194/7524. Searching metadata for 9780195313635
+2024-02-24 01:54:28,689 - INFO - Write completed
+2024-02-24 01:54:29,690 - INFO - 195/7524. Searching metadata for 9780195343540
+2024-02-24 01:54:29,694 - INFO - Write completed
+2024-02-24 01:54:30,696 - INFO - 196/7524. Searching metadata for 9780195343618
+2024-02-24 01:54:30,697 - INFO - Write completed
+2024-02-24 01:54:31,699 - INFO - 197/7524. Searching metadata for 9780195343625
+2024-02-24 01:54:31,700 - INFO - Write completed
+2024-02-24 01:54:32,701 - INFO - 198/7524. Searching metadata for 9780195343632
+2024-02-24 01:54:32,702 - INFO - Write completed
+2024-02-24 01:54:33,703 - INFO - 199/7524. Searching metadata for 9780195343694
+2024-02-24 01:54:33,704 - INFO - Write completed
+2024-02-24 01:54:34,706 - INFO - 200/7524. Searching metadata for 9780195343717
+2024-02-24 01:54:34,707 - INFO - Write completed
+2024-02-24 01:54:35,710 - INFO - 201/7524. Searching metadata for 9780195343731
+2024-02-24 01:54:35,730 - INFO - Write completed
+2024-02-24 01:54:36,732 - INFO - 202/7524. Searching metadata for 9780195343762
+2024-02-24 01:54:36,733 - INFO - Write completed
+2024-02-24 01:54:37,734 - INFO - 203/7524. Searching metadata for 9780195343823
+2024-02-24 01:54:37,735 - INFO - Write completed
+2024-02-24 01:54:38,736 - INFO - 204/7524. Searching metadata for 9780195343854
+2024-02-24 01:54:38,738 - INFO - Write completed
+2024-02-24 01:54:39,740 - INFO - 205/7524. Searching metadata for 9780195343878
+2024-02-24 01:54:39,750 - INFO - Write completed
+2024-02-24 01:54:40,751 - INFO - 206/7524. Searching metadata for 9780195343892
+2024-02-24 01:54:40,752 - INFO - Write completed
+2024-02-24 01:54:41,753 - INFO - 207/7524. Searching metadata for 9780195343908
+2024-02-24 01:54:41,754 - INFO - Write completed
+2024-02-24 01:54:42,755 - INFO - 208/7524. Searching metadata for 9780195343915
+2024-02-24 01:54:42,756 - INFO - Write completed
+2024-02-24 01:54:43,757 - INFO - 209/7524. Searching metadata for 9780195343939
+2024-02-24 01:54:43,761 - INFO - Write completed
+2024-02-24 01:54:44,762 - INFO - 210/7524. Searching metadata for 9780195343946
+2024-02-24 01:54:44,764 - INFO - Write completed
+2024-02-24 01:54:45,765 - INFO - 211/7524. Searching metadata for 9780195343960
+2024-02-24 01:54:45,766 - INFO - Write completed
+2024-02-24 01:54:46,767 - INFO - 212/7524. Searching metadata for 9780195343984
+2024-02-24 01:54:46,768 - INFO - Write completed
+2024-02-24 01:54:47,769 - INFO - 213/7524. Searching metadata for 9780195343991
+2024-02-24 01:54:47,771 - INFO - Write completed
+2024-02-24 01:54:48,772 - INFO - 214/7524. Searching metadata for 9780195344004
+2024-02-24 01:54:48,776 - INFO - Write completed
+2024-02-24 01:54:49,784 - INFO - 215/7524. Searching metadata for 9780195344035
+2024-02-24 01:54:49,785 - INFO - Write completed
+2024-02-24 01:54:50,786 - INFO - 216/7524. Searching metadata for 9780195344080
+2024-02-24 01:54:50,787 - INFO - Write completed
+2024-02-24 01:54:51,788 - INFO - 217/7524. Searching metadata for 9780195344134
+2024-02-24 01:54:51,789 - INFO - Write completed
+2024-02-24 01:54:52,791 - INFO - 218/7524. Searching metadata for 9780195344158
+2024-02-24 01:54:52,794 - INFO - Write completed
+2024-02-24 01:54:53,796 - INFO - 219/7524. Searching metadata for 9780195344219
+2024-02-24 01:54:53,797 - INFO - Write completed
+2024-02-24 01:54:54,798 - INFO - 220/7524. Searching metadata for 9780195344226
+2024-02-24 01:54:54,803 - INFO - Write completed
+2024-02-24 01:54:55,805 - INFO - 221/7524. Searching metadata for 9780195344240
+2024-02-24 01:54:55,813 - INFO - Write completed
+2024-02-24 01:54:56,815 - INFO - 222/7524. Searching metadata for 9780195344288
+2024-02-24 01:54:56,819 - INFO - Write completed
+2024-02-24 01:54:57,820 - INFO - 223/7524. Searching metadata for 9780195344301
+2024-02-24 01:54:57,821 - INFO - Write completed
+2024-02-24 01:54:58,822 - INFO - 224/7524. Searching metadata for 9780195344318
+2024-02-24 01:54:58,825 - INFO - Write completed
+2024-02-24 01:54:59,833 - INFO - 225/7524. Searching metadata for 9780195344356
+2024-02-24 01:54:59,835 - INFO - Write completed
+2024-02-24 01:55:00,835 - INFO - 226/7524. Searching metadata for 9780195344363
+2024-02-24 01:55:00,836 - INFO - Write completed
+2024-02-24 01:55:01,838 - INFO - 227/7524. Searching metadata for 9780195344455
+2024-02-24 01:55:01,839 - INFO - Write completed
+2024-02-24 01:55:02,840 - INFO - 228/7524. Searching metadata for 9780195344530
+2024-02-24 01:55:02,846 - INFO - Write completed
+2024-02-24 01:55:03,848 - INFO - 229/7524. Searching metadata for 9780195344578
+2024-02-24 01:55:03,849 - INFO - Write completed
+2024-02-24 01:55:04,850 - INFO - 230/7524. Searching metadata for 9780195344639
+2024-02-24 01:55:04,851 - INFO - Write completed
+2024-02-24 01:55:05,852 - INFO - 231/7524. Searching metadata for 9780195344707
+2024-02-24 01:55:05,853 - INFO - Write completed
+2024-02-24 01:55:06,855 - INFO - 232/7524. Searching metadata for 9780195344752
+2024-02-24 01:55:06,860 - INFO - Write completed
+2024-02-24 01:55:07,861 - INFO - 233/7524. Searching metadata for 9780195344783
+2024-02-24 01:55:07,862 - INFO - Write completed
+2024-02-24 01:55:49,749 - INFO - Application started
+2024-02-24 01:56:12,470 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:56:13,802 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:56:13,811 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-02-24 01:56:13,816 - INFO - Write completed
+2024-02-24 01:56:14,818 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-02-24 01:56:14,819 - INFO - Write completed
+2024-02-24 01:56:15,820 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-02-24 01:56:15,821 - INFO - Write completed
+2024-02-24 01:56:16,822 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-02-24 01:56:16,826 - INFO - Write completed
+2024-02-24 01:56:17,828 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-02-24 01:56:17,831 - INFO - Write completed
+2024-02-24 01:56:18,832 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-02-24 01:56:18,834 - INFO - Write completed
+2024-02-24 01:56:19,835 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-02-24 01:56:19,836 - INFO - Write completed
+2024-02-24 01:56:20,838 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-02-24 01:56:20,847 - INFO - Write completed
+2024-02-24 01:56:21,848 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-02-24 01:56:21,852 - INFO - Write completed
+2024-02-24 01:56:22,853 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-02-24 01:56:22,854 - INFO - Write completed
+2024-02-24 01:56:23,856 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-02-24 01:56:23,862 - INFO - Write completed
+2024-02-24 01:56:24,863 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-02-24 01:56:24,866 - INFO - Write completed
+2024-02-24 01:56:25,868 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-02-24 01:56:25,869 - INFO - Write completed
+2024-02-24 01:56:26,870 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-02-24 01:56:26,871 - INFO - Write completed
+2024-02-24 01:56:27,872 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-02-24 01:56:27,879 - INFO - Write completed
+2024-02-24 01:56:28,880 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-02-24 01:56:28,881 - INFO - Write completed
+2024-02-24 01:56:29,882 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-02-24 01:56:29,883 - INFO - Write completed
+2024-02-24 01:56:30,885 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-02-24 01:56:30,903 - INFO - Write completed
+2024-02-24 01:56:31,904 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-02-24 01:56:31,906 - INFO - Write completed
+2024-02-24 01:56:32,907 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-02-24 01:56:32,908 - INFO - Write completed
+2024-02-24 01:56:33,909 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-02-24 01:56:33,910 - INFO - Write completed
+2024-02-24 01:56:34,911 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-02-24 01:56:34,912 - INFO - Write completed
+2024-02-24 01:56:35,913 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-02-24 01:56:35,915 - INFO - Write completed
+2024-02-24 01:56:36,917 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-02-24 01:56:36,918 - INFO - Write completed
+2024-02-24 01:56:37,919 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-02-24 01:56:37,920 - INFO - Write completed
+2024-02-24 01:56:38,921 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-02-24 01:56:38,923 - INFO - Write completed
+2024-02-24 01:56:39,924 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-02-24 01:56:39,925 - INFO - Write completed
+2024-02-24 01:56:40,927 - INFO - 27/7524. Searching metadata for 9780191514463
+2024-02-24 01:56:40,928 - INFO - Write completed
+2024-02-24 01:56:41,929 - INFO - 28/7524. Searching metadata for 9780191514470
+2024-02-24 01:56:41,930 - INFO - Write completed
+2024-02-24 01:56:42,931 - INFO - 29/7524. Searching metadata for 9780191514487
+2024-02-24 01:56:42,932 - INFO - Write completed
+2024-02-24 01:56:43,934 - INFO - 30/7524. Searching metadata for 9780191514500
+2024-02-24 01:56:43,935 - INFO - Write completed
+2024-02-24 01:56:44,936 - INFO - 31/7524. Searching metadata for 9780191514517
+2024-02-24 01:56:44,937 - INFO - Write completed
+2024-02-24 01:56:45,938 - INFO - 32/7524. Searching metadata for 9780191514524
+2024-02-24 01:56:45,943 - INFO - Write completed
+2024-02-24 01:56:46,944 - INFO - 33/7524. Searching metadata for 9780191514531
+2024-02-24 01:56:46,945 - INFO - Write completed
+2024-02-24 01:56:47,946 - INFO - 34/7524. Searching metadata for 9780191514548
+2024-02-24 01:56:47,947 - INFO - Write completed
+2024-02-24 01:56:48,948 - INFO - 35/7524. Searching metadata for 9780191514593
+2024-02-24 01:56:48,949 - INFO - Write completed
+2024-02-24 01:56:49,950 - INFO - 36/7524. Searching metadata for 9780191514616
+2024-02-24 01:56:49,952 - INFO - Write completed
+2024-02-24 01:56:50,953 - INFO - 37/7524. Searching metadata for 9780191514708
+2024-02-24 01:56:50,954 - INFO - Write completed
+2024-02-24 01:56:51,960 - INFO - 38/7524. Searching metadata for 9780191514715
+2024-02-24 01:56:51,961 - INFO - Write completed
+2024-02-24 01:56:52,962 - INFO - 39/7524. Searching metadata for 9780191514753
+2024-02-24 01:56:52,963 - INFO - Write completed
+2024-02-24 01:56:53,964 - INFO - 40/7524. Searching metadata for 9780191514791
+2024-02-24 01:56:53,970 - INFO - Write completed
+2024-02-24 01:56:54,972 - INFO - 41/7524. Searching metadata for 9780191514876
+2024-02-24 01:56:54,974 - INFO - Write completed
+2024-02-24 01:56:55,977 - INFO - 42/7524. Searching metadata for 9780191514999
+2024-02-24 01:56:55,979 - INFO - Write completed
+2024-02-24 01:56:56,980 - INFO - 43/7524. Searching metadata for 9780191515002
+2024-02-24 01:56:56,982 - INFO - Write completed
+2024-02-24 01:56:59,032 - INFO - Application started
+2024-02-24 01:57:02,177 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:57:20,886 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-24 01:57:20,890 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-02-24 01:57:20,894 - INFO - Write completed
+2024-02-24 01:57:21,896 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-02-24 01:57:21,898 - INFO - Write completed
+2024-02-24 01:57:22,899 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-02-24 01:57:22,900 - INFO - Write completed
+2024-02-24 01:57:23,901 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-02-24 01:57:23,902 - INFO - Write completed
+2024-02-24 01:57:24,903 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-02-24 01:57:24,905 - INFO - Write completed
+2024-02-24 01:57:25,907 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-02-24 01:57:25,910 - INFO - Write completed
+2024-02-24 01:57:26,912 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-02-24 01:57:26,913 - INFO - Write completed
+2024-02-24 01:57:27,914 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-02-24 01:57:27,915 - INFO - Write completed
+2024-02-24 01:57:28,917 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-02-24 01:57:28,918 - INFO - Write completed
+2024-02-24 01:57:29,919 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-02-24 01:57:29,920 - INFO - Write completed
+2024-02-24 01:57:30,925 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-02-24 01:57:30,926 - INFO - Write completed
+2024-02-24 01:57:31,928 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-02-24 01:57:31,930 - INFO - Write completed
+2024-02-24 01:57:32,931 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-02-24 01:57:32,932 - INFO - Write completed
+2024-02-24 01:57:33,933 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-02-24 01:57:33,934 - INFO - Write completed
+2024-02-24 01:57:34,935 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-02-24 01:57:34,936 - INFO - Write completed
+2024-02-24 01:57:35,938 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-02-24 01:57:35,939 - INFO - Write completed
+2024-02-24 01:57:36,940 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-02-24 01:57:36,945 - INFO - Write completed
+2024-02-24 01:57:37,946 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-02-24 01:57:37,949 - INFO - Write completed
+2024-02-24 01:57:38,950 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-02-24 01:57:38,951 - INFO - Write completed
+2024-02-24 01:57:39,952 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-02-24 01:57:39,954 - INFO - Write completed
+2024-02-24 01:57:40,955 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-02-24 01:57:40,959 - INFO - Write completed
+2024-02-24 01:57:41,960 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-02-24 01:57:41,962 - INFO - Write completed
+2024-02-24 01:57:42,963 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-02-24 01:57:42,964 - INFO - Write completed
+2024-02-24 01:57:43,965 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-02-24 01:57:43,966 - INFO - Write completed
+2024-02-24 01:57:44,967 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-02-24 01:57:44,968 - INFO - Write completed
+2024-02-24 01:57:45,969 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-02-24 01:57:45,973 - INFO - Write completed
+2024-02-24 01:57:46,975 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-02-24 01:57:46,977 - INFO - Write completed
+2024-02-24 01:57:47,978 - INFO - 27/7524. Searching metadata for 9780191514463
+2024-02-24 01:57:47,979 - INFO - Write completed
+2024-02-24 01:57:48,980 - INFO - 28/7524. Searching metadata for 9780191514470
+2024-02-24 01:57:48,981 - INFO - Write completed
+2024-02-24 01:57:49,982 - INFO - 29/7524. Searching metadata for 9780191514487
+2024-02-24 01:57:49,983 - INFO - Write completed
+2024-02-24 01:57:50,984 - INFO - 30/7524. Searching metadata for 9780191514500
+2024-02-24 01:57:50,985 - INFO - Write completed
+2024-02-24 01:57:51,986 - INFO - 31/7524. Searching metadata for 9780191514517
+2024-02-24 01:57:51,988 - INFO - Write completed
+2024-02-24 01:57:52,990 - INFO - 32/7524. Searching metadata for 9780191514524
+2024-02-24 01:57:52,993 - INFO - Write completed
+2024-02-24 01:57:53,994 - INFO - 33/7524. Searching metadata for 9780191514531
+2024-02-24 01:57:53,995 - INFO - Write completed
+2024-02-24 01:57:54,996 - INFO - 34/7524. Searching metadata for 9780191514548
+2024-02-24 01:57:54,998 - INFO - Write completed
+2024-02-24 01:57:55,999 - INFO - 35/7524. Searching metadata for 9780191514593
+2024-02-24 01:57:56,000 - INFO - Write completed
+2024-02-24 01:57:57,001 - INFO - 36/7524. Searching metadata for 9780191514616
+2024-02-24 01:57:57,002 - INFO - Write completed
+2024-02-24 01:57:58,003 - INFO - 37/7524. Searching metadata for 9780191514708
+2024-02-24 01:57:58,009 - INFO - Write completed
+2024-02-24 01:57:59,010 - INFO - 38/7524. Searching metadata for 9780191514715
+2024-02-24 01:57:59,011 - INFO - Write completed
+2024-02-24 01:58:00,012 - INFO - 39/7524. Searching metadata for 9780191514753
+2024-02-24 01:58:00,014 - INFO - Write completed
+2024-02-24 01:58:01,014 - INFO - 40/7524. Searching metadata for 9780191514791
+2024-02-24 01:58:01,015 - INFO - Write completed
+2024-02-24 01:58:02,016 - INFO - 41/7524. Searching metadata for 9780191514876
+2024-02-24 01:58:02,018 - INFO - Write completed
+2024-02-24 01:58:03,019 - INFO - 42/7524. Searching metadata for 9780191514999
+2024-02-24 01:58:03,024 - INFO - Write completed
+2024-02-24 01:58:04,025 - INFO - 43/7524. Searching metadata for 9780191515002
+2024-02-24 01:58:04,028 - INFO - Write completed
+2024-02-24 01:58:05,029 - INFO - 44/7524. Searching metadata for 9780191515071
+2024-02-24 01:58:05,030 - INFO - Write completed
+2024-02-24 01:58:06,031 - INFO - 45/7524. Searching metadata for 9780191515163
+2024-02-24 01:58:06,032 - INFO - Write completed
+2024-02-24 01:58:07,033 - INFO - 46/7524. Searching metadata for 9780191515170
+2024-02-24 01:58:07,034 - INFO - Write completed
+2024-02-24 01:58:08,035 - INFO - 47/7524. Searching metadata for 9780191515200
+2024-02-24 01:58:08,037 - INFO - Write completed
+2024-02-24 01:58:09,038 - INFO - 48/7524. Searching metadata for 9780191515217
+2024-02-24 01:58:09,041 - INFO - Write completed
+2024-02-24 01:58:10,042 - INFO - 49/7524. Searching metadata for 9780191515224
+2024-02-24 01:58:10,046 - INFO - Write completed
+2024-02-24 01:58:11,047 - INFO - 50/7524. Searching metadata for 9780191515279
+2024-02-24 01:58:11,048 - INFO - Write completed
+2024-02-24 01:58:12,049 - INFO - 51/7524. Searching metadata for 9780191515316
+2024-02-24 01:58:12,050 - INFO - Write completed
+2024-02-24 01:58:13,051 - INFO - 52/7524. Searching metadata for 9780191515323
+2024-02-24 01:58:13,052 - INFO - Write completed
+2024-02-24 01:58:14,055 - INFO - 53/7524. Searching metadata for 9780191515330
+2024-02-24 01:58:14,059 - INFO - Write completed
+2024-02-24 01:58:15,060 - INFO - 54/7524. Searching metadata for 9780191515354
+2024-02-24 01:58:15,061 - INFO - Write completed
+2024-02-24 01:58:16,062 - INFO - 55/7524. Searching metadata for 9780191515453
+2024-02-24 01:58:16,064 - INFO - Write completed
+2024-02-24 01:58:16,653 - INFO - Search stopped
+2024-02-24 01:58:17,065 - INFO - 56/7524. Searching metadata for 9780191515477

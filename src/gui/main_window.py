@@ -14,6 +14,8 @@ if src_dir not in sys.path:
 
 from util.file_processor import read_and_validate_file
 from gui.priority_list import PriorityListApp
+from db.database_manager import DatabaseManager
+
 
 
 class LibraryMetadataHarvesterApp(tk.Tk):
@@ -57,6 +59,12 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                             ])
 
         logging.info("Application started")
+
+        # Initialize DatabaseManager
+        self.db_manager = DatabaseManager()
+        self.db_manager.create_table("books", "Isbn INTEGER PRIMARY KEY, Ocn INTEGER")
+        self.db_manager.create_table("lccn", "Lccn_id INTEGER PRIMARY KEY AUTOINCREMENT, Lccn TEXT, Source TEXT")
+        self.db_manager.create_table("book_lccn", "Isbn INTEGER, Lccn_id INTEGER, FOREIGN KEY (Isbn) REFERENCES books (Isbn), FOREIGN KEY (Lccn_id) REFERENCES lccn (Lccn_id)")
 
     def setup_ui(self):
         self.setup_top_frame()
@@ -141,13 +149,17 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
         # Determine the file type based on the radio button selection
         file_type = 'ISBN' if self.input_file_type.get() == 1 else 'OCN'
+
         file_path = self.file_entry.get()
+        options = self.get_current_options()
+        file_type = 'ISBN' if options['input_file_type'] == 'ISBN' else 'OCN'
 
         # Validate and read the file
         validation_result, data = read_and_validate_file(file_path, file_type)
         if validation_result == 'Invalid':
             messagebox.showerror("Error", "Invalid file format or contents. Please check the file.")
             return
+
 
         # Make sure the priority list is set
         if not self.priority_list:
@@ -171,7 +183,71 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 return  # Exit the loop if search has been stopped
             # Simulate work
             time.sleep(1)
+            
+            
+            
         self.after(0, self.stop_search)
+        """
+                for identifier in identifiers:
+            if self.db_manager.data_exists("books", f"Isbn = {identifier}" if file_type == 'ISBN' else f"Ocn = {identifier}"):
+                self.log_message(f"Data for {identifier} already exists in the database.")
+
+                # Case 1: Input is ISBN
+                if file_type == 'ISBN':
+                    # Get associated OCNs for the ISBN
+                    ocns = self.db_manager.fetch_data("books", f"WHERE Isbn = {identifier}")
+                    ocn_list = [ocn for _, ocn in ocns]
+
+                    # Get LCCNs and sources
+                    lccn_data = self.fetch_lccn_data(identifier)
+
+                    # Process LCCN data
+                    lccn_dict = self.process_lccn_data(lccn_data)
+
+                    self.log_message(f"OCNs for ISBN {identifier}: {ocn_list}")
+                    self.log_message(f"LCCN Data: {lccn_dict}")
+
+                # Case 2: Input is OCN
+                else:
+                    # Get associated ISBN for the OCN
+                    isbn = self.db_manager.fetch_data("books", f"WHERE Ocn = {identifier}")[0][0]
+
+                    # Get other OCNs sharing the same ISBN
+                    other_ocns = self.db_manager.fetch_data("books", f"WHERE Isbn = {isbn} AND Ocn != {identifier}")
+                    other_ocn_list = [ocn for _, ocn in other_ocns]
+
+                    # Get LCCNs and sources
+                    lccn_data = self.fetch_lccn_data(isbn)
+
+                    # Process LCCN data
+                    lccn_dict = self.process_lccn_data(lccn_data)
+
+                    self.log_message(f"ISBN for OCN {identifier}: {isbn}")
+                    self.log_message(f"Other OCNs for ISBN {isbn}: {other_ocn_list}")
+                    self.log_message(f"LCCN Data: {lccn_dict}")
+
+        self.log_message("Search completed.")
+
+
+    def fetch_lccn_data(self, isbn):
+        # Fetch LCCN and source data for a given ISBN
+        lccn_query = f"""
+        SELECT l.Lccn, l.Source
+        FROM book_lccn bl
+        JOIN lccn l ON bl.Lccn_id = l.Lccn_id
+        WHERE bl.Isbn = {isbn}
+        """
+        return self.db_manager.execute_query(lccn_query, fetch=True)
+
+    def process_lccn_data(self, lccn_data):
+        # Process and organize LCCN data into a dictionary
+        lccn_dict = {}
+        for lccn, source in lccn_data:
+            if source not in lccn_dict:
+                lccn_dict[source] = []
+            lccn_dict[source].append(lccn)
+        return lccn_dict
+        """
 
     def stop_search(self):
         self.search_active = False

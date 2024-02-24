@@ -113,3 +113,7 @@
 2024-02-23 23:55:26,286 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Blacklight']
 2024-02-23 23:55:27,406 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Blacklight']
 2024-02-23 23:55:29,730 - INFO - Search stopped
+2024-02-23 23:58:33,777 - INFO - Application started
+2024-02-23 23:58:49,171 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-23 23:58:55,801 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Yale', 'Columbia', 'University of Virginia', 'Stanford', 'Johns Hopkins U', 'Cornell', 'NCSU', 'Duke', 'Penn State', 'Indiana U', 'McGill', 'VOILA']
+2024-02-23 23:58:57,679 - INFO - Search stopped

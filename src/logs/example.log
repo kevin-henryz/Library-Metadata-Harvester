@@ -1,2 +1,115 @@
 2024-02-17 12:24:29,484 - INFO - Invalid file or file format.
 2024-02-17 12:24:30,870 - INFO - Search stopped...
+2024-02-23 20:04:44,544 - INFO - Application started
+2024-02-23 20:32:28,561 - INFO - Application started
+2024-02-23 20:35:30,204 - INFO - Application started
+2024-02-23 20:38:21,065 - INFO - Application started
+2024-02-23 20:38:49,242 - INFO - Application started
+2024-02-23 20:39:19,802 - INFO - Application started
+2024-02-23 20:40:17,909 - INFO - Application started
+2024-02-23 20:44:14,422 - INFO - Application started
+2024-02-23 20:45:24,160 - INFO - Application started
+2024-02-23 20:46:29,330 - INFO - Application started
+2024-02-23 20:48:51,515 - INFO - Application started
+2024-02-23 20:50:47,309 - INFO - Application started
+2024-02-23 22:11:37,981 - INFO - Application started
+2024-02-23 22:11:48,698 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:12:06,984 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:12:07,666 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:28:42,073 - INFO - Application started
+2024-02-23 22:29:02,597 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:29:05,525 - INFO - Search started for ISBN with 1003 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:29:10,531 - INFO - Search stopped
+2024-02-23 22:29:56,133 - INFO - Application started
+2024-02-23 22:30:07,697 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:30:08,501 - INFO - Search started for ISBN with 1003 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:45:33,854 - INFO - Application started
+2024-02-23 22:45:38,307 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:45:46,344 - INFO - Search started for OCN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:45:49,388 - INFO - Search stopped
+2024-02-23 22:50:36,868 - INFO - Application started
+2024-02-23 22:51:41,602 - INFO - Application started
+2024-02-23 22:51:46,496 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:51:51,232 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:53:21,094 - INFO - Application started
+2024-02-23 22:53:24,483 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:53:28,984 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:54:01,379 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:59:40,368 - INFO - Application started
+2024-02-23 22:59:44,294 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 22:59:49,457 - INFO - Search started for ISBN with 1003 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:01:58,417 - INFO - Application started
+2024-02-23 23:02:01,918 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:02:07,571 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:02:12,573 - INFO - Search stopped
+2024-02-23 23:04:43,160 - INFO - Application started
+2024-02-23 23:04:48,467 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:04:52,369 - INFO - Search started for OCN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:04:57,373 - INFO - Search stopped
+2024-02-23 23:07:49,479 - INFO - Application started
+2024-02-23 23:07:53,211 - INFO - Application started
+2024-02-23 23:08:13,248 - INFO - Application started
+2024-02-23 23:10:38,776 - INFO - Application started
+2024-02-23 23:10:51,322 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:10:55,129 - INFO - Search started for ISBN with 1003 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:17:32,577 - INFO - Application started
+2024-02-23 23:17:40,176 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:17:41,119 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:17:46,137 - INFO - Search stopped
+2024-02-23 23:20:00,311 - INFO - Application started
+2024-02-23 23:20:14,414 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:20:16,518 - INFO - Search started for ISBN with 1003 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:20:21,538 - INFO - Search stopped
+2024-02-23 23:20:31,031 - INFO - Application started
+2024-02-23 23:24:08,307 - INFO - Application started
+2024-02-23 23:24:17,707 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:24:18,248 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:24:23,278 - INFO - Search stopped
+2024-02-23 23:25:09,721 - INFO - Application started
+2024-02-23 23:25:17,410 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:25:18,410 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:28:09,712 - INFO - Application started
+2024-02-23 23:28:11,910 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:28:19,906 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:28:24,919 - INFO - Search stopped
+2024-02-23 23:31:39,601 - INFO - Application started
+2024-02-23 23:31:43,323 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:31:47,630 - INFO - Search started for ISBN with 1003 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:31:50,842 - INFO - Search stopped
+2024-02-23 23:31:52,658 - INFO - Search stopped
+2024-02-23 23:32:37,496 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:34:02,971 - INFO - Application started
+2024-02-23 23:34:23,940 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:34:24,566 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:34:26,551 - INFO - Search stopped
+2024-02-23 23:34:29,601 - INFO - Search stopped
+2024-02-23 23:40:00,343 - INFO - Application started
+2024-02-23 23:40:11,335 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:40:15,892 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:40:16,893 - INFO - Search stopped
+2024-02-23 23:40:16,930 - INFO - Search stopped
+2024-02-23 23:41:42,689 - INFO - Application started
+2024-02-23 23:41:45,560 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:41:49,608 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:41:50,910 - INFO - Search stopped
+2024-02-23 23:42:18,306 - INFO - Search started for OCN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:42:20,762 - INFO - Search stopped
+2024-02-23 23:42:54,077 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:42:54,729 - INFO - Search started for ISBN with 1003 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:42:55,791 - INFO - Search stopped
+2024-02-23 23:43:04,630 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:43:05,320 - INFO - Search started for ISBN with 1003 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:43:08,521 - INFO - Search stopped
+2024-02-23 23:47:32,668 - INFO - Application started
+2024-02-23 23:47:36,468 - INFO - Application started
+2024-02-23 23:47:48,448 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:47:51,434 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:47:52,824 - INFO - Search stopped
+2024-02-23 23:48:10,127 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:48:10,957 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'WorldCat', 'Blacklight']
+2024-02-23 23:48:12,036 - INFO - Search stopped
+2024-02-23 23:49:07,173 - INFO - Application started
+2024-02-23 23:55:12,884 - INFO - Application started
+2024-02-23 23:55:26,286 - INFO - Updated priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Blacklight']
+2024-02-23 23:55:27,406 - INFO - Search started for ISBN with 7524 items and priority list: ['OCLC API', 'Library of Congress API', 'Harvard Library API', 'Open Library API', 'Google Books API', 'Blacklight']
+2024-02-23 23:55:29,730 - INFO - Search stopped

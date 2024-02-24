@@ -1,11 +1,12 @@
 import tkinter as tk
 
 class PriorityListApp:
-    def __init__(self, master):
+    def __init__(self, master, callback):
         self.master = master
+        self.callback = callback
         self.master.title("Priority List")
 
-        self.entries = ["OCLC API", "Library of Congress API", "Harvard Library API", "Open Library API", "Google Books API", "WorldCat", "Blacklight"]
+        self.entries = ["OCLC API", "Library of Congress API", "Harvard Library API", "Open Library API", "Google Books API", "Blacklight"]
 
         self.listbox = tk.Listbox(master, selectmode=tk.SINGLE)
         for entry in self.entries:
@@ -13,7 +14,7 @@ class PriorityListApp:
 
         self.up_button = tk.Button(master, text="Move Up", command=self.move_up)
         self.down_button = tk.Button(master, text="Move Down", command=self.move_down)
-        self.confirm = tk.Button(master, text="Confirm", command=master.destroy)
+        self.confirm = tk.Button(master, text="Confirm", command=self.confirm_and_exit)
 
         self.listbox.grid(row=0, column=0, columnspan=2, padx=5, pady=5)
         self.up_button.grid(row=1, column=0, padx=5, pady=5)
@@ -40,9 +41,15 @@ class PriorityListApp:
                 self.listbox.insert(selected_index + 1, item)
                 self.listbox.selection_set(selected_index + 1)
 
+    def confirm_and_exit(self):
+        # Callback to update the priority list in the main app
+        self.callback(list(self.listbox.get(0, tk.END)))
+        self.master.destroy()
+
+
 def main():
     root = tk.Tk()
-    app = PriorityListApp(root)
+    PriorityListApp(root, lambda: 1)
     root.mainloop()
 
 if __name__ == "__main__":

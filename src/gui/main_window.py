@@ -182,14 +182,14 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         # Check and lock the corresponding checkbox based on the radio button selection
         if self.input_file_type.get() == 1:  # ISBN selected
             self.output_value_isbn.set(True)  # Check the ISBN checkbox
-            
+            self.output_value_ocn.set(False)
             # Disable the ISBN checkbox to prevent user interaction
             self.isbn_checkbutton['state'] = 'disabled'  
             # Enable the OCN checkbox in case it was previously disabled
             self.ocn_checkbutton['state'] = 'normal'
         else:  # OCN selected
             self.output_value_ocn.set(True)  # Check the OCN checkbox
-           
+            self.output_value_isbn.set(False)
             # Disable the OCN checkbox to prevent user interaction
             self.ocn_checkbutton['state'] = 'disabled'
             # Enable the ISBN checkbox in case it was previously disabled

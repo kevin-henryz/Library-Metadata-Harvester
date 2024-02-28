@@ -48,7 +48,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         super().__init__()
 
         self.configure_app()
-        self.setup_logging('src/logs/example.log')
+        self.setup_logging(os.path.join('src', 'logs', 'example.log')
+)
         self.initialize_database()
         self.setup_ui()
         self.priority_list = []
@@ -207,7 +208,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
         self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=self.stop_search, state='disabled')
 
-        self.open_log_button = ttk.Button(self.button_frame, text="Open Log", command=lambda: self.open_log('src/logs/example.log'))
+        self.open_log_button = ttk.Button(self.button_frame, text="Open Log", command=lambda: self.open_log(os.path.join('src', 'logs', 'example.log')))
         self.open_log_button.pack(side='left', padx=5)
  
         self.choose_output_file_button = ttk.Button(self.button_frame, text="Choose Output File", command=self.choose_output_file)

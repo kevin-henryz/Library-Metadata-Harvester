@@ -3295,3 +3295,538 @@
 2024-03-06 17:22:42,051 - INFO - Write completed for OCN 55663775
 2024-03-06 17:22:42,680 - INFO - Search stopped
 2024-03-06 17:22:43,052 - INFO - 82/21897. Searching metadata for 559153004
+2024-03-06 17:33:57,236 - INFO - Application started
+2024-03-06 17:34:10,101 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 17:34:26,913 - INFO - Search started for OCN with 21897 items and priority list: ['Harvard Library API']
+2024-03-06 17:34:26,922 - INFO - 0/21897. Searching metadata for 922903415
+2024-03-06 17:34:26,923 - INFO - Looking for OCN 922903415 in the database.
+2024-03-06 17:34:26,925 - INFO - No database record found for OCN 922903415.
+2024-03-06 17:34:27,590 - INFO - No results found for identifier 922903415 or failed to fetch data
+2024-03-06 17:34:27,598 - INFO - Write completed for OCN 922903415
+2024-03-06 17:34:28,600 - INFO - 1/21897. Searching metadata for 922903416
+2024-03-06 17:34:28,600 - INFO - Looking for OCN 922903416 in the database.
+2024-03-06 17:34:28,601 - INFO - No database record found for OCN 922903416.
+2024-03-06 17:34:29,070 - INFO - No results found for identifier 922903416 or failed to fetch data
+2024-03-06 17:34:29,082 - INFO - Write completed for OCN 922903416
+2024-03-06 17:34:30,083 - INFO - 2/21897. Searching metadata for 53866884
+2024-03-06 17:34:30,083 - INFO - Looking for OCN 53866884 in the database.
+2024-03-06 17:34:30,085 - INFO - No database record found for OCN 53866884.
+2024-03-06 17:34:30,518 - INFO - No results found for identifier 53866884 or failed to fetch data
+2024-03-06 17:34:30,519 - INFO - Write completed for OCN 53866884
+2024-03-06 17:34:31,520 - INFO - 3/21897. Searching metadata for 53910944
+2024-03-06 17:34:31,520 - INFO - Looking for OCN 53910944 in the database.
+2024-03-06 17:34:31,521 - INFO - No database record found for OCN 53910944.
+2024-03-06 17:34:31,972 - INFO - No results found for identifier 53910944 or failed to fetch data
+2024-03-06 17:34:31,980 - INFO - Write completed for OCN 53910944
+2024-03-06 17:34:32,982 - INFO - 4/21897. Searching metadata for 649970663
+2024-03-06 17:34:32,983 - INFO - Looking for OCN 649970663 in the database.
+2024-03-06 17:34:32,984 - INFO - No database record found for OCN 649970663.
+2024-03-06 17:34:33,438 - INFO - No results found for identifier 649970663 or failed to fetch data
+2024-03-06 17:34:33,441 - INFO - Write completed for OCN 649970663
+2024-03-06 17:34:34,443 - INFO - 5/21897. Searching metadata for 228375157
+2024-03-06 17:34:34,443 - INFO - Looking for OCN 228375157 in the database.
+2024-03-06 17:34:34,444 - INFO - No database record found for OCN 228375157.
+2024-03-06 17:34:34,870 - INFO - No results found for identifier 228375157 or failed to fetch data
+2024-03-06 17:34:34,871 - INFO - Write completed for OCN 228375157
+2024-03-06 17:34:35,872 - INFO - 6/21897. Searching metadata for 231581791
+2024-03-06 17:34:35,872 - INFO - Looking for OCN 231581791 in the database.
+2024-03-06 17:34:35,873 - INFO - No database record found for OCN 231581791.
+2024-03-06 17:34:36,312 - INFO - No results found for identifier 231581791 or failed to fetch data
+2024-03-06 17:34:36,313 - INFO - Write completed for OCN 231581791
+2024-03-06 17:34:37,315 - INFO - 7/21897. Searching metadata for 70771534
+2024-03-06 17:34:37,315 - INFO - Looking for OCN 70771534 in the database.
+2024-03-06 17:34:37,316 - INFO - No database record found for OCN 70771534.
+2024-03-06 17:34:37,748 - INFO - No results found for identifier 70771534 or failed to fetch data
+2024-03-06 17:34:37,749 - INFO - Write completed for OCN 70771534
+2024-03-06 17:34:38,750 - INFO - 8/21897. Searching metadata for 54360360
+2024-03-06 17:34:38,750 - INFO - Looking for OCN 54360360 in the database.
+2024-03-06 17:34:38,751 - INFO - No database record found for OCN 54360360.
+2024-03-06 17:34:39,203 - INFO - No results found for identifier 54360360 or failed to fetch data
+2024-03-06 17:34:39,204 - INFO - Write completed for OCN 54360360
+2024-03-06 17:34:40,206 - INFO - 9/21897. Searching metadata for 228375035
+2024-03-06 17:34:40,206 - INFO - Looking for OCN 228375035 in the database.
+2024-03-06 17:34:40,207 - INFO - No database record found for OCN 228375035.
+2024-03-06 17:34:40,674 - INFO - No results found for identifier 228375035 or failed to fetch data
+2024-03-06 17:34:40,680 - INFO - Write completed for OCN 228375035
+2024-03-06 17:34:41,681 - INFO - 10/21897. Searching metadata for 50308311
+2024-03-06 17:34:41,681 - INFO - Looking for OCN 50308311 in the database.
+2024-03-06 17:34:41,681 - INFO - No database record found for OCN 50308311.
+2024-03-06 17:34:42,191 - INFO - No results found for identifier 50308311 or failed to fetch data
+2024-03-06 17:34:42,197 - INFO - Write completed for OCN 50308311
+2024-03-06 17:34:43,198 - INFO - 11/21897. Searching metadata for 52079511
+2024-03-06 17:34:43,198 - INFO - Looking for OCN 52079511 in the database.
+2024-03-06 17:34:43,199 - INFO - No database record found for OCN 52079511.
+2024-03-06 17:34:43,661 - INFO - No results found for identifier 52079511 or failed to fetch data
+2024-03-06 17:34:43,663 - INFO - Write completed for OCN 52079511
+2024-03-06 17:34:44,664 - INFO - 12/21897. Searching metadata for 559365441
+2024-03-06 17:34:44,664 - INFO - Looking for OCN 559365441 in the database.
+2024-03-06 17:34:44,665 - INFO - No database record found for OCN 559365441.
+2024-03-06 17:34:45,121 - INFO - No results found for identifier 559365441 or failed to fetch data
+2024-03-06 17:34:45,122 - INFO - Write completed for OCN 559365441
+2024-03-06 17:34:46,132 - INFO - 13/21897. Searching metadata for 55046892
+2024-03-06 17:34:46,132 - INFO - Looking for OCN 55046892 in the database.
+2024-03-06 17:34:46,133 - INFO - No database record found for OCN 55046892.
+2024-03-06 17:34:46,548 - INFO - No results found for identifier 55046892 or failed to fetch data
+2024-03-06 17:34:46,549 - INFO - Write completed for OCN 55046892
+2024-03-06 17:34:47,550 - INFO - 14/21897. Searching metadata for 62860555
+2024-03-06 17:34:47,550 - INFO - Looking for OCN 62860555 in the database.
+2024-03-06 17:34:47,551 - INFO - No database record found for OCN 62860555.
+2024-03-06 17:34:48,022 - INFO - No results found for identifier 62860555 or failed to fetch data
+2024-03-06 17:34:48,023 - INFO - Write completed for OCN 62860555
+2024-03-06 17:34:49,029 - INFO - 15/21897. Searching metadata for 697790483
+2024-03-06 17:34:49,029 - INFO - Looking for OCN 697790483 in the database.
+2024-03-06 17:34:49,030 - INFO - No database record found for OCN 697790483.
+2024-03-06 17:34:49,579 - INFO - No results found for identifier 697790483 or failed to fetch data
+2024-03-06 17:34:49,580 - INFO - Write completed for OCN 697790483
+2024-03-06 17:34:50,582 - INFO - 16/21897. Searching metadata for 51004852
+2024-03-06 17:34:50,582 - INFO - Looking for OCN 51004852 in the database.
+2024-03-06 17:34:50,584 - INFO - No database record found for OCN 51004852.
+2024-03-06 17:34:51,084 - INFO - No results found for identifier 51004852 or failed to fetch data
+2024-03-06 17:34:51,089 - INFO - Write completed for OCN 51004852
+2024-03-06 17:34:52,094 - INFO - 17/21897. Searching metadata for 424384171
+2024-03-06 17:34:52,095 - INFO - Looking for OCN 424384171 in the database.
+2024-03-06 17:34:52,098 - INFO - No database record found for OCN 424384171.
+2024-03-06 17:34:52,568 - INFO - Write completed for OCN 424384171
+2024-03-06 17:34:53,568 - INFO - 18/21897. Searching metadata for 55046833
+2024-03-06 17:34:53,568 - INFO - Looking for OCN 55046833 in the database.
+2024-03-06 17:34:53,571 - INFO - No database record found for OCN 55046833.
+2024-03-06 17:34:54,114 - INFO - No results found for identifier 55046833 or failed to fetch data
+2024-03-06 17:34:54,119 - INFO - Write completed for OCN 55046833
+2024-03-06 17:34:55,120 - INFO - 19/21897. Searching metadata for 707917523
+2024-03-06 17:34:55,120 - INFO - Looking for OCN 707917523 in the database.
+2024-03-06 17:34:55,120 - INFO - No database record found for OCN 707917523.
+2024-03-06 17:34:55,588 - INFO - No results found for identifier 707917523 or failed to fetch data
+2024-03-06 17:34:55,590 - INFO - Write completed for OCN 707917523
+2024-03-06 17:34:56,594 - INFO - 20/21897. Searching metadata for 228048153
+2024-03-06 17:34:56,596 - INFO - Looking for OCN 228048153 in the database.
+2024-03-06 17:34:56,598 - INFO - No database record found for OCN 228048153.
+2024-03-06 17:34:57,036 - INFO - No results found for identifier 228048153 or failed to fetch data
+2024-03-06 17:34:57,037 - INFO - Write completed for OCN 228048153
+2024-03-06 17:34:58,038 - INFO - 21/21897. Searching metadata for 779891795
+2024-03-06 17:34:58,038 - INFO - Looking for OCN 779891795 in the database.
+2024-03-06 17:34:58,039 - INFO - No database record found for OCN 779891795.
+2024-03-06 17:34:58,510 - INFO - No results found for identifier 779891795 or failed to fetch data
+2024-03-06 17:34:58,531 - INFO - Write completed for OCN 779891795
+2024-03-06 17:34:59,532 - INFO - 22/21897. Searching metadata for 231580878
+2024-03-06 17:34:59,533 - INFO - Looking for OCN 231580878 in the database.
+2024-03-06 17:34:59,534 - INFO - No database record found for OCN 231580878.
+2024-03-06 17:34:59,963 - INFO - No results found for identifier 231580878 or failed to fetch data
+2024-03-06 17:34:59,965 - INFO - Write completed for OCN 231580878
+2024-03-06 17:35:00,965 - INFO - 23/21897. Searching metadata for 559307665
+2024-03-06 17:35:00,965 - INFO - Looking for OCN 559307665 in the database.
+2024-03-06 17:35:00,967 - INFO - No database record found for OCN 559307665.
+2024-03-06 17:35:01,425 - INFO - No results found for identifier 559307665 or failed to fetch data
+2024-03-06 17:35:01,426 - INFO - Write completed for OCN 559307665
+2024-03-06 17:35:02,428 - INFO - 24/21897. Searching metadata for 72823569
+2024-03-06 17:35:02,428 - INFO - Looking for OCN 72823569 in the database.
+2024-03-06 17:35:02,429 - INFO - No database record found for OCN 72823569.
+2024-03-06 17:35:02,947 - INFO - No results found for identifier 72823569 or failed to fetch data
+2024-03-06 17:35:02,948 - INFO - Write completed for OCN 72823569
+2024-03-06 17:35:03,949 - INFO - 25/21897. Searching metadata for 559152002
+2024-03-06 17:35:03,949 - INFO - Looking for OCN 559152002 in the database.
+2024-03-06 17:35:03,950 - INFO - No database record found for OCN 559152002.
+2024-03-06 17:35:04,366 - INFO - No results found for identifier 559152002 or failed to fetch data
+2024-03-06 17:35:04,366 - INFO - Write completed for OCN 559152002
+2024-03-06 17:35:05,368 - INFO - 26/21897. Searching metadata for 707917524
+2024-03-06 17:35:05,368 - INFO - Looking for OCN 707917524 in the database.
+2024-03-06 17:35:05,369 - INFO - No database record found for OCN 707917524.
+2024-03-06 17:35:05,797 - INFO - No results found for identifier 707917524 or failed to fetch data
+2024-03-06 17:35:05,799 - INFO - Write completed for OCN 707917524
+2024-03-06 17:35:06,799 - INFO - 27/21897. Searching metadata for 228049587
+2024-03-06 17:35:06,802 - INFO - Looking for OCN 228049587 in the database.
+2024-03-06 17:35:06,802 - INFO - No database record found for OCN 228049587.
+2024-03-06 17:35:07,238 - INFO - No results found for identifier 228049587 or failed to fetch data
+2024-03-06 17:35:07,240 - INFO - Write completed for OCN 228049587
+2024-03-06 17:35:08,241 - INFO - 28/21897. Searching metadata for 228374866
+2024-03-06 17:35:08,242 - INFO - Looking for OCN 228374866 in the database.
+2024-03-06 17:35:08,243 - INFO - No database record found for OCN 228374866.
+2024-03-06 17:35:08,996 - INFO - No results found for identifier 228374866 or failed to fetch data
+2024-03-06 17:35:08,997 - INFO - Write completed for OCN 228374866
+2024-03-06 17:35:09,998 - INFO - 29/21897. Searching metadata for 707917525
+2024-03-06 17:35:09,998 - INFO - Looking for OCN 707917525 in the database.
+2024-03-06 17:35:09,999 - INFO - No database record found for OCN 707917525.
+2024-03-06 17:35:10,430 - INFO - No results found for identifier 707917525 or failed to fetch data
+2024-03-06 17:35:10,431 - INFO - Write completed for OCN 707917525
+2024-03-06 17:35:11,431 - INFO - 30/21897. Searching metadata for 228049540
+2024-03-06 17:35:11,431 - INFO - Looking for OCN 228049540 in the database.
+2024-03-06 17:35:11,432 - INFO - No database record found for OCN 228049540.
+2024-03-06 17:35:11,866 - INFO - No results found for identifier 228049540 or failed to fetch data
+2024-03-06 17:35:11,867 - INFO - Write completed for OCN 228049540
+2024-03-06 17:35:12,869 - INFO - 31/21897. Searching metadata for 50322301
+2024-03-06 17:35:12,869 - INFO - Looking for OCN 50322301 in the database.
+2024-03-06 17:35:12,870 - INFO - No database record found for OCN 50322301.
+2024-03-06 17:35:13,350 - INFO - Write completed for OCN 50322301
+2024-03-06 17:35:14,352 - INFO - 32/21897. Searching metadata for 808022420
+2024-03-06 17:35:14,352 - INFO - Looking for OCN 808022420 in the database.
+2024-03-06 17:35:14,353 - INFO - No database record found for OCN 808022420.
+2024-03-06 17:35:14,794 - INFO - No results found for identifier 808022420 or failed to fetch data
+2024-03-06 17:35:14,796 - INFO - Write completed for OCN 808022420
+2024-03-06 17:35:15,797 - INFO - 33/21897. Searching metadata for 55664114
+2024-03-06 17:35:15,797 - INFO - Looking for OCN 55664114 in the database.
+2024-03-06 17:35:15,798 - INFO - No database record found for OCN 55664114.
+2024-03-06 17:35:16,265 - INFO - No results found for identifier 55664114 or failed to fetch data
+2024-03-06 17:35:16,266 - INFO - Write completed for OCN 55664114
+2024-03-06 17:35:17,267 - INFO - 34/21897. Searching metadata for 55663736
+2024-03-06 17:35:17,267 - INFO - Looking for OCN 55663736 in the database.
+2024-03-06 17:35:17,268 - INFO - No database record found for OCN 55663736.
+2024-03-06 17:35:17,707 - INFO - No results found for identifier 55663736 or failed to fetch data
+2024-03-06 17:35:17,714 - INFO - Write completed for OCN 55663736
+2024-03-06 17:35:18,715 - INFO - 35/21897. Searching metadata for 55664087
+2024-03-06 17:35:18,715 - INFO - Looking for OCN 55664087 in the database.
+2024-03-06 17:35:18,716 - INFO - No database record found for OCN 55664087.
+2024-03-06 17:35:19,156 - INFO - No results found for identifier 55664087 or failed to fetch data
+2024-03-06 17:35:19,160 - INFO - Write completed for OCN 55664087
+2024-03-06 17:35:20,163 - INFO - 36/21897. Searching metadata for 55664076
+2024-03-06 17:35:20,165 - INFO - Looking for OCN 55664076 in the database.
+2024-03-06 17:35:20,166 - INFO - No database record found for OCN 55664076.
+2024-03-06 17:35:20,632 - INFO - No results found for identifier 55664076 or failed to fetch data
+2024-03-06 17:35:20,633 - INFO - Write completed for OCN 55664076
+2024-03-06 17:35:21,635 - INFO - 37/21897. Searching metadata for 70771537
+2024-03-06 17:35:21,635 - INFO - Looking for OCN 70771537 in the database.
+2024-03-06 17:35:21,636 - INFO - No database record found for OCN 70771537.
+2024-03-06 17:35:22,062 - INFO - No results found for identifier 70771537 or failed to fetch data
+2024-03-06 17:35:22,066 - INFO - Write completed for OCN 70771537
+2024-03-06 17:35:23,067 - INFO - 38/21897. Searching metadata for 231581833
+2024-03-06 17:35:23,067 - INFO - Looking for OCN 231581833 in the database.
+2024-03-06 17:35:23,068 - INFO - No database record found for OCN 231581833.
+2024-03-06 17:35:23,533 - INFO - No results found for identifier 231581833 or failed to fetch data
+2024-03-06 17:35:23,534 - INFO - Write completed for OCN 231581833
+2024-03-06 17:35:24,535 - INFO - 39/21897. Searching metadata for 559258691
+2024-03-06 17:35:24,535 - INFO - Looking for OCN 559258691 in the database.
+2024-03-06 17:35:24,536 - INFO - No database record found for OCN 559258691.
+2024-03-06 17:35:25,023 - INFO - No results found for identifier 559258691 or failed to fetch data
+2024-03-06 17:35:25,026 - INFO - Write completed for OCN 559258691
+2024-03-06 17:35:26,028 - INFO - 40/21897. Searching metadata for 70754603
+2024-03-06 17:35:26,028 - INFO - Looking for OCN 70754603 in the database.
+2024-03-06 17:35:26,029 - INFO - No database record found for OCN 70754603.
+2024-03-06 17:35:26,520 - INFO - No results found for identifier 70754603 or failed to fetch data
+2024-03-06 17:35:26,521 - INFO - Write completed for OCN 70754603
+2024-03-06 17:35:27,522 - INFO - 41/21897. Searching metadata for 559114966
+2024-03-06 17:35:27,522 - INFO - Looking for OCN 559114966 in the database.
+2024-03-06 17:35:27,523 - INFO - No database record found for OCN 559114966.
+2024-03-06 17:35:27,987 - INFO - No results found for identifier 559114966 or failed to fetch data
+2024-03-06 17:35:27,988 - INFO - Write completed for OCN 559114966
+2024-03-06 17:35:28,989 - INFO - 42/21897. Searching metadata for 559187306
+2024-03-06 17:35:28,992 - INFO - Looking for OCN 559187306 in the database.
+2024-03-06 17:35:28,993 - INFO - No database record found for OCN 559187306.
+2024-03-06 17:35:29,431 - INFO - No results found for identifier 559187306 or failed to fetch data
+2024-03-06 17:35:29,432 - INFO - Write completed for OCN 559187306
+2024-03-06 17:35:30,433 - INFO - 43/21897. Searching metadata for 54360379
+2024-03-06 17:35:30,433 - INFO - Looking for OCN 54360379 in the database.
+2024-03-06 17:35:30,434 - INFO - No database record found for OCN 54360379.
+2024-03-06 17:35:30,895 - INFO - No results found for identifier 54360379 or failed to fetch data
+2024-03-06 17:35:30,899 - INFO - Write completed for OCN 54360379
+2024-03-06 17:35:31,908 - INFO - 44/21897. Searching metadata for 808022533
+2024-03-06 17:35:31,910 - INFO - Looking for OCN 808022533 in the database.
+2024-03-06 17:35:31,913 - INFO - No database record found for OCN 808022533.
+2024-03-06 17:35:32,349 - INFO - No results found for identifier 808022533 or failed to fetch data
+2024-03-06 17:35:32,350 - INFO - Write completed for OCN 808022533
+2024-03-06 17:35:33,351 - INFO - 45/21897. Searching metadata for 707917528
+2024-03-06 17:35:33,351 - INFO - Looking for OCN 707917528 in the database.
+2024-03-06 17:35:33,352 - INFO - No database record found for OCN 707917528.
+2024-03-06 17:35:33,783 - INFO - No results found for identifier 707917528 or failed to fetch data
+2024-03-06 17:35:33,784 - INFO - Write completed for OCN 707917528
+2024-03-06 17:35:34,785 - INFO - 46/21897. Searching metadata for 55664003
+2024-03-06 17:35:34,785 - INFO - Looking for OCN 55664003 in the database.
+2024-03-06 17:35:34,786 - INFO - No database record found for OCN 55664003.
+2024-03-06 17:35:35,203 - INFO - Write completed for OCN 55664003
+2024-03-06 17:35:36,204 - INFO - 47/21897. Searching metadata for 55664050
+2024-03-06 17:35:36,204 - INFO - Looking for OCN 55664050 in the database.
+2024-03-06 17:35:36,205 - INFO - No database record found for OCN 55664050.
+2024-03-06 17:35:36,645 - INFO - No results found for identifier 55664050 or failed to fetch data
+2024-03-06 17:35:36,647 - INFO - Write completed for OCN 55664050
+2024-03-06 17:35:37,648 - INFO - 48/21897. Searching metadata for 231580577
+2024-03-06 17:35:37,648 - INFO - Looking for OCN 231580577 in the database.
+2024-03-06 17:35:37,649 - INFO - No database record found for OCN 231580577.
+2024-03-06 17:35:38,077 - INFO - No results found for identifier 231580577 or failed to fetch data
+2024-03-06 17:35:38,081 - INFO - Write completed for OCN 231580577
+2024-03-06 17:35:39,082 - INFO - 49/21897. Searching metadata for 50493476
+2024-03-06 17:35:39,083 - INFO - Looking for OCN 50493476 in the database.
+2024-03-06 17:35:39,097 - INFO - No database record found for OCN 50493476.
+2024-03-06 17:35:39,531 - INFO - No results found for identifier 50493476 or failed to fetch data
+2024-03-06 17:35:39,532 - INFO - Write completed for OCN 50493476
+2024-03-06 17:35:40,533 - INFO - 50/21897. Searching metadata for 707917529
+2024-03-06 17:35:40,533 - INFO - Looking for OCN 707917529 in the database.
+2024-03-06 17:35:40,533 - INFO - No database record found for OCN 707917529.
+2024-03-06 17:35:40,968 - INFO - No results found for identifier 707917529 or failed to fetch data
+2024-03-06 17:35:40,969 - INFO - Write completed for OCN 707917529
+2024-03-06 17:35:41,970 - INFO - 51/21897. Searching metadata for 559384701
+2024-03-06 17:35:41,970 - INFO - Looking for OCN 559384701 in the database.
+2024-03-06 17:35:41,971 - INFO - No database record found for OCN 559384701.
+2024-03-06 17:35:42,479 - INFO - No results found for identifier 559384701 or failed to fetch data
+2024-03-06 17:35:42,480 - INFO - Write completed for OCN 559384701
+2024-03-06 17:35:43,482 - INFO - 52/21897. Searching metadata for 55664074
+2024-03-06 17:35:43,482 - INFO - Looking for OCN 55664074 in the database.
+2024-03-06 17:35:43,483 - INFO - No database record found for OCN 55664074.
+2024-03-06 17:35:43,968 - INFO - No results found for identifier 55664074 or failed to fetch data
+2024-03-06 17:35:43,969 - INFO - Write completed for OCN 55664074
+2024-03-06 17:35:44,970 - INFO - 53/21897. Searching metadata for 50797894
+2024-03-06 17:35:44,970 - INFO - Looking for OCN 50797894 in the database.
+2024-03-06 17:35:44,981 - INFO - No database record found for OCN 50797894.
+2024-03-06 17:35:45,473 - INFO - No results found for identifier 50797894 or failed to fetch data
+2024-03-06 17:35:45,480 - INFO - Write completed for OCN 50797894
+2024-03-06 17:35:46,482 - INFO - 54/21897. Searching metadata for 559622808
+2024-03-06 17:35:46,482 - INFO - Looking for OCN 559622808 in the database.
+2024-03-06 17:35:46,483 - INFO - No database record found for OCN 559622808.
+2024-03-06 17:35:47,015 - INFO - No results found for identifier 559622808 or failed to fetch data
+2024-03-06 17:35:47,016 - INFO - Write completed for OCN 559622808
+2024-03-06 17:35:48,017 - INFO - 55/21897. Searching metadata for 70773476
+2024-03-06 17:35:48,017 - INFO - Looking for OCN 70773476 in the database.
+2024-03-06 17:35:48,018 - INFO - No database record found for OCN 70773476.
+2024-03-06 17:35:48,497 - INFO - No results found for identifier 70773476 or failed to fetch data
+2024-03-06 17:35:48,499 - INFO - Write completed for OCN 70773476
+2024-03-06 17:35:49,500 - INFO - 56/21897. Searching metadata for 55046840
+2024-03-06 17:35:49,500 - INFO - Looking for OCN 55046840 in the database.
+2024-03-06 17:35:49,501 - INFO - No database record found for OCN 55046840.
+2024-03-06 17:35:50,044 - INFO - Write completed for OCN 55046840
+2024-03-06 17:35:51,047 - INFO - 57/21897. Searching metadata for 228375131
+2024-03-06 17:35:51,047 - INFO - Looking for OCN 228375131 in the database.
+2024-03-06 17:35:51,048 - INFO - No database record found for OCN 228375131.
+2024-03-06 17:35:51,515 - INFO - No results found for identifier 228375131 or failed to fetch data
+2024-03-06 17:35:51,515 - INFO - Write completed for OCN 228375131
+2024-03-06 17:35:52,516 - INFO - 58/21897. Searching metadata for 70736481
+2024-03-06 17:35:52,516 - INFO - Looking for OCN 70736481 in the database.
+2024-03-06 17:35:52,517 - INFO - No database record found for OCN 70736481.
+2024-03-06 17:35:52,979 - INFO - No results found for identifier 70736481 or failed to fetch data
+2024-03-06 17:35:52,982 - INFO - Write completed for OCN 70736481
+2024-03-06 17:35:53,983 - INFO - 59/21897. Searching metadata for 231581840
+2024-03-06 17:35:53,983 - INFO - Looking for OCN 231581840 in the database.
+2024-03-06 17:35:53,984 - INFO - No database record found for OCN 231581840.
+2024-03-06 17:35:54,429 - INFO - No results found for identifier 231581840 or failed to fetch data
+2024-03-06 17:35:54,430 - INFO - Write completed for OCN 231581840
+2024-03-06 17:35:55,431 - INFO - 60/21897. Searching metadata for 50553231
+2024-03-06 17:35:55,431 - INFO - Looking for OCN 50553231 in the database.
+2024-03-06 17:35:55,433 - INFO - No database record found for OCN 50553231.
+2024-03-06 17:35:55,903 - INFO - No results found for identifier 50553231 or failed to fetch data
+2024-03-06 17:35:55,904 - INFO - Write completed for OCN 50553231
+2024-03-06 17:35:56,905 - INFO - 61/21897. Searching metadata for 55046851
+2024-03-06 17:35:56,905 - INFO - Looking for OCN 55046851 in the database.
+2024-03-06 17:35:56,908 - INFO - No database record found for OCN 55046851.
+2024-03-06 17:35:57,407 - INFO - No results found for identifier 55046851 or failed to fetch data
+2024-03-06 17:35:57,415 - INFO - Write completed for OCN 55046851
+2024-03-06 17:35:58,416 - INFO - 62/21897. Searching metadata for 559099049
+2024-03-06 17:35:58,416 - INFO - Looking for OCN 559099049 in the database.
+2024-03-06 17:35:58,417 - INFO - No database record found for OCN 559099049.
+2024-03-06 17:35:58,830 - INFO - No results found for identifier 559099049 or failed to fetch data
+2024-03-06 17:35:58,831 - INFO - Write completed for OCN 559099049
+2024-03-06 17:35:59,833 - INFO - 63/21897. Searching metadata for 55046885
+2024-03-06 17:35:59,833 - INFO - Looking for OCN 55046885 in the database.
+2024-03-06 17:35:59,834 - INFO - No database record found for OCN 55046885.
+2024-03-06 17:36:00,278 - INFO - No results found for identifier 55046885 or failed to fetch data
+2024-03-06 17:36:00,279 - INFO - Write completed for OCN 55046885
+2024-03-06 17:36:01,280 - INFO - 64/21897. Searching metadata for 52801725
+2024-03-06 17:36:01,280 - INFO - Looking for OCN 52801725 in the database.
+2024-03-06 17:36:01,280 - INFO - No database record found for OCN 52801725.
+2024-03-06 17:36:01,712 - INFO - No results found for identifier 52801725 or failed to fetch data
+2024-03-06 17:36:01,712 - INFO - Write completed for OCN 52801725
+2024-03-06 17:36:02,713 - INFO - 65/21897. Searching metadata for 50321166
+2024-03-06 17:36:02,713 - INFO - Looking for OCN 50321166 in the database.
+2024-03-06 17:36:02,714 - INFO - No database record found for OCN 50321166.
+2024-03-06 17:36:03,172 - INFO - No results found for identifier 50321166 or failed to fetch data
+2024-03-06 17:36:03,179 - INFO - Write completed for OCN 50321166
+2024-03-06 17:36:04,180 - INFO - 66/21897. Searching metadata for 70771463
+2024-03-06 17:36:04,180 - INFO - Looking for OCN 70771463 in the database.
+2024-03-06 17:36:04,180 - INFO - No database record found for OCN 70771463.
+2024-03-06 17:36:04,626 - INFO - No results found for identifier 70771463 or failed to fetch data
+2024-03-06 17:36:04,629 - INFO - Write completed for OCN 70771463
+2024-03-06 17:36:05,630 - INFO - 67/21897. Searching metadata for 231581666
+2024-03-06 17:36:05,630 - INFO - Looking for OCN 231581666 in the database.
+2024-03-06 17:36:05,630 - INFO - No database record found for OCN 231581666.
+2024-03-06 17:36:06,114 - INFO - No results found for identifier 231581666 or failed to fetch data
+2024-03-06 17:36:06,115 - INFO - Write completed for OCN 231581666
+2024-03-06 17:36:07,115 - INFO - 68/21897. Searching metadata for 559710226
+2024-03-06 17:36:07,115 - INFO - Looking for OCN 559710226 in the database.
+2024-03-06 17:36:07,116 - INFO - No database record found for OCN 559710226.
+2024-03-06 17:36:07,559 - INFO - No results found for identifier 559710226 or failed to fetch data
+2024-03-06 17:36:07,563 - INFO - Write completed for OCN 559710226
+2024-03-06 17:36:08,564 - INFO - 69/21897. Searching metadata for 70740237
+2024-03-06 17:36:08,564 - INFO - Looking for OCN 70740237 in the database.
+2024-03-06 17:36:08,565 - INFO - No database record found for OCN 70740237.
+2024-03-06 17:36:09,082 - INFO - No results found for identifier 70740237 or failed to fetch data
+2024-03-06 17:36:09,083 - INFO - Write completed for OCN 70740237
+2024-03-06 17:36:10,085 - INFO - 70/21897. Searching metadata for 55664080
+2024-03-06 17:36:10,085 - INFO - Looking for OCN 55664080 in the database.
+2024-03-06 17:36:10,086 - INFO - No database record found for OCN 55664080.
+2024-03-06 17:36:10,512 - INFO - No results found for identifier 55664080 or failed to fetch data
+2024-03-06 17:36:10,514 - INFO - Write completed for OCN 55664080
+2024-03-06 17:36:11,515 - INFO - 71/21897. Searching metadata for 55664049
+2024-03-06 17:36:11,515 - INFO - Looking for OCN 55664049 in the database.
+2024-03-06 17:36:11,515 - INFO - No database record found for OCN 55664049.
+2024-03-06 17:36:12,011 - INFO - No results found for identifier 55664049 or failed to fetch data
+2024-03-06 17:36:12,012 - INFO - Write completed for OCN 55664049
+2024-03-06 17:36:13,013 - INFO - 72/21897. Searching metadata for 722716059
+2024-03-06 17:36:13,013 - INFO - Looking for OCN 722716059 in the database.
+2024-03-06 17:36:13,014 - INFO - No database record found for OCN 722716059.
+2024-03-06 17:36:13,483 - INFO - No results found for identifier 722716059 or failed to fetch data
+2024-03-06 17:36:13,484 - INFO - Write completed for OCN 722716059
+2024-03-06 17:36:14,486 - INFO - 73/21897. Searching metadata for 707917533
+2024-03-06 17:36:14,486 - INFO - Looking for OCN 707917533 in the database.
+2024-03-06 17:36:14,487 - INFO - No database record found for OCN 707917533.
+2024-03-06 17:36:14,957 - INFO - No results found for identifier 707917533 or failed to fetch data
+2024-03-06 17:36:14,964 - INFO - Write completed for OCN 707917533
+2024-03-06 17:36:15,965 - INFO - 74/21897. Searching metadata for 55663764
+2024-03-06 17:36:15,965 - INFO - Looking for OCN 55663764 in the database.
+2024-03-06 17:36:15,966 - INFO - No database record found for OCN 55663764.
+2024-03-06 17:36:16,411 - INFO - No results found for identifier 55663764 or failed to fetch data
+2024-03-06 17:36:16,411 - INFO - Write completed for OCN 55663764
+2024-03-06 17:36:17,413 - INFO - 75/21897. Searching metadata for 55046808
+2024-03-06 17:36:17,413 - INFO - Looking for OCN 55046808 in the database.
+2024-03-06 17:36:17,415 - INFO - No database record found for OCN 55046808.
+2024-03-06 17:36:17,879 - INFO - No results found for identifier 55046808 or failed to fetch data
+2024-03-06 17:36:17,880 - INFO - Write completed for OCN 55046808
+2024-03-06 17:36:18,881 - INFO - 76/21897. Searching metadata for 808022486
+2024-03-06 17:36:18,881 - INFO - Looking for OCN 808022486 in the database.
+2024-03-06 17:36:18,882 - INFO - No database record found for OCN 808022486.
+2024-03-06 17:36:19,396 - INFO - No results found for identifier 808022486 or failed to fetch data
+2024-03-06 17:36:19,397 - INFO - Write completed for OCN 808022486
+2024-03-06 17:36:20,398 - INFO - 77/21897. Searching metadata for 50304216
+2024-03-06 17:36:20,398 - INFO - Looking for OCN 50304216 in the database.
+2024-03-06 17:36:20,399 - INFO - No database record found for OCN 50304216.
+2024-03-06 17:36:20,881 - INFO - No results found for identifier 50304216 or failed to fetch data
+2024-03-06 17:36:20,882 - INFO - Write completed for OCN 50304216
+2024-03-06 17:36:21,884 - INFO - 78/21897. Searching metadata for 50745584
+2024-03-06 17:36:21,884 - INFO - Looking for OCN 50745584 in the database.
+2024-03-06 17:36:21,885 - INFO - No database record found for OCN 50745584.
+2024-03-06 17:36:22,339 - INFO - No results found for identifier 50745584 or failed to fetch data
+2024-03-06 17:36:22,342 - INFO - Write completed for OCN 50745584
+2024-03-06 17:36:23,344 - INFO - 79/21897. Searching metadata for 55047057
+2024-03-06 17:36:23,344 - INFO - Looking for OCN 55047057 in the database.
+2024-03-06 17:36:23,345 - INFO - No database record found for OCN 55047057.
+2024-03-06 17:36:23,796 - INFO - No results found for identifier 55047057 or failed to fetch data
+2024-03-06 17:36:23,799 - INFO - Write completed for OCN 55047057
+2024-03-06 17:36:24,803 - INFO - 80/21897. Searching metadata for 70759261
+2024-03-06 17:36:24,804 - INFO - Looking for OCN 70759261 in the database.
+2024-03-06 17:36:24,807 - INFO - No database record found for OCN 70759261.
+2024-03-06 17:36:25,284 - INFO - No results found for identifier 70759261 or failed to fetch data
+2024-03-06 17:36:25,289 - INFO - Write completed for OCN 70759261
+2024-03-06 17:36:26,291 - INFO - 81/21897. Searching metadata for 55663775
+2024-03-06 17:36:26,291 - INFO - Looking for OCN 55663775 in the database.
+2024-03-06 17:36:26,293 - INFO - No database record found for OCN 55663775.
+2024-03-06 17:36:26,740 - INFO - No results found for identifier 55663775 or failed to fetch data
+2024-03-06 17:36:26,741 - INFO - Write completed for OCN 55663775
+2024-03-06 17:36:27,744 - INFO - 82/21897. Searching metadata for 559153004
+2024-03-06 17:36:27,745 - INFO - Looking for OCN 559153004 in the database.
+2024-03-06 17:36:27,746 - INFO - No database record found for OCN 559153004.
+2024-03-06 17:36:28,205 - INFO - No results found for identifier 559153004 or failed to fetch data
+2024-03-06 17:36:28,221 - INFO - Write completed for OCN 559153004
+2024-03-06 17:36:29,229 - INFO - 83/21897. Searching metadata for 55046733
+2024-03-06 17:36:29,229 - INFO - Looking for OCN 55046733 in the database.
+2024-03-06 17:36:29,230 - INFO - No database record found for OCN 55046733.
+2024-03-06 17:36:29,665 - INFO - No results found for identifier 55046733 or failed to fetch data
+2024-03-06 17:36:29,682 - INFO - Write completed for OCN 55046733
+2024-03-06 17:36:30,684 - INFO - 84/21897. Searching metadata for 231581720
+2024-03-06 17:36:30,684 - INFO - Looking for OCN 231581720 in the database.
+2024-03-06 17:36:30,685 - INFO - No database record found for OCN 231581720.
+2024-03-06 17:36:31,104 - INFO - No results found for identifier 231581720 or failed to fetch data
+2024-03-06 17:36:31,114 - INFO - Write completed for OCN 231581720
+2024-03-06 17:36:32,115 - INFO - 85/21897. Searching metadata for 559432487
+2024-03-06 17:36:32,115 - INFO - Looking for OCN 559432487 in the database.
+2024-03-06 17:36:32,116 - INFO - No database record found for OCN 559432487.
+2024-03-06 17:36:32,527 - INFO - No results found for identifier 559432487 or failed to fetch data
+2024-03-06 17:36:32,528 - INFO - Write completed for OCN 559432487
+2024-03-06 17:36:33,529 - INFO - 86/21897. Searching metadata for 269293479
+2024-03-06 17:36:33,529 - INFO - Looking for OCN 269293479 in the database.
+2024-03-06 17:36:33,529 - INFO - No database record found for OCN 269293479.
+2024-03-06 17:36:33,959 - INFO - No results found for identifier 269293479 or failed to fetch data
+2024-03-06 17:36:33,962 - INFO - Write completed for OCN 269293479
+2024-03-06 17:36:34,963 - INFO - 87/21897. Searching metadata for 228370469
+2024-03-06 17:36:34,963 - INFO - Looking for OCN 228370469 in the database.
+2024-03-06 17:36:34,964 - INFO - No database record found for OCN 228370469.
+2024-03-06 17:36:35,423 - INFO - No results found for identifier 228370469 or failed to fetch data
+2024-03-06 17:36:35,425 - INFO - Write completed for OCN 228370469
+2024-03-06 17:36:36,426 - INFO - 88/21897. Searching metadata for 231582033
+2024-03-06 17:36:36,427 - INFO - Looking for OCN 231582033 in the database.
+2024-03-06 17:36:36,428 - INFO - No database record found for OCN 231582033.
+2024-03-06 17:36:36,859 - INFO - No results found for identifier 231582033 or failed to fetch data
+2024-03-06 17:36:36,878 - INFO - Write completed for OCN 231582033
+2024-03-06 17:36:37,879 - INFO - 89/21897. Searching metadata for 228042468
+2024-03-06 17:36:37,879 - INFO - Looking for OCN 228042468 in the database.
+2024-03-06 17:36:37,879 - INFO - No database record found for OCN 228042468.
+2024-03-06 17:36:38,312 - INFO - No results found for identifier 228042468 or failed to fetch data
+2024-03-06 17:36:38,313 - INFO - Write completed for OCN 228042468
+2024-03-06 17:36:39,314 - INFO - 90/21897. Searching metadata for 52413656
+2024-03-06 17:36:39,314 - INFO - Looking for OCN 52413656 in the database.
+2024-03-06 17:36:39,315 - INFO - No database record found for OCN 52413656.
+2024-03-06 17:36:39,740 - INFO - No results found for identifier 52413656 or failed to fetch data
+2024-03-06 17:36:39,746 - INFO - Write completed for OCN 52413656
+2024-03-06 17:36:40,747 - INFO - 91/21897. Searching metadata for 754034049
+2024-03-06 17:36:40,748 - INFO - Looking for OCN 754034049 in the database.
+2024-03-06 17:36:40,750 - INFO - No database record found for OCN 754034049.
+2024-03-06 17:36:41,225 - INFO - No results found for identifier 754034049 or failed to fetch data
+2024-03-06 17:36:41,228 - INFO - Write completed for OCN 754034049
+2024-03-06 17:36:42,230 - INFO - 92/21897. Searching metadata for 231580893
+2024-03-06 17:36:42,231 - INFO - Looking for OCN 231580893 in the database.
+2024-03-06 17:36:42,231 - INFO - No database record found for OCN 231580893.
+2024-03-06 17:36:42,674 - INFO - No results found for identifier 231580893 or failed to fetch data
+2024-03-06 17:36:42,679 - INFO - Write completed for OCN 231580893
+2024-03-06 17:36:43,681 - INFO - 93/21897. Searching metadata for 707917547
+2024-03-06 17:36:43,681 - INFO - Looking for OCN 707917547 in the database.
+2024-03-06 17:36:43,682 - INFO - No database record found for OCN 707917547.
+2024-03-06 17:36:44,093 - INFO - No results found for identifier 707917547 or failed to fetch data
+2024-03-06 17:36:44,094 - INFO - Write completed for OCN 707917547
+2024-03-06 17:36:45,095 - INFO - 94/21897. Searching metadata for 228048491
+2024-03-06 17:36:45,095 - INFO - Looking for OCN 228048491 in the database.
+2024-03-06 17:36:45,095 - INFO - No database record found for OCN 228048491.
+2024-03-06 17:36:45,544 - INFO - No results found for identifier 228048491 or failed to fetch data
+2024-03-06 17:36:45,546 - INFO - Write completed for OCN 228048491
+2024-03-06 17:36:46,547 - INFO - 95/21897. Searching metadata for 50553265
+2024-03-06 17:36:46,547 - INFO - Looking for OCN 50553265 in the database.
+2024-03-06 17:36:46,549 - INFO - No database record found for OCN 50553265.
+2024-03-06 17:36:46,992 - INFO - No results found for identifier 50553265 or failed to fetch data
+2024-03-06 17:36:46,995 - INFO - Write completed for OCN 50553265
+2024-03-06 17:36:47,995 - INFO - 96/21897. Searching metadata for 609971605
+2024-03-06 17:36:47,995 - INFO - Looking for OCN 609971605 in the database.
+2024-03-06 17:36:47,996 - INFO - No database record found for OCN 609971605.
+2024-03-06 17:36:48,426 - INFO - No results found for identifier 609971605 or failed to fetch data
+2024-03-06 17:36:48,427 - INFO - Write completed for OCN 609971605
+2024-03-06 17:36:49,428 - INFO - 97/21897. Searching metadata for 559401704
+2024-03-06 17:36:49,428 - INFO - Looking for OCN 559401704 in the database.
+2024-03-06 17:36:49,429 - INFO - No database record found for OCN 559401704.
+2024-03-06 17:36:49,855 - INFO - No results found for identifier 559401704 or failed to fetch data
+2024-03-06 17:36:49,861 - INFO - Write completed for OCN 559401704
+2024-03-06 17:36:50,861 - INFO - 98/21897. Searching metadata for 707917550
+2024-03-06 17:36:50,862 - INFO - Looking for OCN 707917550 in the database.
+2024-03-06 17:36:50,863 - INFO - No database record found for OCN 707917550.
+2024-03-06 17:36:51,295 - INFO - No results found for identifier 707917550 or failed to fetch data
+2024-03-06 17:36:51,297 - INFO - Write completed for OCN 707917550
+2024-03-06 17:36:52,298 - INFO - 99/21897. Searching metadata for 50322411
+2024-03-06 17:36:52,298 - INFO - Looking for OCN 50322411 in the database.
+2024-03-06 17:36:52,299 - INFO - No database record found for OCN 50322411.
+2024-03-06 17:36:52,746 - INFO - No results found for identifier 50322411 or failed to fetch data
+2024-03-06 17:36:52,747 - INFO - Write completed for OCN 50322411
+2024-03-06 17:36:53,748 - INFO - 100/21897. Searching metadata for 55664071
+2024-03-06 17:36:53,748 - INFO - Looking for OCN 55664071 in the database.
+2024-03-06 17:36:53,748 - INFO - No database record found for OCN 55664071.
+2024-03-06 17:36:54,212 - INFO - No results found for identifier 55664071 or failed to fetch data
+2024-03-06 17:36:54,214 - INFO - Write completed for OCN 55664071
+2024-03-06 17:36:55,214 - INFO - 101/21897. Searching metadata for 50553250
+2024-03-06 17:36:55,214 - INFO - Looking for OCN 50553250 in the database.
+2024-03-06 17:36:55,215 - INFO - No database record found for OCN 50553250.
+2024-03-06 17:36:55,646 - INFO - No results found for identifier 50553250 or failed to fetch data
+2024-03-06 17:36:55,651 - INFO - Write completed for OCN 50553250
+2024-03-06 17:36:56,653 - INFO - 102/21897. Searching metadata for 50321822
+2024-03-06 17:36:56,653 - INFO - Looking for OCN 50321822 in the database.
+2024-03-06 17:36:56,654 - INFO - No database record found for OCN 50321822.
+2024-03-06 17:36:57,091 - INFO - No results found for identifier 50321822 or failed to fetch data
+2024-03-06 17:36:57,097 - INFO - Write completed for OCN 50321822
+2024-03-06 17:36:58,098 - INFO - 103/21897. Searching metadata for 55046874
+2024-03-06 17:36:58,099 - INFO - Looking for OCN 55046874 in the database.
+2024-03-06 17:36:58,100 - INFO - No database record found for OCN 55046874.
+2024-03-06 17:36:58,561 - INFO - No results found for identifier 55046874 or failed to fetch data
+2024-03-06 17:36:58,562 - INFO - Write completed for OCN 55046874
+2024-03-06 17:36:59,564 - INFO - 104/21897. Searching metadata for 50488168
+2024-03-06 17:36:59,564 - INFO - Looking for OCN 50488168 in the database.
+2024-03-06 17:36:59,564 - INFO - No database record found for OCN 50488168.
+2024-03-06 17:36:59,992 - INFO - No results found for identifier 50488168 or failed to fetch data
+2024-03-06 17:36:59,993 - INFO - Write completed for OCN 50488168
+2024-03-06 17:37:00,994 - INFO - 105/21897. Searching metadata for 808023178
+2024-03-06 17:37:00,994 - INFO - Looking for OCN 808023178 in the database.
+2024-03-06 17:37:00,995 - INFO - No database record found for OCN 808023178.
+2024-03-06 17:37:01,445 - INFO - No results found for identifier 808023178 or failed to fetch data
+2024-03-06 17:37:01,447 - INFO - Write completed for OCN 808023178
+2024-03-06 17:37:02,448 - INFO - 106/21897. Searching metadata for 55663991
+2024-03-06 17:37:02,448 - INFO - Looking for OCN 55663991 in the database.
+2024-03-06 17:37:02,449 - INFO - No database record found for OCN 55663991.
+2024-03-06 17:37:02,650 - INFO - Search stopped
+2024-03-06 17:37:03,123 - INFO - No results found for identifier 55663991 or failed to fetch data
+2024-03-06 17:37:08,784 - INFO - 107/21897. Searching metadata for 559558913

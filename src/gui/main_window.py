@@ -138,7 +138,6 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     
     def write_data_to_output_file(self, identifier, data):
         if not hasattr(self, 'output_file_path') or not self.output_file_path:
-            messagebox.showerror("Error", "Output file path is not set.")
             return
 
         # Identify the input type

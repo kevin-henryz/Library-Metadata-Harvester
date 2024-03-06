@@ -18,30 +18,41 @@ from util.file_processor import read_and_validate_file
 from gui.priority_list import PriorityListApp
 from db.database_manager import DatabaseManager
 
+from apis.harvard_library_API import HarvardAPI
+
 #Test code
-from gui.dummy_source import *
+#from gui.dummy_source import *
 
 class LibraryMetadataHarvesterApp(tk.Tk):
     
+    """ 
+
+        source_mapping = {
+        "OCLC API": OCLCAPI(),
+        "Library of Congress API": LibraryOfCongressAPI(),
+        "Harvard Library API": HarvardLibraryAPI(),
+        "Open Library API": OpenLibraryAPI(),
+        "Google Books API": GoogleBooksAPI(),
+        "Yale": YaleLibraryAPI(),
+        "Columbia": ColumbiaLibraryAPI(),
+        "University of Virginia": UniversityOfVirginiaLibraryAPI(),
+        "Stanford": StanfordLibraryAPI(),
+        "Johns Hopkins U": JohnsHopkinsULibraryAPI(),
+        "Cornell": CornellLibraryAPI(),
+        "NCSU": NCSULibraryAPI(),
+        "Duke": DukeLibraryAPI(),
+        "Penn State": PennStateLibraryAPI(),
+        "Indiana U": IndianaULibraryAPI(),
+        "McGill": McGillLibraryAPI(),
+        "VOILA": VOILAAPI(),
+    }
+    """
+
     source_mapping = {
-    "OCLC API": OCLCAPI(),
-    "Library of Congress API": LibraryOfCongressAPI(),
-    "Harvard Library API": HarvardLibraryAPI(),
-    "Open Library API": OpenLibraryAPI(),
-    "Google Books API": GoogleBooksAPI(),
-    "Yale": YaleLibraryAPI(),
-    "Columbia": ColumbiaLibraryAPI(),
-    "University of Virginia": UniversityOfVirginiaLibraryAPI(),
-    "Stanford": StanfordLibraryAPI(),
-    "Johns Hopkins U": JohnsHopkinsULibraryAPI(),
-    "Cornell": CornellLibraryAPI(),
-    "NCSU": NCSULibraryAPI(),
-    "Duke": DukeLibraryAPI(),
-    "Penn State": PennStateLibraryAPI(),
-    "Indiana U": IndianaULibraryAPI(),
-    "McGill": McGillLibraryAPI(),
-    "VOILA": VOILAAPI(),
-}
+        "Harvard Library API": HarvardAPI()
+        }
+
+
 
 
     def __init__(self):
@@ -101,52 +112,76 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         existing_data = {}
         if file_type == 'ISBN':
             condition = f"Isbn = {identifier}"
+            logging.info(f"Looking for ISBN {identifier} in the database.")
         else: # Assuming OCN for simplicity; adjust as needed for your application
             condition = f"Ocn = {identifier}"
+            logging.info(f"Looking for OCN {identifier} in the database.")
         
         # Check for main book data (ISBN, OCN)
         book_data = self.db_manager.fetch_data("books", f"WHERE {condition}")
         if book_data:
-            existing_data['ISBN'] = book_data[0][0]  # Assuming first column is ISBN
-            existing_data['OCN'] = book_data[0][1]  # Assuming second column is OCN
+            existing_data['isbn'] = book_data[0][0]  # Assuming first column is ISBN
+            existing_data['ocn'] = book_data[0][1]  # Assuming second column is OCN
+            logging.info(f"Found database record for {file_type} {identifier}: ISBN={book_data[0][0]}, OCN={book_data[0][1]}")
+        else:
+            logging.info(f"No database record found for {file_type} {identifier}.")
+
         
         # Check for LCCN data if required
         if self.output_value_lccn.get() or self.output_value_lccn_source.get():
             lccn_data = self.db_manager.fetch_data("book_lccn", f"JOIN lccn ON book_lccn.Lccn_id = lccn.Lccn_id WHERE book_lccn.Isbn = {identifier}")
             if lccn_data:
-                existing_data['LCCN'] = [row[1] for row in lccn_data]  # Assuming LCCN is in the second column
-                existing_data['LCCN Source'] = [row[2] for row in lccn_data]  # Assuming source is in the third column
+                existing_data['lccn'] = [row[1] for row in lccn_data]  # Assuming LCCN is in the second column
+                existing_data['lccn_source'] = [row[2] for row in lccn_data]  # Assuming source is in the third column
         
         return existing_data
     
     def write_data_to_output_file(self, identifier, data):
-        # Ensure the output file path is defined
         if not hasattr(self, 'output_file_path') or not self.output_file_path:
             messagebox.showerror("Error", "Output file path is not set.")
             return
 
-        # Open the file in append mode, so we add to the file without overwriting it
+        # Identify the input type
+        input_type = 'ISBN' if self.input_file_type.get() == 1 else 'OCN'
+
+        # Initialize headers based on user selections, dynamically including input type (ISBN or OCN)
+        headers = []
+        if self.output_value_isbn.get():
+            headers.append('ISBN')
+        if self.output_value_ocn.get():
+            headers.append('OCN')
+        if self.output_value_lccn.get():
+            headers.append('LCCN')
+        if self.output_value_lccn_source.get():
+            headers.append('LCCN Source')
+
+        # Check if file already exists and has content to decide whether to write headers
+        file_exists = os.path.isfile(self.output_file_path) and os.path.getsize(self.output_file_path) > 0
+
         with open(self.output_file_path, 'a', newline='') as file:
-            # Use csv.writer to handle the CSV output
             csv_writer = csv.writer(file)
-            
-            # Prepare the row data starting with the identifier
-            row_data = [identifier]
-            
-            # Append each chosen option's data to the row
-            # The order of fields will match the order in which they are checked and appended here
+
+            # Write headers if the file is new or empty
+            if not file_exists:
+                csv_writer.writerow(headers)
+
+            # Prepare the data row based on the chosen options
+            row_data = []
             if self.output_value_isbn.get():
-                row_data.append(data.get('ISBN', ''))
+                isbn_data = identifier if input_type == 'ISBN' else data.get('isbn', '')
+                row_data.append('; '.join(isbn_data) if isinstance(isbn_data, list) else isbn_data)
             if self.output_value_ocn.get():
-                row_data.append(data.get('OCN', ''))
+                ocn_data = identifier if input_type == 'OCN' else data.get('ocn', '')
+                row_data.append('; '.join(ocn_data) if isinstance(ocn_data, list) else ocn_data)
             if self.output_value_lccn.get():
-                row_data.append('; '.join(data.get('LCCN', [])))  # Join multiple LCCNs by semicolon
+                row_data.append('; '.join(data.get('lccn', [])) if isinstance(data.get('lccn', []), list) else data.get('lccn', ''))
             if self.output_value_lccn_source.get():
-                row_data.append('; '.join(data.get('LCCN Source', [])))  # Join multiple sources by semicolon
-            
-            # Write the row to the CSV file
+                row_data.append('; '.join(data.get('lccn_source', [])) if isinstance(data.get('lccn_source', []), list) else data.get('lccn_source', ''))
+
+            # Write the row to the CSV file if there's anything to write
             csv_writer.writerow(row_data)
-            logging.info(f"Write completed")
+            logging.info(f"Write completed for {input_type} {identifier}")
+
 
 
     def setup_ui(self):
@@ -291,11 +326,13 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.search_in_progress = True
 
         output_options = {
-        'ISBN': self.output_value_isbn.get(),
-        'OCN': self.output_value_ocn.get(),
-        'LCCN': self.output_value_lccn.get(),
-        'LCCN Source': self.output_value_lccn_source.get()
+        'isbn': self.output_value_isbn.get(),
+        'ocn': self.output_value_ocn.get(),
+        'lccn': self.output_value_lccn.get(),
+        'lccn_source': self.output_value_lccn_source.get()
                 }
+        
+        input_type = 'isbn' if self.input_file_type.get() == 1 else 'ocn'
         
         for index,identifier in enumerate(data):
             self.current_identifier = index + 1
@@ -314,16 +351,21 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 for source_name in self.priority_list:
                     source = self.source_mapping.get(source_name)
                     if source:
-                        result = source.query(identifier)
+                        result = source.fetch_metadata(identifier, input_type)
                         # Update existing data with fetched information
-                        for data_type in list(missing_data):  # Use list(missing_data) to safely modify missing_data while iterating
-                            if data_type.lower() in result:
-                                existing_data[data_type] = result[data_type.lower()]
-                                missing_data.remove(data_type)  # Remove the found data type from missing_data
-                                
-                        # Break out of the loop if no more data is missing
-                        if not missing_data:
-                            break
+                        if result: 
+                            for data_type in list(missing_data):  # Use list(missing_data) to safely modify missing_data while iterating
+                                if data_type.lower() in result:
+                                    existing_data[data_type] = result[data_type.lower()]
+                                    missing_data.remove(data_type)  # Remove the found data type from missing_data
+                                    
+                            # Break out of the loop if no more data is missing
+                            if not missing_data:
+                                break
+                        else:
+                            logging.info(f"No results found for identifier {identifier} or failed to fetch data")
+                            continue
+
 
             # Now that all sources have been queried, write the existing_data to the output file
             self.write_data_to_output_file(identifier, existing_data)

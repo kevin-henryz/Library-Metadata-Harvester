@@ -1162,3 +1162,2136 @@
 2024-02-24 15:21:59,469 - INFO - Search stopped
 2024-02-24 15:21:59,673 - INFO - 31/7524. Searching metadata for 9780191514517
 2024-02-28 16:42:27,062 - INFO - Application started
+2024-03-06 16:20:19,922 - INFO - Application started
+2024-03-06 16:20:32,939 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 16:20:50,572 - INFO - Search started for ISBN with 7524 items and priority list: ['Harvard Library API']
+2024-03-06 16:20:50,583 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-03-06 16:21:37,918 - INFO - Search stopped
+2024-03-06 16:24:44,915 - INFO - Application started
+2024-03-06 16:24:55,080 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 16:25:12,669 - INFO - Search started for ISBN with 7524 items and priority list: ['Harvard Library API']
+2024-03-06 16:25:12,675 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-03-06 16:27:32,244 - INFO - Application started
+2024-03-06 16:27:40,659 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 16:28:01,053 - INFO - Search started for ISBN with 7524 items and priority list: ['Harvard Library API']
+2024-03-06 16:28:01,058 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-03-06 16:28:01,558 - INFO - No results found for identifier 9780191513015 or failed to fetch data
+2024-03-06 16:28:01,561 - INFO - Write completed
+2024-03-06 16:28:02,562 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-03-06 16:28:03,054 - INFO - No results found for identifier 9780191513022 or failed to fetch data
+2024-03-06 16:28:03,055 - INFO - Write completed
+2024-03-06 16:28:04,057 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-03-06 16:28:04,550 - INFO - No results found for identifier 9780191513039 or failed to fetch data
+2024-03-06 16:28:04,551 - INFO - Write completed
+2024-03-06 16:28:05,552 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-03-06 16:28:06,076 - INFO - No results found for identifier 9780191513183 or failed to fetch data
+2024-03-06 16:28:06,078 - INFO - Write completed
+2024-03-06 16:28:07,079 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-03-06 16:28:07,531 - INFO - No results found for identifier 9780191513213 or failed to fetch data
+2024-03-06 16:28:07,532 - INFO - Write completed
+2024-03-06 16:28:08,533 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-03-06 16:28:08,951 - INFO - No results found for identifier 9780191513275 or failed to fetch data
+2024-03-06 16:28:08,955 - INFO - Write completed
+2024-03-06 16:28:09,956 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-03-06 16:28:10,415 - INFO - No results found for identifier 9780191513329 or failed to fetch data
+2024-03-06 16:28:10,417 - INFO - Write completed
+2024-03-06 16:28:11,418 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-03-06 16:28:11,839 - INFO - No results found for identifier 9780191513336 or failed to fetch data
+2024-03-06 16:28:11,840 - INFO - Write completed
+2024-03-06 16:28:12,842 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-03-06 16:28:13,277 - INFO - No results found for identifier 9780191513428 or failed to fetch data
+2024-03-06 16:28:13,278 - INFO - Write completed
+2024-03-06 16:28:14,279 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-03-06 16:28:14,759 - INFO - No results found for identifier 9780191513435 or failed to fetch data
+2024-03-06 16:28:14,760 - INFO - Write completed
+2024-03-06 16:28:15,762 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-03-06 16:28:16,233 - INFO - No results found for identifier 9780191513459 or failed to fetch data
+2024-03-06 16:28:16,234 - INFO - Write completed
+2024-03-06 16:28:17,240 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-03-06 16:28:17,708 - INFO - No results found for identifier 9780191513466 or failed to fetch data
+2024-03-06 16:28:17,712 - INFO - Write completed
+2024-03-06 16:28:18,713 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-03-06 16:28:19,192 - INFO - No results found for identifier 9780191513473 or failed to fetch data
+2024-03-06 16:28:19,193 - INFO - Write completed
+2024-03-06 16:28:20,195 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-03-06 16:28:20,699 - INFO - No results found for identifier 9780191513480 or failed to fetch data
+2024-03-06 16:28:20,700 - INFO - Write completed
+2024-03-06 16:28:21,701 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-03-06 16:28:22,139 - INFO - No results found for identifier 9780191513503 or failed to fetch data
+2024-03-06 16:28:22,145 - INFO - Write completed
+2024-03-06 16:28:23,146 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-03-06 16:28:23,594 - INFO - No results found for identifier 9780191513510 or failed to fetch data
+2024-03-06 16:28:23,595 - INFO - Write completed
+2024-03-06 16:28:24,596 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-03-06 16:28:25,042 - INFO - Write completed
+2024-03-06 16:28:26,043 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-03-06 16:28:26,507 - INFO - No results found for identifier 9780191513589 or failed to fetch data
+2024-03-06 16:28:26,513 - INFO - Write completed
+2024-03-06 16:28:27,514 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-03-06 16:28:27,988 - INFO - No results found for identifier 9780191513688 or failed to fetch data
+2024-03-06 16:28:27,989 - INFO - Write completed
+2024-03-06 16:28:28,990 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-03-06 16:28:29,423 - INFO - No results found for identifier 9780191513732 or failed to fetch data
+2024-03-06 16:28:29,424 - INFO - Write completed
+2024-03-06 16:28:30,425 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-03-06 16:28:30,854 - INFO - No results found for identifier 9780191514012 or failed to fetch data
+2024-03-06 16:28:30,855 - INFO - Write completed
+2024-03-06 16:28:31,857 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-03-06 16:28:32,329 - INFO - No results found for identifier 9780191514166 or failed to fetch data
+2024-03-06 16:28:32,330 - INFO - Write completed
+2024-03-06 16:28:33,331 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-03-06 16:28:33,766 - INFO - No results found for identifier 9780191514210 or failed to fetch data
+2024-03-06 16:28:33,767 - INFO - Write completed
+2024-03-06 16:28:34,774 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-03-06 16:28:35,253 - INFO - No results found for identifier 9780191514227 or failed to fetch data
+2024-03-06 16:28:35,254 - INFO - Write completed
+2024-03-06 16:28:36,255 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-03-06 16:28:36,700 - INFO - No results found for identifier 9780191514302 or failed to fetch data
+2024-03-06 16:28:36,701 - INFO - Write completed
+2024-03-06 16:28:37,702 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-03-06 16:28:38,145 - INFO - No results found for identifier 9780191514395 or failed to fetch data
+2024-03-06 16:28:38,147 - INFO - Write completed
+2024-03-06 16:28:39,147 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-03-06 16:28:39,597 - INFO - No results found for identifier 9780191514418 or failed to fetch data
+2024-03-06 16:28:39,599 - INFO - Write completed
+2024-03-06 16:28:40,600 - INFO - 27/7524. Searching metadata for 9780191514463
+2024-03-06 16:28:41,024 - INFO - No results found for identifier 9780191514463 or failed to fetch data
+2024-03-06 16:28:41,025 - INFO - Write completed
+2024-03-06 16:28:42,026 - INFO - 28/7524. Searching metadata for 9780191514470
+2024-03-06 16:28:42,466 - INFO - No results found for identifier 9780191514470 or failed to fetch data
+2024-03-06 16:28:42,467 - INFO - Write completed
+2024-03-06 16:28:43,469 - INFO - 29/7524. Searching metadata for 9780191514487
+2024-03-06 16:28:43,897 - INFO - No results found for identifier 9780191514487 or failed to fetch data
+2024-03-06 16:28:43,898 - INFO - Write completed
+2024-03-06 16:28:44,899 - INFO - 30/7524. Searching metadata for 9780191514500
+2024-03-06 16:28:45,357 - INFO - No results found for identifier 9780191514500 or failed to fetch data
+2024-03-06 16:28:45,361 - INFO - Write completed
+2024-03-06 16:28:46,362 - INFO - 31/7524. Searching metadata for 9780191514517
+2024-03-06 16:28:46,813 - INFO - No results found for identifier 9780191514517 or failed to fetch data
+2024-03-06 16:28:46,814 - INFO - Write completed
+2024-03-06 16:28:47,815 - INFO - 32/7524. Searching metadata for 9780191514524
+2024-03-06 16:28:48,391 - INFO - No results found for identifier 9780191514524 or failed to fetch data
+2024-03-06 16:28:48,392 - INFO - Write completed
+2024-03-06 16:28:49,393 - INFO - 33/7524. Searching metadata for 9780191514531
+2024-03-06 16:28:49,852 - INFO - No results found for identifier 9780191514531 or failed to fetch data
+2024-03-06 16:28:49,853 - INFO - Write completed
+2024-03-06 16:28:50,854 - INFO - 34/7524. Searching metadata for 9780191514548
+2024-03-06 16:28:51,275 - INFO - No results found for identifier 9780191514548 or failed to fetch data
+2024-03-06 16:28:51,276 - INFO - Write completed
+2024-03-06 16:28:52,277 - INFO - 35/7524. Searching metadata for 9780191514593
+2024-03-06 16:28:52,705 - INFO - No results found for identifier 9780191514593 or failed to fetch data
+2024-03-06 16:28:52,708 - INFO - Write completed
+2024-03-06 16:28:53,708 - INFO - 36/7524. Searching metadata for 9780191514616
+2024-03-06 16:28:54,139 - INFO - No results found for identifier 9780191514616 or failed to fetch data
+2024-03-06 16:28:54,141 - INFO - Write completed
+2024-03-06 16:28:55,141 - INFO - 37/7524. Searching metadata for 9780191514708
+2024-03-06 16:28:55,586 - INFO - No results found for identifier 9780191514708 or failed to fetch data
+2024-03-06 16:28:55,587 - INFO - Write completed
+2024-03-06 16:28:56,588 - INFO - 38/7524. Searching metadata for 9780191514715
+2024-03-06 16:28:57,020 - INFO - No results found for identifier 9780191514715 or failed to fetch data
+2024-03-06 16:28:57,021 - INFO - Write completed
+2024-03-06 16:28:58,022 - INFO - 39/7524. Searching metadata for 9780191514753
+2024-03-06 16:28:58,451 - INFO - No results found for identifier 9780191514753 or failed to fetch data
+2024-03-06 16:28:58,452 - INFO - Write completed
+2024-03-06 16:28:59,454 - INFO - 40/7524. Searching metadata for 9780191514791
+2024-03-06 16:28:59,924 - INFO - No results found for identifier 9780191514791 or failed to fetch data
+2024-03-06 16:28:59,925 - INFO - Write completed
+2024-03-06 16:29:00,925 - INFO - 41/7524. Searching metadata for 9780191514876
+2024-03-06 16:29:01,351 - INFO - No results found for identifier 9780191514876 or failed to fetch data
+2024-03-06 16:29:01,352 - INFO - Write completed
+2024-03-06 16:29:02,353 - INFO - 42/7524. Searching metadata for 9780191514999
+2024-03-06 16:29:02,843 - INFO - No results found for identifier 9780191514999 or failed to fetch data
+2024-03-06 16:29:02,844 - INFO - Write completed
+2024-03-06 16:29:03,845 - INFO - 43/7524. Searching metadata for 9780191515002
+2024-03-06 16:29:04,267 - INFO - No results found for identifier 9780191515002 or failed to fetch data
+2024-03-06 16:29:04,270 - INFO - Write completed
+2024-03-06 16:29:05,281 - INFO - 44/7524. Searching metadata for 9780191515071
+2024-03-06 16:29:05,739 - INFO - No results found for identifier 9780191515071 or failed to fetch data
+2024-03-06 16:29:05,740 - INFO - Write completed
+2024-03-06 16:29:06,740 - INFO - 45/7524. Searching metadata for 9780191515163
+2024-03-06 16:29:07,185 - INFO - No results found for identifier 9780191515163 or failed to fetch data
+2024-03-06 16:29:07,186 - INFO - Write completed
+2024-03-06 16:29:08,187 - INFO - 46/7524. Searching metadata for 9780191515170
+2024-03-06 16:29:08,633 - INFO - No results found for identifier 9780191515170 or failed to fetch data
+2024-03-06 16:29:08,634 - INFO - Write completed
+2024-03-06 16:29:09,635 - INFO - 47/7524. Searching metadata for 9780191515200
+2024-03-06 16:29:10,068 - INFO - No results found for identifier 9780191515200 or failed to fetch data
+2024-03-06 16:29:10,072 - INFO - Write completed
+2024-03-06 16:29:11,074 - INFO - 48/7524. Searching metadata for 9780191515217
+2024-03-06 16:29:11,518 - INFO - No results found for identifier 9780191515217 or failed to fetch data
+2024-03-06 16:29:11,519 - INFO - Write completed
+2024-03-06 16:29:12,521 - INFO - 49/7524. Searching metadata for 9780191515224
+2024-03-06 16:29:12,953 - INFO - Write completed
+2024-03-06 16:29:13,955 - INFO - 50/7524. Searching metadata for 9780191515279
+2024-03-06 16:29:14,369 - INFO - No results found for identifier 9780191515279 or failed to fetch data
+2024-03-06 16:29:14,375 - INFO - Write completed
+2024-03-06 16:29:15,377 - INFO - 51/7524. Searching metadata for 9780191515316
+2024-03-06 16:29:15,841 - INFO - No results found for identifier 9780191515316 or failed to fetch data
+2024-03-06 16:29:15,842 - INFO - Write completed
+2024-03-06 16:29:16,843 - INFO - 52/7524. Searching metadata for 9780191515323
+2024-03-06 16:29:17,306 - INFO - Write completed
+2024-03-06 16:29:18,307 - INFO - 53/7524. Searching metadata for 9780191515330
+2024-03-06 16:29:18,754 - INFO - No results found for identifier 9780191515330 or failed to fetch data
+2024-03-06 16:29:18,756 - INFO - Write completed
+2024-03-06 16:29:19,757 - INFO - 54/7524. Searching metadata for 9780191515354
+2024-03-06 16:29:20,255 - INFO - No results found for identifier 9780191515354 or failed to fetch data
+2024-03-06 16:29:20,258 - INFO - Write completed
+2024-03-06 16:29:21,259 - INFO - 55/7524. Searching metadata for 9780191515453
+2024-03-06 16:29:21,699 - INFO - No results found for identifier 9780191515453 or failed to fetch data
+2024-03-06 16:29:21,709 - INFO - Write completed
+2024-03-06 16:29:22,710 - INFO - 56/7524. Searching metadata for 9780191515477
+2024-03-06 16:29:23,188 - INFO - No results found for identifier 9780191515477 or failed to fetch data
+2024-03-06 16:29:23,191 - INFO - Write completed
+2024-03-06 16:29:24,192 - INFO - 57/7524. Searching metadata for 9780191515514
+2024-03-06 16:29:24,642 - INFO - No results found for identifier 9780191515514 or failed to fetch data
+2024-03-06 16:29:24,643 - INFO - Write completed
+2024-03-06 16:29:25,645 - INFO - 58/7524. Searching metadata for 9780191515545
+2024-03-06 16:29:26,085 - INFO - No results found for identifier 9780191515545 or failed to fetch data
+2024-03-06 16:29:26,086 - INFO - Write completed
+2024-03-06 16:35:11,867 - INFO - Application started
+2024-03-06 16:35:31,057 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 16:35:38,961 - INFO - Search started for ISBN with 7524 items and priority list: ['Harvard Library API']
+2024-03-06 16:35:38,965 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-03-06 16:35:39,523 - INFO - No results found for identifier 9780191513015 or failed to fetch data
+2024-03-06 16:35:39,524 - INFO - Write completed for identifier 9780191513015
+2024-03-06 16:35:40,526 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-03-06 16:35:40,985 - INFO - No results found for identifier 9780191513022 or failed to fetch data
+2024-03-06 16:35:40,987 - INFO - Write completed for identifier 9780191513022
+2024-03-06 16:35:41,988 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-03-06 16:35:42,555 - INFO - No results found for identifier 9780191513039 or failed to fetch data
+2024-03-06 16:35:42,556 - INFO - Write completed for identifier 9780191513039
+2024-03-06 16:35:43,556 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-03-06 16:35:43,997 - INFO - No results found for identifier 9780191513183 or failed to fetch data
+2024-03-06 16:35:44,000 - INFO - Write completed for identifier 9780191513183
+2024-03-06 16:35:45,001 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-03-06 16:35:45,417 - INFO - No results found for identifier 9780191513213 or failed to fetch data
+2024-03-06 16:35:45,418 - INFO - Write completed for identifier 9780191513213
+2024-03-06 16:35:46,418 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-03-06 16:35:46,832 - INFO - No results found for identifier 9780191513275 or failed to fetch data
+2024-03-06 16:35:46,833 - INFO - Write completed for identifier 9780191513275
+2024-03-06 16:35:47,834 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-03-06 16:35:48,283 - INFO - No results found for identifier 9780191513329 or failed to fetch data
+2024-03-06 16:35:48,284 - INFO - Write completed for identifier 9780191513329
+2024-03-06 16:35:49,285 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-03-06 16:35:49,716 - INFO - No results found for identifier 9780191513336 or failed to fetch data
+2024-03-06 16:35:49,719 - INFO - Write completed for identifier 9780191513336
+2024-03-06 16:35:50,720 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-03-06 16:35:51,162 - INFO - No results found for identifier 9780191513428 or failed to fetch data
+2024-03-06 16:35:51,163 - INFO - Write completed for identifier 9780191513428
+2024-03-06 16:35:52,164 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-03-06 16:35:52,588 - INFO - No results found for identifier 9780191513435 or failed to fetch data
+2024-03-06 16:35:52,589 - INFO - Write completed for identifier 9780191513435
+2024-03-06 16:35:53,591 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-03-06 16:35:54,035 - INFO - No results found for identifier 9780191513459 or failed to fetch data
+2024-03-06 16:35:54,036 - INFO - Write completed for identifier 9780191513459
+2024-03-06 16:35:55,037 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-03-06 16:35:55,484 - INFO - No results found for identifier 9780191513466 or failed to fetch data
+2024-03-06 16:35:55,489 - INFO - Write completed for identifier 9780191513466
+2024-03-06 16:35:56,490 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-03-06 16:35:56,941 - INFO - No results found for identifier 9780191513473 or failed to fetch data
+2024-03-06 16:35:56,941 - INFO - Write completed for identifier 9780191513473
+2024-03-06 16:35:57,942 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-03-06 16:35:58,412 - INFO - No results found for identifier 9780191513480 or failed to fetch data
+2024-03-06 16:35:58,413 - INFO - Write completed for identifier 9780191513480
+2024-03-06 16:35:59,415 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-03-06 16:35:59,897 - INFO - No results found for identifier 9780191513503 or failed to fetch data
+2024-03-06 16:35:59,899 - INFO - Write completed for identifier 9780191513503
+2024-03-06 16:36:00,900 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-03-06 16:36:01,331 - INFO - No results found for identifier 9780191513510 or failed to fetch data
+2024-03-06 16:36:01,332 - INFO - Write completed for identifier 9780191513510
+2024-03-06 16:36:02,333 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-03-06 16:36:02,915 - INFO - Search stopped
+2024-03-06 16:40:10,441 - INFO - Application started
+2024-03-06 16:40:29,179 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 16:40:30,228 - INFO - Search started for ISBN with 7524 items and priority list: ['Harvard Library API']
+2024-03-06 16:40:30,233 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-03-06 16:40:30,764 - INFO - No results found for identifier 9780191513015 or failed to fetch data
+2024-03-06 16:40:30,765 - INFO - Write completed for ISBN 9780191513015
+2024-03-06 16:40:31,767 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-03-06 16:40:32,182 - INFO - No results found for identifier 9780191513022 or failed to fetch data
+2024-03-06 16:40:32,183 - INFO - Write completed for ISBN 9780191513022
+2024-03-06 16:40:33,184 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-03-06 16:40:33,630 - INFO - No results found for identifier 9780191513039 or failed to fetch data
+2024-03-06 16:40:33,631 - INFO - Write completed for ISBN 9780191513039
+2024-03-06 16:40:34,632 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-03-06 16:40:35,077 - INFO - No results found for identifier 9780191513183 or failed to fetch data
+2024-03-06 16:40:35,078 - INFO - Write completed for ISBN 9780191513183
+2024-03-06 16:40:36,079 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-03-06 16:40:36,522 - INFO - No results found for identifier 9780191513213 or failed to fetch data
+2024-03-06 16:40:36,523 - INFO - Write completed for ISBN 9780191513213
+2024-03-06 16:40:37,524 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-03-06 16:40:38,007 - INFO - No results found for identifier 9780191513275 or failed to fetch data
+2024-03-06 16:40:38,008 - INFO - Write completed for ISBN 9780191513275
+2024-03-06 16:40:39,009 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-03-06 16:40:39,464 - INFO - No results found for identifier 9780191513329 or failed to fetch data
+2024-03-06 16:40:39,465 - INFO - Write completed for ISBN 9780191513329
+2024-03-06 16:40:40,466 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-03-06 16:40:40,950 - INFO - No results found for identifier 9780191513336 or failed to fetch data
+2024-03-06 16:40:40,951 - INFO - Write completed for ISBN 9780191513336
+2024-03-06 16:40:41,952 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-03-06 16:40:42,435 - INFO - No results found for identifier 9780191513428 or failed to fetch data
+2024-03-06 16:40:42,437 - INFO - Write completed for ISBN 9780191513428
+2024-03-06 16:40:43,439 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-03-06 16:40:43,998 - INFO - No results found for identifier 9780191513435 or failed to fetch data
+2024-03-06 16:40:43,999 - INFO - Write completed for ISBN 9780191513435
+2024-03-06 16:40:45,000 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-03-06 16:40:45,467 - INFO - No results found for identifier 9780191513459 or failed to fetch data
+2024-03-06 16:40:45,468 - INFO - Write completed for ISBN 9780191513459
+2024-03-06 16:40:46,469 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-03-06 16:40:46,907 - INFO - No results found for identifier 9780191513466 or failed to fetch data
+2024-03-06 16:40:46,908 - INFO - Write completed for ISBN 9780191513466
+2024-03-06 16:40:47,909 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-03-06 16:40:48,335 - INFO - No results found for identifier 9780191513473 or failed to fetch data
+2024-03-06 16:40:48,336 - INFO - Write completed for ISBN 9780191513473
+2024-03-06 16:40:49,337 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-03-06 16:40:49,842 - INFO - No results found for identifier 9780191513480 or failed to fetch data
+2024-03-06 16:40:49,848 - INFO - Write completed for ISBN 9780191513480
+2024-03-06 16:40:50,850 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-03-06 16:40:51,297 - INFO - No results found for identifier 9780191513503 or failed to fetch data
+2024-03-06 16:40:51,298 - INFO - Write completed for ISBN 9780191513503
+2024-03-06 16:40:52,299 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-03-06 16:40:52,709 - INFO - No results found for identifier 9780191513510 or failed to fetch data
+2024-03-06 16:40:52,710 - INFO - Write completed for ISBN 9780191513510
+2024-03-06 16:40:53,711 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-03-06 16:40:54,131 - INFO - Write completed for ISBN 9780191513572
+2024-03-06 16:40:55,131 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-03-06 16:40:55,595 - INFO - No results found for identifier 9780191513589 or failed to fetch data
+2024-03-06 16:40:55,596 - INFO - Write completed for ISBN 9780191513589
+2024-03-06 16:40:56,597 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-03-06 16:40:57,094 - INFO - No results found for identifier 9780191513688 or failed to fetch data
+2024-03-06 16:40:57,095 - INFO - Write completed for ISBN 9780191513688
+2024-03-06 16:40:58,096 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-03-06 16:40:58,561 - INFO - No results found for identifier 9780191513732 or failed to fetch data
+2024-03-06 16:40:58,562 - INFO - Write completed for ISBN 9780191513732
+2024-03-06 16:40:59,563 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-03-06 16:41:00,034 - INFO - No results found for identifier 9780191514012 or failed to fetch data
+2024-03-06 16:41:00,035 - INFO - Write completed for ISBN 9780191514012
+2024-03-06 16:41:01,036 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-03-06 16:41:01,510 - INFO - No results found for identifier 9780191514166 or failed to fetch data
+2024-03-06 16:41:01,511 - INFO - Write completed for ISBN 9780191514166
+2024-03-06 16:41:02,512 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-03-06 16:41:02,975 - INFO - No results found for identifier 9780191514210 or failed to fetch data
+2024-03-06 16:41:02,976 - INFO - Write completed for ISBN 9780191514210
+2024-03-06 16:41:03,978 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-03-06 16:41:04,395 - INFO - No results found for identifier 9780191514227 or failed to fetch data
+2024-03-06 16:41:04,396 - INFO - Write completed for ISBN 9780191514227
+2024-03-06 16:41:05,397 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-03-06 16:41:05,811 - INFO - No results found for identifier 9780191514302 or failed to fetch data
+2024-03-06 16:41:05,812 - INFO - Write completed for ISBN 9780191514302
+2024-03-06 16:41:06,813 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-03-06 16:41:07,248 - INFO - No results found for identifier 9780191514395 or failed to fetch data
+2024-03-06 16:41:07,249 - INFO - Write completed for ISBN 9780191514395
+2024-03-06 16:41:08,249 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-03-06 16:41:08,757 - INFO - No results found for identifier 9780191514418 or failed to fetch data
+2024-03-06 16:41:08,760 - INFO - Write completed for ISBN 9780191514418
+2024-03-06 16:41:09,761 - INFO - 27/7524. Searching metadata for 9780191514463
+2024-03-06 16:41:10,209 - INFO - No results found for identifier 9780191514463 or failed to fetch data
+2024-03-06 16:41:10,213 - INFO - Write completed for ISBN 9780191514463
+2024-03-06 16:41:11,214 - INFO - 28/7524. Searching metadata for 9780191514470
+2024-03-06 16:41:11,668 - INFO - No results found for identifier 9780191514470 or failed to fetch data
+2024-03-06 16:41:11,670 - INFO - Write completed for ISBN 9780191514470
+2024-03-06 16:41:12,671 - INFO - 29/7524. Searching metadata for 9780191514487
+2024-03-06 16:41:13,086 - INFO - No results found for identifier 9780191514487 or failed to fetch data
+2024-03-06 16:41:13,087 - INFO - Write completed for ISBN 9780191514487
+2024-03-06 16:41:14,088 - INFO - 30/7524. Searching metadata for 9780191514500
+2024-03-06 16:41:14,548 - INFO - No results found for identifier 9780191514500 or failed to fetch data
+2024-03-06 16:41:14,549 - INFO - Write completed for ISBN 9780191514500
+2024-03-06 16:41:15,550 - INFO - 31/7524. Searching metadata for 9780191514517
+2024-03-06 16:41:15,996 - INFO - No results found for identifier 9780191514517 or failed to fetch data
+2024-03-06 16:41:15,997 - INFO - Write completed for ISBN 9780191514517
+2024-03-06 16:41:16,999 - INFO - 32/7524. Searching metadata for 9780191514524
+2024-03-06 16:41:17,427 - INFO - No results found for identifier 9780191514524 or failed to fetch data
+2024-03-06 16:41:17,428 - INFO - Write completed for ISBN 9780191514524
+2024-03-06 16:41:18,430 - INFO - 33/7524. Searching metadata for 9780191514531
+2024-03-06 16:41:18,864 - INFO - No results found for identifier 9780191514531 or failed to fetch data
+2024-03-06 16:41:18,864 - INFO - Write completed for ISBN 9780191514531
+2024-03-06 16:41:19,866 - INFO - 34/7524. Searching metadata for 9780191514548
+2024-03-06 16:41:20,298 - INFO - No results found for identifier 9780191514548 or failed to fetch data
+2024-03-06 16:41:20,298 - INFO - Write completed for ISBN 9780191514548
+2024-03-06 16:41:21,300 - INFO - 35/7524. Searching metadata for 9780191514593
+2024-03-06 16:41:21,759 - INFO - No results found for identifier 9780191514593 or failed to fetch data
+2024-03-06 16:41:21,760 - INFO - Write completed for ISBN 9780191514593
+2024-03-06 16:41:22,761 - INFO - 36/7524. Searching metadata for 9780191514616
+2024-03-06 16:41:23,229 - INFO - No results found for identifier 9780191514616 or failed to fetch data
+2024-03-06 16:41:23,230 - INFO - Write completed for ISBN 9780191514616
+2024-03-06 16:41:24,230 - INFO - 37/7524. Searching metadata for 9780191514708
+2024-03-06 16:41:24,697 - INFO - No results found for identifier 9780191514708 or failed to fetch data
+2024-03-06 16:41:24,698 - INFO - Write completed for ISBN 9780191514708
+2024-03-06 16:41:25,699 - INFO - 38/7524. Searching metadata for 9780191514715
+2024-03-06 16:41:26,093 - INFO - No results found for identifier 9780191514715 or failed to fetch data
+2024-03-06 16:41:26,094 - INFO - Write completed for ISBN 9780191514715
+2024-03-06 16:41:27,095 - INFO - 39/7524. Searching metadata for 9780191514753
+2024-03-06 16:41:27,566 - INFO - No results found for identifier 9780191514753 or failed to fetch data
+2024-03-06 16:41:27,568 - INFO - Write completed for ISBN 9780191514753
+2024-03-06 16:41:28,569 - INFO - 40/7524. Searching metadata for 9780191514791
+2024-03-06 16:41:29,009 - INFO - No results found for identifier 9780191514791 or failed to fetch data
+2024-03-06 16:41:29,010 - INFO - Write completed for ISBN 9780191514791
+2024-03-06 16:41:30,011 - INFO - 41/7524. Searching metadata for 9780191514876
+2024-03-06 16:41:30,484 - INFO - No results found for identifier 9780191514876 or failed to fetch data
+2024-03-06 16:41:30,485 - INFO - Write completed for ISBN 9780191514876
+2024-03-06 16:41:31,488 - INFO - 42/7524. Searching metadata for 9780191514999
+2024-03-06 16:41:32,062 - INFO - No results found for identifier 9780191514999 or failed to fetch data
+2024-03-06 16:41:32,063 - INFO - Write completed for ISBN 9780191514999
+2024-03-06 16:41:33,064 - INFO - 43/7524. Searching metadata for 9780191515002
+2024-03-06 16:41:33,512 - INFO - No results found for identifier 9780191515002 or failed to fetch data
+2024-03-06 16:41:33,513 - INFO - Write completed for ISBN 9780191515002
+2024-03-06 16:41:34,514 - INFO - 44/7524. Searching metadata for 9780191515071
+2024-03-06 16:41:34,957 - INFO - No results found for identifier 9780191515071 or failed to fetch data
+2024-03-06 16:41:34,960 - INFO - Write completed for ISBN 9780191515071
+2024-03-06 16:41:35,960 - INFO - 45/7524. Searching metadata for 9780191515163
+2024-03-06 16:41:36,371 - INFO - No results found for identifier 9780191515163 or failed to fetch data
+2024-03-06 16:41:36,372 - INFO - Write completed for ISBN 9780191515163
+2024-03-06 16:41:37,374 - INFO - 46/7524. Searching metadata for 9780191515170
+2024-03-06 16:41:37,801 - INFO - No results found for identifier 9780191515170 or failed to fetch data
+2024-03-06 16:41:37,802 - INFO - Write completed for ISBN 9780191515170
+2024-03-06 16:41:38,803 - INFO - 47/7524. Searching metadata for 9780191515200
+2024-03-06 16:41:39,215 - INFO - No results found for identifier 9780191515200 or failed to fetch data
+2024-03-06 16:41:39,216 - INFO - Write completed for ISBN 9780191515200
+2024-03-06 16:41:40,217 - INFO - 48/7524. Searching metadata for 9780191515217
+2024-03-06 16:41:40,643 - INFO - No results found for identifier 9780191515217 or failed to fetch data
+2024-03-06 16:41:40,644 - INFO - Write completed for ISBN 9780191515217
+2024-03-06 16:41:41,645 - INFO - 49/7524. Searching metadata for 9780191515224
+2024-03-06 16:41:42,085 - INFO - Write completed for ISBN 9780191515224
+2024-03-06 16:41:43,085 - INFO - 50/7524. Searching metadata for 9780191515279
+2024-03-06 16:41:43,513 - INFO - No results found for identifier 9780191515279 or failed to fetch data
+2024-03-06 16:41:43,514 - INFO - Write completed for ISBN 9780191515279
+2024-03-06 16:41:44,514 - INFO - 51/7524. Searching metadata for 9780191515316
+2024-03-06 16:41:45,071 - INFO - No results found for identifier 9780191515316 or failed to fetch data
+2024-03-06 16:41:45,074 - INFO - Write completed for ISBN 9780191515316
+2024-03-06 16:41:46,076 - INFO - 52/7524. Searching metadata for 9780191515323
+2024-03-06 16:41:46,590 - INFO - Write completed for ISBN 9780191515323
+2024-03-06 16:48:49,547 - INFO - Application started
+2024-03-06 16:48:58,558 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 16:49:10,816 - INFO - Search started for ISBN with 7524 items and priority list: ['Harvard Library API']
+2024-03-06 16:49:10,821 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-03-06 16:49:11,493 - INFO - No results found for identifier 9780191513015 or failed to fetch data
+2024-03-06 16:49:11,494 - INFO - Write completed for ISBN 9780191513015
+2024-03-06 16:49:12,495 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-03-06 16:49:12,963 - INFO - No results found for identifier 9780191513022 or failed to fetch data
+2024-03-06 16:49:12,964 - INFO - Write completed for ISBN 9780191513022
+2024-03-06 16:49:13,966 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-03-06 16:49:14,401 - INFO - No results found for identifier 9780191513039 or failed to fetch data
+2024-03-06 16:49:14,401 - INFO - Write completed for ISBN 9780191513039
+2024-03-06 16:49:15,403 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-03-06 16:49:15,930 - INFO - No results found for identifier 9780191513183 or failed to fetch data
+2024-03-06 16:49:15,932 - INFO - Write completed for ISBN 9780191513183
+2024-03-06 16:49:16,933 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-03-06 16:49:17,345 - INFO - No results found for identifier 9780191513213 or failed to fetch data
+2024-03-06 16:49:17,346 - INFO - Write completed for ISBN 9780191513213
+2024-03-06 16:49:18,348 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-03-06 16:49:18,757 - INFO - No results found for identifier 9780191513275 or failed to fetch data
+2024-03-06 16:49:18,758 - INFO - Write completed for ISBN 9780191513275
+2024-03-06 16:49:19,759 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-03-06 16:49:20,215 - INFO - No results found for identifier 9780191513329 or failed to fetch data
+2024-03-06 16:49:20,216 - INFO - Write completed for ISBN 9780191513329
+2024-03-06 16:49:21,217 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-03-06 16:49:21,690 - INFO - No results found for identifier 9780191513336 or failed to fetch data
+2024-03-06 16:49:21,691 - INFO - Write completed for ISBN 9780191513336
+2024-03-06 16:49:22,693 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-03-06 16:49:23,162 - INFO - No results found for identifier 9780191513428 or failed to fetch data
+2024-03-06 16:49:23,163 - INFO - Write completed for ISBN 9780191513428
+2024-03-06 16:49:24,165 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-03-06 16:49:24,617 - INFO - No results found for identifier 9780191513435 or failed to fetch data
+2024-03-06 16:49:24,620 - INFO - Write completed for ISBN 9780191513435
+2024-03-06 16:49:25,620 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-03-06 16:49:26,043 - INFO - No results found for identifier 9780191513459 or failed to fetch data
+2024-03-06 16:49:26,044 - INFO - Write completed for ISBN 9780191513459
+2024-03-06 16:49:27,046 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-03-06 16:49:27,497 - INFO - No results found for identifier 9780191513466 or failed to fetch data
+2024-03-06 16:49:27,498 - INFO - Write completed for ISBN 9780191513466
+2024-03-06 16:49:28,499 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-03-06 16:49:28,953 - INFO - No results found for identifier 9780191513473 or failed to fetch data
+2024-03-06 16:49:28,954 - INFO - Write completed for ISBN 9780191513473
+2024-03-06 16:49:29,956 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-03-06 16:49:30,439 - INFO - No results found for identifier 9780191513480 or failed to fetch data
+2024-03-06 16:49:30,440 - INFO - Write completed for ISBN 9780191513480
+2024-03-06 16:49:31,440 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-03-06 16:49:31,898 - INFO - No results found for identifier 9780191513503 or failed to fetch data
+2024-03-06 16:49:31,899 - INFO - Write completed for ISBN 9780191513503
+2024-03-06 16:49:32,900 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-03-06 16:49:33,320 - INFO - No results found for identifier 9780191513510 or failed to fetch data
+2024-03-06 16:49:33,321 - INFO - Write completed for ISBN 9780191513510
+2024-03-06 16:49:34,322 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-03-06 16:49:34,804 - INFO - Write completed for ISBN 9780191513572
+2024-03-06 16:49:35,806 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-03-06 16:49:36,266 - INFO - No results found for identifier 9780191513589 or failed to fetch data
+2024-03-06 16:49:36,267 - INFO - Write completed for ISBN 9780191513589
+2024-03-06 16:49:37,269 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-03-06 16:49:37,742 - INFO - No results found for identifier 9780191513688 or failed to fetch data
+2024-03-06 16:49:37,743 - INFO - Write completed for ISBN 9780191513688
+2024-03-06 16:49:38,744 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-03-06 16:49:39,216 - INFO - No results found for identifier 9780191513732 or failed to fetch data
+2024-03-06 16:49:39,218 - INFO - Write completed for ISBN 9780191513732
+2024-03-06 16:49:40,219 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-03-06 16:49:40,656 - INFO - No results found for identifier 9780191514012 or failed to fetch data
+2024-03-06 16:49:40,657 - INFO - Write completed for ISBN 9780191514012
+2024-03-06 16:49:41,659 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-03-06 16:49:42,090 - INFO - No results found for identifier 9780191514166 or failed to fetch data
+2024-03-06 16:49:42,091 - INFO - Write completed for ISBN 9780191514166
+2024-03-06 16:49:43,093 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-03-06 16:49:43,496 - INFO - No results found for identifier 9780191514210 or failed to fetch data
+2024-03-06 16:49:43,497 - INFO - Write completed for ISBN 9780191514210
+2024-03-06 16:49:44,498 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-03-06 16:49:44,948 - INFO - No results found for identifier 9780191514227 or failed to fetch data
+2024-03-06 16:49:44,950 - INFO - Write completed for ISBN 9780191514227
+2024-03-06 16:49:45,952 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-03-06 16:49:46,369 - INFO - No results found for identifier 9780191514302 or failed to fetch data
+2024-03-06 16:49:46,370 - INFO - Write completed for ISBN 9780191514302
+2024-03-06 16:49:47,372 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-03-06 16:49:47,806 - INFO - No results found for identifier 9780191514395 or failed to fetch data
+2024-03-06 16:49:47,807 - INFO - Write completed for ISBN 9780191514395
+2024-03-06 16:49:48,808 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-03-06 16:49:49,276 - INFO - No results found for identifier 9780191514418 or failed to fetch data
+2024-03-06 16:49:49,276 - INFO - Write completed for ISBN 9780191514418
+2024-03-06 16:49:50,283 - INFO - 27/7524. Searching metadata for 9780191514463
+2024-03-06 16:49:50,839 - INFO - No results found for identifier 9780191514463 or failed to fetch data
+2024-03-06 16:49:50,840 - INFO - Write completed for ISBN 9780191514463
+2024-03-06 16:49:51,841 - INFO - 28/7524. Searching metadata for 9780191514470
+2024-03-06 16:49:52,330 - INFO - No results found for identifier 9780191514470 or failed to fetch data
+2024-03-06 16:49:52,334 - INFO - Write completed for ISBN 9780191514470
+2024-03-06 16:49:53,335 - INFO - 29/7524. Searching metadata for 9780191514487
+2024-03-06 16:49:53,803 - INFO - No results found for identifier 9780191514487 or failed to fetch data
+2024-03-06 16:49:53,805 - INFO - Write completed for ISBN 9780191514487
+2024-03-06 16:49:54,806 - INFO - 30/7524. Searching metadata for 9780191514500
+2024-03-06 16:49:55,331 - INFO - No results found for identifier 9780191514500 or failed to fetch data
+2024-03-06 16:49:55,332 - INFO - Write completed for ISBN 9780191514500
+2024-03-06 16:49:56,333 - INFO - 31/7524. Searching metadata for 9780191514517
+2024-03-06 16:49:56,748 - INFO - No results found for identifier 9780191514517 or failed to fetch data
+2024-03-06 16:49:56,748 - INFO - Write completed for ISBN 9780191514517
+2024-03-06 16:49:57,749 - INFO - 32/7524. Searching metadata for 9780191514524
+2024-03-06 16:49:58,194 - INFO - No results found for identifier 9780191514524 or failed to fetch data
+2024-03-06 16:49:58,195 - INFO - Write completed for ISBN 9780191514524
+2024-03-06 16:49:59,196 - INFO - 33/7524. Searching metadata for 9780191514531
+2024-03-06 16:49:59,659 - INFO - No results found for identifier 9780191514531 or failed to fetch data
+2024-03-06 16:49:59,669 - INFO - Write completed for ISBN 9780191514531
+2024-03-06 16:50:00,670 - INFO - 34/7524. Searching metadata for 9780191514548
+2024-03-06 16:50:01,142 - INFO - No results found for identifier 9780191514548 or failed to fetch data
+2024-03-06 16:50:01,143 - INFO - Write completed for ISBN 9780191514548
+2024-03-06 16:50:02,149 - INFO - 35/7524. Searching metadata for 9780191514593
+2024-03-06 16:50:02,609 - INFO - No results found for identifier 9780191514593 or failed to fetch data
+2024-03-06 16:50:02,616 - INFO - Write completed for ISBN 9780191514593
+2024-03-06 16:50:03,617 - INFO - 36/7524. Searching metadata for 9780191514616
+2024-03-06 16:50:04,085 - INFO - No results found for identifier 9780191514616 or failed to fetch data
+2024-03-06 16:50:04,086 - INFO - Write completed for ISBN 9780191514616
+2024-03-06 16:50:05,087 - INFO - 37/7524. Searching metadata for 9780191514708
+2024-03-06 16:50:05,566 - INFO - No results found for identifier 9780191514708 or failed to fetch data
+2024-03-06 16:50:05,567 - INFO - Write completed for ISBN 9780191514708
+2024-03-06 16:50:06,568 - INFO - 38/7524. Searching metadata for 9780191514715
+2024-03-06 16:50:07,001 - INFO - No results found for identifier 9780191514715 or failed to fetch data
+2024-03-06 16:50:07,002 - INFO - Write completed for ISBN 9780191514715
+2024-03-06 16:50:08,003 - INFO - 39/7524. Searching metadata for 9780191514753
+2024-03-06 16:50:08,461 - INFO - No results found for identifier 9780191514753 or failed to fetch data
+2024-03-06 16:50:08,463 - INFO - Write completed for ISBN 9780191514753
+2024-03-06 16:50:09,464 - INFO - 40/7524. Searching metadata for 9780191514791
+2024-03-06 16:50:09,908 - INFO - No results found for identifier 9780191514791 or failed to fetch data
+2024-03-06 16:50:09,909 - INFO - Write completed for ISBN 9780191514791
+2024-03-06 16:50:10,910 - INFO - 41/7524. Searching metadata for 9780191514876
+2024-03-06 16:50:11,395 - INFO - No results found for identifier 9780191514876 or failed to fetch data
+2024-03-06 16:50:11,396 - INFO - Write completed for ISBN 9780191514876
+2024-03-06 16:50:12,397 - INFO - 42/7524. Searching metadata for 9780191514999
+2024-03-06 16:50:12,838 - INFO - No results found for identifier 9780191514999 or failed to fetch data
+2024-03-06 16:50:12,839 - INFO - Write completed for ISBN 9780191514999
+2024-03-06 16:50:13,840 - INFO - 43/7524. Searching metadata for 9780191515002
+2024-03-06 16:50:14,303 - INFO - No results found for identifier 9780191515002 or failed to fetch data
+2024-03-06 16:50:14,304 - INFO - Write completed for ISBN 9780191515002
+2024-03-06 16:50:15,305 - INFO - 44/7524. Searching metadata for 9780191515071
+2024-03-06 16:50:15,778 - INFO - No results found for identifier 9780191515071 or failed to fetch data
+2024-03-06 16:50:15,779 - INFO - Write completed for ISBN 9780191515071
+2024-03-06 16:50:16,780 - INFO - 45/7524. Searching metadata for 9780191515163
+2024-03-06 16:50:17,209 - INFO - No results found for identifier 9780191515163 or failed to fetch data
+2024-03-06 16:50:17,210 - INFO - Write completed for ISBN 9780191515163
+2024-03-06 16:50:18,212 - INFO - 46/7524. Searching metadata for 9780191515170
+2024-03-06 16:50:18,634 - INFO - No results found for identifier 9780191515170 or failed to fetch data
+2024-03-06 16:50:18,635 - INFO - Write completed for ISBN 9780191515170
+2024-03-06 16:50:19,635 - INFO - 47/7524. Searching metadata for 9780191515200
+2024-03-06 16:50:20,110 - INFO - No results found for identifier 9780191515200 or failed to fetch data
+2024-03-06 16:50:20,112 - INFO - Write completed for ISBN 9780191515200
+2024-03-06 16:50:21,114 - INFO - 48/7524. Searching metadata for 9780191515217
+2024-03-06 16:50:21,581 - INFO - No results found for identifier 9780191515217 or failed to fetch data
+2024-03-06 16:50:21,582 - INFO - Write completed for ISBN 9780191515217
+2024-03-06 16:50:22,584 - INFO - 49/7524. Searching metadata for 9780191515224
+2024-03-06 16:50:23,039 - INFO - Write completed for ISBN 9780191515224
+2024-03-06 16:50:24,041 - INFO - 50/7524. Searching metadata for 9780191515279
+2024-03-06 16:50:24,477 - INFO - No results found for identifier 9780191515279 or failed to fetch data
+2024-03-06 16:50:24,480 - INFO - Write completed for ISBN 9780191515279
+2024-03-06 16:50:25,481 - INFO - 51/7524. Searching metadata for 9780191515316
+2024-03-06 16:50:25,918 - INFO - No results found for identifier 9780191515316 or failed to fetch data
+2024-03-06 16:50:25,919 - INFO - Write completed for ISBN 9780191515316
+2024-03-06 16:50:26,920 - INFO - 52/7524. Searching metadata for 9780191515323
+2024-03-06 16:50:27,396 - INFO - Write completed for ISBN 9780191515323
+2024-03-06 16:50:28,396 - INFO - 53/7524. Searching metadata for 9780191515330
+2024-03-06 16:50:28,899 - INFO - No results found for identifier 9780191515330 or failed to fetch data
+2024-03-06 16:50:28,901 - INFO - Write completed for ISBN 9780191515330
+2024-03-06 16:50:29,903 - INFO - 54/7524. Searching metadata for 9780191515354
+2024-03-06 16:50:30,418 - INFO - No results found for identifier 9780191515354 or failed to fetch data
+2024-03-06 16:50:30,419 - INFO - Write completed for ISBN 9780191515354
+2024-03-06 16:50:31,419 - INFO - 55/7524. Searching metadata for 9780191515453
+2024-03-06 16:50:31,892 - INFO - No results found for identifier 9780191515453 or failed to fetch data
+2024-03-06 16:50:31,894 - INFO - Write completed for ISBN 9780191515453
+2024-03-06 16:50:32,895 - INFO - 56/7524. Searching metadata for 9780191515477
+2024-03-06 16:50:33,345 - INFO - No results found for identifier 9780191515477 or failed to fetch data
+2024-03-06 16:50:33,348 - INFO - Write completed for ISBN 9780191515477
+2024-03-06 16:50:34,350 - INFO - 57/7524. Searching metadata for 9780191515514
+2024-03-06 16:50:34,877 - INFO - No results found for identifier 9780191515514 or failed to fetch data
+2024-03-06 16:50:34,884 - INFO - Write completed for ISBN 9780191515514
+2024-03-06 16:50:35,886 - INFO - 58/7524. Searching metadata for 9780191515545
+2024-03-06 16:50:36,436 - INFO - No results found for identifier 9780191515545 or failed to fetch data
+2024-03-06 16:50:36,437 - INFO - Write completed for ISBN 9780191515545
+2024-03-06 16:50:37,438 - INFO - 59/7524. Searching metadata for 9780191515613
+2024-03-06 16:50:37,887 - INFO - Write completed for ISBN 9780191515613
+2024-03-06 16:50:38,887 - INFO - 60/7524. Searching metadata for 9780191515651
+2024-03-06 16:50:39,353 - INFO - No results found for identifier 9780191515651 or failed to fetch data
+2024-03-06 16:50:39,354 - INFO - Write completed for ISBN 9780191515651
+2024-03-06 16:50:40,355 - INFO - 61/7524. Searching metadata for 9780191515866
+2024-03-06 16:50:40,822 - INFO - No results found for identifier 9780191515866 or failed to fetch data
+2024-03-06 16:50:40,823 - INFO - Write completed for ISBN 9780191515866
+2024-03-06 16:50:41,824 - INFO - 62/7524. Searching metadata for 9780191515965
+2024-03-06 16:50:42,291 - INFO - Write completed for ISBN 9780191515965
+2024-03-06 16:50:43,292 - INFO - 63/7524. Searching metadata for 9780191515972
+2024-03-06 16:50:43,801 - INFO - No results found for identifier 9780191515972 or failed to fetch data
+2024-03-06 16:50:43,802 - INFO - Write completed for ISBN 9780191515972
+2024-03-06 16:50:44,803 - INFO - 64/7524. Searching metadata for 9780191516085
+2024-03-06 16:50:45,260 - INFO - No results found for identifier 9780191516085 or failed to fetch data
+2024-03-06 16:50:45,264 - INFO - Write completed for ISBN 9780191516085
+2024-03-06 16:50:46,265 - INFO - 65/7524. Searching metadata for 9780191516269
+2024-03-06 16:50:46,679 - INFO - No results found for identifier 9780191516269 or failed to fetch data
+2024-03-06 16:50:46,680 - INFO - Write completed for ISBN 9780191516269
+2024-03-06 16:50:47,681 - INFO - 66/7524. Searching metadata for 9780191516474
+2024-03-06 16:50:48,129 - INFO - No results found for identifier 9780191516474 or failed to fetch data
+2024-03-06 16:50:48,130 - INFO - Write completed for ISBN 9780191516474
+2024-03-06 16:50:49,131 - INFO - 67/7524. Searching metadata for 9780191516757
+2024-03-06 16:50:49,550 - INFO - No results found for identifier 9780191516757 or failed to fetch data
+2024-03-06 16:50:49,551 - INFO - Write completed for ISBN 9780191516757
+2024-03-06 16:50:50,552 - INFO - 68/7524. Searching metadata for 9780191516771
+2024-03-06 16:50:51,239 - INFO - No results found for identifier 9780191516771 or failed to fetch data
+2024-03-06 16:50:51,421 - INFO - Write completed for ISBN 9780191516771
+2024-03-06 16:50:52,422 - INFO - 69/7524. Searching metadata for 9780191516795
+2024-03-06 16:50:52,879 - INFO - No results found for identifier 9780191516795 or failed to fetch data
+2024-03-06 16:50:52,879 - INFO - Write completed for ISBN 9780191516795
+2024-03-06 16:50:53,880 - INFO - 70/7524. Searching metadata for 9780191516801
+2024-03-06 16:50:54,352 - INFO - No results found for identifier 9780191516801 or failed to fetch data
+2024-03-06 16:50:54,353 - INFO - Write completed for ISBN 9780191516801
+2024-03-06 16:50:55,354 - INFO - 71/7524. Searching metadata for 9780191516856
+2024-03-06 16:50:55,812 - INFO - No results found for identifier 9780191516856 or failed to fetch data
+2024-03-06 16:50:55,813 - INFO - Write completed for ISBN 9780191516856
+2024-03-06 16:50:56,814 - INFO - 72/7524. Searching metadata for 9780191516900
+2024-03-06 16:50:57,251 - INFO - No results found for identifier 9780191516900 or failed to fetch data
+2024-03-06 16:50:57,252 - INFO - Write completed for ISBN 9780191516900
+2024-03-06 16:50:58,254 - INFO - 73/7524. Searching metadata for 9780191516948
+2024-03-06 16:50:58,747 - INFO - No results found for identifier 9780191516948 or failed to fetch data
+2024-03-06 16:50:58,748 - INFO - Write completed for ISBN 9780191516948
+2024-03-06 16:50:59,749 - INFO - 74/7524. Searching metadata for 9780191516962
+2024-03-06 16:51:00,210 - INFO - No results found for identifier 9780191516962 or failed to fetch data
+2024-03-06 16:51:00,211 - INFO - Write completed for ISBN 9780191516962
+2024-03-06 16:51:01,213 - INFO - 75/7524. Searching metadata for 9780191516986
+2024-03-06 16:51:01,676 - INFO - No results found for identifier 9780191516986 or failed to fetch data
+2024-03-06 16:51:01,679 - INFO - Write completed for ISBN 9780191516986
+2024-03-06 16:51:02,685 - INFO - 76/7524. Searching metadata for 9780191516993
+2024-03-06 16:51:03,179 - INFO - No results found for identifier 9780191516993 or failed to fetch data
+2024-03-06 16:51:03,184 - INFO - Write completed for ISBN 9780191516993
+2024-03-06 16:51:04,185 - INFO - 77/7524. Searching metadata for 9780191517013
+2024-03-06 16:51:04,643 - INFO - No results found for identifier 9780191517013 or failed to fetch data
+2024-03-06 16:51:04,644 - INFO - Write completed for ISBN 9780191517013
+2024-03-06 16:51:05,645 - INFO - 78/7524. Searching metadata for 9780191517020
+2024-03-06 16:51:06,096 - INFO - No results found for identifier 9780191517020 or failed to fetch data
+2024-03-06 16:51:06,097 - INFO - Write completed for ISBN 9780191517020
+2024-03-06 16:51:07,098 - INFO - 79/7524. Searching metadata for 9780191517068
+2024-03-06 16:51:07,528 - INFO - No results found for identifier 9780191517068 or failed to fetch data
+2024-03-06 16:51:07,529 - INFO - Write completed for ISBN 9780191517068
+2024-03-06 16:51:08,531 - INFO - 80/7524. Searching metadata for 9780191517075
+2024-03-06 16:51:09,001 - INFO - No results found for identifier 9780191517075 or failed to fetch data
+2024-03-06 16:51:09,002 - INFO - Write completed for ISBN 9780191517075
+2024-03-06 16:51:10,002 - INFO - 81/7524. Searching metadata for 9780191517112
+2024-03-06 16:51:10,475 - INFO - No results found for identifier 9780191517112 or failed to fetch data
+2024-03-06 16:51:10,480 - INFO - Write completed for ISBN 9780191517112
+2024-03-06 16:51:11,481 - INFO - 82/7524. Searching metadata for 9780191517259
+2024-03-06 16:51:11,948 - INFO - No results found for identifier 9780191517259 or failed to fetch data
+2024-03-06 16:51:11,949 - INFO - Write completed for ISBN 9780191517259
+2024-03-06 16:51:12,950 - INFO - 83/7524. Searching metadata for 9780191517440
+2024-03-06 16:51:13,382 - INFO - No results found for identifier 9780191517440 or failed to fetch data
+2024-03-06 16:51:13,383 - INFO - Write completed for ISBN 9780191517440
+2024-03-06 16:51:14,384 - INFO - 84/7524. Searching metadata for 9780191517495
+2024-03-06 16:51:14,850 - INFO - No results found for identifier 9780191517495 or failed to fetch data
+2024-03-06 16:51:14,851 - INFO - Write completed for ISBN 9780191517495
+2024-03-06 16:51:15,852 - INFO - 85/7524. Searching metadata for 9780191517556
+2024-03-06 16:51:16,321 - INFO - No results found for identifier 9780191517556 or failed to fetch data
+2024-03-06 16:51:16,356 - INFO - Write completed for ISBN 9780191517556
+2024-03-06 16:51:17,356 - INFO - 86/7524. Searching metadata for 9780191517747
+2024-03-06 16:51:17,812 - INFO - No results found for identifier 9780191517747 or failed to fetch data
+2024-03-06 16:51:17,838 - INFO - Write completed for ISBN 9780191517747
+2024-03-06 16:51:18,840 - INFO - 87/7524. Searching metadata for 9780191517921
+2024-03-06 16:51:19,287 - INFO - No results found for identifier 9780191517921 or failed to fetch data
+2024-03-06 16:51:19,288 - INFO - Write completed for ISBN 9780191517921
+2024-03-06 16:51:20,289 - INFO - 88/7524. Searching metadata for 9780191517945
+2024-03-06 16:51:20,728 - INFO - No results found for identifier 9780191517945 or failed to fetch data
+2024-03-06 16:51:20,729 - INFO - Write completed for ISBN 9780191517945
+2024-03-06 16:51:21,731 - INFO - 89/7524. Searching metadata for 9780191518010
+2024-03-06 16:51:22,153 - INFO - No results found for identifier 9780191518010 or failed to fetch data
+2024-03-06 16:51:22,154 - INFO - Write completed for ISBN 9780191518010
+2024-03-06 16:51:23,155 - INFO - 90/7524. Searching metadata for 9780191518331
+2024-03-06 16:51:23,622 - INFO - No results found for identifier 9780191518331 or failed to fetch data
+2024-03-06 16:51:23,634 - INFO - Write completed for ISBN 9780191518331
+2024-03-06 16:56:05,856 - INFO - Application started
+2024-03-06 16:56:28,072 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 16:56:30,488 - INFO - Search started for ISBN with 7524 items and priority list: ['Harvard Library API']
+2024-03-06 16:56:30,492 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-03-06 16:56:31,089 - INFO - No results found for identifier 9780191513015 or failed to fetch data
+2024-03-06 16:56:31,090 - INFO - Write completed for ISBN 9780191513015
+2024-03-06 16:56:32,092 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-03-06 16:56:32,502 - INFO - No results found for identifier 9780191513022 or failed to fetch data
+2024-03-06 16:56:32,503 - INFO - Write completed for ISBN 9780191513022
+2024-03-06 16:56:33,504 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-03-06 16:56:33,941 - INFO - No results found for identifier 9780191513039 or failed to fetch data
+2024-03-06 16:56:33,942 - INFO - Write completed for ISBN 9780191513039
+2024-03-06 16:56:34,943 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-03-06 16:56:35,426 - INFO - No results found for identifier 9780191513183 or failed to fetch data
+2024-03-06 16:56:35,426 - INFO - Write completed for ISBN 9780191513183
+2024-03-06 16:56:36,427 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-03-06 16:56:36,858 - INFO - No results found for identifier 9780191513213 or failed to fetch data
+2024-03-06 16:56:36,859 - INFO - Write completed for ISBN 9780191513213
+2024-03-06 16:56:37,860 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-03-06 16:56:38,286 - INFO - No results found for identifier 9780191513275 or failed to fetch data
+2024-03-06 16:56:38,290 - INFO - Write completed for ISBN 9780191513275
+2024-03-06 16:56:39,291 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-03-06 16:56:39,715 - INFO - No results found for identifier 9780191513329 or failed to fetch data
+2024-03-06 16:56:39,716 - INFO - Write completed for ISBN 9780191513329
+2024-03-06 16:56:40,717 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-03-06 16:56:41,142 - INFO - No results found for identifier 9780191513336 or failed to fetch data
+2024-03-06 16:56:41,143 - INFO - Write completed for ISBN 9780191513336
+2024-03-06 16:56:42,144 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-03-06 16:56:42,598 - INFO - No results found for identifier 9780191513428 or failed to fetch data
+2024-03-06 16:56:42,599 - INFO - Write completed for ISBN 9780191513428
+2024-03-06 16:56:43,601 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-03-06 16:56:44,025 - INFO - No results found for identifier 9780191513435 or failed to fetch data
+2024-03-06 16:56:44,028 - INFO - Write completed for ISBN 9780191513435
+2024-03-06 16:56:45,029 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-03-06 16:56:45,473 - INFO - No results found for identifier 9780191513459 or failed to fetch data
+2024-03-06 16:56:45,474 - INFO - Write completed for ISBN 9780191513459
+2024-03-06 16:56:46,475 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-03-06 16:56:46,921 - INFO - No results found for identifier 9780191513466 or failed to fetch data
+2024-03-06 16:56:46,922 - INFO - Write completed for ISBN 9780191513466
+2024-03-06 16:56:47,923 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-03-06 16:56:48,342 - INFO - No results found for identifier 9780191513473 or failed to fetch data
+2024-03-06 16:56:48,343 - INFO - Write completed for ISBN 9780191513473
+2024-03-06 16:56:49,344 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-03-06 16:56:49,793 - INFO - No results found for identifier 9780191513480 or failed to fetch data
+2024-03-06 16:56:49,795 - INFO - Write completed for ISBN 9780191513480
+2024-03-06 16:56:50,796 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-03-06 16:56:51,248 - INFO - No results found for identifier 9780191513503 or failed to fetch data
+2024-03-06 16:56:51,249 - INFO - Write completed for ISBN 9780191513503
+2024-03-06 16:56:52,249 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-03-06 16:56:52,673 - INFO - No results found for identifier 9780191513510 or failed to fetch data
+2024-03-06 16:56:52,674 - INFO - Write completed for ISBN 9780191513510
+2024-03-06 16:56:53,676 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-03-06 16:56:54,196 - INFO - Write completed for ISBN 9780191513572
+2024-03-06 16:56:55,197 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-03-06 16:56:55,706 - INFO - No results found for identifier 9780191513589 or failed to fetch data
+2024-03-06 16:56:55,707 - INFO - Write completed for ISBN 9780191513589
+2024-03-06 16:56:56,709 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-03-06 16:56:57,178 - INFO - No results found for identifier 9780191513688 or failed to fetch data
+2024-03-06 16:56:57,179 - INFO - Write completed for ISBN 9780191513688
+2024-03-06 16:56:58,180 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-03-06 16:56:58,625 - INFO - No results found for identifier 9780191513732 or failed to fetch data
+2024-03-06 16:56:58,627 - INFO - Write completed for ISBN 9780191513732
+2024-03-06 16:56:59,627 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-03-06 16:57:00,097 - INFO - No results found for identifier 9780191514012 or failed to fetch data
+2024-03-06 16:57:00,098 - INFO - Write completed for ISBN 9780191514012
+2024-03-06 16:57:01,111 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-03-06 16:57:01,567 - INFO - No results found for identifier 9780191514166 or failed to fetch data
+2024-03-06 16:57:01,576 - INFO - Write completed for ISBN 9780191514166
+2024-03-06 16:57:02,577 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-03-06 16:57:03,014 - INFO - No results found for identifier 9780191514210 or failed to fetch data
+2024-03-06 16:57:03,015 - INFO - Write completed for ISBN 9780191514210
+2024-03-06 16:57:04,016 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-03-06 16:57:04,462 - INFO - No results found for identifier 9780191514227 or failed to fetch data
+2024-03-06 16:57:04,466 - INFO - Write completed for ISBN 9780191514227
+2024-03-06 16:57:05,468 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-03-06 16:57:05,880 - INFO - No results found for identifier 9780191514302 or failed to fetch data
+2024-03-06 16:57:05,880 - INFO - Write completed for ISBN 9780191514302
+2024-03-06 16:57:06,881 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-03-06 16:57:07,288 - INFO - No results found for identifier 9780191514395 or failed to fetch data
+2024-03-06 16:57:07,289 - INFO - Write completed for ISBN 9780191514395
+2024-03-06 16:57:08,291 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-03-06 16:57:08,688 - INFO - No results found for identifier 9780191514418 or failed to fetch data
+2024-03-06 16:57:08,688 - INFO - Write completed for ISBN 9780191514418
+2024-03-06 16:57:09,690 - INFO - 27/7524. Searching metadata for 9780191514463
+2024-03-06 16:57:10,207 - INFO - No results found for identifier 9780191514463 or failed to fetch data
+2024-03-06 16:57:10,210 - INFO - Write completed for ISBN 9780191514463
+2024-03-06 16:57:11,213 - INFO - 28/7524. Searching metadata for 9780191514470
+2024-03-06 16:57:11,644 - INFO - No results found for identifier 9780191514470 or failed to fetch data
+2024-03-06 16:57:11,649 - INFO - Write completed for ISBN 9780191514470
+2024-03-06 16:57:12,651 - INFO - 29/7524. Searching metadata for 9780191514487
+2024-03-06 16:57:13,076 - INFO - No results found for identifier 9780191514487 or failed to fetch data
+2024-03-06 16:57:13,077 - INFO - Write completed for ISBN 9780191514487
+2024-03-06 16:57:14,078 - INFO - 30/7524. Searching metadata for 9780191514500
+2024-03-06 16:57:14,527 - INFO - No results found for identifier 9780191514500 or failed to fetch data
+2024-03-06 16:57:14,528 - INFO - Write completed for ISBN 9780191514500
+2024-03-06 16:57:15,529 - INFO - 31/7524. Searching metadata for 9780191514517
+2024-03-06 16:57:15,920 - INFO - No results found for identifier 9780191514517 or failed to fetch data
+2024-03-06 16:57:15,921 - INFO - Write completed for ISBN 9780191514517
+2024-03-06 16:57:16,921 - INFO - 32/7524. Searching metadata for 9780191514524
+2024-03-06 16:57:17,356 - INFO - No results found for identifier 9780191514524 or failed to fetch data
+2024-03-06 16:57:17,357 - INFO - Write completed for ISBN 9780191514524
+2024-03-06 16:57:18,358 - INFO - 33/7524. Searching metadata for 9780191514531
+2024-03-06 16:57:18,967 - INFO - No results found for identifier 9780191514531 or failed to fetch data
+2024-03-06 16:57:18,971 - INFO - Write completed for ISBN 9780191514531
+2024-03-06 16:57:19,971 - INFO - 34/7524. Searching metadata for 9780191514548
+2024-03-06 16:57:20,434 - INFO - No results found for identifier 9780191514548 or failed to fetch data
+2024-03-06 16:57:20,440 - INFO - Write completed for ISBN 9780191514548
+2024-03-06 16:57:21,446 - INFO - 35/7524. Searching metadata for 9780191514593
+2024-03-06 16:57:21,868 - INFO - No results found for identifier 9780191514593 or failed to fetch data
+2024-03-06 16:57:21,874 - INFO - Write completed for ISBN 9780191514593
+2024-03-06 16:57:22,875 - INFO - 36/7524. Searching metadata for 9780191514616
+2024-03-06 16:57:23,306 - INFO - No results found for identifier 9780191514616 or failed to fetch data
+2024-03-06 16:57:23,306 - INFO - Write completed for ISBN 9780191514616
+2024-03-06 16:57:24,308 - INFO - 37/7524. Searching metadata for 9780191514708
+2024-03-06 16:57:24,729 - INFO - No results found for identifier 9780191514708 or failed to fetch data
+2024-03-06 16:57:24,730 - INFO - Write completed for ISBN 9780191514708
+2024-03-06 16:57:25,731 - INFO - 38/7524. Searching metadata for 9780191514715
+2024-03-06 16:57:26,170 - INFO - No results found for identifier 9780191514715 or failed to fetch data
+2024-03-06 16:57:26,171 - INFO - Write completed for ISBN 9780191514715
+2024-03-06 16:57:27,172 - INFO - 39/7524. Searching metadata for 9780191514753
+2024-03-06 16:57:27,603 - INFO - No results found for identifier 9780191514753 or failed to fetch data
+2024-03-06 16:57:27,604 - INFO - Write completed for ISBN 9780191514753
+2024-03-06 16:57:28,610 - INFO - 40/7524. Searching metadata for 9780191514791
+2024-03-06 16:57:29,064 - INFO - No results found for identifier 9780191514791 or failed to fetch data
+2024-03-06 16:57:29,064 - INFO - Write completed for ISBN 9780191514791
+2024-03-06 16:57:30,065 - INFO - 41/7524. Searching metadata for 9780191514876
+2024-03-06 16:57:30,566 - INFO - No results found for identifier 9780191514876 or failed to fetch data
+2024-03-06 16:57:30,567 - INFO - Write completed for ISBN 9780191514876
+2024-03-06 16:57:31,568 - INFO - 42/7524. Searching metadata for 9780191514999
+2024-03-06 16:57:32,039 - INFO - No results found for identifier 9780191514999 or failed to fetch data
+2024-03-06 16:57:32,040 - INFO - Write completed for ISBN 9780191514999
+2024-03-06 16:57:33,041 - INFO - 43/7524. Searching metadata for 9780191515002
+2024-03-06 16:57:33,468 - INFO - No results found for identifier 9780191515002 or failed to fetch data
+2024-03-06 16:57:33,469 - INFO - Write completed for ISBN 9780191515002
+2024-03-06 16:57:34,472 - INFO - 44/7524. Searching metadata for 9780191515071
+2024-03-06 16:57:34,916 - INFO - No results found for identifier 9780191515071 or failed to fetch data
+2024-03-06 16:57:34,919 - INFO - Write completed for ISBN 9780191515071
+2024-03-06 16:57:35,921 - INFO - 45/7524. Searching metadata for 9780191515163
+2024-03-06 16:57:36,351 - INFO - No results found for identifier 9780191515163 or failed to fetch data
+2024-03-06 16:57:36,357 - INFO - Write completed for ISBN 9780191515163
+2024-03-06 16:57:37,358 - INFO - 46/7524. Searching metadata for 9780191515170
+2024-03-06 16:57:37,807 - INFO - No results found for identifier 9780191515170 or failed to fetch data
+2024-03-06 16:57:37,808 - INFO - Write completed for ISBN 9780191515170
+2024-03-06 16:57:38,809 - INFO - 47/7524. Searching metadata for 9780191515200
+2024-03-06 16:57:39,262 - INFO - No results found for identifier 9780191515200 or failed to fetch data
+2024-03-06 16:57:39,263 - INFO - Write completed for ISBN 9780191515200
+2024-03-06 16:57:40,264 - INFO - 48/7524. Searching metadata for 9780191515217
+2024-03-06 16:57:40,692 - INFO - No results found for identifier 9780191515217 or failed to fetch data
+2024-03-06 16:57:40,693 - INFO - Write completed for ISBN 9780191515217
+2024-03-06 16:57:41,694 - INFO - 49/7524. Searching metadata for 9780191515224
+2024-03-06 16:57:42,148 - INFO - Write completed for ISBN 9780191515224
+2024-03-06 16:57:43,149 - INFO - 50/7524. Searching metadata for 9780191515279
+2024-03-06 16:57:43,572 - INFO - No results found for identifier 9780191515279 or failed to fetch data
+2024-03-06 16:57:43,573 - INFO - Write completed for ISBN 9780191515279
+2024-03-06 16:57:44,574 - INFO - 51/7524. Searching metadata for 9780191515316
+2024-03-06 16:57:45,027 - INFO - No results found for identifier 9780191515316 or failed to fetch data
+2024-03-06 16:57:45,029 - INFO - Write completed for ISBN 9780191515316
+2024-03-06 16:57:46,030 - INFO - 52/7524. Searching metadata for 9780191515323
+2024-03-06 16:57:46,504 - INFO - Write completed for ISBN 9780191515323
+2024-03-06 16:57:47,505 - INFO - 53/7524. Searching metadata for 9780191515330
+2024-03-06 16:57:47,934 - INFO - No results found for identifier 9780191515330 or failed to fetch data
+2024-03-06 16:57:47,935 - INFO - Write completed for ISBN 9780191515330
+2024-03-06 16:57:48,936 - INFO - 54/7524. Searching metadata for 9780191515354
+2024-03-06 16:57:49,419 - INFO - No results found for identifier 9780191515354 or failed to fetch data
+2024-03-06 16:57:49,438 - INFO - Write completed for ISBN 9780191515354
+2024-03-06 16:57:50,439 - INFO - 55/7524. Searching metadata for 9780191515453
+2024-03-06 16:57:50,878 - INFO - No results found for identifier 9780191515453 or failed to fetch data
+2024-03-06 16:57:50,879 - INFO - Write completed for ISBN 9780191515453
+2024-03-06 16:57:51,880 - INFO - 56/7524. Searching metadata for 9780191515477
+2024-03-06 16:57:52,330 - INFO - No results found for identifier 9780191515477 or failed to fetch data
+2024-03-06 16:57:52,330 - INFO - Write completed for ISBN 9780191515477
+2024-03-06 16:57:53,331 - INFO - 57/7524. Searching metadata for 9780191515514
+2024-03-06 16:57:53,793 - INFO - No results found for identifier 9780191515514 or failed to fetch data
+2024-03-06 16:57:53,794 - INFO - Write completed for ISBN 9780191515514
+2024-03-06 16:57:54,794 - INFO - 58/7524. Searching metadata for 9780191515545
+2024-03-06 16:57:55,250 - INFO - No results found for identifier 9780191515545 or failed to fetch data
+2024-03-06 16:57:55,256 - INFO - Write completed for ISBN 9780191515545
+2024-03-06 16:57:56,258 - INFO - 59/7524. Searching metadata for 9780191515613
+2024-03-06 16:57:56,747 - INFO - Write completed for ISBN 9780191515613
+2024-03-06 16:57:57,749 - INFO - 60/7524. Searching metadata for 9780191515651
+2024-03-06 16:57:58,196 - INFO - No results found for identifier 9780191515651 or failed to fetch data
+2024-03-06 16:57:58,197 - INFO - Write completed for ISBN 9780191515651
+2024-03-06 16:57:59,198 - INFO - 61/7524. Searching metadata for 9780191515866
+2024-03-06 16:57:59,629 - INFO - No results found for identifier 9780191515866 or failed to fetch data
+2024-03-06 16:57:59,630 - INFO - Write completed for ISBN 9780191515866
+2024-03-06 16:58:00,631 - INFO - 62/7524. Searching metadata for 9780191515965
+2024-03-06 16:58:01,116 - INFO - Write completed for ISBN 9780191515965
+2024-03-06 16:58:02,125 - INFO - 63/7524. Searching metadata for 9780191515972
+2024-03-06 16:58:02,557 - INFO - No results found for identifier 9780191515972 or failed to fetch data
+2024-03-06 16:58:02,558 - INFO - Write completed for ISBN 9780191515972
+2024-03-06 16:58:03,558 - INFO - 64/7524. Searching metadata for 9780191516085
+2024-03-06 16:58:03,996 - INFO - No results found for identifier 9780191516085 or failed to fetch data
+2024-03-06 16:58:03,997 - INFO - Write completed for ISBN 9780191516085
+2024-03-06 16:58:04,999 - INFO - 65/7524. Searching metadata for 9780191516269
+2024-03-06 16:58:05,502 - INFO - No results found for identifier 9780191516269 or failed to fetch data
+2024-03-06 16:58:05,505 - INFO - Write completed for ISBN 9780191516269
+2024-03-06 16:58:06,507 - INFO - 66/7524. Searching metadata for 9780191516474
+2024-03-06 16:58:06,958 - INFO - No results found for identifier 9780191516474 or failed to fetch data
+2024-03-06 16:58:06,959 - INFO - Write completed for ISBN 9780191516474
+2024-03-06 16:58:07,960 - INFO - 67/7524. Searching metadata for 9780191516757
+2024-03-06 16:58:08,416 - INFO - No results found for identifier 9780191516757 or failed to fetch data
+2024-03-06 16:58:08,418 - INFO - Write completed for ISBN 9780191516757
+2024-03-06 16:58:14,523 - INFO - Application started
+2024-03-06 16:58:18,347 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 16:59:33,622 - INFO - Search started for ISBN with 7524 items and priority list: ['Harvard Library API']
+2024-03-06 16:59:33,632 - INFO - 0/7524. Searching metadata for 9780191513015
+2024-03-06 16:59:34,182 - INFO - No results found for identifier 9780191513015 or failed to fetch data
+2024-03-06 16:59:34,185 - INFO - Write completed for ISBN 9780191513015
+2024-03-06 16:59:35,186 - INFO - 1/7524. Searching metadata for 9780191513022
+2024-03-06 16:59:35,630 - INFO - No results found for identifier 9780191513022 or failed to fetch data
+2024-03-06 16:59:35,631 - INFO - Write completed for ISBN 9780191513022
+2024-03-06 16:59:36,633 - INFO - 2/7524. Searching metadata for 9780191513039
+2024-03-06 16:59:37,070 - INFO - No results found for identifier 9780191513039 or failed to fetch data
+2024-03-06 16:59:37,072 - INFO - Write completed for ISBN 9780191513039
+2024-03-06 16:59:38,073 - INFO - 3/7524. Searching metadata for 9780191513183
+2024-03-06 16:59:38,526 - INFO - No results found for identifier 9780191513183 or failed to fetch data
+2024-03-06 16:59:38,527 - INFO - Write completed for ISBN 9780191513183
+2024-03-06 16:59:39,528 - INFO - 4/7524. Searching metadata for 9780191513213
+2024-03-06 16:59:39,969 - INFO - No results found for identifier 9780191513213 or failed to fetch data
+2024-03-06 16:59:39,980 - INFO - Write completed for ISBN 9780191513213
+2024-03-06 16:59:40,981 - INFO - 5/7524. Searching metadata for 9780191513275
+2024-03-06 16:59:41,429 - INFO - No results found for identifier 9780191513275 or failed to fetch data
+2024-03-06 16:59:41,430 - INFO - Write completed for ISBN 9780191513275
+2024-03-06 16:59:42,432 - INFO - 6/7524. Searching metadata for 9780191513329
+2024-03-06 16:59:42,860 - INFO - No results found for identifier 9780191513329 or failed to fetch data
+2024-03-06 16:59:42,861 - INFO - Write completed for ISBN 9780191513329
+2024-03-06 16:59:43,862 - INFO - 7/7524. Searching metadata for 9780191513336
+2024-03-06 16:59:44,349 - INFO - No results found for identifier 9780191513336 or failed to fetch data
+2024-03-06 16:59:44,353 - INFO - Write completed for ISBN 9780191513336
+2024-03-06 16:59:45,354 - INFO - 8/7524. Searching metadata for 9780191513428
+2024-03-06 16:59:45,779 - INFO - No results found for identifier 9780191513428 or failed to fetch data
+2024-03-06 16:59:45,780 - INFO - Write completed for ISBN 9780191513428
+2024-03-06 16:59:46,782 - INFO - 9/7524. Searching metadata for 9780191513435
+2024-03-06 16:59:47,244 - INFO - No results found for identifier 9780191513435 or failed to fetch data
+2024-03-06 16:59:47,245 - INFO - Write completed for ISBN 9780191513435
+2024-03-06 16:59:48,246 - INFO - 10/7524. Searching metadata for 9780191513459
+2024-03-06 16:59:48,787 - INFO - No results found for identifier 9780191513459 or failed to fetch data
+2024-03-06 16:59:48,789 - INFO - Write completed for ISBN 9780191513459
+2024-03-06 16:59:49,790 - INFO - 11/7524. Searching metadata for 9780191513466
+2024-03-06 16:59:50,239 - INFO - No results found for identifier 9780191513466 or failed to fetch data
+2024-03-06 16:59:50,243 - INFO - Write completed for ISBN 9780191513466
+2024-03-06 16:59:51,244 - INFO - 12/7524. Searching metadata for 9780191513473
+2024-03-06 16:59:51,678 - INFO - No results found for identifier 9780191513473 or failed to fetch data
+2024-03-06 16:59:51,680 - INFO - Write completed for ISBN 9780191513473
+2024-03-06 16:59:52,682 - INFO - 13/7524. Searching metadata for 9780191513480
+2024-03-06 16:59:53,124 - INFO - No results found for identifier 9780191513480 or failed to fetch data
+2024-03-06 16:59:53,124 - INFO - Write completed for ISBN 9780191513480
+2024-03-06 16:59:54,126 - INFO - 14/7524. Searching metadata for 9780191513503
+2024-03-06 16:59:54,595 - INFO - No results found for identifier 9780191513503 or failed to fetch data
+2024-03-06 16:59:54,596 - INFO - Write completed for ISBN 9780191513503
+2024-03-06 16:59:55,597 - INFO - 15/7524. Searching metadata for 9780191513510
+2024-03-06 16:59:56,057 - INFO - No results found for identifier 9780191513510 or failed to fetch data
+2024-03-06 16:59:56,058 - INFO - Write completed for ISBN 9780191513510
+2024-03-06 16:59:57,060 - INFO - 16/7524. Searching metadata for 9780191513572
+2024-03-06 16:59:57,504 - INFO - Write completed for ISBN 9780191513572
+2024-03-06 16:59:58,505 - INFO - 17/7524. Searching metadata for 9780191513589
+2024-03-06 16:59:58,935 - INFO - No results found for identifier 9780191513589 or failed to fetch data
+2024-03-06 16:59:58,939 - INFO - Write completed for ISBN 9780191513589
+2024-03-06 16:59:59,941 - INFO - 18/7524. Searching metadata for 9780191513688
+2024-03-06 17:00:00,435 - INFO - No results found for identifier 9780191513688 or failed to fetch data
+2024-03-06 17:00:00,442 - INFO - Write completed for ISBN 9780191513688
+2024-03-06 17:00:01,443 - INFO - 19/7524. Searching metadata for 9780191513732
+2024-03-06 17:00:01,930 - INFO - No results found for identifier 9780191513732 or failed to fetch data
+2024-03-06 17:00:01,936 - INFO - Write completed for ISBN 9780191513732
+2024-03-06 17:00:02,937 - INFO - 20/7524. Searching metadata for 9780191514012
+2024-03-06 17:00:03,406 - INFO - No results found for identifier 9780191514012 or failed to fetch data
+2024-03-06 17:00:03,407 - INFO - Write completed for ISBN 9780191514012
+2024-03-06 17:00:04,408 - INFO - 21/7524. Searching metadata for 9780191514166
+2024-03-06 17:00:04,877 - INFO - No results found for identifier 9780191514166 or failed to fetch data
+2024-03-06 17:00:04,878 - INFO - Write completed for ISBN 9780191514166
+2024-03-06 17:00:05,880 - INFO - 22/7524. Searching metadata for 9780191514210
+2024-03-06 17:00:06,348 - INFO - No results found for identifier 9780191514210 or failed to fetch data
+2024-03-06 17:00:06,356 - INFO - Write completed for ISBN 9780191514210
+2024-03-06 17:00:07,358 - INFO - 23/7524. Searching metadata for 9780191514227
+2024-03-06 17:00:07,888 - INFO - No results found for identifier 9780191514227 or failed to fetch data
+2024-03-06 17:00:07,925 - INFO - Write completed for ISBN 9780191514227
+2024-03-06 17:00:08,926 - INFO - 24/7524. Searching metadata for 9780191514302
+2024-03-06 17:00:09,457 - INFO - No results found for identifier 9780191514302 or failed to fetch data
+2024-03-06 17:00:09,457 - INFO - Write completed for ISBN 9780191514302
+2024-03-06 17:00:10,458 - INFO - 25/7524. Searching metadata for 9780191514395
+2024-03-06 17:00:10,913 - INFO - No results found for identifier 9780191514395 or failed to fetch data
+2024-03-06 17:00:10,914 - INFO - Write completed for ISBN 9780191514395
+2024-03-06 17:00:11,915 - INFO - 26/7524. Searching metadata for 9780191514418
+2024-03-06 17:00:12,516 - INFO - No results found for identifier 9780191514418 or failed to fetch data
+2024-03-06 17:00:12,518 - INFO - Write completed for ISBN 9780191514418
+2024-03-06 17:01:21,897 - INFO - Application started
+2024-03-06 17:01:31,194 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 17:01:45,166 - INFO - Search started for OCN with 21897 items and priority list: ['Harvard Library API']
+2024-03-06 17:01:45,186 - INFO - 0/21897. Searching metadata for 922903415
+2024-03-06 17:01:45,793 - INFO - No results found for identifier 922903415 or failed to fetch data
+2024-03-06 17:01:45,794 - INFO - Write completed for OCN 922903415
+2024-03-06 17:01:46,795 - INFO - 1/21897. Searching metadata for 922903416
+2024-03-06 17:01:47,238 - INFO - No results found for identifier 922903416 or failed to fetch data
+2024-03-06 17:01:47,239 - INFO - Write completed for OCN 922903416
+2024-03-06 17:01:48,240 - INFO - 2/21897. Searching metadata for 53866884
+2024-03-06 17:01:48,719 - INFO - No results found for identifier 53866884 or failed to fetch data
+2024-03-06 17:01:48,777 - INFO - Write completed for OCN 53866884
+2024-03-06 17:01:49,778 - INFO - 3/21897. Searching metadata for 53910944
+2024-03-06 17:01:50,414 - INFO - No results found for identifier 53910944 or failed to fetch data
+2024-03-06 17:01:50,415 - INFO - Write completed for OCN 53910944
+2024-03-06 17:01:51,417 - INFO - 4/21897. Searching metadata for 649970663
+2024-03-06 17:01:51,831 - INFO - No results found for identifier 649970663 or failed to fetch data
+2024-03-06 17:01:51,832 - INFO - Write completed for OCN 649970663
+2024-03-06 17:01:52,834 - INFO - 5/21897. Searching metadata for 228375157
+2024-03-06 17:01:53,287 - INFO - No results found for identifier 228375157 or failed to fetch data
+2024-03-06 17:01:53,288 - INFO - Write completed for OCN 228375157
+2024-03-06 17:01:54,289 - INFO - 6/21897. Searching metadata for 231581791
+2024-03-06 17:01:54,790 - INFO - No results found for identifier 231581791 or failed to fetch data
+2024-03-06 17:01:54,791 - INFO - Write completed for OCN 231581791
+2024-03-06 17:01:55,792 - INFO - 7/21897. Searching metadata for 70771534
+2024-03-06 17:01:56,231 - INFO - No results found for identifier 70771534 or failed to fetch data
+2024-03-06 17:01:56,232 - INFO - Write completed for OCN 70771534
+2024-03-06 17:01:57,234 - INFO - 8/21897. Searching metadata for 54360360
+2024-03-06 17:01:57,647 - INFO - No results found for identifier 54360360 or failed to fetch data
+2024-03-06 17:01:57,648 - INFO - Write completed for OCN 54360360
+2024-03-06 17:01:58,649 - INFO - 9/21897. Searching metadata for 228375035
+2024-03-06 17:01:59,075 - INFO - No results found for identifier 228375035 or failed to fetch data
+2024-03-06 17:01:59,076 - INFO - Write completed for OCN 228375035
+2024-03-06 17:02:00,076 - INFO - 10/21897. Searching metadata for 50308311
+2024-03-06 17:02:00,528 - INFO - No results found for identifier 50308311 or failed to fetch data
+2024-03-06 17:02:00,529 - INFO - Write completed for OCN 50308311
+2024-03-06 17:02:01,531 - INFO - 11/21897. Searching metadata for 52079511
+2024-03-06 17:02:01,965 - INFO - No results found for identifier 52079511 or failed to fetch data
+2024-03-06 17:02:01,966 - INFO - Write completed for OCN 52079511
+2024-03-06 17:02:02,968 - INFO - 12/21897. Searching metadata for 559365441
+2024-03-06 17:02:03,404 - INFO - No results found for identifier 559365441 or failed to fetch data
+2024-03-06 17:02:03,405 - INFO - Write completed for OCN 559365441
+2024-03-06 17:02:04,407 - INFO - 13/21897. Searching metadata for 55046892
+2024-03-06 17:02:04,902 - INFO - No results found for identifier 55046892 or failed to fetch data
+2024-03-06 17:02:04,905 - INFO - Write completed for OCN 55046892
+2024-03-06 17:02:05,906 - INFO - 14/21897. Searching metadata for 62860555
+2024-03-06 17:02:06,352 - INFO - No results found for identifier 62860555 or failed to fetch data
+2024-03-06 17:02:06,353 - INFO - Write completed for OCN 62860555
+2024-03-06 17:02:07,354 - INFO - 15/21897. Searching metadata for 697790483
+2024-03-06 17:02:07,794 - INFO - No results found for identifier 697790483 or failed to fetch data
+2024-03-06 17:02:07,795 - INFO - Write completed for OCN 697790483
+2024-03-06 17:02:08,797 - INFO - 16/21897. Searching metadata for 51004852
+2024-03-06 17:02:09,204 - INFO - No results found for identifier 51004852 or failed to fetch data
+2024-03-06 17:02:09,205 - INFO - Write completed for OCN 51004852
+2024-03-06 17:02:10,206 - INFO - 17/21897. Searching metadata for 424384171
+2024-03-06 17:02:10,674 - INFO - Write completed for OCN 424384171
+2024-03-06 17:02:11,675 - INFO - 18/21897. Searching metadata for 55046833
+2024-03-06 17:02:12,111 - INFO - No results found for identifier 55046833 or failed to fetch data
+2024-03-06 17:02:12,112 - INFO - Write completed for OCN 55046833
+2024-03-06 17:02:13,114 - INFO - 19/21897. Searching metadata for 707917523
+2024-03-06 17:02:13,534 - INFO - No results found for identifier 707917523 or failed to fetch data
+2024-03-06 17:02:13,535 - INFO - Write completed for OCN 707917523
+2024-03-06 17:02:14,537 - INFO - 20/21897. Searching metadata for 228048153
+2024-03-06 17:02:14,970 - INFO - No results found for identifier 228048153 or failed to fetch data
+2024-03-06 17:02:14,971 - INFO - Write completed for OCN 228048153
+2024-03-06 17:02:15,971 - INFO - 21/21897. Searching metadata for 779891795
+2024-03-06 17:02:16,385 - INFO - No results found for identifier 779891795 or failed to fetch data
+2024-03-06 17:02:16,386 - INFO - Write completed for OCN 779891795
+2024-03-06 17:02:17,388 - INFO - 22/21897. Searching metadata for 231580878
+2024-03-06 17:02:17,821 - INFO - No results found for identifier 231580878 or failed to fetch data
+2024-03-06 17:02:17,822 - INFO - Write completed for OCN 231580878
+2024-03-06 17:02:18,823 - INFO - 23/21897. Searching metadata for 559307665
+2024-03-06 17:02:19,234 - INFO - No results found for identifier 559307665 or failed to fetch data
+2024-03-06 17:02:19,235 - INFO - Write completed for OCN 559307665
+2024-03-06 17:02:20,239 - INFO - 24/21897. Searching metadata for 72823569
+2024-03-06 17:02:20,653 - INFO - No results found for identifier 72823569 or failed to fetch data
+2024-03-06 17:02:20,654 - INFO - Write completed for OCN 72823569
+2024-03-06 17:02:21,656 - INFO - 25/21897. Searching metadata for 559152002
+2024-03-06 17:02:22,078 - INFO - No results found for identifier 559152002 or failed to fetch data
+2024-03-06 17:02:22,079 - INFO - Write completed for OCN 559152002
+2024-03-06 17:02:23,080 - INFO - 26/21897. Searching metadata for 707917524
+2024-03-06 17:02:23,525 - INFO - No results found for identifier 707917524 or failed to fetch data
+2024-03-06 17:02:23,525 - INFO - Write completed for OCN 707917524
+2024-03-06 17:02:24,527 - INFO - 27/21897. Searching metadata for 228049587
+2024-03-06 17:02:24,959 - INFO - No results found for identifier 228049587 or failed to fetch data
+2024-03-06 17:02:24,967 - INFO - Write completed for OCN 228049587
+2024-03-06 17:02:25,967 - INFO - 28/21897. Searching metadata for 228374866
+2024-03-06 17:02:26,408 - INFO - No results found for identifier 228374866 or failed to fetch data
+2024-03-06 17:02:26,409 - INFO - Write completed for OCN 228374866
+2024-03-06 17:02:27,410 - INFO - 29/21897. Searching metadata for 707917525
+2024-03-06 17:02:27,864 - INFO - No results found for identifier 707917525 or failed to fetch data
+2024-03-06 17:02:27,865 - INFO - Write completed for OCN 707917525
+2024-03-06 17:02:28,866 - INFO - 30/21897. Searching metadata for 228049540
+2024-03-06 17:02:29,285 - INFO - No results found for identifier 228049540 or failed to fetch data
+2024-03-06 17:02:29,286 - INFO - Write completed for OCN 228049540
+2024-03-06 17:02:30,287 - INFO - 31/21897. Searching metadata for 50322301
+2024-03-06 17:02:30,758 - INFO - Write completed for OCN 50322301
+2024-03-06 17:02:31,759 - INFO - 32/21897. Searching metadata for 808022420
+2024-03-06 17:02:32,170 - INFO - No results found for identifier 808022420 or failed to fetch data
+2024-03-06 17:02:32,173 - INFO - Write completed for OCN 808022420
+2024-03-06 17:02:33,175 - INFO - 33/21897. Searching metadata for 55664114
+2024-03-06 17:02:33,620 - INFO - No results found for identifier 55664114 or failed to fetch data
+2024-03-06 17:02:33,622 - INFO - Write completed for OCN 55664114
+2024-03-06 17:02:34,623 - INFO - 34/21897. Searching metadata for 55663736
+2024-03-06 17:02:35,090 - INFO - No results found for identifier 55663736 or failed to fetch data
+2024-03-06 17:02:35,091 - INFO - Write completed for OCN 55663736
+2024-03-06 17:02:36,092 - INFO - 35/21897. Searching metadata for 55664087
+2024-03-06 17:02:36,667 - INFO - No results found for identifier 55664087 or failed to fetch data
+2024-03-06 17:02:36,668 - INFO - Write completed for OCN 55664087
+2024-03-06 17:02:37,669 - INFO - 36/21897. Searching metadata for 55664076
+2024-03-06 17:02:38,144 - INFO - No results found for identifier 55664076 or failed to fetch data
+2024-03-06 17:02:38,157 - INFO - Write completed for OCN 55664076
+2024-03-06 17:02:39,159 - INFO - 37/21897. Searching metadata for 70771537
+2024-03-06 17:02:39,607 - INFO - No results found for identifier 70771537 or failed to fetch data
+2024-03-06 17:02:39,607 - INFO - Write completed for OCN 70771537
+2024-03-06 17:02:40,609 - INFO - 38/21897. Searching metadata for 231581833
+2024-03-06 17:02:41,013 - INFO - No results found for identifier 231581833 or failed to fetch data
+2024-03-06 17:02:41,014 - INFO - Write completed for OCN 231581833
+2024-03-06 17:02:42,016 - INFO - 39/21897. Searching metadata for 559258691
+2024-03-06 17:02:42,430 - INFO - No results found for identifier 559258691 or failed to fetch data
+2024-03-06 17:02:42,431 - INFO - Write completed for OCN 559258691
+2024-03-06 17:02:43,432 - INFO - 40/21897. Searching metadata for 70754603
+2024-03-06 17:02:43,854 - INFO - No results found for identifier 70754603 or failed to fetch data
+2024-03-06 17:02:43,855 - INFO - Write completed for OCN 70754603
+2024-03-06 17:02:44,856 - INFO - 41/21897. Searching metadata for 559114966
+2024-03-06 17:02:45,342 - INFO - No results found for identifier 559114966 or failed to fetch data
+2024-03-06 17:02:45,342 - INFO - Write completed for OCN 559114966
+2024-03-06 17:02:46,343 - INFO - 42/21897. Searching metadata for 559187306
+2024-03-06 17:02:46,787 - INFO - No results found for identifier 559187306 or failed to fetch data
+2024-03-06 17:02:46,788 - INFO - Write completed for OCN 559187306
+2024-03-06 17:02:47,789 - INFO - 43/21897. Searching metadata for 54360379
+2024-03-06 17:02:48,208 - INFO - No results found for identifier 54360379 or failed to fetch data
+2024-03-06 17:02:48,209 - INFO - Write completed for OCN 54360379
+2024-03-06 17:02:49,210 - INFO - 44/21897. Searching metadata for 808022533
+2024-03-06 17:02:49,639 - INFO - No results found for identifier 808022533 or failed to fetch data
+2024-03-06 17:02:49,640 - INFO - Write completed for OCN 808022533
+2024-03-06 17:02:50,641 - INFO - 45/21897. Searching metadata for 707917528
+2024-03-06 17:02:51,122 - INFO - No results found for identifier 707917528 or failed to fetch data
+2024-03-06 17:02:51,124 - INFO - Write completed for OCN 707917528
+2024-03-06 17:02:52,124 - INFO - 46/21897. Searching metadata for 55664003
+2024-03-06 17:02:52,599 - INFO - Write completed for OCN 55664003
+2024-03-06 17:02:53,601 - INFO - 47/21897. Searching metadata for 55664050
+2024-03-06 17:02:54,036 - INFO - No results found for identifier 55664050 or failed to fetch data
+2024-03-06 17:02:54,037 - INFO - Write completed for OCN 55664050
+2024-03-06 17:02:55,038 - INFO - 48/21897. Searching metadata for 231580577
+2024-03-06 17:02:55,470 - INFO - No results found for identifier 231580577 or failed to fetch data
+2024-03-06 17:02:55,476 - INFO - Write completed for OCN 231580577
+2024-03-06 17:02:56,476 - INFO - 49/21897. Searching metadata for 50493476
+2024-03-06 17:02:56,942 - INFO - No results found for identifier 50493476 or failed to fetch data
+2024-03-06 17:02:56,943 - INFO - Write completed for OCN 50493476
+2024-03-06 17:02:57,944 - INFO - 50/21897. Searching metadata for 707917529
+2024-03-06 17:02:58,417 - INFO - No results found for identifier 707917529 or failed to fetch data
+2024-03-06 17:02:58,422 - INFO - Write completed for OCN 707917529
+2024-03-06 17:02:59,423 - INFO - 51/21897. Searching metadata for 559384701
+2024-03-06 17:02:59,856 - INFO - No results found for identifier 559384701 or failed to fetch data
+2024-03-06 17:02:59,858 - INFO - Write completed for OCN 559384701
+2024-03-06 17:03:00,858 - INFO - 52/21897. Searching metadata for 55664074
+2024-03-06 17:03:01,325 - INFO - No results found for identifier 55664074 or failed to fetch data
+2024-03-06 17:03:01,335 - INFO - Write completed for OCN 55664074
+2024-03-06 17:03:02,337 - INFO - 53/21897. Searching metadata for 50797894
+2024-03-06 17:03:02,804 - INFO - No results found for identifier 50797894 or failed to fetch data
+2024-03-06 17:03:02,805 - INFO - Write completed for OCN 50797894
+2024-03-06 17:03:03,807 - INFO - 54/21897. Searching metadata for 559622808
+2024-03-06 17:03:04,318 - INFO - No results found for identifier 559622808 or failed to fetch data
+2024-03-06 17:03:04,319 - INFO - Write completed for OCN 559622808
+2024-03-06 17:03:05,320 - INFO - 55/21897. Searching metadata for 70773476
+2024-03-06 17:03:05,722 - INFO - No results found for identifier 70773476 or failed to fetch data
+2024-03-06 17:03:05,723 - INFO - Write completed for OCN 70773476
+2024-03-06 17:03:06,724 - INFO - 56/21897. Searching metadata for 55046840
+2024-03-06 17:03:07,148 - INFO - Write completed for OCN 55046840
+2024-03-06 17:03:08,150 - INFO - 57/21897. Searching metadata for 228375131
+2024-03-06 17:03:08,609 - INFO - No results found for identifier 228375131 or failed to fetch data
+2024-03-06 17:03:08,610 - INFO - Write completed for OCN 228375131
+2024-03-06 17:03:09,612 - INFO - 58/21897. Searching metadata for 70736481
+2024-03-06 17:03:10,035 - INFO - No results found for identifier 70736481 or failed to fetch data
+2024-03-06 17:03:10,036 - INFO - Write completed for OCN 70736481
+2024-03-06 17:03:11,037 - INFO - 59/21897. Searching metadata for 231581840
+2024-03-06 17:03:11,484 - INFO - No results found for identifier 231581840 or failed to fetch data
+2024-03-06 17:03:11,485 - INFO - Write completed for OCN 231581840
+2024-03-06 17:03:12,487 - INFO - 60/21897. Searching metadata for 50553231
+2024-03-06 17:03:12,946 - INFO - No results found for identifier 50553231 or failed to fetch data
+2024-03-06 17:03:12,948 - INFO - Write completed for OCN 50553231
+2024-03-06 17:03:13,950 - INFO - 61/21897. Searching metadata for 55046851
+2024-03-06 17:03:14,700 - INFO - No results found for identifier 55046851 or failed to fetch data
+2024-03-06 17:03:14,701 - INFO - Write completed for OCN 55046851
+2024-03-06 17:03:15,702 - INFO - 62/21897. Searching metadata for 559099049
+2024-03-06 17:03:16,120 - INFO - No results found for identifier 559099049 or failed to fetch data
+2024-03-06 17:03:16,121 - INFO - Write completed for OCN 559099049
+2024-03-06 17:03:17,122 - INFO - 63/21897. Searching metadata for 55046885
+2024-03-06 17:03:17,533 - INFO - No results found for identifier 55046885 or failed to fetch data
+2024-03-06 17:03:17,534 - INFO - Write completed for OCN 55046885
+2024-03-06 17:03:18,535 - INFO - 64/21897. Searching metadata for 52801725
+2024-03-06 17:03:18,956 - INFO - No results found for identifier 52801725 or failed to fetch data
+2024-03-06 17:03:18,956 - INFO - Write completed for OCN 52801725
+2024-03-06 17:03:19,958 - INFO - 65/21897. Searching metadata for 50321166
+2024-03-06 17:03:20,407 - INFO - No results found for identifier 50321166 or failed to fetch data
+2024-03-06 17:03:20,409 - INFO - Write completed for OCN 50321166
+2024-03-06 17:03:21,411 - INFO - 66/21897. Searching metadata for 70771463
+2024-03-06 17:03:21,844 - INFO - No results found for identifier 70771463 or failed to fetch data
+2024-03-06 17:03:21,849 - INFO - Write completed for OCN 70771463
+2024-03-06 17:03:22,851 - INFO - 67/21897. Searching metadata for 231581666
+2024-03-06 17:03:23,307 - INFO - No results found for identifier 231581666 or failed to fetch data
+2024-03-06 17:03:23,308 - INFO - Write completed for OCN 231581666
+2024-03-06 17:03:24,309 - INFO - 68/21897. Searching metadata for 559710226
+2024-03-06 17:03:24,768 - INFO - No results found for identifier 559710226 or failed to fetch data
+2024-03-06 17:03:24,769 - INFO - Write completed for OCN 559710226
+2024-03-06 17:03:25,770 - INFO - 69/21897. Searching metadata for 70740237
+2024-03-06 17:03:26,217 - INFO - No results found for identifier 70740237 or failed to fetch data
+2024-03-06 17:03:26,223 - INFO - Write completed for OCN 70740237
+2024-03-06 17:03:27,224 - INFO - 70/21897. Searching metadata for 55664080
+2024-03-06 17:03:27,689 - INFO - No results found for identifier 55664080 or failed to fetch data
+2024-03-06 17:03:27,693 - INFO - Write completed for OCN 55664080
+2024-03-06 17:03:28,693 - INFO - 71/21897. Searching metadata for 55664049
+2024-03-06 17:03:29,135 - INFO - No results found for identifier 55664049 or failed to fetch data
+2024-03-06 17:03:29,136 - INFO - Write completed for OCN 55664049
+2024-03-06 17:03:30,142 - INFO - 72/21897. Searching metadata for 722716059
+2024-03-06 17:03:30,559 - INFO - No results found for identifier 722716059 or failed to fetch data
+2024-03-06 17:03:30,560 - INFO - Write completed for OCN 722716059
+2024-03-06 17:03:31,561 - INFO - 73/21897. Searching metadata for 707917533
+2024-03-06 17:03:31,992 - INFO - No results found for identifier 707917533 or failed to fetch data
+2024-03-06 17:03:31,993 - INFO - Write completed for OCN 707917533
+2024-03-06 17:03:32,993 - INFO - 74/21897. Searching metadata for 55663764
+2024-03-06 17:03:33,442 - INFO - No results found for identifier 55663764 or failed to fetch data
+2024-03-06 17:03:33,443 - INFO - Write completed for OCN 55663764
+2024-03-06 17:03:34,444 - INFO - 75/21897. Searching metadata for 55046808
+2024-03-06 17:03:34,930 - INFO - No results found for identifier 55046808 or failed to fetch data
+2024-03-06 17:03:34,931 - INFO - Write completed for OCN 55046808
+2024-03-06 17:03:35,932 - INFO - 76/21897. Searching metadata for 808022486
+2024-03-06 17:03:36,430 - INFO - No results found for identifier 808022486 or failed to fetch data
+2024-03-06 17:03:36,433 - INFO - Write completed for OCN 808022486
+2024-03-06 17:03:37,435 - INFO - 77/21897. Searching metadata for 50304216
+2024-03-06 17:03:37,897 - INFO - No results found for identifier 50304216 or failed to fetch data
+2024-03-06 17:03:37,902 - INFO - Write completed for OCN 50304216
+2024-03-06 17:03:38,903 - INFO - 78/21897. Searching metadata for 50745584
+2024-03-06 17:03:39,341 - INFO - No results found for identifier 50745584 or failed to fetch data
+2024-03-06 17:03:39,342 - INFO - Write completed for OCN 50745584
+2024-03-06 17:03:40,343 - INFO - 79/21897. Searching metadata for 55047057
+2024-03-06 17:03:40,787 - INFO - No results found for identifier 55047057 or failed to fetch data
+2024-03-06 17:03:40,788 - INFO - Write completed for OCN 55047057
+2024-03-06 17:03:41,789 - INFO - 80/21897. Searching metadata for 70759261
+2024-03-06 17:03:42,203 - INFO - No results found for identifier 70759261 or failed to fetch data
+2024-03-06 17:03:42,204 - INFO - Write completed for OCN 70759261
+2024-03-06 17:03:43,205 - INFO - 81/21897. Searching metadata for 55663775
+2024-03-06 17:03:43,621 - INFO - No results found for identifier 55663775 or failed to fetch data
+2024-03-06 17:03:43,622 - INFO - Write completed for OCN 55663775
+2024-03-06 17:03:44,623 - INFO - 82/21897. Searching metadata for 559153004
+2024-03-06 17:03:45,133 - INFO - No results found for identifier 559153004 or failed to fetch data
+2024-03-06 17:03:45,137 - INFO - Write completed for OCN 559153004
+2024-03-06 17:03:46,139 - INFO - 83/21897. Searching metadata for 55046733
+2024-03-06 17:03:46,542 - INFO - No results found for identifier 55046733 or failed to fetch data
+2024-03-06 17:03:46,543 - INFO - Write completed for OCN 55046733
+2024-03-06 17:03:47,544 - INFO - 84/21897. Searching metadata for 231581720
+2024-03-06 17:03:47,989 - INFO - No results found for identifier 231581720 or failed to fetch data
+2024-03-06 17:03:47,990 - INFO - Write completed for OCN 231581720
+2024-03-06 17:03:48,990 - INFO - 85/21897. Searching metadata for 559432487
+2024-03-06 17:03:49,415 - INFO - No results found for identifier 559432487 or failed to fetch data
+2024-03-06 17:03:49,416 - INFO - Write completed for OCN 559432487
+2024-03-06 17:03:50,418 - INFO - 86/21897. Searching metadata for 269293479
+2024-03-06 17:03:50,854 - INFO - No results found for identifier 269293479 or failed to fetch data
+2024-03-06 17:03:50,855 - INFO - Write completed for OCN 269293479
+2024-03-06 17:03:51,855 - INFO - 87/21897. Searching metadata for 228370469
+2024-03-06 17:03:52,299 - INFO - No results found for identifier 228370469 or failed to fetch data
+2024-03-06 17:03:52,302 - INFO - Write completed for OCN 228370469
+2024-03-06 17:03:53,303 - INFO - 88/21897. Searching metadata for 231582033
+2024-03-06 17:03:53,735 - INFO - No results found for identifier 231582033 or failed to fetch data
+2024-03-06 17:03:53,736 - INFO - Write completed for OCN 231582033
+2024-03-06 17:03:54,737 - INFO - 89/21897. Searching metadata for 228042468
+2024-03-06 17:03:55,234 - INFO - No results found for identifier 228042468 or failed to fetch data
+2024-03-06 17:03:55,242 - INFO - Write completed for OCN 228042468
+2024-03-06 17:03:56,243 - INFO - 90/21897. Searching metadata for 52413656
+2024-03-06 17:03:56,716 - INFO - No results found for identifier 52413656 or failed to fetch data
+2024-03-06 17:03:56,719 - INFO - Write completed for OCN 52413656
+2024-03-06 17:03:57,720 - INFO - 91/21897. Searching metadata for 754034049
+2024-03-06 17:03:58,221 - INFO - No results found for identifier 754034049 or failed to fetch data
+2024-03-06 17:03:58,222 - INFO - Write completed for OCN 754034049
+2024-03-06 17:03:59,223 - INFO - 92/21897. Searching metadata for 231580893
+2024-03-06 17:03:59,702 - INFO - No results found for identifier 231580893 or failed to fetch data
+2024-03-06 17:03:59,703 - INFO - Write completed for OCN 231580893
+2024-03-06 17:04:00,704 - INFO - 93/21897. Searching metadata for 707917547
+2024-03-06 17:04:01,154 - INFO - No results found for identifier 707917547 or failed to fetch data
+2024-03-06 17:04:01,156 - INFO - Write completed for OCN 707917547
+2024-03-06 17:04:02,157 - INFO - 94/21897. Searching metadata for 228048491
+2024-03-06 17:04:02,640 - INFO - No results found for identifier 228048491 or failed to fetch data
+2024-03-06 17:04:02,640 - INFO - Write completed for OCN 228048491
+2024-03-06 17:04:03,642 - INFO - 95/21897. Searching metadata for 50553265
+2024-03-06 17:04:04,106 - INFO - No results found for identifier 50553265 or failed to fetch data
+2024-03-06 17:04:04,107 - INFO - Write completed for OCN 50553265
+2024-03-06 17:04:05,108 - INFO - 96/21897. Searching metadata for 609971605
+2024-03-06 17:04:05,591 - INFO - No results found for identifier 609971605 or failed to fetch data
+2024-03-06 17:04:05,592 - INFO - Write completed for OCN 609971605
+2024-03-06 17:04:06,593 - INFO - 97/21897. Searching metadata for 559401704
+2024-03-06 17:04:07,036 - INFO - No results found for identifier 559401704 or failed to fetch data
+2024-03-06 17:04:07,037 - INFO - Write completed for OCN 559401704
+2024-03-06 17:04:08,039 - INFO - 98/21897. Searching metadata for 707917550
+2024-03-06 17:04:08,496 - INFO - No results found for identifier 707917550 or failed to fetch data
+2024-03-06 17:04:08,525 - INFO - Write completed for OCN 707917550
+2024-03-06 17:04:09,526 - INFO - 99/21897. Searching metadata for 50322411
+2024-03-06 17:04:09,971 - INFO - No results found for identifier 50322411 or failed to fetch data
+2024-03-06 17:04:09,972 - INFO - Write completed for OCN 50322411
+2024-03-06 17:04:10,973 - INFO - 100/21897. Searching metadata for 55664071
+2024-03-06 17:04:11,386 - INFO - No results found for identifier 55664071 or failed to fetch data
+2024-03-06 17:04:11,387 - INFO - Write completed for OCN 55664071
+2024-03-06 17:04:12,388 - INFO - 101/21897. Searching metadata for 50553250
+2024-03-06 17:04:12,839 - INFO - No results found for identifier 50553250 or failed to fetch data
+2024-03-06 17:04:12,840 - INFO - Write completed for OCN 50553250
+2024-03-06 17:04:13,841 - INFO - 102/21897. Searching metadata for 50321822
+2024-03-06 17:04:14,262 - INFO - No results found for identifier 50321822 or failed to fetch data
+2024-03-06 17:04:14,263 - INFO - Write completed for OCN 50321822
+2024-03-06 17:04:15,264 - INFO - 103/21897. Searching metadata for 55046874
+2024-03-06 17:04:15,753 - INFO - No results found for identifier 55046874 or failed to fetch data
+2024-03-06 17:04:15,754 - INFO - Write completed for OCN 55046874
+2024-03-06 17:04:16,755 - INFO - 104/21897. Searching metadata for 50488168
+2024-03-06 17:04:17,168 - INFO - No results found for identifier 50488168 or failed to fetch data
+2024-03-06 17:04:17,169 - INFO - Write completed for OCN 50488168
+2024-03-06 17:04:18,169 - INFO - 105/21897. Searching metadata for 808023178
+2024-03-06 17:04:18,575 - INFO - No results found for identifier 808023178 or failed to fetch data
+2024-03-06 17:04:18,575 - INFO - Write completed for OCN 808023178
+2024-03-06 17:04:19,577 - INFO - 106/21897. Searching metadata for 55663991
+2024-03-06 17:04:20,052 - INFO - No results found for identifier 55663991 or failed to fetch data
+2024-03-06 17:04:20,056 - INFO - Write completed for OCN 55663991
+2024-03-06 17:04:21,058 - INFO - 107/21897. Searching metadata for 559558913
+2024-03-06 17:04:21,504 - INFO - No results found for identifier 559558913 or failed to fetch data
+2024-03-06 17:04:21,508 - INFO - Write completed for OCN 559558913
+2024-03-06 17:04:22,510 - INFO - 108/21897. Searching metadata for 55046780
+2024-03-06 17:04:22,978 - INFO - No results found for identifier 55046780 or failed to fetch data
+2024-03-06 17:04:22,983 - INFO - Write completed for OCN 55046780
+2024-03-06 17:04:23,985 - INFO - 109/21897. Searching metadata for 228047982
+2024-03-06 17:04:24,447 - INFO - No results found for identifier 228047982 or failed to fetch data
+2024-03-06 17:04:24,449 - INFO - Write completed for OCN 228047982
+2024-03-06 17:04:25,450 - INFO - 110/21897. Searching metadata for 55046784
+2024-03-06 17:04:25,857 - INFO - No results found for identifier 55046784 or failed to fetch data
+2024-03-06 17:04:25,858 - INFO - Write completed for OCN 55046784
+2024-03-06 17:04:26,859 - INFO - 111/21897. Searching metadata for 697749913
+2024-03-06 17:04:27,268 - INFO - No results found for identifier 697749913 or failed to fetch data
+2024-03-06 17:04:27,269 - INFO - Write completed for OCN 697749913
+2024-03-06 17:04:28,270 - INFO - 112/21897. Searching metadata for 55664032
+2024-03-06 17:04:28,742 - INFO - No results found for identifier 55664032 or failed to fetch data
+2024-03-06 17:04:28,750 - INFO - Write completed for OCN 55664032
+2024-03-06 17:04:29,751 - INFO - 113/21897. Searching metadata for 55664044
+2024-03-06 17:04:30,223 - INFO - No results found for identifier 55664044 or failed to fetch data
+2024-03-06 17:04:30,224 - INFO - Write completed for OCN 55664044
+2024-03-06 17:04:31,225 - INFO - 114/21897. Searching metadata for 559648508
+2024-03-06 17:04:31,672 - INFO - No results found for identifier 559648508 or failed to fetch data
+2024-03-06 17:04:31,673 - INFO - Write completed for OCN 559648508
+2024-03-06 17:04:32,674 - INFO - 115/21897. Searching metadata for 55664103
+2024-03-06 17:04:33,111 - INFO - No results found for identifier 55664103 or failed to fetch data
+2024-03-06 17:04:33,112 - INFO - Write completed for OCN 55664103
+2024-03-06 17:04:34,113 - INFO - 116/21897. Searching metadata for 54360356
+2024-03-06 17:04:34,577 - INFO - No results found for identifier 54360356 or failed to fetch data
+2024-03-06 17:04:34,587 - INFO - Write completed for OCN 54360356
+2024-03-06 17:04:35,588 - INFO - 117/21897. Searching metadata for 697740106
+2024-03-06 17:04:36,071 - INFO - No results found for identifier 697740106 or failed to fetch data
+2024-03-06 17:04:36,075 - INFO - Write completed for OCN 697740106
+2024-03-06 17:04:37,078 - INFO - 118/21897. Searching metadata for 228048471
+2024-03-06 17:04:37,538 - INFO - No results found for identifier 228048471 or failed to fetch data
+2024-03-06 17:04:37,539 - INFO - Write completed for OCN 228048471
+2024-03-06 17:04:38,540 - INFO - 119/21897. Searching metadata for 707917560
+2024-03-06 17:04:38,999 - INFO - No results found for identifier 707917560 or failed to fetch data
+2024-03-06 17:04:39,000 - INFO - Write completed for OCN 707917560
+2024-03-06 17:04:40,001 - INFO - 120/21897. Searching metadata for 228373513
+2024-03-06 17:04:40,471 - INFO - No results found for identifier 228373513 or failed to fetch data
+2024-03-06 17:04:40,472 - INFO - Write completed for OCN 228373513
+2024-03-06 17:04:41,473 - INFO - 121/21897. Searching metadata for 55663916
+2024-03-06 17:04:41,906 - INFO - No results found for identifier 55663916 or failed to fetch data
+2024-03-06 17:04:41,907 - INFO - Write completed for OCN 55663916
+2024-03-06 17:04:42,908 - INFO - 122/21897. Searching metadata for 49852565
+2024-03-06 17:04:43,380 - INFO - No results found for identifier 49852565 or failed to fetch data
+2024-03-06 17:04:43,383 - INFO - Write completed for OCN 49852565
+2024-03-06 17:04:44,383 - INFO - 123/21897. Searching metadata for 559224035
+2024-03-06 17:04:44,855 - INFO - No results found for identifier 559224035 or failed to fetch data
+2024-03-06 17:04:44,855 - INFO - Write completed for OCN 559224035
+2024-03-06 17:04:45,856 - INFO - 124/21897. Searching metadata for 55046347
+2024-03-06 17:04:46,307 - INFO - No results found for identifier 55046347 or failed to fetch data
+2024-03-06 17:04:46,308 - INFO - Write completed for OCN 55046347
+2024-03-06 17:04:47,309 - INFO - 125/21897. Searching metadata for 559792721
+2024-03-06 17:04:47,780 - INFO - No results found for identifier 559792721 or failed to fetch data
+2024-03-06 17:04:47,782 - INFO - Write completed for OCN 559792721
+2024-03-06 17:04:48,783 - INFO - 126/21897. Searching metadata for 54360361
+2024-03-06 17:04:49,233 - INFO - No results found for identifier 54360361 or failed to fetch data
+2024-03-06 17:04:49,234 - INFO - Write completed for OCN 54360361
+2024-03-06 17:04:50,235 - INFO - 127/21897. Searching metadata for 50488187
+2024-03-06 17:04:50,691 - INFO - No results found for identifier 50488187 or failed to fetch data
+2024-03-06 17:04:50,692 - INFO - Write completed for OCN 50488187
+2024-03-06 17:04:51,696 - INFO - 128/21897. Searching metadata for 54761088
+2024-03-06 17:04:52,179 - INFO - No results found for identifier 54761088 or failed to fetch data
+2024-03-06 17:04:52,183 - INFO - Write completed for OCN 54761088
+2024-03-06 17:04:53,184 - INFO - 129/21897. Searching metadata for 559517717
+2024-03-06 17:04:53,637 - INFO - No results found for identifier 559517717 or failed to fetch data
+2024-03-06 17:04:53,637 - INFO - Write completed for OCN 559517717
+2024-03-06 17:04:54,638 - INFO - 130/21897. Searching metadata for 231581811
+2024-03-06 17:04:55,062 - INFO - No results found for identifier 231581811 or failed to fetch data
+2024-03-06 17:04:55,065 - INFO - Write completed for OCN 231581811
+2024-03-06 17:04:56,068 - INFO - 131/21897. Searching metadata for 57596827
+2024-03-06 17:04:56,531 - INFO - No results found for identifier 57596827 or failed to fetch data
+2024-03-06 17:04:56,532 - INFO - Write completed for OCN 57596827
+2024-03-06 17:04:57,533 - INFO - 132/21897. Searching metadata for 70743326
+2024-03-06 17:04:57,950 - INFO - No results found for identifier 70743326 or failed to fetch data
+2024-03-06 17:04:57,951 - INFO - Write completed for OCN 70743326
+2024-03-06 17:04:58,953 - INFO - 133/21897. Searching metadata for 55664083
+2024-03-06 17:04:59,430 - INFO - No results found for identifier 55664083 or failed to fetch data
+2024-03-06 17:04:59,434 - INFO - Write completed for OCN 55664083
+2024-03-06 17:05:00,435 - INFO - 134/21897. Searching metadata for 778315260
+2024-03-06 17:05:00,915 - INFO - No results found for identifier 778315260 or failed to fetch data
+2024-03-06 17:05:00,918 - INFO - Write completed for OCN 778315260
+2024-03-06 17:05:01,919 - INFO - 135/21897. Searching metadata for 228042471
+2024-03-06 17:05:02,372 - INFO - No results found for identifier 228042471 or failed to fetch data
+2024-03-06 17:05:02,373 - INFO - Write completed for OCN 228042471
+2024-03-06 17:05:03,375 - INFO - 136/21897. Searching metadata for 52413212
+2024-03-06 17:05:03,841 - INFO - No results found for identifier 52413212 or failed to fetch data
+2024-03-06 17:05:03,851 - INFO - Write completed for OCN 52413212
+2024-03-06 17:05:04,851 - INFO - 137/21897. Searching metadata for 70771531
+2024-03-06 17:05:05,299 - INFO - No results found for identifier 70771531 or failed to fetch data
+2024-03-06 17:05:05,302 - INFO - Write completed for OCN 70771531
+2024-03-06 17:05:06,303 - INFO - 138/21897. Searching metadata for 559152979
+2024-03-06 17:05:06,726 - INFO - No results found for identifier 559152979 or failed to fetch data
+2024-03-06 17:05:06,727 - INFO - Write completed for OCN 559152979
+2024-03-06 17:05:07,731 - INFO - 139/21897. Searching metadata for 55663933
+2024-03-06 17:05:08,166 - INFO - No results found for identifier 55663933 or failed to fetch data
+2024-03-06 17:05:08,184 - INFO - Write completed for OCN 55663933
+2024-03-06 17:05:09,185 - INFO - 140/21897. Searching metadata for 559205644
+2024-03-06 17:05:09,645 - INFO - No results found for identifier 559205644 or failed to fetch data
+2024-03-06 17:05:09,675 - INFO - Search stopped
+2024-03-06 17:05:12,410 - INFO - 141/21897. Searching metadata for 808022638
+2024-03-06 17:12:52,319 - INFO - Application started
+2024-03-06 17:13:16,301 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 17:13:16,942 - INFO - Search started for OCN with 21897 items and priority list: ['Harvard Library API']
+2024-03-06 17:13:16,947 - INFO - 0/21897. Searching metadata for 922903415
+2024-03-06 17:13:17,526 - INFO - No results found for identifier 922903415 or failed to fetch data
+2024-03-06 17:13:17,527 - INFO - Write completed for OCN 922903415
+2024-03-06 17:13:18,528 - INFO - 1/21897. Searching metadata for 922903416
+2024-03-06 17:13:19,087 - INFO - No results found for identifier 922903416 or failed to fetch data
+2024-03-06 17:13:19,088 - INFO - Write completed for OCN 922903416
+2024-03-06 17:13:20,106 - INFO - 2/21897. Searching metadata for 53866884
+2024-03-06 17:13:20,589 - INFO - No results found for identifier 53866884 or failed to fetch data
+2024-03-06 17:13:20,592 - INFO - Write completed for OCN 53866884
+2024-03-06 17:13:21,594 - INFO - 3/21897. Searching metadata for 53910944
+2024-03-06 17:13:22,048 - INFO - No results found for identifier 53910944 or failed to fetch data
+2024-03-06 17:13:22,049 - INFO - Write completed for OCN 53910944
+2024-03-06 17:13:23,051 - INFO - 4/21897. Searching metadata for 649970663
+2024-03-06 17:13:23,456 - INFO - No results found for identifier 649970663 or failed to fetch data
+2024-03-06 17:13:23,457 - INFO - Write completed for OCN 649970663
+2024-03-06 17:13:24,458 - INFO - 5/21897. Searching metadata for 228375157
+2024-03-06 17:13:24,920 - INFO - No results found for identifier 228375157 or failed to fetch data
+2024-03-06 17:13:24,922 - INFO - Write completed for OCN 228375157
+2024-03-06 17:13:25,923 - INFO - 6/21897. Searching metadata for 231581791
+2024-03-06 17:13:26,403 - INFO - No results found for identifier 231581791 or failed to fetch data
+2024-03-06 17:13:26,405 - INFO - Write completed for OCN 231581791
+2024-03-06 17:13:27,406 - INFO - 7/21897. Searching metadata for 70771534
+2024-03-06 17:13:27,822 - INFO - No results found for identifier 70771534 or failed to fetch data
+2024-03-06 17:13:27,824 - INFO - Write completed for OCN 70771534
+2024-03-06 17:13:28,826 - INFO - 8/21897. Searching metadata for 54360360
+2024-03-06 17:13:29,249 - INFO - No results found for identifier 54360360 or failed to fetch data
+2024-03-06 17:13:29,255 - INFO - Write completed for OCN 54360360
+2024-03-06 17:13:30,257 - INFO - 9/21897. Searching metadata for 228375035
+2024-03-06 17:13:30,705 - INFO - No results found for identifier 228375035 or failed to fetch data
+2024-03-06 17:13:30,707 - INFO - Write completed for OCN 228375035
+2024-03-06 17:13:31,709 - INFO - 10/21897. Searching metadata for 50308311
+2024-03-06 17:13:32,140 - INFO - No results found for identifier 50308311 or failed to fetch data
+2024-03-06 17:13:32,141 - INFO - Write completed for OCN 50308311
+2024-03-06 17:13:33,143 - INFO - 11/21897. Searching metadata for 52079511
+2024-03-06 17:13:33,573 - INFO - No results found for identifier 52079511 or failed to fetch data
+2024-03-06 17:13:33,575 - INFO - Write completed for OCN 52079511
+2024-03-06 17:13:34,576 - INFO - 12/21897. Searching metadata for 559365441
+2024-03-06 17:13:34,994 - INFO - No results found for identifier 559365441 or failed to fetch data
+2024-03-06 17:13:34,995 - INFO - Write completed for OCN 559365441
+2024-03-06 17:13:35,996 - INFO - 13/21897. Searching metadata for 55046892
+2024-03-06 17:13:36,468 - INFO - No results found for identifier 55046892 or failed to fetch data
+2024-03-06 17:13:36,469 - INFO - Write completed for OCN 55046892
+2024-03-06 17:13:37,471 - INFO - 14/21897. Searching metadata for 62860555
+2024-03-06 17:13:37,911 - INFO - No results found for identifier 62860555 or failed to fetch data
+2024-03-06 17:13:37,914 - INFO - Write completed for OCN 62860555
+2024-03-06 17:13:38,915 - INFO - 15/21897. Searching metadata for 697790483
+2024-03-06 17:13:39,381 - INFO - No results found for identifier 697790483 or failed to fetch data
+2024-03-06 17:13:39,384 - INFO - Write completed for OCN 697790483
+2024-03-06 17:13:40,385 - INFO - 16/21897. Searching metadata for 51004852
+2024-03-06 17:13:40,831 - INFO - No results found for identifier 51004852 or failed to fetch data
+2024-03-06 17:13:40,838 - INFO - Write completed for OCN 51004852
+2024-03-06 17:13:41,839 - INFO - 17/21897. Searching metadata for 424384171
+2024-03-06 17:13:42,252 - INFO - Write completed for OCN 424384171
+2024-03-06 17:13:43,254 - INFO - 18/21897. Searching metadata for 55046833
+2024-03-06 17:13:43,658 - INFO - No results found for identifier 55046833 or failed to fetch data
+2024-03-06 17:13:43,659 - INFO - Write completed for OCN 55046833
+2024-03-06 17:13:44,660 - INFO - 19/21897. Searching metadata for 707917523
+2024-03-06 17:13:45,071 - INFO - No results found for identifier 707917523 or failed to fetch data
+2024-03-06 17:13:45,072 - INFO - Write completed for OCN 707917523
+2024-03-06 17:13:46,075 - INFO - 20/21897. Searching metadata for 228048153
+2024-03-06 17:13:46,603 - INFO - No results found for identifier 228048153 or failed to fetch data
+2024-03-06 17:13:46,609 - INFO - Write completed for OCN 228048153
+2024-03-06 17:13:47,611 - INFO - 21/21897. Searching metadata for 779891795
+2024-03-06 17:13:48,017 - INFO - No results found for identifier 779891795 or failed to fetch data
+2024-03-06 17:13:48,019 - INFO - Write completed for OCN 779891795
+2024-03-06 17:13:49,025 - INFO - 22/21897. Searching metadata for 231580878
+2024-03-06 17:13:49,461 - INFO - No results found for identifier 231580878 or failed to fetch data
+2024-03-06 17:13:49,462 - INFO - Write completed for OCN 231580878
+2024-03-06 17:13:50,464 - INFO - 23/21897. Searching metadata for 559307665
+2024-03-06 17:13:50,968 - INFO - No results found for identifier 559307665 or failed to fetch data
+2024-03-06 17:13:50,971 - INFO - Write completed for OCN 559307665
+2024-03-06 17:13:51,972 - INFO - 24/21897. Searching metadata for 72823569
+2024-03-06 17:13:52,406 - INFO - No results found for identifier 72823569 or failed to fetch data
+2024-03-06 17:13:52,408 - INFO - Write completed for OCN 72823569
+2024-03-06 17:13:53,410 - INFO - 25/21897. Searching metadata for 559152002
+2024-03-06 17:13:53,845 - INFO - No results found for identifier 559152002 or failed to fetch data
+2024-03-06 17:13:53,845 - INFO - Write completed for OCN 559152002
+2024-03-06 17:13:54,847 - INFO - 26/21897. Searching metadata for 707917524
+2024-03-06 17:13:55,259 - INFO - No results found for identifier 707917524 or failed to fetch data
+2024-03-06 17:13:55,260 - INFO - Write completed for OCN 707917524
+2024-03-06 17:13:56,261 - INFO - 27/21897. Searching metadata for 228049587
+2024-03-06 17:13:56,670 - INFO - No results found for identifier 228049587 or failed to fetch data
+2024-03-06 17:13:56,671 - INFO - Write completed for OCN 228049587
+2024-03-06 17:13:57,671 - INFO - 28/21897. Searching metadata for 228374866
+2024-03-06 17:13:58,092 - INFO - No results found for identifier 228374866 or failed to fetch data
+2024-03-06 17:13:58,093 - INFO - Write completed for OCN 228374866
+2024-03-06 17:13:59,094 - INFO - 29/21897. Searching metadata for 707917525
+2024-03-06 17:13:59,538 - INFO - No results found for identifier 707917525 or failed to fetch data
+2024-03-06 17:13:59,542 - INFO - Write completed for OCN 707917525
+2024-03-06 17:14:00,543 - INFO - 30/21897. Searching metadata for 228049540
+2024-03-06 17:14:00,984 - INFO - No results found for identifier 228049540 or failed to fetch data
+2024-03-06 17:14:00,987 - INFO - Write completed for OCN 228049540
+2024-03-06 17:14:01,989 - INFO - 31/21897. Searching metadata for 50322301
+2024-03-06 17:14:02,417 - INFO - Write completed for OCN 50322301
+2024-03-06 17:14:03,418 - INFO - 32/21897. Searching metadata for 808022420
+2024-03-06 17:14:03,850 - INFO - No results found for identifier 808022420 or failed to fetch data
+2024-03-06 17:14:03,856 - INFO - Write completed for OCN 808022420
+2024-03-06 17:14:04,857 - INFO - 33/21897. Searching metadata for 55664114
+2024-03-06 17:14:05,281 - INFO - No results found for identifier 55664114 or failed to fetch data
+2024-03-06 17:14:05,283 - INFO - Write completed for OCN 55664114
+2024-03-06 17:14:06,285 - INFO - 34/21897. Searching metadata for 55663736
+2024-03-06 17:14:06,779 - INFO - No results found for identifier 55663736 or failed to fetch data
+2024-03-06 17:14:06,781 - INFO - Write completed for OCN 55663736
+2024-03-06 17:14:07,786 - INFO - 35/21897. Searching metadata for 55664087
+2024-03-06 17:14:08,246 - INFO - No results found for identifier 55664087 or failed to fetch data
+2024-03-06 17:14:08,247 - INFO - Write completed for OCN 55664087
+2024-03-06 17:14:09,249 - INFO - 36/21897. Searching metadata for 55664076
+2024-03-06 17:14:09,674 - INFO - No results found for identifier 55664076 or failed to fetch data
+2024-03-06 17:14:09,675 - INFO - Write completed for OCN 55664076
+2024-03-06 17:14:10,677 - INFO - 37/21897. Searching metadata for 70771537
+2024-03-06 17:14:11,122 - INFO - No results found for identifier 70771537 or failed to fetch data
+2024-03-06 17:14:11,123 - INFO - Write completed for OCN 70771537
+2024-03-06 17:14:12,124 - INFO - 38/21897. Searching metadata for 231581833
+2024-03-06 17:14:12,607 - INFO - No results found for identifier 231581833 or failed to fetch data
+2024-03-06 17:14:12,608 - INFO - Write completed for OCN 231581833
+2024-03-06 17:14:13,608 - INFO - 39/21897. Searching metadata for 559258691
+2024-03-06 17:14:14,068 - INFO - No results found for identifier 559258691 or failed to fetch data
+2024-03-06 17:14:14,069 - INFO - Write completed for OCN 559258691
+2024-03-06 17:14:15,071 - INFO - 40/21897. Searching metadata for 70754603
+2024-03-06 17:14:15,512 - INFO - No results found for identifier 70754603 or failed to fetch data
+2024-03-06 17:14:15,513 - INFO - Write completed for OCN 70754603
+2024-03-06 17:14:16,519 - INFO - 41/21897. Searching metadata for 559114966
+2024-03-06 17:14:16,996 - INFO - No results found for identifier 559114966 or failed to fetch data
+2024-03-06 17:14:16,997 - INFO - Write completed for OCN 559114966
+2024-03-06 17:14:17,997 - INFO - 42/21897. Searching metadata for 559187306
+2024-03-06 17:14:18,492 - INFO - No results found for identifier 559187306 or failed to fetch data
+2024-03-06 17:14:18,494 - INFO - Write completed for OCN 559187306
+2024-03-06 17:14:19,496 - INFO - 43/21897. Searching metadata for 54360379
+2024-03-06 17:14:20,013 - INFO - No results found for identifier 54360379 or failed to fetch data
+2024-03-06 17:14:20,014 - INFO - Write completed for OCN 54360379
+2024-03-06 17:14:21,016 - INFO - 44/21897. Searching metadata for 808022533
+2024-03-06 17:14:21,528 - INFO - No results found for identifier 808022533 or failed to fetch data
+2024-03-06 17:14:21,529 - INFO - Write completed for OCN 808022533
+2024-03-06 17:14:22,531 - INFO - 45/21897. Searching metadata for 707917528
+2024-03-06 17:14:23,005 - INFO - No results found for identifier 707917528 or failed to fetch data
+2024-03-06 17:14:23,006 - INFO - Write completed for OCN 707917528
+2024-03-06 17:14:24,008 - INFO - 46/21897. Searching metadata for 55664003
+2024-03-06 17:14:24,479 - INFO - Write completed for OCN 55664003
+2024-03-06 17:14:25,480 - INFO - 47/21897. Searching metadata for 55664050
+2024-03-06 17:14:25,955 - INFO - No results found for identifier 55664050 or failed to fetch data
+2024-03-06 17:14:25,956 - INFO - Write completed for OCN 55664050
+2024-03-06 17:14:26,957 - INFO - 48/21897. Searching metadata for 231580577
+2024-03-06 17:14:27,416 - INFO - No results found for identifier 231580577 or failed to fetch data
+2024-03-06 17:14:27,420 - INFO - Write completed for OCN 231580577
+2024-03-06 17:14:28,422 - INFO - 49/21897. Searching metadata for 50493476
+2024-03-06 17:14:28,970 - INFO - No results found for identifier 50493476 or failed to fetch data
+2024-03-06 17:14:28,978 - INFO - Write completed for OCN 50493476
+2024-03-06 17:14:29,979 - INFO - 50/21897. Searching metadata for 707917529
+2024-03-06 17:14:30,457 - INFO - No results found for identifier 707917529 or failed to fetch data
+2024-03-06 17:14:30,458 - INFO - Write completed for OCN 707917529
+2024-03-06 17:14:31,460 - INFO - 51/21897. Searching metadata for 559384701
+2024-03-06 17:14:32,018 - INFO - No results found for identifier 559384701 or failed to fetch data
+2024-03-06 17:14:32,019 - INFO - Write completed for OCN 559384701
+2024-03-06 17:14:33,020 - INFO - 52/21897. Searching metadata for 55664074
+2024-03-06 17:14:33,469 - INFO - No results found for identifier 55664074 or failed to fetch data
+2024-03-06 17:14:33,470 - INFO - Write completed for OCN 55664074
+2024-03-06 17:14:34,471 - INFO - 53/21897. Searching metadata for 50797894
+2024-03-06 17:14:34,903 - INFO - No results found for identifier 50797894 or failed to fetch data
+2024-03-06 17:14:34,907 - INFO - Write completed for OCN 50797894
+2024-03-06 17:14:35,908 - INFO - 54/21897. Searching metadata for 559622808
+2024-03-06 17:14:36,366 - INFO - No results found for identifier 559622808 or failed to fetch data
+2024-03-06 17:14:36,367 - INFO - Write completed for OCN 559622808
+2024-03-06 17:16:30,540 - INFO - Application started
+2024-03-06 17:16:44,208 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 17:16:54,908 - INFO - Search started for OCN with 21897 items and priority list: ['Harvard Library API']
+2024-03-06 17:16:54,913 - INFO - 0/21897. Searching metadata for 922903415
+2024-03-06 17:16:55,398 - INFO - No results found for identifier 922903415 or failed to fetch data
+2024-03-06 17:16:55,399 - INFO - Write completed for OCN 922903415
+2024-03-06 17:16:56,401 - INFO - 1/21897. Searching metadata for 922903416
+2024-03-06 17:16:56,862 - INFO - No results found for identifier 922903416 or failed to fetch data
+2024-03-06 17:16:56,870 - INFO - Write completed for OCN 922903416
+2024-03-06 17:16:57,872 - INFO - 2/21897. Searching metadata for 53866884
+2024-03-06 17:16:58,321 - INFO - No results found for identifier 53866884 or failed to fetch data
+2024-03-06 17:16:58,322 - INFO - Write completed for OCN 53866884
+2024-03-06 17:16:59,324 - INFO - 3/21897. Searching metadata for 53910944
+2024-03-06 17:16:59,855 - INFO - No results found for identifier 53910944 or failed to fetch data
+2024-03-06 17:16:59,857 - INFO - Write completed for OCN 53910944
+2024-03-06 17:17:00,857 - INFO - 4/21897. Searching metadata for 649970663
+2024-03-06 17:17:01,294 - INFO - No results found for identifier 649970663 or failed to fetch data
+2024-03-06 17:17:01,298 - INFO - Write completed for OCN 649970663
+2024-03-06 17:17:02,300 - INFO - 5/21897. Searching metadata for 228375157
+2024-03-06 17:17:02,722 - INFO - No results found for identifier 228375157 or failed to fetch data
+2024-03-06 17:17:02,723 - INFO - Write completed for OCN 228375157
+2024-03-06 17:17:03,725 - INFO - 6/21897. Searching metadata for 231581791
+2024-03-06 17:17:04,199 - INFO - No results found for identifier 231581791 or failed to fetch data
+2024-03-06 17:17:04,203 - INFO - Write completed for OCN 231581791
+2024-03-06 17:17:05,204 - INFO - 7/21897. Searching metadata for 70771534
+2024-03-06 17:17:05,644 - INFO - No results found for identifier 70771534 or failed to fetch data
+2024-03-06 17:17:05,648 - INFO - Write completed for OCN 70771534
+2024-03-06 17:17:06,650 - INFO - 8/21897. Searching metadata for 54360360
+2024-03-06 17:17:07,084 - INFO - No results found for identifier 54360360 or failed to fetch data
+2024-03-06 17:17:07,085 - INFO - Write completed for OCN 54360360
+2024-03-06 17:17:08,087 - INFO - 9/21897. Searching metadata for 228375035
+2024-03-06 17:17:08,517 - INFO - No results found for identifier 228375035 or failed to fetch data
+2024-03-06 17:17:08,518 - INFO - Write completed for OCN 228375035
+2024-03-06 17:17:09,519 - INFO - 10/21897. Searching metadata for 50308311
+2024-03-06 17:17:09,974 - INFO - No results found for identifier 50308311 or failed to fetch data
+2024-03-06 17:17:09,975 - INFO - Write completed for OCN 50308311
+2024-03-06 17:17:10,976 - INFO - 11/21897. Searching metadata for 52079511
+2024-03-06 17:17:11,391 - INFO - No results found for identifier 52079511 or failed to fetch data
+2024-03-06 17:17:11,392 - INFO - Write completed for OCN 52079511
+2024-03-06 17:17:12,393 - INFO - 12/21897. Searching metadata for 559365441
+2024-03-06 17:17:12,842 - INFO - No results found for identifier 559365441 or failed to fetch data
+2024-03-06 17:17:12,843 - INFO - Write completed for OCN 559365441
+2024-03-06 17:17:13,844 - INFO - 13/21897. Searching metadata for 55046892
+2024-03-06 17:17:14,285 - INFO - No results found for identifier 55046892 or failed to fetch data
+2024-03-06 17:17:14,286 - INFO - Write completed for OCN 55046892
+2024-03-06 17:17:15,287 - INFO - 14/21897. Searching metadata for 62860555
+2024-03-06 17:17:15,719 - INFO - No results found for identifier 62860555 or failed to fetch data
+2024-03-06 17:17:15,720 - INFO - Write completed for OCN 62860555
+2024-03-06 17:17:16,721 - INFO - 15/21897. Searching metadata for 697790483
+2024-03-06 17:17:17,223 - INFO - No results found for identifier 697790483 or failed to fetch data
+2024-03-06 17:17:17,224 - INFO - Write completed for OCN 697790483
+2024-03-06 17:17:18,225 - INFO - 16/21897. Searching metadata for 51004852
+2024-03-06 17:17:18,652 - INFO - No results found for identifier 51004852 or failed to fetch data
+2024-03-06 17:17:18,653 - INFO - Write completed for OCN 51004852
+2024-03-06 17:17:19,654 - INFO - 17/21897. Searching metadata for 424384171
+2024-03-06 17:17:20,087 - INFO - Write completed for OCN 424384171
+2024-03-06 17:17:21,088 - INFO - 18/21897. Searching metadata for 55046833
+2024-03-06 17:17:21,525 - INFO - No results found for identifier 55046833 or failed to fetch data
+2024-03-06 17:17:21,526 - INFO - Write completed for OCN 55046833
+2024-03-06 17:17:22,527 - INFO - 19/21897. Searching metadata for 707917523
+2024-03-06 17:17:22,986 - INFO - No results found for identifier 707917523 or failed to fetch data
+2024-03-06 17:17:22,988 - INFO - Write completed for OCN 707917523
+2024-03-06 17:17:23,989 - INFO - 20/21897. Searching metadata for 228048153
+2024-03-06 17:17:24,481 - INFO - No results found for identifier 228048153 or failed to fetch data
+2024-03-06 17:17:24,490 - INFO - Write completed for OCN 228048153
+2024-03-06 17:17:25,491 - INFO - 21/21897. Searching metadata for 779891795
+2024-03-06 17:17:25,946 - INFO - No results found for identifier 779891795 or failed to fetch data
+2024-03-06 17:17:25,950 - INFO - Write completed for OCN 779891795
+2024-03-06 17:17:26,951 - INFO - 22/21897. Searching metadata for 231580878
+2024-03-06 17:17:27,406 - INFO - No results found for identifier 231580878 or failed to fetch data
+2024-03-06 17:17:27,408 - INFO - Write completed for OCN 231580878
+2024-03-06 17:17:28,409 - INFO - 23/21897. Searching metadata for 559307665
+2024-03-06 17:17:28,862 - INFO - No results found for identifier 559307665 or failed to fetch data
+2024-03-06 17:17:28,870 - INFO - Write completed for OCN 559307665
+2024-03-06 17:17:29,871 - INFO - 24/21897. Searching metadata for 72823569
+2024-03-06 17:17:30,325 - INFO - No results found for identifier 72823569 or failed to fetch data
+2024-03-06 17:17:30,326 - INFO - Write completed for OCN 72823569
+2024-03-06 17:17:31,327 - INFO - 25/21897. Searching metadata for 559152002
+2024-03-06 17:17:31,751 - INFO - No results found for identifier 559152002 or failed to fetch data
+2024-03-06 17:17:31,752 - INFO - Write completed for OCN 559152002
+2024-03-06 17:17:32,753 - INFO - 26/21897. Searching metadata for 707917524
+2024-03-06 17:17:33,186 - INFO - No results found for identifier 707917524 or failed to fetch data
+2024-03-06 17:17:33,187 - INFO - Write completed for OCN 707917524
+2024-03-06 17:17:34,188 - INFO - 27/21897. Searching metadata for 228049587
+2024-03-06 17:17:34,602 - INFO - No results found for identifier 228049587 or failed to fetch data
+2024-03-06 17:17:34,603 - INFO - Write completed for OCN 228049587
+2024-03-06 17:17:35,604 - INFO - 28/21897. Searching metadata for 228374866
+2024-03-06 17:17:36,103 - INFO - No results found for identifier 228374866 or failed to fetch data
+2024-03-06 17:17:36,106 - INFO - Write completed for OCN 228374866
+2024-03-06 17:17:37,107 - INFO - 29/21897. Searching metadata for 707917525
+2024-03-06 17:17:37,616 - INFO - No results found for identifier 707917525 or failed to fetch data
+2024-03-06 17:17:37,616 - INFO - Write completed for OCN 707917525
+2024-03-06 17:17:38,618 - INFO - 30/21897. Searching metadata for 228049540
+2024-03-06 17:17:39,116 - INFO - No results found for identifier 228049540 or failed to fetch data
+2024-03-06 17:17:39,117 - INFO - Write completed for OCN 228049540
+2024-03-06 17:17:40,119 - INFO - 31/21897. Searching metadata for 50322301
+2024-03-06 17:17:40,575 - INFO - Write completed for OCN 50322301
+2024-03-06 17:17:41,576 - INFO - 32/21897. Searching metadata for 808022420
+2024-03-06 17:17:42,115 - INFO - No results found for identifier 808022420 or failed to fetch data
+2024-03-06 17:17:42,118 - INFO - Write completed for OCN 808022420
+2024-03-06 17:17:43,118 - INFO - 33/21897. Searching metadata for 55664114
+2024-03-06 17:17:43,577 - INFO - No results found for identifier 55664114 or failed to fetch data
+2024-03-06 17:17:43,587 - INFO - Write completed for OCN 55664114
+2024-03-06 17:17:44,588 - INFO - 34/21897. Searching metadata for 55663736
+2024-03-06 17:17:45,056 - INFO - No results found for identifier 55663736 or failed to fetch data
+2024-03-06 17:17:45,057 - INFO - Write completed for OCN 55663736
+2024-03-06 17:17:46,059 - INFO - 35/21897. Searching metadata for 55664087
+2024-03-06 17:17:46,521 - INFO - No results found for identifier 55664087 or failed to fetch data
+2024-03-06 17:17:46,522 - INFO - Write completed for OCN 55664087
+2024-03-06 17:17:47,523 - INFO - 36/21897. Searching metadata for 55664076
+2024-03-06 17:17:47,971 - INFO - No results found for identifier 55664076 or failed to fetch data
+2024-03-06 17:17:47,973 - INFO - Write completed for OCN 55664076
+2024-03-06 17:17:48,973 - INFO - 37/21897. Searching metadata for 70771537
+2024-03-06 17:17:49,394 - INFO - No results found for identifier 70771537 or failed to fetch data
+2024-03-06 17:17:49,402 - INFO - Write completed for OCN 70771537
+2024-03-06 17:17:50,404 - INFO - 38/21897. Searching metadata for 231581833
+2024-03-06 17:17:50,836 - INFO - No results found for identifier 231581833 or failed to fetch data
+2024-03-06 17:17:50,837 - INFO - Write completed for OCN 231581833
+2024-03-06 17:17:51,838 - INFO - 39/21897. Searching metadata for 559258691
+2024-03-06 17:17:52,240 - INFO - No results found for identifier 559258691 or failed to fetch data
+2024-03-06 17:17:52,241 - INFO - Write completed for OCN 559258691
+2024-03-06 17:17:53,242 - INFO - 40/21897. Searching metadata for 70754603
+2024-03-06 17:17:53,652 - INFO - No results found for identifier 70754603 or failed to fetch data
+2024-03-06 17:17:53,653 - INFO - Write completed for OCN 70754603
+2024-03-06 17:17:54,654 - INFO - 41/21897. Searching metadata for 559114966
+2024-03-06 17:17:55,087 - INFO - No results found for identifier 559114966 or failed to fetch data
+2024-03-06 17:17:55,107 - INFO - Write completed for OCN 559114966
+2024-03-06 17:17:56,109 - INFO - 42/21897. Searching metadata for 559187306
+2024-03-06 17:17:56,570 - INFO - No results found for identifier 559187306 or failed to fetch data
+2024-03-06 17:17:56,572 - INFO - Write completed for OCN 559187306
+2024-03-06 17:17:57,573 - INFO - 43/21897. Searching metadata for 54360379
+2024-03-06 17:17:57,995 - INFO - No results found for identifier 54360379 or failed to fetch data
+2024-03-06 17:17:57,997 - INFO - Write completed for OCN 54360379
+2024-03-06 17:17:58,999 - INFO - 44/21897. Searching metadata for 808022533
+2024-03-06 17:17:59,449 - INFO - No results found for identifier 808022533 or failed to fetch data
+2024-03-06 17:17:59,450 - INFO - Write completed for OCN 808022533
+2024-03-06 17:18:00,452 - INFO - 45/21897. Searching metadata for 707917528
+2024-03-06 17:18:00,882 - INFO - No results found for identifier 707917528 or failed to fetch data
+2024-03-06 17:18:00,884 - INFO - Write completed for OCN 707917528
+2024-03-06 17:18:01,887 - INFO - 46/21897. Searching metadata for 55664003
+2024-03-06 17:18:02,375 - INFO - Write completed for OCN 55664003
+2024-03-06 17:18:03,377 - INFO - 47/21897. Searching metadata for 55664050
+2024-03-06 17:18:03,838 - INFO - No results found for identifier 55664050 or failed to fetch data
+2024-03-06 17:18:03,839 - INFO - Write completed for OCN 55664050
+2024-03-06 17:18:04,840 - INFO - 48/21897. Searching metadata for 231580577
+2024-03-06 17:18:05,298 - INFO - No results found for identifier 231580577 or failed to fetch data
+2024-03-06 17:18:05,302 - INFO - Write completed for OCN 231580577
+2024-03-06 17:18:06,304 - INFO - 49/21897. Searching metadata for 50493476
+2024-03-06 17:18:06,762 - INFO - No results found for identifier 50493476 or failed to fetch data
+2024-03-06 17:18:06,767 - INFO - Write completed for OCN 50493476
+2024-03-06 17:18:07,769 - INFO - 50/21897. Searching metadata for 707917529
+2024-03-06 17:18:08,184 - INFO - No results found for identifier 707917529 or failed to fetch data
+2024-03-06 17:18:08,186 - INFO - Write completed for OCN 707917529
+2024-03-06 17:18:09,187 - INFO - 51/21897. Searching metadata for 559384701
+2024-03-06 17:18:09,641 - INFO - No results found for identifier 559384701 or failed to fetch data
+2024-03-06 17:18:09,642 - INFO - Write completed for OCN 559384701
+2024-03-06 17:18:10,643 - INFO - 52/21897. Searching metadata for 55664074
+2024-03-06 17:18:11,102 - INFO - No results found for identifier 55664074 or failed to fetch data
+2024-03-06 17:18:11,103 - INFO - Write completed for OCN 55664074
+2024-03-06 17:18:12,104 - INFO - 53/21897. Searching metadata for 50797894
+2024-03-06 17:18:12,542 - INFO - No results found for identifier 50797894 or failed to fetch data
+2024-03-06 17:18:12,543 - INFO - Write completed for OCN 50797894
+2024-03-06 17:18:13,546 - INFO - 54/21897. Searching metadata for 559622808
+2024-03-06 17:18:13,961 - INFO - No results found for identifier 559622808 or failed to fetch data
+2024-03-06 17:18:13,966 - INFO - Write completed for OCN 559622808
+2024-03-06 17:18:14,968 - INFO - 55/21897. Searching metadata for 70773476
+2024-03-06 17:18:15,414 - INFO - No results found for identifier 70773476 or failed to fetch data
+2024-03-06 17:18:15,418 - INFO - Write completed for OCN 70773476
+2024-03-06 17:18:16,419 - INFO - 56/21897. Searching metadata for 55046840
+2024-03-06 17:18:16,968 - INFO - Write completed for OCN 55046840
+2024-03-06 17:18:17,970 - INFO - 57/21897. Searching metadata for 228375131
+2024-03-06 17:18:18,464 - INFO - No results found for identifier 228375131 or failed to fetch data
+2024-03-06 17:18:18,488 - INFO - Write completed for OCN 228375131
+2024-03-06 17:18:19,490 - INFO - 58/21897. Searching metadata for 70736481
+2024-03-06 17:18:19,930 - INFO - No results found for identifier 70736481 or failed to fetch data
+2024-03-06 17:18:19,931 - INFO - Write completed for OCN 70736481
+2024-03-06 17:18:20,933 - INFO - 59/21897. Searching metadata for 231581840
+2024-03-06 17:18:21,198 - INFO - Search stopped
+2024-03-06 17:18:21,368 - INFO - No results found for identifier 231581840 or failed to fetch data
+2024-03-06 17:18:24,558 - INFO - 60/21897. Searching metadata for 50553231
+2024-03-06 17:20:26,088 - INFO - Application started
+2024-03-06 17:20:43,115 - INFO - Updated priority list: ['Harvard Library API']
+2024-03-06 17:20:44,050 - INFO - Search started for OCN with 21897 items and priority list: ['Harvard Library API']
+2024-03-06 17:20:44,064 - INFO - 0/21897. Searching metadata for 922903415
+2024-03-06 17:20:44,067 - INFO - Looking for OCN 922903415 in the database.
+2024-03-06 17:20:44,069 - INFO - No database record found for OCN 922903415.
+2024-03-06 17:20:44,673 - INFO - No results found for identifier 922903415 or failed to fetch data
+2024-03-06 17:20:44,677 - INFO - Write completed for OCN 922903415
+2024-03-06 17:20:45,679 - INFO - 1/21897. Searching metadata for 922903416
+2024-03-06 17:20:45,680 - INFO - Looking for OCN 922903416 in the database.
+2024-03-06 17:20:45,681 - INFO - No database record found for OCN 922903416.
+2024-03-06 17:20:46,129 - INFO - No results found for identifier 922903416 or failed to fetch data
+2024-03-06 17:20:46,131 - INFO - Write completed for OCN 922903416
+2024-03-06 17:20:47,133 - INFO - 2/21897. Searching metadata for 53866884
+2024-03-06 17:20:47,133 - INFO - Looking for OCN 53866884 in the database.
+2024-03-06 17:20:47,134 - INFO - No database record found for OCN 53866884.
+2024-03-06 17:20:47,579 - INFO - No results found for identifier 53866884 or failed to fetch data
+2024-03-06 17:20:47,583 - INFO - Write completed for OCN 53866884
+2024-03-06 17:20:48,585 - INFO - 3/21897. Searching metadata for 53910944
+2024-03-06 17:20:48,585 - INFO - Looking for OCN 53910944 in the database.
+2024-03-06 17:20:48,587 - INFO - No database record found for OCN 53910944.
+2024-03-06 17:20:49,039 - INFO - No results found for identifier 53910944 or failed to fetch data
+2024-03-06 17:20:49,040 - INFO - Write completed for OCN 53910944
+2024-03-06 17:20:50,041 - INFO - 4/21897. Searching metadata for 649970663
+2024-03-06 17:20:50,042 - INFO - Looking for OCN 649970663 in the database.
+2024-03-06 17:20:50,044 - INFO - No database record found for OCN 649970663.
+2024-03-06 17:20:50,461 - INFO - No results found for identifier 649970663 or failed to fetch data
+2024-03-06 17:20:50,463 - INFO - Write completed for OCN 649970663
+2024-03-06 17:20:51,464 - INFO - 5/21897. Searching metadata for 228375157
+2024-03-06 17:20:51,464 - INFO - Looking for OCN 228375157 in the database.
+2024-03-06 17:20:51,465 - INFO - No database record found for OCN 228375157.
+2024-03-06 17:20:51,930 - INFO - No results found for identifier 228375157 or failed to fetch data
+2024-03-06 17:20:51,934 - INFO - Write completed for OCN 228375157
+2024-03-06 17:20:52,938 - INFO - 6/21897. Searching metadata for 231581791
+2024-03-06 17:20:52,938 - INFO - Looking for OCN 231581791 in the database.
+2024-03-06 17:20:52,939 - INFO - No database record found for OCN 231581791.
+2024-03-06 17:20:53,356 - INFO - No results found for identifier 231581791 or failed to fetch data
+2024-03-06 17:20:53,364 - INFO - Write completed for OCN 231581791
+2024-03-06 17:20:54,365 - INFO - 7/21897. Searching metadata for 70771534
+2024-03-06 17:20:54,365 - INFO - Looking for OCN 70771534 in the database.
+2024-03-06 17:20:54,366 - INFO - No database record found for OCN 70771534.
+2024-03-06 17:20:54,773 - INFO - No results found for identifier 70771534 or failed to fetch data
+2024-03-06 17:20:54,780 - INFO - Write completed for OCN 70771534
+2024-03-06 17:20:55,781 - INFO - 8/21897. Searching metadata for 54360360
+2024-03-06 17:20:55,789 - INFO - Looking for OCN 54360360 in the database.
+2024-03-06 17:20:55,790 - INFO - No database record found for OCN 54360360.
+2024-03-06 17:20:56,297 - INFO - No results found for identifier 54360360 or failed to fetch data
+2024-03-06 17:20:56,299 - INFO - Write completed for OCN 54360360
+2024-03-06 17:20:57,301 - INFO - 9/21897. Searching metadata for 228375035
+2024-03-06 17:20:57,301 - INFO - Looking for OCN 228375035 in the database.
+2024-03-06 17:20:57,302 - INFO - No database record found for OCN 228375035.
+2024-03-06 17:20:57,780 - INFO - No results found for identifier 228375035 or failed to fetch data
+2024-03-06 17:20:57,783 - INFO - Write completed for OCN 228375035
+2024-03-06 17:20:58,784 - INFO - 10/21897. Searching metadata for 50308311
+2024-03-06 17:20:58,784 - INFO - Looking for OCN 50308311 in the database.
+2024-03-06 17:20:58,785 - INFO - No database record found for OCN 50308311.
+2024-03-06 17:20:59,246 - INFO - No results found for identifier 50308311 or failed to fetch data
+2024-03-06 17:20:59,247 - INFO - Write completed for OCN 50308311
+2024-03-06 17:21:00,248 - INFO - 11/21897. Searching metadata for 52079511
+2024-03-06 17:21:00,248 - INFO - Looking for OCN 52079511 in the database.
+2024-03-06 17:21:00,249 - INFO - No database record found for OCN 52079511.
+2024-03-06 17:21:00,681 - INFO - No results found for identifier 52079511 or failed to fetch data
+2024-03-06 17:21:00,682 - INFO - Write completed for OCN 52079511
+2024-03-06 17:21:01,683 - INFO - 12/21897. Searching metadata for 559365441
+2024-03-06 17:21:01,683 - INFO - Looking for OCN 559365441 in the database.
+2024-03-06 17:21:01,684 - INFO - No database record found for OCN 559365441.
+2024-03-06 17:21:02,119 - INFO - No results found for identifier 559365441 or failed to fetch data
+2024-03-06 17:21:02,120 - INFO - Write completed for OCN 559365441
+2024-03-06 17:21:03,121 - INFO - 13/21897. Searching metadata for 55046892
+2024-03-06 17:21:03,121 - INFO - Looking for OCN 55046892 in the database.
+2024-03-06 17:21:03,122 - INFO - No database record found for OCN 55046892.
+2024-03-06 17:21:03,534 - INFO - No results found for identifier 55046892 or failed to fetch data
+2024-03-06 17:21:03,535 - INFO - Write completed for OCN 55046892
+2024-03-06 17:21:04,536 - INFO - 14/21897. Searching metadata for 62860555
+2024-03-06 17:21:04,536 - INFO - Looking for OCN 62860555 in the database.
+2024-03-06 17:21:04,537 - INFO - No database record found for OCN 62860555.
+2024-03-06 17:21:04,943 - INFO - No results found for identifier 62860555 or failed to fetch data
+2024-03-06 17:21:04,945 - INFO - Write completed for OCN 62860555
+2024-03-06 17:21:05,945 - INFO - 15/21897. Searching metadata for 697790483
+2024-03-06 17:21:05,945 - INFO - Looking for OCN 697790483 in the database.
+2024-03-06 17:21:05,946 - INFO - No database record found for OCN 697790483.
+2024-03-06 17:21:06,344 - INFO - No results found for identifier 697790483 or failed to fetch data
+2024-03-06 17:21:06,345 - INFO - Write completed for OCN 697790483
+2024-03-06 17:21:07,346 - INFO - 16/21897. Searching metadata for 51004852
+2024-03-06 17:21:07,347 - INFO - Looking for OCN 51004852 in the database.
+2024-03-06 17:21:07,349 - INFO - No database record found for OCN 51004852.
+2024-03-06 17:21:07,799 - INFO - No results found for identifier 51004852 or failed to fetch data
+2024-03-06 17:21:07,802 - INFO - Write completed for OCN 51004852
+2024-03-06 17:21:08,803 - INFO - 17/21897. Searching metadata for 424384171
+2024-03-06 17:21:08,803 - INFO - Looking for OCN 424384171 in the database.
+2024-03-06 17:21:08,805 - INFO - No database record found for OCN 424384171.
+2024-03-06 17:21:09,316 - INFO - Write completed for OCN 424384171
+2024-03-06 17:21:10,316 - INFO - 18/21897. Searching metadata for 55046833
+2024-03-06 17:21:10,316 - INFO - Looking for OCN 55046833 in the database.
+2024-03-06 17:21:10,317 - INFO - No database record found for OCN 55046833.
+2024-03-06 17:21:10,730 - INFO - No results found for identifier 55046833 or failed to fetch data
+2024-03-06 17:21:10,731 - INFO - Write completed for OCN 55046833
+2024-03-06 17:21:11,732 - INFO - 19/21897. Searching metadata for 707917523
+2024-03-06 17:21:11,732 - INFO - Looking for OCN 707917523 in the database.
+2024-03-06 17:21:11,733 - INFO - No database record found for OCN 707917523.
+2024-03-06 17:21:12,165 - INFO - No results found for identifier 707917523 or failed to fetch data
+2024-03-06 17:21:12,166 - INFO - Write completed for OCN 707917523
+2024-03-06 17:21:13,167 - INFO - 20/21897. Searching metadata for 228048153
+2024-03-06 17:21:13,167 - INFO - Looking for OCN 228048153 in the database.
+2024-03-06 17:21:13,168 - INFO - No database record found for OCN 228048153.
+2024-03-06 17:21:13,614 - INFO - No results found for identifier 228048153 or failed to fetch data
+2024-03-06 17:21:13,615 - INFO - Write completed for OCN 228048153
+2024-03-06 17:21:14,616 - INFO - 21/21897. Searching metadata for 779891795
+2024-03-06 17:21:14,616 - INFO - Looking for OCN 779891795 in the database.
+2024-03-06 17:21:14,617 - INFO - No database record found for OCN 779891795.
+2024-03-06 17:21:15,060 - INFO - No results found for identifier 779891795 or failed to fetch data
+2024-03-06 17:21:15,061 - INFO - Write completed for OCN 779891795
+2024-03-06 17:21:16,062 - INFO - 22/21897. Searching metadata for 231580878
+2024-03-06 17:21:16,062 - INFO - Looking for OCN 231580878 in the database.
+2024-03-06 17:21:16,063 - INFO - No database record found for OCN 231580878.
+2024-03-06 17:21:16,485 - INFO - No results found for identifier 231580878 or failed to fetch data
+2024-03-06 17:21:16,486 - INFO - Write completed for OCN 231580878
+2024-03-06 17:21:17,487 - INFO - 23/21897. Searching metadata for 559307665
+2024-03-06 17:21:17,487 - INFO - Looking for OCN 559307665 in the database.
+2024-03-06 17:21:17,488 - INFO - No database record found for OCN 559307665.
+2024-03-06 17:21:17,901 - INFO - No results found for identifier 559307665 or failed to fetch data
+2024-03-06 17:21:17,902 - INFO - Write completed for OCN 559307665
+2024-03-06 17:21:18,904 - INFO - 24/21897. Searching metadata for 72823569
+2024-03-06 17:21:18,904 - INFO - Looking for OCN 72823569 in the database.
+2024-03-06 17:21:18,905 - INFO - No database record found for OCN 72823569.
+2024-03-06 17:21:19,414 - INFO - No results found for identifier 72823569 or failed to fetch data
+2024-03-06 17:21:19,415 - INFO - Write completed for OCN 72823569
+2024-03-06 17:21:20,416 - INFO - 25/21897. Searching metadata for 559152002
+2024-03-06 17:21:20,416 - INFO - Looking for OCN 559152002 in the database.
+2024-03-06 17:21:20,417 - INFO - No database record found for OCN 559152002.
+2024-03-06 17:21:20,855 - INFO - No results found for identifier 559152002 or failed to fetch data
+2024-03-06 17:21:20,856 - INFO - Write completed for OCN 559152002
+2024-03-06 17:21:21,858 - INFO - 26/21897. Searching metadata for 707917524
+2024-03-06 17:21:21,858 - INFO - Looking for OCN 707917524 in the database.
+2024-03-06 17:21:21,859 - INFO - No database record found for OCN 707917524.
+2024-03-06 17:21:22,265 - INFO - No results found for identifier 707917524 or failed to fetch data
+2024-03-06 17:21:22,266 - INFO - Write completed for OCN 707917524
+2024-03-06 17:21:23,267 - INFO - 27/21897. Searching metadata for 228049587
+2024-03-06 17:21:23,267 - INFO - Looking for OCN 228049587 in the database.
+2024-03-06 17:21:23,268 - INFO - No database record found for OCN 228049587.
+2024-03-06 17:21:23,687 - INFO - No results found for identifier 228049587 or failed to fetch data
+2024-03-06 17:21:23,688 - INFO - Write completed for OCN 228049587
+2024-03-06 17:21:24,689 - INFO - 28/21897. Searching metadata for 228374866
+2024-03-06 17:21:24,689 - INFO - Looking for OCN 228374866 in the database.
+2024-03-06 17:21:24,691 - INFO - No database record found for OCN 228374866.
+2024-03-06 17:21:25,097 - INFO - No results found for identifier 228374866 or failed to fetch data
+2024-03-06 17:21:25,098 - INFO - Write completed for OCN 228374866
+2024-03-06 17:21:26,103 - INFO - 29/21897. Searching metadata for 707917525
+2024-03-06 17:21:26,104 - INFO - Looking for OCN 707917525 in the database.
+2024-03-06 17:21:26,105 - INFO - No database record found for OCN 707917525.
+2024-03-06 17:21:26,613 - INFO - No results found for identifier 707917525 or failed to fetch data
+2024-03-06 17:21:26,614 - INFO - Write completed for OCN 707917525
+2024-03-06 17:21:27,616 - INFO - 30/21897. Searching metadata for 228049540
+2024-03-06 17:21:27,616 - INFO - Looking for OCN 228049540 in the database.
+2024-03-06 17:21:27,617 - INFO - No database record found for OCN 228049540.
+2024-03-06 17:21:28,084 - INFO - No results found for identifier 228049540 or failed to fetch data
+2024-03-06 17:21:28,085 - INFO - Write completed for OCN 228049540
+2024-03-06 17:21:29,087 - INFO - 31/21897. Searching metadata for 50322301
+2024-03-06 17:21:29,087 - INFO - Looking for OCN 50322301 in the database.
+2024-03-06 17:21:29,088 - INFO - No database record found for OCN 50322301.
+2024-03-06 17:21:29,538 - INFO - Write completed for OCN 50322301
+2024-03-06 17:21:30,539 - INFO - 32/21897. Searching metadata for 808022420
+2024-03-06 17:21:30,539 - INFO - Looking for OCN 808022420 in the database.
+2024-03-06 17:21:30,540 - INFO - No database record found for OCN 808022420.
+2024-03-06 17:21:30,944 - INFO - No results found for identifier 808022420 or failed to fetch data
+2024-03-06 17:21:30,945 - INFO - Write completed for OCN 808022420
+2024-03-06 17:21:31,946 - INFO - 33/21897. Searching metadata for 55664114
+2024-03-06 17:21:31,946 - INFO - Looking for OCN 55664114 in the database.
+2024-03-06 17:21:31,947 - INFO - No database record found for OCN 55664114.
+2024-03-06 17:21:32,428 - INFO - No results found for identifier 55664114 or failed to fetch data
+2024-03-06 17:21:32,429 - INFO - Write completed for OCN 55664114
+2024-03-06 17:21:33,431 - INFO - 34/21897. Searching metadata for 55663736
+2024-03-06 17:21:33,431 - INFO - Looking for OCN 55663736 in the database.
+2024-03-06 17:21:33,432 - INFO - No database record found for OCN 55663736.
+2024-03-06 17:21:33,900 - INFO - No results found for identifier 55663736 or failed to fetch data
+2024-03-06 17:21:33,912 - INFO - Write completed for OCN 55663736
+2024-03-06 17:21:34,914 - INFO - 35/21897. Searching metadata for 55664087
+2024-03-06 17:21:34,914 - INFO - Looking for OCN 55664087 in the database.
+2024-03-06 17:21:34,915 - INFO - No database record found for OCN 55664087.
+2024-03-06 17:21:35,380 - INFO - No results found for identifier 55664087 or failed to fetch data
+2024-03-06 17:21:35,381 - INFO - Write completed for OCN 55664087
+2024-03-06 17:21:36,382 - INFO - 36/21897. Searching metadata for 55664076
+2024-03-06 17:21:36,382 - INFO - Looking for OCN 55664076 in the database.
+2024-03-06 17:21:36,383 - INFO - No database record found for OCN 55664076.
+2024-03-06 17:21:36,795 - INFO - No results found for identifier 55664076 or failed to fetch data
+2024-03-06 17:21:36,796 - INFO - Write completed for OCN 55664076
+2024-03-06 17:21:37,797 - INFO - 37/21897. Searching metadata for 70771537
+2024-03-06 17:21:37,797 - INFO - Looking for OCN 70771537 in the database.
+2024-03-06 17:21:37,798 - INFO - No database record found for OCN 70771537.
+2024-03-06 17:21:38,205 - INFO - No results found for identifier 70771537 or failed to fetch data
+2024-03-06 17:21:38,206 - INFO - Write completed for OCN 70771537
+2024-03-06 17:21:39,208 - INFO - 38/21897. Searching metadata for 231581833
+2024-03-06 17:21:39,208 - INFO - Looking for OCN 231581833 in the database.
+2024-03-06 17:21:39,209 - INFO - No database record found for OCN 231581833.
+2024-03-06 17:21:39,617 - INFO - No results found for identifier 231581833 or failed to fetch data
+2024-03-06 17:21:39,618 - INFO - Write completed for OCN 231581833
+2024-03-06 17:21:40,619 - INFO - 39/21897. Searching metadata for 559258691
+2024-03-06 17:21:40,619 - INFO - Looking for OCN 559258691 in the database.
+2024-03-06 17:21:40,621 - INFO - No database record found for OCN 559258691.
+2024-03-06 17:21:41,101 - INFO - No results found for identifier 559258691 or failed to fetch data
+2024-03-06 17:21:41,102 - INFO - Write completed for OCN 559258691
+2024-03-06 17:21:42,104 - INFO - 40/21897. Searching metadata for 70754603
+2024-03-06 17:21:42,104 - INFO - Looking for OCN 70754603 in the database.
+2024-03-06 17:21:42,105 - INFO - No database record found for OCN 70754603.
+2024-03-06 17:21:42,545 - INFO - No results found for identifier 70754603 or failed to fetch data
+2024-03-06 17:21:42,546 - INFO - Write completed for OCN 70754603
+2024-03-06 17:21:43,547 - INFO - 41/21897. Searching metadata for 559114966
+2024-03-06 17:21:43,547 - INFO - Looking for OCN 559114966 in the database.
+2024-03-06 17:21:43,551 - INFO - No database record found for OCN 559114966.
+2024-03-06 17:21:44,002 - INFO - No results found for identifier 559114966 or failed to fetch data
+2024-03-06 17:21:44,003 - INFO - Write completed for OCN 559114966
+2024-03-06 17:21:45,004 - INFO - 42/21897. Searching metadata for 559187306
+2024-03-06 17:21:45,012 - INFO - Looking for OCN 559187306 in the database.
+2024-03-06 17:21:45,014 - INFO - No database record found for OCN 559187306.
+2024-03-06 17:21:45,531 - INFO - No results found for identifier 559187306 or failed to fetch data
+2024-03-06 17:21:45,532 - INFO - Write completed for OCN 559187306
+2024-03-06 17:21:46,533 - INFO - 43/21897. Searching metadata for 54360379
+2024-03-06 17:21:46,534 - INFO - Looking for OCN 54360379 in the database.
+2024-03-06 17:21:46,535 - INFO - No database record found for OCN 54360379.
+2024-03-06 17:21:46,994 - INFO - No results found for identifier 54360379 or failed to fetch data
+2024-03-06 17:21:46,995 - INFO - Write completed for OCN 54360379
+2024-03-06 17:21:47,997 - INFO - 44/21897. Searching metadata for 808022533
+2024-03-06 17:21:47,997 - INFO - Looking for OCN 808022533 in the database.
+2024-03-06 17:21:47,998 - INFO - No database record found for OCN 808022533.
+2024-03-06 17:21:48,461 - INFO - No results found for identifier 808022533 or failed to fetch data
+2024-03-06 17:21:48,466 - INFO - Write completed for OCN 808022533
+2024-03-06 17:21:49,467 - INFO - 45/21897. Searching metadata for 707917528
+2024-03-06 17:21:49,467 - INFO - Looking for OCN 707917528 in the database.
+2024-03-06 17:21:49,468 - INFO - No database record found for OCN 707917528.
+2024-03-06 17:21:49,879 - INFO - No results found for identifier 707917528 or failed to fetch data
+2024-03-06 17:21:49,880 - INFO - Write completed for OCN 707917528
+2024-03-06 17:21:50,881 - INFO - 46/21897. Searching metadata for 55664003
+2024-03-06 17:21:50,881 - INFO - Looking for OCN 55664003 in the database.
+2024-03-06 17:21:50,882 - INFO - No database record found for OCN 55664003.
+2024-03-06 17:21:51,310 - INFO - Write completed for OCN 55664003
+2024-03-06 17:21:52,311 - INFO - 47/21897. Searching metadata for 55664050
+2024-03-06 17:21:52,311 - INFO - Looking for OCN 55664050 in the database.
+2024-03-06 17:21:52,312 - INFO - No database record found for OCN 55664050.
+2024-03-06 17:21:52,720 - INFO - No results found for identifier 55664050 or failed to fetch data
+2024-03-06 17:21:52,721 - INFO - Write completed for OCN 55664050
+2024-03-06 17:21:53,722 - INFO - 48/21897. Searching metadata for 231580577
+2024-03-06 17:21:53,723 - INFO - Looking for OCN 231580577 in the database.
+2024-03-06 17:21:53,724 - INFO - No database record found for OCN 231580577.
+2024-03-06 17:21:54,202 - INFO - No results found for identifier 231580577 or failed to fetch data
+2024-03-06 17:21:54,203 - INFO - Write completed for OCN 231580577
+2024-03-06 17:21:55,204 - INFO - 49/21897. Searching metadata for 50493476
+2024-03-06 17:21:55,204 - INFO - Looking for OCN 50493476 in the database.
+2024-03-06 17:21:55,205 - INFO - No database record found for OCN 50493476.
+2024-03-06 17:21:55,611 - INFO - No results found for identifier 50493476 or failed to fetch data
+2024-03-06 17:21:55,612 - INFO - Write completed for OCN 50493476
+2024-03-06 17:21:56,613 - INFO - 50/21897. Searching metadata for 707917529
+2024-03-06 17:21:56,613 - INFO - Looking for OCN 707917529 in the database.
+2024-03-06 17:21:56,614 - INFO - No database record found for OCN 707917529.
+2024-03-06 17:21:57,015 - INFO - No results found for identifier 707917529 or failed to fetch data
+2024-03-06 17:21:57,016 - INFO - Write completed for OCN 707917529
+2024-03-06 17:21:58,017 - INFO - 51/21897. Searching metadata for 559384701
+2024-03-06 17:21:58,017 - INFO - Looking for OCN 559384701 in the database.
+2024-03-06 17:21:58,018 - INFO - No database record found for OCN 559384701.
+2024-03-06 17:21:58,470 - INFO - No results found for identifier 559384701 or failed to fetch data
+2024-03-06 17:21:58,471 - INFO - Write completed for OCN 559384701
+2024-03-06 17:21:59,473 - INFO - 52/21897. Searching metadata for 55664074
+2024-03-06 17:21:59,474 - INFO - Looking for OCN 55664074 in the database.
+2024-03-06 17:21:59,475 - INFO - No database record found for OCN 55664074.
+2024-03-06 17:21:59,929 - INFO - No results found for identifier 55664074 or failed to fetch data
+2024-03-06 17:21:59,929 - INFO - Write completed for OCN 55664074
+2024-03-06 17:22:00,931 - INFO - 53/21897. Searching metadata for 50797894
+2024-03-06 17:22:00,931 - INFO - Looking for OCN 50797894 in the database.
+2024-03-06 17:22:00,932 - INFO - No database record found for OCN 50797894.
+2024-03-06 17:22:01,380 - INFO - No results found for identifier 50797894 or failed to fetch data
+2024-03-06 17:22:01,381 - INFO - Write completed for OCN 50797894
+2024-03-06 17:22:02,382 - INFO - 54/21897. Searching metadata for 559622808
+2024-03-06 17:22:02,382 - INFO - Looking for OCN 559622808 in the database.
+2024-03-06 17:22:02,383 - INFO - No database record found for OCN 559622808.
+2024-03-06 17:22:02,812 - INFO - No results found for identifier 559622808 or failed to fetch data
+2024-03-06 17:22:02,813 - INFO - Write completed for OCN 559622808
+2024-03-06 17:22:03,815 - INFO - 55/21897. Searching metadata for 70773476
+2024-03-06 17:22:03,815 - INFO - Looking for OCN 70773476 in the database.
+2024-03-06 17:22:03,816 - INFO - No database record found for OCN 70773476.
+2024-03-06 17:22:04,272 - INFO - No results found for identifier 70773476 or failed to fetch data
+2024-03-06 17:22:04,286 - INFO - Write completed for OCN 70773476
+2024-03-06 17:22:05,287 - INFO - 56/21897. Searching metadata for 55046840
+2024-03-06 17:22:05,287 - INFO - Looking for OCN 55046840 in the database.
+2024-03-06 17:22:05,288 - INFO - No database record found for OCN 55046840.
+2024-03-06 17:22:05,750 - INFO - Write completed for OCN 55046840
+2024-03-06 17:22:06,753 - INFO - 57/21897. Searching metadata for 228375131
+2024-03-06 17:22:06,753 - INFO - Looking for OCN 228375131 in the database.
+2024-03-06 17:22:06,754 - INFO - No database record found for OCN 228375131.
+2024-03-06 17:22:07,172 - INFO - No results found for identifier 228375131 or failed to fetch data
+2024-03-06 17:22:07,174 - INFO - Write completed for OCN 228375131
+2024-03-06 17:22:08,176 - INFO - 58/21897. Searching metadata for 70736481
+2024-03-06 17:22:08,176 - INFO - Looking for OCN 70736481 in the database.
+2024-03-06 17:22:08,178 - INFO - No database record found for OCN 70736481.
+2024-03-06 17:22:08,609 - INFO - No results found for identifier 70736481 or failed to fetch data
+2024-03-06 17:22:08,612 - INFO - Write completed for OCN 70736481
+2024-03-06 17:22:09,613 - INFO - 59/21897. Searching metadata for 231581840
+2024-03-06 17:22:09,613 - INFO - Looking for OCN 231581840 in the database.
+2024-03-06 17:22:09,615 - INFO - No database record found for OCN 231581840.
+2024-03-06 17:22:10,042 - INFO - No results found for identifier 231581840 or failed to fetch data
+2024-03-06 17:22:10,044 - INFO - Write completed for OCN 231581840
+2024-03-06 17:22:11,046 - INFO - 60/21897. Searching metadata for 50553231
+2024-03-06 17:22:11,046 - INFO - Looking for OCN 50553231 in the database.
+2024-03-06 17:22:11,047 - INFO - No database record found for OCN 50553231.
+2024-03-06 17:22:11,482 - INFO - No results found for identifier 50553231 or failed to fetch data
+2024-03-06 17:22:11,483 - INFO - Write completed for OCN 50553231
+2024-03-06 17:22:12,484 - INFO - 61/21897. Searching metadata for 55046851
+2024-03-06 17:22:12,484 - INFO - Looking for OCN 55046851 in the database.
+2024-03-06 17:22:12,485 - INFO - No database record found for OCN 55046851.
+2024-03-06 17:22:12,910 - INFO - No results found for identifier 55046851 or failed to fetch data
+2024-03-06 17:22:12,915 - INFO - Write completed for OCN 55046851
+2024-03-06 17:22:13,916 - INFO - 62/21897. Searching metadata for 559099049
+2024-03-06 17:22:13,916 - INFO - Looking for OCN 559099049 in the database.
+2024-03-06 17:22:13,917 - INFO - No database record found for OCN 559099049.
+2024-03-06 17:22:14,512 - INFO - No results found for identifier 559099049 or failed to fetch data
+2024-03-06 17:22:14,513 - INFO - Write completed for OCN 559099049
+2024-03-06 17:22:15,514 - INFO - 63/21897. Searching metadata for 55046885
+2024-03-06 17:22:15,514 - INFO - Looking for OCN 55046885 in the database.
+2024-03-06 17:22:15,515 - INFO - No database record found for OCN 55046885.
+2024-03-06 17:22:15,979 - INFO - No results found for identifier 55046885 or failed to fetch data
+2024-03-06 17:22:15,980 - INFO - Write completed for OCN 55046885
+2024-03-06 17:22:16,981 - INFO - 64/21897. Searching metadata for 52801725
+2024-03-06 17:22:16,981 - INFO - Looking for OCN 52801725 in the database.
+2024-03-06 17:22:16,982 - INFO - No database record found for OCN 52801725.
+2024-03-06 17:22:17,433 - INFO - No results found for identifier 52801725 or failed to fetch data
+2024-03-06 17:22:17,434 - INFO - Write completed for OCN 52801725
+2024-03-06 17:22:18,436 - INFO - 65/21897. Searching metadata for 50321166
+2024-03-06 17:22:18,436 - INFO - Looking for OCN 50321166 in the database.
+2024-03-06 17:22:18,437 - INFO - No database record found for OCN 50321166.
+2024-03-06 17:22:18,882 - INFO - No results found for identifier 50321166 or failed to fetch data
+2024-03-06 17:22:18,883 - INFO - Write completed for OCN 50321166
+2024-03-06 17:22:19,884 - INFO - 66/21897. Searching metadata for 70771463
+2024-03-06 17:22:19,886 - INFO - Looking for OCN 70771463 in the database.
+2024-03-06 17:22:19,886 - INFO - No database record found for OCN 70771463.
+2024-03-06 17:22:20,342 - INFO - No results found for identifier 70771463 or failed to fetch data
+2024-03-06 17:22:20,347 - INFO - Write completed for OCN 70771463
+2024-03-06 17:22:21,348 - INFO - 67/21897. Searching metadata for 231581666
+2024-03-06 17:22:21,348 - INFO - Looking for OCN 231581666 in the database.
+2024-03-06 17:22:21,348 - INFO - No database record found for OCN 231581666.
+2024-03-06 17:22:21,777 - INFO - No results found for identifier 231581666 or failed to fetch data
+2024-03-06 17:22:21,778 - INFO - Write completed for OCN 231581666
+2024-03-06 17:22:22,779 - INFO - 68/21897. Searching metadata for 559710226
+2024-03-06 17:22:22,779 - INFO - Looking for OCN 559710226 in the database.
+2024-03-06 17:22:22,780 - INFO - No database record found for OCN 559710226.
+2024-03-06 17:22:23,187 - INFO - No results found for identifier 559710226 or failed to fetch data
+2024-03-06 17:22:23,194 - INFO - Write completed for OCN 559710226
+2024-03-06 17:22:24,198 - INFO - 69/21897. Searching metadata for 70740237
+2024-03-06 17:22:24,198 - INFO - Looking for OCN 70740237 in the database.
+2024-03-06 17:22:24,200 - INFO - No database record found for OCN 70740237.
+2024-03-06 17:22:24,663 - INFO - No results found for identifier 70740237 or failed to fetch data
+2024-03-06 17:22:24,664 - INFO - Write completed for OCN 70740237
+2024-03-06 17:22:25,665 - INFO - 70/21897. Searching metadata for 55664080
+2024-03-06 17:22:25,665 - INFO - Looking for OCN 55664080 in the database.
+2024-03-06 17:22:25,666 - INFO - No database record found for OCN 55664080.
+2024-03-06 17:22:26,105 - INFO - No results found for identifier 55664080 or failed to fetch data
+2024-03-06 17:22:26,109 - INFO - Write completed for OCN 55664080
+2024-03-06 17:22:27,111 - INFO - 71/21897. Searching metadata for 55664049
+2024-03-06 17:22:27,111 - INFO - Looking for OCN 55664049 in the database.
+2024-03-06 17:22:27,112 - INFO - No database record found for OCN 55664049.
+2024-03-06 17:22:27,512 - INFO - No results found for identifier 55664049 or failed to fetch data
+2024-03-06 17:22:27,513 - INFO - Write completed for OCN 55664049
+2024-03-06 17:22:28,514 - INFO - 72/21897. Searching metadata for 722716059
+2024-03-06 17:22:28,514 - INFO - Looking for OCN 722716059 in the database.
+2024-03-06 17:22:28,515 - INFO - No database record found for OCN 722716059.
+2024-03-06 17:22:28,943 - INFO - No results found for identifier 722716059 or failed to fetch data
+2024-03-06 17:22:28,944 - INFO - Write completed for OCN 722716059
+2024-03-06 17:22:29,947 - INFO - 73/21897. Searching metadata for 707917533
+2024-03-06 17:22:29,948 - INFO - Looking for OCN 707917533 in the database.
+2024-03-06 17:22:29,949 - INFO - No database record found for OCN 707917533.
+2024-03-06 17:22:30,369 - INFO - No results found for identifier 707917533 or failed to fetch data
+2024-03-06 17:22:30,370 - INFO - Write completed for OCN 707917533
+2024-03-06 17:22:31,371 - INFO - 74/21897. Searching metadata for 55663764
+2024-03-06 17:22:31,371 - INFO - Looking for OCN 55663764 in the database.
+2024-03-06 17:22:31,372 - INFO - No database record found for OCN 55663764.
+2024-03-06 17:22:31,818 - INFO - No results found for identifier 55663764 or failed to fetch data
+2024-03-06 17:22:31,827 - INFO - Write completed for OCN 55663764
+2024-03-06 17:22:32,829 - INFO - 75/21897. Searching metadata for 55046808
+2024-03-06 17:22:32,833 - INFO - Looking for OCN 55046808 in the database.
+2024-03-06 17:22:32,833 - INFO - No database record found for OCN 55046808.
+2024-03-06 17:22:33,239 - INFO - No results found for identifier 55046808 or failed to fetch data
+2024-03-06 17:22:33,244 - INFO - Write completed for OCN 55046808
+2024-03-06 17:22:34,245 - INFO - 76/21897. Searching metadata for 808022486
+2024-03-06 17:22:34,245 - INFO - Looking for OCN 808022486 in the database.
+2024-03-06 17:22:34,246 - INFO - No database record found for OCN 808022486.
+2024-03-06 17:22:34,722 - INFO - No results found for identifier 808022486 or failed to fetch data
+2024-03-06 17:22:34,729 - INFO - Write completed for OCN 808022486
+2024-03-06 17:22:35,730 - INFO - 77/21897. Searching metadata for 50304216
+2024-03-06 17:22:35,730 - INFO - Looking for OCN 50304216 in the database.
+2024-03-06 17:22:35,732 - INFO - No database record found for OCN 50304216.
+2024-03-06 17:22:36,164 - INFO - No results found for identifier 50304216 or failed to fetch data
+2024-03-06 17:22:36,165 - INFO - Write completed for OCN 50304216
+2024-03-06 17:22:37,166 - INFO - 78/21897. Searching metadata for 50745584
+2024-03-06 17:22:37,166 - INFO - Looking for OCN 50745584 in the database.
+2024-03-06 17:22:37,167 - INFO - No database record found for OCN 50745584.
+2024-03-06 17:22:37,582 - INFO - No results found for identifier 50745584 or failed to fetch data
+2024-03-06 17:22:37,583 - INFO - Write completed for OCN 50745584
+2024-03-06 17:22:38,584 - INFO - 79/21897. Searching metadata for 55047057
+2024-03-06 17:22:38,584 - INFO - Looking for OCN 55047057 in the database.
+2024-03-06 17:22:38,585 - INFO - No database record found for OCN 55047057.
+2024-03-06 17:22:39,043 - INFO - No results found for identifier 55047057 or failed to fetch data
+2024-03-06 17:22:39,046 - INFO - Write completed for OCN 55047057
+2024-03-06 17:22:40,047 - INFO - 80/21897. Searching metadata for 70759261
+2024-03-06 17:22:40,050 - INFO - Looking for OCN 70759261 in the database.
+2024-03-06 17:22:40,050 - INFO - No database record found for OCN 70759261.
+2024-03-06 17:22:40,554 - INFO - No results found for identifier 70759261 or failed to fetch data
+2024-03-06 17:22:40,558 - INFO - Write completed for OCN 70759261
+2024-03-06 17:22:41,560 - INFO - 81/21897. Searching metadata for 55663775
+2024-03-06 17:22:41,564 - INFO - Looking for OCN 55663775 in the database.
+2024-03-06 17:22:41,565 - INFO - No database record found for OCN 55663775.
+2024-03-06 17:22:42,050 - INFO - No results found for identifier 55663775 or failed to fetch data
+2024-03-06 17:22:42,051 - INFO - Write completed for OCN 55663775
+2024-03-06 17:22:42,680 - INFO - Search stopped
+2024-03-06 17:22:43,052 - INFO - 82/21897. Searching metadata for 559153004

@@ -2,8 +2,9 @@ import re
 import requests
 from ratelimit import limits, sleep_and_retry
 
+from .base_api import BaseAPI
 
-class HarvardAPI:
+class HarvardAPI(BaseAPI):
     def __init__(self):
         self.base_url = "https://api.lib.harvard.edu/v2/items"
         self.name = "Harvard"
@@ -65,17 +66,18 @@ class HarvardAPI:
         return lccns
 
     def get_ocn(self, results):
-        # returns the first OCN found in the response
+        # Returns the first OCN found in the response, with hyphens removed
         for item in results:
             if isinstance(item, dict) and item.get('@type') == 'oclc':
-                return item.get('#text', '')
+                ocn = item.get('#text', '')
+                return re.sub(r'-', '', ocn)  # Remove hyphens
         return ''
 
-    # returns isbn's affiliated with input
     def get_isbn(self, results):
-        # returns a list of ISBNs, which were stored in the 'identifier' field in the response
+        # Returns a list of ISBNs, which were stored in the 'identifier' field in the response, with hyphens removed
         isbns = []
         for item in results:
             if isinstance(item, dict) and item.get('@type') == 'isbn' and item.get('@invalid') != 'yes':
-                isbns.append(item.get('#text', "").split()[0])
+                isbn = item.get('#text', "").split()[0]  # Take first part if there are spaces
+                isbns.append(re.sub(r'-', '', isbn))  # Remove hyphens
         return isbns if isbns else ''

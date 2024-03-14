@@ -6,7 +6,7 @@ class PriorityListApp:
         self.callback = callback
         self.master.title("Priority List")
 
-        self.entries = ["Harvard Library API"]
+        self.entries = ["Harvard Library API","Library of Congress API","Google Books API"]
 
         self.listbox = tk.Listbox(master, selectmode=tk.SINGLE)
         for entry in self.entries:

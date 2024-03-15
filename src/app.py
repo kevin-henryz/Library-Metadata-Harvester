@@ -1,21 +1,12 @@
 """ 
-
-        source_mapping = {
-        "OCLC API": OCLCAPI(),
-        "Open Library API": OpenLibraryAPI(),
-        "Yale": YaleLibraryAPI(),
-        "Columbia": ColumbiaLibraryAPI(),
-        "University of Virginia": UniversityOfVirginiaLibraryAPI(),
-        "Stanford": StanfordLibraryAPI(),
-        "Johns Hopkins U": JohnsHopkinsULibraryAPI(),
-        "Cornell": CornellLibraryAPI(),
-        "NCSU": NCSULibraryAPI(),
-        "Duke": DukeLibraryAPI(),
-        "Penn State": PennStateLibraryAPI(),
-        "Indiana U": IndianaULibraryAPI(),
-        "McGill": McGillLibraryAPI(),
-        "VOILA": VOILAAPI(),
-    }
+"Cornell": CornellLibraryAPI(),
+"Duke": DukeLibraryAPI()
+"Indiana": IndianaLibraryAPI(),
+"Johns Hopkins": JohnsHopkinsLibraryAPI(),
+"North Carolina State": NorthCarolinaStateAPI(),
+"Penn State": PennStateLibraryAPI()
+"Yale": YaleLibraryAPI(),
+"Stanford": StanfordLibraryAPI()
 """
 
 import tkinter as tk
@@ -32,6 +23,7 @@ from db.database_manager import DatabaseManager
 from apis.harvard_library_API import HarvardAPI
 from apis.library_of_congress_API import LibraryOfCongressAPI
 from apis.google_books_API import GoogleBooksAPI
+from webScraping.columbia_library_api import ColumbiaLibraryAPI
 
 class LibraryMetadataHarvesterApp(tk.Tk):
     """A GUI application for harvesting library metadata from different sources."""
@@ -39,8 +31,10 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     source_mapping = {
         "Harvard Library API": HarvardAPI(),
         "Library of Congress API": LibraryOfCongressAPI(),
-        "Google Books API": GoogleBooksAPI()
+        "Google Books API": GoogleBooksAPI(),
+        "Columbia Library": ColumbiaLibraryAPI()
         }
+    
 
     def __init__(self):
         """Initialize the application, its variables, and UI components."""

@@ -41,7 +41,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         super().__init__()
 
         self.configure_app()
-        self.setup_logging(os.path.join('src', 'logs', 'example.log'))
+        self.setup_logging(os.path.join('src','logs', 'example.log'))
         self.initialize_database()
         self.setup_ui()
         self.priority_list = []

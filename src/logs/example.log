@@ -3370,3 +3370,35 @@
 2024-03-14 20:53:52,797 - INFO - Search completed
 2024-03-14 20:53:54,482 - INFO - Updated data for 559152002 from Columbia Library
 2024-03-14 20:53:54,483 - INFO - 10/21881. Searching metadata for 707917524
+2024-03-16 14:15:47,517 - INFO - Application started
+2024-03-16 14:32:14,363 - INFO - Application started
+2024-03-16 14:32:26,030 - INFO - Updated priority list: ['Harvard Library API', 'Library of Congress API', 'Google Books API', 'Columbia Library']
+2024-03-16 14:33:00,895 - INFO - Search started for ISBN with 7522 items and priority list: ['Harvard Library API', 'Library of Congress API', 'Google Books API', 'Columbia Library']
+2024-03-16 14:33:00,912 - INFO - 0/7522. Searching metadata for 9780191513015
+2024-03-16 14:33:00,913 - INFO - Looking for ISBN 9780191513015 in the database.
+2024-03-16 14:33:00,916 - INFO - No database record found for ISBN 9780191513015.
+2024-03-16 14:33:01,533 - INFO - No results found for identifier 9780191513015 from Harvard Library API
+2024-03-16 14:33:01,896 - INFO - No results found for identifier 9780191513015 from Library of Congress API
+2024-03-16 14:33:02,507 - INFO - Updated data for 9780191513015 from Google Books API
+2024-03-16 14:33:02,508 - INFO - Write completed for ISBN 9780191513015
+2024-03-16 14:33:02,529 - INFO - 1/7522. Searching metadata for 9780191513022
+2024-03-16 14:33:02,530 - INFO - Looking for ISBN 9780191513022 in the database.
+2024-03-16 14:33:02,531 - INFO - No database record found for ISBN 9780191513022.
+2024-03-16 14:33:02,957 - INFO - No results found for identifier 9780191513022 from Harvard Library API
+2024-03-16 14:33:03,372 - INFO - No results found for identifier 9780191513022 from Library of Congress API
+2024-03-16 14:33:04,020 - INFO - Updated data for 9780191513022 from Google Books API
+2024-03-16 14:33:04,024 - INFO - Write completed for ISBN 9780191513022
+2024-03-16 14:33:04,042 - INFO - 2/7522. Searching metadata for 9780191513039
+2024-03-16 14:33:04,043 - INFO - Looking for ISBN 9780191513039 in the database.
+2024-03-16 14:33:04,044 - INFO - No database record found for ISBN 9780191513039.
+2024-03-16 14:33:04,546 - INFO - No results found for identifier 9780191513039 from Harvard Library API
+2024-03-16 14:33:04,875 - INFO - No results found for identifier 9780191513039 from Library of Congress API
+2024-03-16 14:33:05,423 - INFO - Updated data for 9780191513039 from Google Books API
+2024-03-16 14:33:05,425 - INFO - Write completed for ISBN 9780191513039
+2024-03-16 14:33:05,441 - INFO - 3/7522. Searching metadata for 9780191513183
+2024-03-16 14:33:05,441 - INFO - Looking for ISBN 9780191513183 in the database.
+2024-03-16 14:33:05,443 - INFO - No database record found for ISBN 9780191513183.
+2024-03-16 14:33:05,558 - INFO - Search completed
+2024-03-16 14:33:05,900 - INFO - No results found for identifier 9780191513183 from Harvard Library API
+2024-03-16 14:33:06,293 - INFO - No results found for identifier 9780191513183 from Library of Congress API
+2024-03-16 14:33:06,925 - INFO - No results found for identifier 9780191513183 from Google Books API

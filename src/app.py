@@ -13,6 +13,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 from tkinter.filedialog import asksaveasfile
 import os
+import sys
 import logging
 import threading
 import time
@@ -41,7 +42,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         super().__init__()
 
         self.configure_app()
-        self.setup_logging(os.path.join('src','logs', 'example.log'))
+        self.setup_logging(LibraryMetadataHarvesterApp.resource_path(os.path.join('logs', 'example.log')))
         self.initialize_database()
         self.setup_ui()
         self.priority_list = []
@@ -70,6 +71,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
     def setup_logging(self, log_file_path):
         """Setup application logging."""
+        
         logging.getLogger().handlers.clear()
         logging.basicConfig(level=logging.INFO,
                             format='%(asctime)s - %(levelname)s - %(message)s',
@@ -146,7 +148,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.start_button = ttk.Button(self.button_frame, text="Start Search", command=self.start_search)
         self.start_button.pack(side='left', padx=5)
         self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=self.finalize_search, state='disabled')
-        self.open_log_button = ttk.Button(self.button_frame, text="Open Log", command=lambda: self.open_log(os.path.join('src', 'logs', 'example.log')))
+        self.open_log_button = ttk.Button(self.button_frame, text="Open Log", command=lambda: self.open_log(LibraryMetadataHarvesterApp.resource_path(os.path.join('logs', 'example.log'))))
         self.open_log_button.pack(side='left', padx=5)
         self.choose_output_file_button = ttk.Button(self.button_frame, text="Choose Output File", command=self.choose_output_file)
         self.choose_output_file_button.pack(side='left', padx=5)
@@ -408,6 +410,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
                 if updated:
                     logging.info(f"Updated data for {identifier} from {source_name}")
+
                     if not missing_data:  # Exit early if all missing data has been found
                         break
 
@@ -523,6 +526,12 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 text.insert(tk.END, log_content)
         except Exception as e:
             messagebox.showerror("Error", f"Failed to open log: {str(e)}")
+
+    @staticmethod
+    def resource_path(relative_path):
+        """ Get absolute path to resource, works for development and for PyInstaller """
+        base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+        return os.path.join(base_path, relative_path)
     
 if __name__ == "__main__":
     app = LibraryMetadataHarvesterApp()

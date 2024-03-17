@@ -1,5 +1,5 @@
 import requests
-from .base_api import BaseAPI
+from .baseAPI import BaseAPI
 import re
 from ratelimit import limits, sleep_and_retry
 
@@ -16,10 +16,9 @@ class GoogleBooksAPI(BaseAPI):
             response = requests.get(url)
             response.raise_for_status()  # Check for HTTP request errors
             return self.parse_response(response.json(), identifier, input_type)
-        except requests.RequestException as e:
-            print(f"Error fetching metadata for identifier {identifier} from {self.name}: {e}")
-        return None
-
+        except Exception as e:
+            #print(f"Error fetching metadata for identifier {identifier} from {self.name}: {e}")
+            return None
     def parse_response(self, response, identifier, input_type):
         items = response.get('items')
         if items:

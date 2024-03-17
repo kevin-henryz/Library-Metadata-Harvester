@@ -1,13 +1,20 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import WebDriverException
+from selenium.common.exceptions import NoSuchElementException
 import time
+from selenium.common.exceptions import WebDriverException
+from .baseScraping import BaseScraping
 
-
-class ColumbiaLibraryAPI:
+class ColumbiaLibraryAPI(BaseScraping):
 
     def __init__(self):
-        self.driver = webdriver.Chrome()
+        options = webdriver.ChromeOptions()
+        options.add_argument('--headless')  # Run Chrome in headless mode.
+        options.add_argument('--no-sandbox')  # Bypass OS security model.
+        options.add_argument('--disable-dev-shm-usage')  # Overcome limited resource problems.
+        options.add_argument('--disable-gpu')
+        options.add_experimental_option('excludeSwitches', ['enable-logging'])
+        self.driver = webdriver.Chrome(options=options)
         self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
 
     def fetch_metadata(self, identifier, input_type):
@@ -19,6 +26,7 @@ class ColumbiaLibraryAPI:
             input_type = input_type.upper()
 
             if (input_type != "OCN") and (input_type != "ISBN"):
+                # print("Please select either 'ISBN' or 'OCN' as your second argument.")
                 return {k.lower(): v for k, v in self.catalog_data.items()}
 
             elif input_type == "ISBN":
@@ -35,6 +43,7 @@ class ColumbiaLibraryAPI:
                     intermediate_step = catalog.find_elements(By.CLASS_NAME, "result")
 
                     if len(intermediate_step) == 0:
+                        # print(f"ISBN {identifier} has no associated catalog in Columbia.")
                         return {k.lower(): v for k, v in self.catalog_data.items()}
 
                     max_length = 0
@@ -61,15 +70,19 @@ class ColumbiaLibraryAPI:
 
                     for item in list_format:
                         if 'OCN' in item:
-                            self.catalog_data["OCN"] = item[5:]
+                            if self.catalog_data["OCN"] == "":
+                                self.catalog_data["OCN"] = item[5:]
                         elif "LCCN" in item:
                             self.catalog_data["LCCN"].append(item[6:])
                             self.catalog_data["LCCN_Source"].append("Columbia")
 
                     return {k.lower(): v for k, v in self.catalog_data.items()}
 
-                except Exception as e:
-                    #print(f"Error for ISBN {identifier} when entered into Columbia: {e}")
+                except NoSuchElementException:
+                    # print(f"Error for ISBN {identifier} when entered into Columbia: {e}")
+                    return {k.lower(): v for k, v in self.catalog_data.items()}
+
+                except ValueError:
                     return {k.lower(): v for k, v in self.catalog_data.items()}
 
             elif input_type == "OCN":
@@ -86,6 +99,7 @@ class ColumbiaLibraryAPI:
                     intermediate_step = catalog.find_elements(By.CLASS_NAME, "result")
 
                     if len(intermediate_step) == 0:
+                        # print(f"OCN {identifier} has no associated catalog in Columbia.")
                         return {k.lower(): v for k, v in self.catalog_data.items()}
 
                     max_length = 0
@@ -119,12 +133,14 @@ class ColumbiaLibraryAPI:
 
                     return {k.lower(): v for k, v in self.catalog_data.items()}
 
-                except Exception as e:
-                    #print(f"Error for OCN {identifier} when entered into Columbia: {e}")
+                except NoSuchElementException:
+                    # print(f"Error for OCN {identifier} when entered into Columbia: {e}")
                     return {k.lower(): v for k, v in self.catalog_data.items()}
-                
 
-        except WebDriverException as e:
-            #print(f"Browser session has been closed or lost: {e}")
+                except ValueError:
+                    return {k.lower(): v for k, v in self.catalog_data.items()}
+
+        except WebDriverException:
+            # print(f"Browser session has been closed or lost: {e}")
             self.driver = webdriver.Chrome()
             return {k.lower(): v for k, v in self.catalog_data.items()}

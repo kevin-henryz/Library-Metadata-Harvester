@@ -1,7 +1,7 @@
 import requests
 import re
 from ratelimit import limits, sleep_and_retry
-from .base_api import BaseAPI
+from .baseAPI import BaseAPI
 
 # The LOC API does not have a dedicated endpoint for fetching metadata by identifier, so we use the search API
 # The input must be ISBN, as OCN input doesn't return correct results
@@ -23,7 +23,7 @@ class LibraryOfCongressAPI(BaseAPI):
             response = requests.get(url)
             response.raise_for_status()
             return self.parse_response(response.json(), identifier, input_type)
-        except requests.RequestException as e:
+        except Exception as e:
             print(f"Error fetching metadata for identifier {identifier} from {self.name}: {e}")
         return None
 
@@ -42,7 +42,7 @@ class LibraryOfCongressAPI(BaseAPI):
                 'isbn': isbn,
                 'ocn': ocn,
                 'lccn': lccn,
-                'lccn_source': ["LOC"] * len(lccn),
+                'lccn_source': ["Library of Congress"] * len(lccn),
             }
         return None
 

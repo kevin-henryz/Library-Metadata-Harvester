@@ -2,9 +2,9 @@ import re
 import requests
 from ratelimit import limits, sleep_and_retry
 
-from .base_api import BaseAPI
+from .baseAPI import BaseAPI
 
-class HarvardAPI(BaseAPI):
+class HarvardLibraryAPI(BaseAPI):
     def __init__(self):
         self.base_url = "https://api.lib.harvard.edu/v2/items"
         self.name = "Harvard"
@@ -21,10 +21,10 @@ class HarvardAPI(BaseAPI):
                 return self.parse_response(response.json(), identifier, input_type)
             else:
                 raise Exception(f"API request failed with status code: {response.status_code}")
-        except requests.RequestException as e:
+        except Exception as e:
             # Log the error and continue with the search
-            print(f"Error fetching metadata for identifier {identifier} from {self.name}: {e}")
-        return None
+            #print(f"Error fetching metadata for identifier {identifier} from {self.name}: {e}")
+            return None
 
     def parse_response(self, response, identifier, input_type):
         if response.get('items'):
@@ -80,4 +80,4 @@ class HarvardAPI(BaseAPI):
             if isinstance(item, dict) and item.get('@type') == 'isbn' and item.get('@invalid') != 'yes':
                 isbn = item.get('#text', "").split()[0]  # Take first part if there are spaces
                 isbns.append(re.sub(r'-', '', isbn))  # Remove hyphens
-        return isbns if isbns else ''
+        return isbns

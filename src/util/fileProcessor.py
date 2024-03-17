@@ -1,6 +1,6 @@
 import re
 
-def read_and_validate_file(filepath, file_type):
+def verifyFileFormat(filepath, file_type):
     """
     Reads a file and checks if it contains valid ISBNs or OCNs based on the selected file type.
     Additionally, checks if the file content matches the selected file type.

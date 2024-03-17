@@ -1,12 +1,12 @@
 import tkinter as tk
 
-class PriorityListApp:
-    def __init__(self, master, callback):
+class PriorityList:
+    def __init__(self, master, callback, priorityList):
         self.master = master
         self.callback = callback
         self.master.title("Priority List")
 
-        self.entries = ["Harvard Library API","Library of Congress API","Google Books API","Columbia Library"]
+        self.entries = priorityList
 
         self.listbox = tk.Listbox(master, selectmode=tk.SINGLE)
         for entry in self.entries:
@@ -57,7 +57,7 @@ class PriorityListApp:
 
 def main():
     root = tk.Tk()
-    PriorityListApp(root, lambda: 1)
+    PriorityList(root, lambda: 1)
     root.mainloop()
 
 if __name__ == "__main__":

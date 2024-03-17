@@ -2,7 +2,7 @@ import sqlite3
 import os
 
 class DatabaseManager:
-    def __init__(self, db_name='metadata.db'):
+    def __init__(self, db_name='metadata.sqlite'):
         directory = os.path.dirname(os.path.abspath(__file__))
         self.db_name = os.path.join(directory, db_name)
 

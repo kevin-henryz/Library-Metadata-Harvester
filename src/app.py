@@ -384,7 +384,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                     isbn_data = [identifier] if input_type == 'ISBN' else data.get('isbn', [])
                     formatted_data = '; '.join(map(str, isbn_data))
                 elif header == 'OCN':
-                    ocn_data = [identifier] if input_type == 'OCN' else data.get('ocn', [])
+                    ocn_data = [identifier] if input_type == 'OCN' else [data.get('ocn', [])]
                     formatted_data = str(ocn_data[0]) if ocn_data else ''  # Assuming OCN is a single value
                 elif header == 'LCCN':
                     lccn_data = data.get('lccn', [])

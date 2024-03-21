@@ -37,7 +37,7 @@ class HarvardLibraryAPI(BaseAPI):
             if results:
                 lccns = self.get_lccn(results.get('classification', []))
                 ocn = self.get_ocn(results.get('identifier', []))
-                isbn = identifier
+                isbn = self.get_isbn(results.get('identifier', []))
                 source = "Harvard"
 
                 if input_type == "ocn":

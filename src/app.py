@@ -336,7 +336,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         Writes the collected metadata for a given identifier to the configured output file.
         
         This method compiles data into a format consistent with user-selected options and 
-        writes this information into a CSV file. If the file doesn't exist, it will be created. 
+        writes this information into a tab-delimited file. If the file doesn't exist, it will be created. 
         If it does, data will be appended. This method considers user settings to determine 
         which data should be included in the output file, such as ISBN, OCN, LCCN, and LCCN Source.
 
@@ -366,14 +366,16 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         if self.output_value_lccn.get():
             headers.append('LCCN')
         if self.output_value_lccn_source.get():
-            headers.append('LCCN Source')
+            headers.append('LCCN_Source')
+
 
         # Write data to file, creating it if necessary
         file_exists = os.path.isfile(self.output_file_path) and os.path.getsize(self.output_file_path) > 0
         with open(self.output_file_path, 'a', newline='') as file:
-            csv_writer = csv.writer(file)
+            # Change to csv.writer with delimiter as tab
+            tsv_writer = csv.writer(file, delimiter='\t')
             if not file_exists:
-                csv_writer.writerow(headers)
+                tsv_writer.writerow(headers)
 
             # Prepare the data row based on the chosen options
             row_data = []
@@ -397,9 +399,9 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             row_data = [item if item not in [None, 'None'] else '' for item in row_data]
             # Check if all elements are empty, if not then write to the file
             if any(row_data):
-                csv_writer.writerow(row_data)
+                tsv_writer.writerow(row_data)
                 logging.info(f"Write completed for {input_type} {identifier}")
-
+    
     def start_search(self):
         """Validate output options and start the search process."""
         if sum([self.output_value_isbn.get(), self.output_value_ocn.get(), self.output_value_lccn.get(), self.output_value_lccn_source.get()]) <= 1:

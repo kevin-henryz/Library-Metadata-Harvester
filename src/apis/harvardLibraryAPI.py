@@ -51,7 +51,7 @@ class HarvardLibraryAPI(BaseAPI):
             if input_type == "ocn":
                 if identifier != self.catalog_data['OCN']:
                     return None
-            print(self.catalog_data)
+
             self.catalog_data = vd.optimize_dictionary(self.catalog_data)
             return {k.lower(): v for k, v in self.catalog_data.items()}
 

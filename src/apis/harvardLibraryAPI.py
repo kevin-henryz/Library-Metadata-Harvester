@@ -1,13 +1,20 @@
 import re
 import requests
 from ratelimit import limits, sleep_and_retry
+import src.util.dictionaryValidationMethod as vd
+from src.apis.baseAPI import BaseAPI
 
-from .baseAPI import BaseAPI
 
 class HarvardLibraryAPI(BaseAPI):
     def __init__(self):
         self.base_url = "https://api.lib.harvard.edu/v2/items"
         self.name = "Harvard"
+        self.catalog_data = {
+            'ISBN': [],
+            'OCN': '',
+            'LCCN': [],
+            'LCCN_Source': []
+        }
 
     @sleep_and_retry
     @limits(calls=1, period=1)  # Allow 1 request per second
@@ -23,39 +30,35 @@ class HarvardLibraryAPI(BaseAPI):
                 raise Exception(f"API request failed with status code: {response.status_code}")
         except Exception as e:
             # Log the error and continue with the search
-            #print(f"Error fetching metadata for identifier {identifier} from {self.name}: {e}")
+            # print(f"Error fetching metadata for identifier {identifier} from {self.name}: {e}")
             return None
 
     def parse_response(self, response, identifier, input_type):
         if response.get('items'):
-            mods = response['items']['mods']
+            mods = response.get('items', {}).get('mods', {})
+
             if isinstance(mods, list):
-                results = mods[0]  # Take the first result
+                results = mods[0]
             elif isinstance(mods, dict):
                 results = mods
 
             if results:
-                lccns = self.get_lccn(results.get('classification', []))
-                ocn = self.get_ocn(results.get('identifier', []))
-                isbn = self.get_isbn(results.get('identifier', []))
-                source = "Harvard"
+                self.catalog_data['ISBN'] = self.get_isbn(results.get('identifier', []))
+                self.catalog_data['OCN'] = self.get_ocn(results.get('identifier', ''))
+                self.catalog_data['LCCN'] = self.get_lccn(results.get('classification', []))
+                self.catalog_data['LCCN_Source'] = ["Harvard"] * len(self.catalog_data['LCCN'])
 
-                if input_type == "ocn":
-                    isbn = self.get_isbn(results.get('identifier', []))  # list of isbns from the response
-                    if ocn != identifier:
-                        return None
+            if input_type == "ocn":
+                if identifier != self.catalog_data['OCN']:
+                    return None
+            print(self.catalog_data)
+            self.catalog_data = vd.optimize_dictionary(self.catalog_data)
+            return {k.lower(): v for k, v in self.catalog_data.items()}
 
-                return {
-                    'isbn': isbn,
-                    'ocn': ocn,
-                    'lccn': lccns,
-                    'lccn_source': [source] * len(lccns),
-                }
         return None
 
-
     def get_lccn(self, results):
-        
+
         lccns = []
         if isinstance(results, list):
             for item in results:

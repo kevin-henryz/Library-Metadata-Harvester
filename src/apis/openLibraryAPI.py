@@ -13,7 +13,7 @@ class OpenLibraryAPI(BaseAPI):
             'ISBN': [],
             'OCN': '',
             'LCCN': [],
-            'LCCN_Source': ['Open Library']
+            'LCCN_Source': []
         }
 
     def fetch_metadata(self, identifier, input_type):
@@ -45,8 +45,8 @@ class OpenLibraryAPI(BaseAPI):
             self.catalog_data['ISBN'] = self.get_isbn(results)
             self.catalog_data['OCN'] = self.get_ocn(results)
             self.catalog_data['LCCN'] = self.get_lccn(results)
+            self.catalog_data['LCCN_Source'] = ["Open Library"] * len(self.catalog_data['LCCN'])
 
-            print(self.catalog_data)
             self.catalog_data = vd.optimize_dictionary(self.catalog_data)
             return {k.lower(): v for k, v in self.catalog_data.items()}
 

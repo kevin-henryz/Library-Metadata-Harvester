@@ -15,7 +15,7 @@ class LibraryOfCongressAPI(BaseAPI):
             'ISBN': [],
             'OCN': '',
             'LCCN': [],
-            'LCCN_Source': ['Library of Congress']
+            'LCCN_Source': []
         }
 
     @sleep_and_retry
@@ -57,6 +57,7 @@ class LibraryOfCongressAPI(BaseAPI):
             self.catalog_data['ISBN'] = isbns
             self.catalog_data['OCN'] = str(ocns[0]) if ocns else ''
             self.catalog_data['LCCN'] = lccns
+            self.catalog_data['LCCN_Source'] = ["Library of Congress"] * len(lccns)
 
             self.catalog_data = vd.optimize_dictionary(self.catalog_data)
             return {k.lower(): v for k, v in self.catalog_data.items()}

@@ -45,7 +45,7 @@ class GoogleBooksAPI(BaseAPI):
             self.catalog_data['ISBN'] = isbn
             self.catalog_data['OCN'] = ocn
             self.catalog_data['LCCN'] = lccn
-            self.catalog_data['LCCN_Source'] = ["Google Books"] * len(lccn)
+            self.catalog_data['LCCN_Source'] = ['Google Books'] * len(lccn)
 
             self.catalog_data = vd.optimize_dictionary(self.catalog_data)
             return {k.lower(): v for k, v in self.catalog_data.items()}

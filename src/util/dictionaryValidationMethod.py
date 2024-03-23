@@ -5,8 +5,9 @@ output_dictionary = {
     'ISBN': [],
     'OCN': '',
     'LCCN': [],
-    'LCCN_SOURCE': []
+    'LCCN_Source': []
 }
+
 
 def optimize_dictionary(input_dictionary):
     # Clean the ISBN, OCN, and LCCN fields in the input dictionary and return the cleaned fields in the output dictionary

@@ -103,13 +103,17 @@ def run_individual_webscraper(webscraper, input_type, name):
     print(f"Total time for {input_type} inputs: {total_time} seconds")
 
 if __name__ == "__main__":
-    run_apis()
-    # Example usage:
-    # run_all()
-    # run_webscrapers()
-    # api = GoogleBooksAPI()  # HarvardLibraryAPI(), LibraryOfCongressAPI(), GoogleBooksAPI(), OpenLibraryAPI()
-    # input_type = 'ocn'  # 'isbn' or 'ocn
-    # run_individual(api, input_type)
+
+    run_apis() # run all apis, all input types
+
+    # run_webscrapers() # run all webscrapers, all input types
+
+    # run individual api and input type
+    # api = HarvardLibraryAPI()  # HarvardLibraryAPI(), LibraryOfCongressAPI(), GoogleBooksAPI(), OpenLibraryAPI()
+    # input_type = 'isbn'  # 'isbn' or 'ocn
+    # run_individual_api(api, input_type)
+
+    #run individual webscraper and input
     # webscraper = JohnsHopkinsLibraryAPI()  # ColumbiaLibraryAPI(), CornellLibraryAPI(), DukeLibraryAPI(),
     # name = 'JHU'  # 'Columbia', 'Cornell', 'Duke', 'Indiana', 'JHU', 'NCSU', 'PennState', 'Yale', 'Stanford'
     # input_type = 'isbn'  # 'isbn' or 'ocn'

@@ -4,6 +4,8 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 from selenium.common.exceptions import WebDriverException
 from .baseScraping import BaseScraping
+import src.util.dictionaryValidationMethod as vd
+
 
 class StanfordLibraryAPI(BaseScraping):
 
@@ -16,6 +18,10 @@ class StanfordLibraryAPI(BaseScraping):
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         self.driver = webdriver.Chrome(options=options)
         self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
+
+    def send_dictionary(self):
+        self.catalog_data = vd.optimize_dictionary(self.catalog_data)
+        return {k.lower(): v for k, v in self.catalog_data.items()}
 
     def fetch_metadata(self, identifier, input_type):
 
@@ -63,7 +69,8 @@ class StanfordLibraryAPI(BaseScraping):
                     except ValueError:
                         try:
                             index_of_ocn = webpage_text.index("(OCoLC-M)")
-                            self.catalog_data["OCN"] = webpage_text[index_of_ocn + 9: webpage_text.index(" ", index_of_ocn)]
+                            self.catalog_data["OCN"] = webpage_text[
+                                                       index_of_ocn + 9: webpage_text.index(" ", index_of_ocn)]
                         except ValueError:
                             pass
 
@@ -91,20 +98,21 @@ class StanfordLibraryAPI(BaseScraping):
                         index_of_second_potion = webpage_text.index("b|", index_of_fifty)
                         index_of_intermediate_space = webpage_text.index(" ", index_of_second_potion + 3)
                         index_of_final_space = webpage_text.index(" ", index_of_intermediate_space + 1)
-                        first_portion = webpage_text[index_of_first_portion + 3: webpage_text.index(" ", index_of_first_portion + 3)]
+                        first_portion = webpage_text[
+                                        index_of_first_portion + 3: webpage_text.index(" ", index_of_first_portion + 3)]
                         second_portion = webpage_text[index_of_second_potion + 3: index_of_final_space]
                         # Add parts together.
                         lccn = first_portion + second_portion
                         self.catalog_data["LCCN"].append(lccn)
                         self.catalog_data["LCCN_Source"].append("Stanford")
 
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
             elif input_type == "OCN":
 
@@ -154,10 +162,12 @@ class StanfordLibraryAPI(BaseScraping):
                         try:
                             if webpage_text.index("z|", index_of_twenty) < webpage_text.index("a|", index_of_twenty):
                                 index_of_z = webpage_text.index("z|", index_of_twenty)
-                                self.catalog_data["ISBN"].append(webpage_text[index_of_z + 3: webpage_text.index(" ", index_of_z + 3)])
+                                self.catalog_data["ISBN"].append(
+                                    webpage_text[index_of_z + 3: webpage_text.index(" ", index_of_z + 3)])
                             else:
                                 index_of_a = webpage_text.index("a|", index_of_twenty)
-                                self.catalog_data["ISBN"].append(webpage_text[index_of_a + 3: webpage_text.index(" ", index_of_a + 3)])
+                                self.catalog_data["ISBN"].append(
+                                    webpage_text[index_of_a + 3: webpage_text.index(" ", index_of_a + 3)])
                         except ValueError:
                             pass
 
@@ -179,13 +189,13 @@ class StanfordLibraryAPI(BaseScraping):
                         self.catalog_data["LCCN"].append(lccn)
                         self.catalog_data["LCCN_Source"].append("Stanford")
 
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
         except WebDriverException:
             # print(f"Browser session has been closed or lost: {e}")

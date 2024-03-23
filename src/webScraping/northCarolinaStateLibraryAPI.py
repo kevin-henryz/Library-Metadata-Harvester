@@ -4,6 +4,8 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 from selenium.common.exceptions import WebDriverException
 from .baseScraping import BaseScraping
+import src.util.dictionaryValidationMethod as vd
+
 
 class NorthCarolinaStateLibraryAPI(BaseScraping):
 
@@ -16,6 +18,10 @@ class NorthCarolinaStateLibraryAPI(BaseScraping):
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         self.driver = webdriver.Chrome(options=options)
         self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
+
+    def send_dictionary(self):
+        self.catalog_data = vd.optimize_dictionary(self.catalog_data)
+        return {k.lower(): v for k, v in self.catalog_data.items()}
 
     def fetch_metadata(self, identifier, input_type):
 
@@ -83,7 +89,8 @@ class NorthCarolinaStateLibraryAPI(BaseScraping):
 
                     for index_of_fifty in indexes_of_fifty:
                         index_of_first_portion = body_text.index("|a", index_of_fifty)
-                        first_portion = body_text[index_of_first_portion + 2: body_text.index("|b", index_of_first_portion)]
+                        first_portion = body_text[
+                                        index_of_first_portion + 2: body_text.index("|b", index_of_first_portion)]
                         index_of_second_portion = body_text.index("|b", index_of_fifty)
                         index_of_intermediate_space = body_text.index(" ", index_of_second_portion)
                         index_of_final_space = body_text.index(" ", index_of_intermediate_space + 1)
@@ -97,13 +104,13 @@ class NorthCarolinaStateLibraryAPI(BaseScraping):
                         self.catalog_data["LCCN"].append(lccn)
                         self.catalog_data["LCCN_Source"].append("NCSU")
 
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
             elif input_type == "OCN":
 
@@ -168,7 +175,8 @@ class NorthCarolinaStateLibraryAPI(BaseScraping):
 
                     for index_of_fifty in indexes_of_fifty:
                         index_of_first_portion = body_text.index("|a", index_of_fifty)
-                        first_portion = body_text[index_of_first_portion + 2: body_text.index("|b", index_of_first_portion)]
+                        first_portion = body_text[
+                                        index_of_first_portion + 2: body_text.index("|b", index_of_first_portion)]
                         index_of_second_portion = body_text.index("|b", index_of_fifty)
                         index_of_intermediate_space = body_text.index(" ", index_of_second_portion)
                         index_of_final_space = body_text.index(" ", index_of_intermediate_space + 1)
@@ -182,13 +190,13 @@ class NorthCarolinaStateLibraryAPI(BaseScraping):
                         self.catalog_data["LCCN"].append(lccn)
                         self.catalog_data["LCCN_Source"].append("NCSU")
 
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
         except WebDriverException:
             # print(f"Browser session has been closed or lost: {e}")

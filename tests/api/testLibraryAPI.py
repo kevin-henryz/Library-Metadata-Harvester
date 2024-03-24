@@ -42,7 +42,9 @@ class TestLibraryAPIs(unittest.TestCase):
 
     def setUp(self):
         """Set up test environment before each test."""
-        self.data_dir = 'data'
+        current_file_dir = os.path.dirname(os.path.abspath(__file__))
+        parent_dir = os.path.dirname(current_file_dir)
+        self.data_dir = os.path.join(parent_dir, 'data', 'tsv')
 
     def test_apis_with_isbn(self):
         """Test each API with ISBN identifiers."""

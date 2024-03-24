@@ -3,7 +3,7 @@ import platform
 import subprocess
 
 def build():
-    # Define the path to the main script and the additional src path for PyInstaller to find modules
+   
     main_script = os.path.join('src', 'app.py')
     src_path = os.path.join(os.getcwd(), 'src')  # Assumes the build script is at the root of the project
     paths_arg = '--paths=' + src_path
@@ -14,8 +14,8 @@ def build():
         '--clean',  # Clean PyInstaller cache and remove temporary files before building
         '--onefile',  # Package the app into one file
         '--windowed',  # Windowed mode, no console
-        paths_arg,  # Path to your src directory
-        main_script  # Path to your main Python script
+        paths_arg, 
+        main_script  
     ]
 
     # Run the command

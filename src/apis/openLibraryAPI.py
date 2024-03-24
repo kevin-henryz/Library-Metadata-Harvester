@@ -1,20 +1,26 @@
 # apis/openLibrary_api.py
 import re
 import requests
-from .baseAPI import BaseAPI
-
+from src.apis.baseAPI import BaseAPI
+import src.util.dictionaryValidationMethod as vd
 
 
 class OpenLibraryAPI(BaseAPI):
     def __init__(self):
-        self.base_url = "https://openlibrary.org/"
+        self.base_url = "http://openlibrary.org/api/volumes/brief/"
         self.name = "OpenLibrary"
+        self.catalog_data = {
+            'ISBN': [],
+            'OCN': '',
+            'LCCN': [],
+            'LCCN_Source': []
+        }
 
     def fetch_metadata(self, identifier, input_type):
-        if input_type != "isbn": # OpenLibrary does not support searching by OCN
-            #print(f"{self.name} API does not support {input_type} input")
-            return None
-        url = f"{self.base_url}isbn/{identifier}.json"
+        if input_type == "isbn":
+            url = f"{self.base_url}isbn/{identifier}.json"
+        elif input_type == "ocn":
+            url = f"{self.base_url}oclc/{identifier}.json"
         try:
             response = requests.get(url)
             response.raise_for_status()  # Raise an exception for HTTP errors (status code >= 400)
@@ -24,47 +30,43 @@ class OpenLibraryAPI(BaseAPI):
                 raise Exception(f"API request failed with status code: {response.status_code}")
         except Exception as e:
             # Log the error and continue with the search
-            #print(f"Error fetching metadata for identifier {identifier} from {self.name}: {e}")
+            # print(f"Error fetching metadata for identifier {identifier} from {self.name}: {e}")
             return None
 
-    # if present and requested, returns ISBN_13, single OCN, and single LCCN with source from the response
     def parse_response(self, response, identifier, input_type):
-        return {
-            "isbn": self.get_isbn(response),
-            "ocn": self.get_ocn(response),
-            "lccn": self.get_lccn(response),
-            "lccn_source": ["Open Library"]* len(self.get_lccn(response))
-        }
 
-    def get_ocn(self, response):
-        result = response.get("oclc")
-        if result is not None:  
-            if not isinstance(result, list):  
-                result = [result] 
-        else:
-            result = [] 
-        return result
+        if response.get('records'):
+            olid = list(response['records'].keys())[0].split("/")[
+                -1]  # need to get olid for header to enter the json file
 
-    def get_lccn(self, response):
-        result = response.get("lccn")
-        if result is not None: 
-            if not isinstance(result, list):  
-                result = [result] 
-        else:
-            result = []
-        return result
+        results = response['records'][f"/books/{olid}"]
 
-    def get_isbn(self, response):
+        if results:
+            self.catalog_data['ISBN'] = self.get_isbn(results)
+            self.catalog_data['OCN'] = self.get_ocn(results)
+            self.catalog_data['LCCN'] = self.get_lccn(results)
+            self.catalog_data['LCCN_Source'] = ["Open Library"] * len(self.catalog_data['LCCN'])
 
-            isbns = []
-            result = response.get("isbn_13")
-            result2 = response.get("isbn_10")
-            if result is not None: 
-                if not isinstance(result, list): 
-                    result = [result] 
-                isbns.extend(result)
-            if result2 is not None: 
-                if not isinstance(result2, list):
-                    result2 = [result2]
-                isbns.extend(result2)
-            return isbns
+            self.catalog_data = vd.optimize_dictionary(self.catalog_data)
+            return {k.lower(): v for k, v in self.catalog_data.items()}
+
+        return None
+
+    def get_ocn(self, results):
+        # returns ocn as string
+        ocn = ''
+        ocn_list = results.get('oclcs', [])
+        if ocn_list:
+            ocn = ocn_list[0]
+        return ocn
+
+    def get_lccn(self, results):
+        # returns list of lccn
+        if results.get('data'):
+            lccns = results['data'].get('classifications', {}).get('lc_classifications', [])
+        return lccns if lccns else []
+
+    def get_isbn(self, results):
+        # returns list of ISBN, usually includes isbn_10 and isbn_13
+        isbns = results.get('isbns', [])
+        return isbns if isbns else []

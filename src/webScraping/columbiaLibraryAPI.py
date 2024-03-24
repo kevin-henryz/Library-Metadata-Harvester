@@ -3,8 +3,12 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import time
 from selenium.common.exceptions import WebDriverException
-from .baseScraping import BaseScraping
 
+import src.util.dictionaryValidationMethod as vd
+from src.webScraping.baseScraping import BaseScraping
+
+
+# class NewColumbia(BaseScraping)
 class ColumbiaLibraryAPI(BaseScraping):
 
     def __init__(self):
@@ -16,6 +20,42 @@ class ColumbiaLibraryAPI(BaseScraping):
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         self.driver = webdriver.Chrome(options=options)
         self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
+
+    def send_dictionary(self):
+        self.catalog_data = vd.optimize_dictionary(self.catalog_data)
+        return {k.lower(): v for k, v in self.catalog_data.items()}
+
+    def find_occurrences_using_index(self, input_string, search_string):
+        indices = []
+        start_index = 0
+
+        while True:
+            try:
+                index = input_string.index(search_string, start_index)
+                indices.append(index)
+                start_index = index + 1
+            except ValueError:
+                break
+
+        return indices
+
+    def get_lccns(self, text, list_of_indices):
+        for index_of_fifty in list_of_indices:
+            index_of_first_portion = text.index("|a ", index_of_fifty)
+            first_portion = text[index_of_first_portion + 3: text.index(" ", index_of_first_portion + 3)]
+            index_of_second_portion = text.index("|b ", index_of_fifty)
+            index_of_intermediate_space = text.index(" ", index_of_second_portion + 3)
+            index_of_final_space = text.index(" ", index_of_intermediate_space + 1)
+            second_portion = text[index_of_second_portion + 3: index_of_final_space]
+            # Determine whether to keep the second portion or not.
+            # Based on whether the second portion returns the information we are looking for.
+            index_of_filter_space = text.index(" ", index_of_first_portion + 3)
+            if text[index_of_filter_space + 1: index_of_filter_space + 4] != "|b ":
+                lccn = first_portion
+            else:
+                lccn = first_portion + second_portion
+            self.catalog_data["LCCN"].append(lccn)
+            self.catalog_data["LCCN_Source"].append("Columbia")
 
     def fetch_metadata(self, identifier, input_type):
 
@@ -38,52 +78,47 @@ class ColumbiaLibraryAPI(BaseScraping):
                 time.sleep(5)
 
                 try:
-                    catalog = self.driver.find_element(By.CLASS_NAME, "result_set")
+                    catalog = self.driver.find_element(By.XPATH, "//div[@source='catalog']")
+                    title = catalog.find_element(By.CLASS_NAME, "result_title")
+                    printable_title = title.text
+                    link_to_click = self.driver.find_element(By.LINK_TEXT, printable_title)
+                    link_to_click.click()
 
-                    intermediate_step = catalog.find_elements(By.CLASS_NAME, "result")
+                    time.sleep(5)
 
-                    if len(intermediate_step) == 0:
-                        # print(f"ISBN {identifier} has no associated catalog in Columbia.")
-                        return {k.lower(): v for k, v in self.catalog_data.items()}
+                    url = self.driver.current_url
+                    self.driver.get(url[:url.index("?")] + "/librarian_view")
 
-                    max_length = 0
-                    index_of_desired_element = 0
+                    time.sleep(5)
 
-                    for element in intermediate_step:
-                        information_list = element.get_attribute('standard_ids')
+                    body = self.driver.find_element(By.TAG_NAME, "body")
+                    body_text = body.text.replace("\n", " ")
 
-                        information_list = information_list.strip("[]").replace("oclc", "ocn")
-                        information_list = information_list.replace('"', '').replace(':', ': ').upper()
-                        list_format = information_list.split(", ")
+                    try:
+                        index_of_ocn = body_text.index("(OCoLC)")
+                        if body_text.index(" ", index_of_ocn) > body_text.index("|", index_of_ocn):
+                            self.catalog_data["OCN"] = body_text[index_of_ocn + 7: body_text.index("|", index_of_ocn)]
+                        else:
+                            self.catalog_data["OCN"] = body_text[index_of_ocn + 7: body_text.index(" ", index_of_ocn)]
+                    except ValueError:
+                        pass
 
-                        if len(list_format) > max_length:
-                            max_length = len(list_format)
-                            index_of_desired_element = intermediate_step.index(element)
+                    indexes_of_fifty_part_one = self.find_occurrences_using_index(body_text, "050    4")
+                    indexes_of_fifty_part_two = self.find_occurrences_using_index(body_text, "050 0 0")
+                    indexes_of_fifty_part_three = self.find_occurrences_using_index(body_text, "050 1 4")
+                    indexes_of_fifty = indexes_of_fifty_part_one + indexes_of_fifty_part_two
+                    indexes_of_fifty += indexes_of_fifty_part_three
 
-                    desired_element = intermediate_step[index_of_desired_element]
+                    self.get_lccns(body_text, indexes_of_fifty)
 
-                    information_list = desired_element.get_attribute('standard_ids')
-
-                    information_list = information_list.strip("[]").replace("oclc", "ocn")
-                    information_list = information_list.replace('"', '').replace(':', ': ').upper()
-                    list_format = information_list.split(", ")
-
-                    for item in list_format:
-                        if 'OCN' in item:
-                            if self.catalog_data["OCN"] == "":
-                                self.catalog_data["OCN"] = item[5:]
-                        elif "LCCN" in item:
-                            self.catalog_data["LCCN"].append(item[6:])
-                            self.catalog_data["LCCN_Source"].append("Columbia")
-
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
                     # print(f"Error for ISBN {identifier} when entered into Columbia: {e}")
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
             elif input_type == "OCN":
 
@@ -94,51 +129,53 @@ class ColumbiaLibraryAPI(BaseScraping):
                 time.sleep(5)
 
                 try:
-                    catalog = self.driver.find_element(By.CLASS_NAME, "result_set")
 
-                    intermediate_step = catalog.find_elements(By.CLASS_NAME, "result")
+                    catalog = self.driver.find_element(By.XPATH, "//div[@source='catalog']")
+                    title = catalog.find_element(By.CLASS_NAME, "result_title")
+                    printable_title = title.text
+                    link_to_click = self.driver.find_element(By.LINK_TEXT, printable_title)
+                    link_to_click.click()
 
-                    if len(intermediate_step) == 0:
-                        # print(f"OCN {identifier} has no associated catalog in Columbia.")
-                        return {k.lower(): v for k, v in self.catalog_data.items()}
+                    time.sleep(5)
 
-                    max_length = 0
-                    index_of_desired_element = 0
+                    url = self.driver.current_url
+                    self.driver.get(url[:url.index("?")] + "/librarian_view")
 
-                    for element in intermediate_step:
-                        information_list = element.get_attribute('standard_ids')
+                    time.sleep(5)
 
-                        information_list = information_list.strip("[]").replace("oclc", "ocn")
-                        information_list = information_list.replace('"', '').replace(':', ': ').upper()
-                        list_format = information_list.split(", ")
+                    body = self.driver.find_element(By.TAG_NAME, "body")
+                    body_text = body.text.replace("\n", " ")
 
-                        if len(list_format) > max_length:
-                            max_length = len(list_format)
-                            index_of_desired_element = intermediate_step.index(element)
+                    indexes_of_twenty = self.find_occurrences_using_index(body_text, "020       ")
+                    for index_of_twenty in indexes_of_twenty:
+                        try:
+                            if body_text.index("|z", index_of_twenty) < body_text.index("|a", index_of_twenty):
+                                index_of_z = body_text.index("|z", index_of_twenty)
+                                self.catalog_data["ISBN"].append(
+                                    body_text[index_of_z + 3: body_text.index(" ", index_of_z + 3)])
+                            else:
+                                index_of_a = body_text.index("|a", index_of_twenty)
+                                self.catalog_data["ISBN"].append(
+                                    body_text[index_of_a + 3: body_text.index(" ", index_of_a + 3)])
+                        except ValueError:
+                            pass
 
-                    desired_element = intermediate_step[index_of_desired_element]
+                    indexes_of_fifty_part_one = self.find_occurrences_using_index(body_text, "050    4")
+                    indexes_of_fifty_part_two = self.find_occurrences_using_index(body_text, "050 0 0")
+                    indexes_of_fifty_part_three = self.find_occurrences_using_index(body_text, "050 1 4")
+                    indexes_of_fifty = indexes_of_fifty_part_one + indexes_of_fifty_part_two
+                    indexes_of_fifty += indexes_of_fifty_part_three
 
-                    information_list = desired_element.get_attribute('standard_ids')
+                    self.get_lccns(body_text, indexes_of_fifty)
 
-                    information_list = information_list.strip("[]").replace("oclc", "ocn")
-                    information_list = information_list.replace('"', '').replace(':', ': ').upper()
-                    list_format = information_list.split(", ")
-
-                    for item in list_format:
-                        if 'ISBN' in item:
-                            self.catalog_data["ISBN"].append(item[6:])
-                        elif "LCCN" in item:
-                            self.catalog_data["LCCN"].append(item[6:])
-                            self.catalog_data["LCCN_Source"].append("Columbia")
-
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
-                    # print(f"Error for OCN {identifier} when entered into Columbia: {e}")
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    # print(f"Error for ISBN {identifier} when entered into Columbia: {e}")
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
         except WebDriverException:
             # print(f"Browser session has been closed or lost: {e}")

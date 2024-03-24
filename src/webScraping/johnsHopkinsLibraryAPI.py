@@ -4,6 +4,8 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 from selenium.common.exceptions import WebDriverException
 from .baseScraping import BaseScraping
+import src.util.dictionaryValidationMethod as vd
+
 
 class JohnsHopkinsLibraryAPI(BaseScraping):
 
@@ -16,6 +18,11 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         self.driver = webdriver.Chrome(options=options)
         self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
+
+    def send_dictionary(self):
+        print(self.catalog_data)
+        self.catalog_data = vd.optimize_dictionary(self.catalog_data)
+        return {k.lower(): v for k, v in self.catalog_data.items()}
 
     def fetch_metadata(self, identifier, input_type):
 
@@ -33,7 +40,8 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
 
                 self.catalog_data["ISBN"].append(identifier)
 
-                self.driver.get(f"https://catalyst.library.jhu.edu/discovery/search?query=any,contains,{identifier}&pfilter=rtype,exact,books&tab=Everything&search_scope=MyInst_and_CI&vid=01JHU_INST:JHU&offset=0")
+                self.driver.get(
+                    f"https://catalyst.library.jhu.edu/discovery/search?query=any,contains,{identifier}&pfilter=rtype,exact,books&tab=Everything&search_scope=MyInst_and_CI&vid=01JHU_INST:JHU&offset=0")
 
                 time.sleep(5)
 
@@ -54,7 +62,8 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
                     doc = url[index_doc + 6: url.index("&", index_doc)]
                     owner = vid[:vid.index(":")]
                     # Get the new url.
-                    self.driver.get(f"https://catalyst.library.jhu.edu/discovery/sourceRecord?vid={vid}&docId={doc}&recordOwner={owner}")
+                    self.driver.get(
+                        f"https://catalyst.library.jhu.edu/discovery/sourceRecord?vid={vid}&docId={doc}&recordOwner={owner}")
 
                     time.sleep(5)
 
@@ -100,7 +109,8 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
                         index_of_second_potion = pre_text.index("$b", index_of_fifty)
                         index_of_intermediate_space = pre_text.index(" ", index_of_second_potion + 2)
                         index_of_final_space = pre_text.index(" ", index_of_intermediate_space + 1)
-                        first_portion = pre_text[index_of_first_portion + 2: pre_text.index(" ", index_of_first_portion + 2)]
+                        first_portion = pre_text[
+                                        index_of_first_portion + 2: pre_text.index(" ", index_of_first_portion + 2)]
                         second_portion = pre_text[index_of_second_potion + 2: index_of_final_space]
                         # Determine whether to keep the second portion or not.
                         # Based on whether the second portion returns the information we are looking for.
@@ -112,19 +122,20 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
                         self.catalog_data["LCCN"].append(lccn)
                         self.catalog_data["LCCN_Source"].append("JHU")
 
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
             elif input_type == "OCN":
 
                 self.catalog_data["OCN"] = identifier
 
-                self.driver.get(f"https://catalyst.library.jhu.edu/discovery/search?query=lds10,contains,{identifier}&pfilter=rtype,exact,books&tab=Everything&search_scope=MyInst_and_CI&vid=01JHU_INST:JHU&offset=0")
+                self.driver.get(
+                    f"https://catalyst.library.jhu.edu/discovery/search?query=lds10,contains,{identifier}&pfilter=rtype,exact,books&tab=Everything&search_scope=MyInst_and_CI&vid=01JHU_INST:JHU&offset=0")
 
                 time.sleep(5)
 
@@ -146,7 +157,8 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
                     doc = url[index_doc + 6: url.index("&", index_doc)]
                     owner = vid[:vid.index(":")]
                     # Get the new url.
-                    self.driver.get(f"https://catalyst.library.jhu.edu/discovery/sourceRecord?vid={vid}&docId={doc}&recordOwner={owner}")
+                    self.driver.get(
+                        f"https://catalyst.library.jhu.edu/discovery/sourceRecord?vid={vid}&docId={doc}&recordOwner={owner}")
 
                     time.sleep(5)
                     # Get the relevant text from this new url.
@@ -159,7 +171,7 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
                     # It is possible that it could be found manually through the previous tab.
                     # But as was mentioned before, that previous tab had web scraping limitations.
                     if "Record ID" and "was not found" in pre_text:
-                        return {k.lower(): v for k, v in self.catalog_data.items()}
+                        return self.send_dictionary()
 
                     def find_occurrences_using_index(input_string, search_string):
                         indices = []
@@ -180,7 +192,8 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
                     indexes_of_isbn = indexes_of_isbn_twenty + indexes_of_isbn_seven_seven_six
 
                     for index_ISBN in indexes_of_isbn:
-                        self.catalog_data["ISBN"].append(pre_text[index_ISBN + 8: pre_text.index(" ", index_ISBN + 8)].replace("-", ""))
+                        self.catalog_data["ISBN"].append(
+                            pre_text[index_ISBN + 8: pre_text.index(" ", index_ISBN + 8)].replace("-", ""))
 
                     indexes_of_fifty_part_one = find_occurrences_using_index(pre_text, "050 #4$a")
                     indexes_of_fifty_part_two = find_occurrences_using_index(pre_text, "050 00$a")
@@ -192,7 +205,8 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
                         index_of_second_potion = pre_text.index("$b", index_of_fifty)
                         index_of_intermediate_space = pre_text.index(" ", index_of_second_potion + 2)
                         index_of_final_space = pre_text.index(" ", index_of_intermediate_space + 1)
-                        first_portion = pre_text[index_of_first_portion + 2: pre_text.index(" ", index_of_first_portion + 2)]
+                        first_portion = pre_text[
+                                        index_of_first_portion + 2: pre_text.index(" ", index_of_first_portion + 2)]
                         second_portion = pre_text[index_of_second_potion + 2: index_of_final_space]
                         # Determine whether to keep the second portion or not.
                         # Based on whether the second portion returns the information we are looking for.
@@ -204,13 +218,13 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
                         self.catalog_data["LCCN"].append(lccn)
                         self.catalog_data["LCCN_Source"].append("JHU")
 
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
         except WebDriverException:
             # print(f"Browser session has been closed or lost: {e}")

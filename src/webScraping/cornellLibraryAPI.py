@@ -4,6 +4,7 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 from selenium.common.exceptions import WebDriverException
 from .baseScraping import BaseScraping
+import src.util.dictionaryValidationMethod as vd
 
 class CornellLibraryAPI(BaseScraping):
 
@@ -16,6 +17,11 @@ class CornellLibraryAPI(BaseScraping):
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         self.driver = webdriver.Chrome(options=options)
         self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
+
+
+    def send_dictionary(self):
+        self.catalog_data = vd.optimize_dictionary(self.catalog_data)
+        return {k.lower(): v for k, v in self.catalog_data.items()}
 
     def fetch_metadata(self, identifier, input_type):
 
@@ -97,13 +103,13 @@ class CornellLibraryAPI(BaseScraping):
                         self.catalog_data["LCCN"].append(lccn)
                         self.catalog_data["LCCN_Source"].append("Cornell")
 
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
             elif input_type == "OCN":
 
@@ -176,13 +182,13 @@ class CornellLibraryAPI(BaseScraping):
                         self.catalog_data["LCCN"].append(lccn)
                         self.catalog_data["LCCN_Source"].append("Cornell")
 
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except NoSuchElementException:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
                 except ValueError:
-                    return {k.lower(): v for k, v in self.catalog_data.items()}
+                    return self.send_dictionary()
 
         except WebDriverException:
             # print(f"Browser session has been closed or lost: {e}")

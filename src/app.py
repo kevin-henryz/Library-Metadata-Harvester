@@ -5,6 +5,10 @@ import threading
 import time
 import csv
 
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
+
+
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 from tkinter.filedialog import asksaveasfile
@@ -33,8 +37,6 @@ from webScraping.pennStateLibraryAPI import PennStateLibraryAPI
 from webScraping.yaleLibraryAPI import YaleLibraryAPI
 from webScraping.stanfordLibraryAPI import StanfordLibraryAPI
 
-import util.dictionaryValidationMethod as vd
-
 class LibraryMetadataHarvesterApp(tk.Tk):
     """A GUI application for harvesting library metadata from different sources.
 
@@ -56,7 +58,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.source_mapping = {}
         self.source_threads = {}
         self.configure_app()
-        self.setup_logging(LibraryMetadataHarvesterApp.resource_path(os.path.join('logs', 'example.log')))
+        self.setup_logging()
         self.initialize_database()
         self.setup_ui()
         self.initialize_sources_async()
@@ -91,9 +93,14 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.style.map('TEntry', fieldbackground=[('focus', '#404040')], foreground=[('focus', 'white')])
 
 
-    def setup_logging(self, log_file_path):
+    def setup_logging(self):
         """Setup application logging."""
-        
+        # When bundled by PyInstaller, files are in a temporary folder referenced by _MEIPASS
+        base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+        log_directory = os.path.join(base_path, 'logs')
+        os.makedirs(log_directory, exist_ok=True)  # Create the logs directory if it doesn't exist
+        log_file_path = os.path.join(log_directory, 'example.log')
+
         logging.getLogger().handlers.clear()
         logging.basicConfig(level=logging.INFO,
                             format='%(asctime)s - %(levelname)s - %(message)s',
@@ -102,6 +109,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                                 logging.StreamHandler()
                             ])
         logging.info("Application started")
+
 
     def initialize_database(self):
         """Initialize the application's database and required tables."""

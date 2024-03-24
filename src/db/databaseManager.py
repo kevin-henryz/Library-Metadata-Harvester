@@ -1,14 +1,20 @@
 import sqlite3
 import os
+import sys
 
 class DatabaseManager:
     def __init__(self, db_name='metadata.sqlite'):
-        directory = os.path.dirname(os.path.abspath(__file__))
-        self.db_name = os.path.join(directory, db_name)
+        if getattr(sys, 'frozen', False):
+            application_path = sys._MEIPASS  # _MEIPASS is a special attribute set by PyInstaller at runtime
+        else:
+            application_path = os.path.dirname(os.path.abspath(__file__))
+        
+        # Construct the full path for the database file
+        self.db_path = os.path.join(application_path, db_name)
 
     def execute_query(self, query, params=(), fetch=False):
         """General purpose method to execute database queries."""
-        with sqlite3.connect(self.db_name) as conn:
+        with sqlite3.connect(self.db_path) as conn:
             cursor = conn.cursor()
             try:
                 cursor.execute(query, params)

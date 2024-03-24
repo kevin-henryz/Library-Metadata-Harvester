@@ -2,8 +2,9 @@ import requests
 
 import re
 from ratelimit import limits, sleep_and_retry
-import src.util.dictionaryValidationMethod as vd
-from src.apis.baseAPI import BaseAPI
+import util.dictionaryValidationMethod as vd
+from apis.baseAPI import BaseAPI
+import isbnlib
 
 
 class GoogleBooksAPI(BaseAPI):

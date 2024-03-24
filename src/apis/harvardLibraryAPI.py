@@ -1,8 +1,9 @@
 import re
 import requests
 from ratelimit import limits, sleep_and_retry
-import src.util.dictionaryValidationMethod as vd
-from src.apis.baseAPI import BaseAPI
+import util.dictionaryValidationMethod as vd
+from apis.baseAPI import BaseAPI
+
 
 
 class HarvardLibraryAPI(BaseAPI):

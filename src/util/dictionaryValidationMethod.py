@@ -14,16 +14,17 @@ def optimize_dictionary(input_dictionary):
     # Call this function in the API classes to clean the fields before returning the output dictionary
 
     # extract the fields from the input dictionary
-    isbn_list = input_dictionary["ISBN"]
-    ocn = input_dictionary["OCN"]
-    lccn_list = input_dictionary["LCCN"]
-    lccn_source_list = input_dictionary["LCCN_Source"]
+    isbn_list = input_dictionary.get("ISBN", input_dictionary.get("isbn", []))
+    ocn = input_dictionary.get("OCN", input_dictionary.get("ocn", ""))
+    lccn_list = input_dictionary.get("LCCN", input_dictionary.get("lccn", []))
+    lccn_source_list = input_dictionary.get("LCCN_Source", input_dictionary.get("lccn_source", []))
+
 
     # clean the fields and store optimal output choice to the output dictionary
     output_dictionary["ISBN"] = best_clean_isbn(isbn_list) if isbn_list else []
     output_dictionary["OCN"] = clean_ocn(ocn) if ocn else ''
     output_dictionary["LCCN"] = best_clean_lccn(lccn_list) if lccn_list else []
-    output_dictionary["LCCN_SOURCE"] = [lccn_source_list[0]] if output_dictionary["LCCN"] else []
+    output_dictionary["LCCN_SOURCE"] = [str(lccn_source_list[0])] if output_dictionary["LCCN"] else []
 
     return output_dictionary
 
@@ -37,7 +38,7 @@ def best_clean_isbn(isbn_list):
 
 def clean_isbn_list(isbn_list):
     # Remove non-digit characters from the beginning and end of each string and filter out invalid ISBNs
-    isbn_list = [item for item in isbn_list if item.isdigit()]
+    # isbn_list = [item for item in isbn_list if item.isdigit()]
     isbn_list = [item for item in isbn_list if isbnlib.is_isbn10(item) or isbnlib.is_isbn13(item)]
     return isbn_list if isbn_list else []
 
@@ -46,7 +47,7 @@ def get_highest_ascii_item(input_list):
     # Convert each string to an integer and then sum up their ASCII values, and return the highest valued one
     ascii_sums = [sum(ord(char) for char in str(int_val)) for int_val in input_list]
     max_index = ascii_sums.index(max(ascii_sums))
-    return [input_list[max_index]] if input_list else []
+    return [str(input_list[max_index])] if input_list else []
 
 
 def clean_ocn(ocn):
@@ -54,7 +55,7 @@ def clean_ocn(ocn):
     stripped_ocn = re.sub(r'^\D+|\D+$', '', ocn)
     if bool(re.search(r'\D', stripped_ocn)) or len(stripped_ocn) < 8 or len(stripped_ocn) > 11:
         return ''
-    return stripped_ocn
+    return str(stripped_ocn)
 
 
 def best_clean_lccn(lccn_list):
@@ -85,4 +86,4 @@ def longest_string_in_list(input_list):
     for string in input_list[1:]:
         if len(string) > len(longest):
             longest = string
-    return [longest]  # Wrap the longest string in a list before returning it
+    return [str(longest)]  # Wrap the longest string in a list before returning it

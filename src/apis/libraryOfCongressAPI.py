@@ -1,9 +1,10 @@
 import requests
 import re
 from ratelimit import limits, sleep_and_retry
-import src.util.dictionaryValidationMethod as vd
+import util.dictionaryValidationMethod as vd
 
-from src.apis.baseAPI import BaseAPI
+from apis.baseAPI import BaseAPI
+
 
 # The LOC API does not have a dedicated endpoint for fetching metadata by identifier, so we use the search API
 # The API does not return ISBNs, so we return an empty list for ISBNs if the input is OCN
@@ -75,4 +76,3 @@ class LibraryOfCongressAPI(BaseAPI):
         call_numbers = result.get('item', {}).get('call_number', [])
         lccn = next((cn for cn in call_numbers if cn != "Newspaper"), None)
         return str(lccn) if lccn is not None else ""
-

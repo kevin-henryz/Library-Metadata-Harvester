@@ -6895,3 +6895,1420 @@
 2024-03-21 15:00:04,787 - INFO - Querying database for OCN 228049540.
 2024-03-21 15:00:04,788 - INFO - No database record found for OCN 228049540.
 2024-03-21 15:00:04,789 - INFO - No LCCN data found for OCN 228049540.
+2024-03-21 17:49:28,004 - INFO - Application started
+2024-03-21 17:49:40,214 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:22:58,774 - INFO - Application started
+2024-03-23 23:23:21,852 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:25:09,876 - INFO - Application started
+2024-03-23 23:25:21,325 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:25:39,959 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:25:39,963 - INFO - 0/8. Searching metadata for 49251460
+2024-03-23 23:25:39,964 - INFO - Querying database for OCN 49251460.
+2024-03-23 23:25:39,972 - INFO - No database record found for OCN 49251460.
+2024-03-23 23:25:39,977 - INFO - No LCCN data found for OCN 49251460.
+2024-03-23 23:25:48,848 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-23 23:25:55,717 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-23 23:26:07,739 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-23 23:26:08,434 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-23 23:26:15,929 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-23 23:26:25,336 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-23 23:26:27,273 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-23 23:26:27,282 - INFO - Write completed for OCN 49251460
+2024-03-23 23:26:27,283 - INFO - 1/8. Searching metadata for 22281914
+2024-03-23 23:26:27,283 - INFO - Querying database for OCN 22281914.
+2024-03-23 23:26:27,284 - INFO - No database record found for OCN 22281914.
+2024-03-23 23:26:27,286 - INFO - No LCCN data found for OCN 22281914.
+2024-03-23 23:26:32,902 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-23 23:26:39,320 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-23 23:26:48,440 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-23 23:26:49,137 - INFO - Updated data for 22281914 from Google Books
+2024-03-23 23:26:49,141 - INFO - Write completed for OCN 22281914
+2024-03-23 23:26:49,142 - INFO - 2/8. Searching metadata for 51868091
+2024-03-23 23:26:49,142 - INFO - Querying database for OCN 51868091.
+2024-03-23 23:26:49,144 - INFO - No database record found for OCN 51868091.
+2024-03-23 23:26:49,145 - INFO - No LCCN data found for OCN 51868091.
+2024-03-23 23:26:54,872 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-23 23:27:01,360 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-23 23:27:09,132 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-23 23:27:16,006 - INFO - No additional results found for OCN 51868091 from Indiana Library
+2024-03-23 23:27:21,659 - INFO - No additional results found for OCN 51868091 from Johns Hopkins Library
+2024-03-23 23:27:32,459 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-23 23:27:32,908 - INFO - Updated data for 51868091 from Open Library
+2024-03-23 23:27:32,938 - INFO - Write completed for OCN 51868091
+2024-03-23 23:27:32,939 - INFO - 3/8. Searching metadata for 225374393
+2024-03-23 23:27:32,941 - INFO - Querying database for OCN 225374393.
+2024-03-23 23:27:32,944 - INFO - No database record found for OCN 225374393.
+2024-03-23 23:27:32,946 - INFO - No LCCN data found for OCN 225374393.
+2024-03-23 23:27:38,689 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-23 23:27:45,252 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-23 23:27:51,489 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-23 23:27:52,206 - INFO - Updated data for 225374393 from Google Books
+2024-03-23 23:27:52,209 - INFO - Write completed for OCN 225374393
+2024-03-23 23:27:52,210 - INFO - 4/8. Searching metadata for 1056625215
+2024-03-23 23:27:52,210 - INFO - Querying database for OCN 1056625215.
+2024-03-23 23:27:52,211 - INFO - No database record found for OCN 1056625215.
+2024-03-23 23:27:52,212 - INFO - No LCCN data found for OCN 1056625215.
+2024-03-23 23:27:57,733 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-23 23:28:04,074 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-23 23:28:12,089 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-23 23:28:18,960 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-23 23:28:24,225 - INFO - No additional results found for OCN 1056625215 from Johns Hopkins Library
+2024-03-23 23:28:32,780 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-23 23:28:33,330 - INFO - Updated data for 1056625215 from Open Library
+2024-03-23 23:28:33,348 - INFO - Write completed for OCN 1056625215
+2024-03-23 23:28:33,348 - INFO - 5/8. Searching metadata for 58561723
+2024-03-23 23:28:33,349 - INFO - Querying database for OCN 58561723.
+2024-03-23 23:28:33,351 - INFO - No database record found for OCN 58561723.
+2024-03-23 23:28:33,351 - INFO - No LCCN data found for OCN 58561723.
+2024-03-23 23:28:38,914 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-23 23:28:45,240 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-23 23:28:51,173 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-23 23:28:52,193 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-23 23:28:52,215 - INFO - Write completed for OCN 58561723
+2024-03-23 23:28:52,216 - INFO - 6/8. Searching metadata for 58593680
+2024-03-23 23:28:52,217 - INFO - Querying database for OCN 58593680.
+2024-03-23 23:28:52,219 - INFO - No database record found for OCN 58593680.
+2024-03-23 23:28:52,221 - INFO - No LCCN data found for OCN 58593680.
+2024-03-23 23:28:57,754 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-23 23:29:03,659 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-23 23:29:09,722 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-23 23:29:10,815 - INFO - Updated data for 58593680 from Harvard Library
+2024-03-23 23:29:10,834 - INFO - Write completed for OCN 58593680
+2024-03-23 23:29:10,835 - INFO - 7/8. Searching metadata for 58561723
+2024-03-23 23:29:10,835 - INFO - Querying database for OCN 58561723.
+2024-03-23 23:29:10,837 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-23 23:29:10,837 - INFO - No LCCN data found for OCN 58561723.
+2024-03-23 23:29:16,341 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-23 23:29:22,652 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-23 23:29:28,490 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-23 23:29:30,469 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-23 23:29:30,575 - INFO - Write completed for OCN 58561723
+2024-03-23 23:29:30,575 - INFO - Search thread completed successfully for 8 items.
+2024-03-23 23:29:30,738 - INFO - Search completed
+2024-03-23 23:32:53,832 - INFO - Application started
+2024-03-23 23:33:36,141 - INFO - Application started
+2024-03-23 23:34:33,941 - INFO - Application started
+2024-03-23 23:34:54,823 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:34:57,860 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:34:57,864 - INFO - 0/8. Searching metadata for 49251460
+2024-03-23 23:34:57,864 - INFO - Querying database for OCN 49251460.
+2024-03-23 23:34:57,865 - INFO - No database record found for OCN 49251460.
+2024-03-23 23:34:57,869 - INFO - No LCCN data found for OCN 49251460.
+2024-03-23 23:35:03,946 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-23 23:35:10,380 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-23 23:35:19,127 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-23 23:35:19,837 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-23 23:35:27,008 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-23 23:35:37,643 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-23 23:35:38,080 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-23 23:35:38,128 - INFO - Write completed for OCN 49251460
+2024-03-23 23:35:38,129 - INFO - 1/8. Searching metadata for 22281914
+2024-03-23 23:35:38,130 - INFO - Querying database for OCN 22281914.
+2024-03-23 23:35:38,131 - INFO - No database record found for OCN 22281914.
+2024-03-23 23:35:38,131 - INFO - No LCCN data found for OCN 22281914.
+2024-03-23 23:35:43,696 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-23 23:35:50,262 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-23 23:35:57,705 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-23 23:35:58,392 - INFO - Updated data for 22281914 from Google Books
+2024-03-23 23:35:58,397 - INFO - Write completed for OCN 22281914
+2024-03-23 23:35:58,397 - INFO - 2/8. Searching metadata for 51868091
+2024-03-23 23:35:58,397 - INFO - Querying database for OCN 51868091.
+2024-03-23 23:35:58,399 - INFO - No database record found for OCN 51868091.
+2024-03-23 23:35:58,400 - INFO - No LCCN data found for OCN 51868091.
+2024-03-23 23:36:03,964 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-23 23:36:10,499 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-23 23:36:18,087 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-23 23:36:24,968 - INFO - No additional results found for OCN 51868091 from Indiana Library
+2024-03-23 23:36:30,545 - INFO - No additional results found for OCN 51868091 from Johns Hopkins Library
+2024-03-23 23:36:39,642 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-23 23:36:40,278 - INFO - Updated data for 51868091 from Open Library
+2024-03-23 23:36:40,297 - INFO - Write completed for OCN 51868091
+2024-03-23 23:36:40,298 - INFO - 3/8. Searching metadata for 225374393
+2024-03-23 23:36:40,298 - INFO - Querying database for OCN 225374393.
+2024-03-23 23:36:40,300 - INFO - No database record found for OCN 225374393.
+2024-03-23 23:36:40,301 - INFO - No LCCN data found for OCN 225374393.
+2024-03-23 23:36:45,847 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-23 23:36:52,558 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-23 23:37:08,848 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-23 23:37:09,589 - INFO - Search completed
+2024-03-23 23:37:09,862 - INFO - 4/8. Searching metadata for 1056625215
+2024-03-23 23:37:09,863 - INFO - Search thread stopped manually after processing 5 out of 8 items.
+2024-03-23 23:38:29,986 - INFO - Application started
+2024-03-23 23:38:58,975 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:39:08,319 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:39:08,324 - INFO - 0/8. Searching metadata for 58561723
+2024-03-23 23:39:08,324 - INFO - Querying database for OCN 58561723.
+2024-03-23 23:39:08,325 - INFO - No database record found for OCN 58561723.
+2024-03-23 23:39:08,326 - INFO - No LCCN data found for OCN 58561723.
+2024-03-23 23:39:14,241 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-23 23:39:21,060 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-23 23:39:27,867 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-23 23:39:28,923 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-23 23:39:28,948 - INFO - Write completed for OCN 58561723
+2024-03-23 23:39:28,949 - INFO - 1/8. Searching metadata for 49251460
+2024-03-23 23:39:28,951 - INFO - Querying database for OCN 49251460.
+2024-03-23 23:39:28,953 - INFO - No database record found for OCN 49251460.
+2024-03-23 23:39:28,955 - INFO - No LCCN data found for OCN 49251460.
+2024-03-23 23:39:34,421 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-23 23:39:41,014 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-23 23:39:48,615 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-23 23:39:49,322 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-23 23:39:54,120 - INFO - Search completed
+2024-03-23 23:39:56,521 - INFO - 2/8. Searching metadata for 22281914
+2024-03-23 23:39:56,521 - INFO - Search thread stopped manually after processing 3 out of 8 items.
+2024-03-23 23:45:39,055 - INFO - Application started
+2024-03-23 23:45:51,471 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:46:01,565 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:46:01,569 - INFO - 0/8. Searching metadata for 58561723
+2024-03-23 23:46:01,570 - INFO - Querying database for OCN 58561723.
+2024-03-23 23:46:01,572 - INFO - No database record found for OCN 58561723.
+2024-03-23 23:46:01,574 - INFO - No LCCN data found for OCN 58561723.
+2024-03-23 23:46:07,624 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-23 23:46:14,583 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-23 23:46:21,339 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-23 23:46:22,630 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-23 23:46:22,684 - INFO - Write completed for OCN 58561723
+2024-03-23 23:46:22,685 - INFO - 1/8. Searching metadata for 49251460
+2024-03-23 23:46:22,685 - INFO - Querying database for OCN 49251460.
+2024-03-23 23:46:22,688 - INFO - No database record found for OCN 49251460.
+2024-03-23 23:46:22,689 - INFO - No LCCN data found for OCN 49251460.
+2024-03-23 23:46:28,399 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-23 23:46:34,906 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-23 23:46:42,229 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-23 23:46:42,835 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-23 23:46:49,837 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-23 23:46:59,481 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-23 23:46:59,938 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-23 23:46:59,949 - INFO - Write completed for OCN 49251460
+2024-03-23 23:46:59,949 - INFO - 2/8. Searching metadata for 22281914
+2024-03-23 23:46:59,950 - INFO - Querying database for OCN 22281914.
+2024-03-23 23:46:59,950 - INFO - No database record found for OCN 22281914.
+2024-03-23 23:46:59,951 - INFO - No LCCN data found for OCN 22281914.
+2024-03-23 23:47:05,506 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-23 23:47:12,369 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-23 23:47:19,901 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-23 23:47:20,735 - INFO - Updated data for 22281914 from Google Books
+2024-03-23 23:47:20,740 - INFO - Write completed for OCN 22281914
+2024-03-23 23:47:20,740 - INFO - 3/8. Searching metadata for 51868091
+2024-03-23 23:47:20,741 - INFO - Querying database for OCN 51868091.
+2024-03-23 23:47:20,744 - INFO - No database record found for OCN 51868091.
+2024-03-23 23:47:20,745 - INFO - No LCCN data found for OCN 51868091.
+2024-03-23 23:47:26,333 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-23 23:47:32,684 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-23 23:47:40,442 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-23 23:47:47,338 - INFO - No additional results found for OCN 51868091 from Indiana Library
+2024-03-23 23:47:52,952 - INFO - No additional results found for OCN 51868091 from Johns Hopkins Library
+2024-03-23 23:48:02,263 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-23 23:48:02,798 - INFO - Updated data for 51868091 from Open Library
+2024-03-23 23:48:02,826 - INFO - Write completed for OCN 51868091
+2024-03-23 23:48:02,827 - INFO - 4/8. Searching metadata for 225374393
+2024-03-23 23:48:02,827 - INFO - Querying database for OCN 225374393.
+2024-03-23 23:48:02,829 - INFO - No database record found for OCN 225374393.
+2024-03-23 23:48:02,831 - INFO - No LCCN data found for OCN 225374393.
+2024-03-23 23:48:08,388 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-23 23:48:14,855 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-23 23:48:21,804 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-23 23:48:22,521 - INFO - Updated data for 225374393 from Google Books
+2024-03-23 23:48:22,526 - INFO - Write completed for OCN 225374393
+2024-03-23 23:48:22,526 - INFO - 5/8. Searching metadata for 1056625215
+2024-03-23 23:48:22,527 - INFO - Querying database for OCN 1056625215.
+2024-03-23 23:48:22,528 - INFO - No database record found for OCN 1056625215.
+2024-03-23 23:48:22,529 - INFO - No LCCN data found for OCN 1056625215.
+2024-03-23 23:48:28,029 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-23 23:48:34,057 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-23 23:48:42,233 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-23 23:48:49,075 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-23 23:48:54,290 - INFO - No additional results found for OCN 1056625215 from Johns Hopkins Library
+2024-03-23 23:49:02,174 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-23 23:49:02,646 - INFO - Updated data for 1056625215 from Open Library
+2024-03-23 23:49:02,666 - INFO - Write completed for OCN 1056625215
+2024-03-23 23:49:02,667 - INFO - 6/8. Searching metadata for 58561723
+2024-03-23 23:49:02,667 - INFO - Querying database for OCN 58561723.
+2024-03-23 23:49:02,668 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-23 23:49:02,669 - INFO - No LCCN data found for OCN 58561723.
+2024-03-23 23:49:08,168 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-23 23:49:14,449 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-23 23:49:20,306 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-23 23:49:21,404 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-23 23:49:21,481 - INFO - Write completed for OCN 58561723
+2024-03-23 23:49:21,481 - INFO - 7/8. Searching metadata for 58593680
+2024-03-23 23:49:21,481 - INFO - Querying database for OCN 58593680.
+2024-03-23 23:49:21,482 - INFO - No database record found for OCN 58593680.
+2024-03-23 23:49:21,483 - INFO - No LCCN data found for OCN 58593680.
+2024-03-23 23:49:27,072 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-23 23:49:33,343 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-23 23:49:39,236 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-23 23:49:40,348 - INFO - Updated data for 58593680 from Harvard Library
+2024-03-23 23:49:40,363 - INFO - Write completed for OCN 58593680
+2024-03-23 23:49:40,363 - INFO - Search thread completed successfully for 8 items.
+2024-03-23 23:49:40,389 - INFO - Search completed
+2024-03-23 23:56:03,959 - INFO - Application started
+2024-03-23 23:56:18,208 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:56:18,784 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:56:18,788 - INFO - 0/8. Searching metadata for 58561723
+2024-03-23 23:56:18,788 - INFO - Querying database for OCN 58561723.
+2024-03-23 23:56:18,789 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-23 23:56:18,793 - INFO - No LCCN data found for OCN 58561723.
+2024-03-23 23:56:24,768 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-23 23:56:31,309 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-23 23:56:32,676 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-23 23:56:32,703 - INFO - Write completed for OCN 58561723
+2024-03-23 23:56:32,704 - INFO - 1/8. Searching metadata for 49251460
+2024-03-23 23:56:32,704 - INFO - Querying database for OCN 49251460.
+2024-03-23 23:56:32,705 - INFO - No database record found for OCN 49251460.
+2024-03-23 23:56:32,706 - INFO - No LCCN data found for OCN 49251460.
+2024-03-23 23:56:38,292 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-23 23:56:44,675 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-23 23:56:45,260 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-23 23:56:56,845 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-23 23:56:57,309 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-23 23:57:38,385 - INFO - Application started
+2024-03-23 23:57:57,399 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:58:03,878 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-23 23:58:03,882 - INFO - 0/8. Searching metadata for 58561723
+2024-03-23 23:58:03,883 - INFO - Querying database for OCN 58561723.
+2024-03-23 23:58:03,885 - INFO - No database record found for OCN 58561723.
+2024-03-23 23:58:03,887 - INFO - No LCCN data found for OCN 58561723.
+2024-03-23 23:58:09,837 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-23 23:58:16,600 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-23 23:58:25,466 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-23 23:58:26,570 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-23 23:58:26,590 - INFO - Write completed for OCN 58561723
+2024-03-23 23:58:26,590 - INFO - 1/8. Searching metadata for 49251460
+2024-03-23 23:58:26,590 - INFO - Querying database for OCN 49251460.
+2024-03-23 23:58:26,592 - INFO - No database record found for OCN 49251460.
+2024-03-23 23:58:26,593 - INFO - No LCCN data found for OCN 49251460.
+2024-03-23 23:58:32,302 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-23 23:58:38,708 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-23 23:58:46,294 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-23 23:58:46,955 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-23 23:58:54,105 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-23 23:58:54,488 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-23 23:58:54,508 - INFO - Write completed for OCN 49251460
+2024-03-23 23:58:54,509 - INFO - 2/8. Searching metadata for 22281914
+2024-03-23 23:58:54,520 - INFO - Querying database for OCN 22281914.
+2024-03-23 23:58:54,521 - INFO - No database record found for OCN 22281914.
+2024-03-23 23:58:54,525 - INFO - No LCCN data found for OCN 22281914.
+2024-03-23 23:59:00,123 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-23 23:59:06,491 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-23 23:59:15,353 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-23 23:59:15,998 - INFO - Updated data for 22281914 from Google Books
+2024-03-23 23:59:16,006 - INFO - Write completed for OCN 22281914
+2024-03-23 23:59:16,007 - INFO - 3/8. Searching metadata for 51868091
+2024-03-23 23:59:16,007 - INFO - Querying database for OCN 51868091.
+2024-03-23 23:59:16,008 - INFO - No database record found for OCN 51868091.
+2024-03-23 23:59:16,017 - INFO - No LCCN data found for OCN 51868091.
+2024-03-23 23:59:21,718 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-23 23:59:28,370 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-23 23:59:37,541 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-23 23:59:44,421 - INFO - No additional results found for OCN 51868091 from Indiana Library
+2024-03-23 23:59:53,339 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-23 23:59:53,883 - INFO - Updated data for 51868091 from Open Library
+2024-03-23 23:59:53,900 - INFO - Write completed for OCN 51868091
+2024-03-23 23:59:53,900 - INFO - 4/8. Searching metadata for 225374393
+2024-03-23 23:59:53,901 - INFO - Querying database for OCN 225374393.
+2024-03-23 23:59:53,903 - INFO - No database record found for OCN 225374393.
+2024-03-23 23:59:53,904 - INFO - No LCCN data found for OCN 225374393.
+2024-03-23 23:59:59,453 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 00:00:05,971 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 00:00:12,114 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 00:00:12,769 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 00:00:12,774 - INFO - Write completed for OCN 225374393
+2024-03-24 00:00:12,775 - INFO - 5/8. Searching metadata for 1056625215
+2024-03-24 00:00:12,775 - INFO - Querying database for OCN 1056625215.
+2024-03-24 00:00:12,777 - INFO - No database record found for OCN 1056625215.
+2024-03-24 00:00:12,778 - INFO - No LCCN data found for OCN 1056625215.
+2024-03-24 00:00:18,330 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-24 00:00:24,682 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-24 00:00:32,670 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-24 00:00:39,471 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-24 00:00:47,503 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-24 00:00:47,833 - INFO - Updated data for 1056625215 from Open Library
+2024-03-24 00:00:47,850 - INFO - Write completed for OCN 1056625215
+2024-03-24 00:00:47,850 - INFO - 6/8. Searching metadata for 58561723
+2024-03-24 00:00:47,851 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:00:47,852 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 00:00:47,853 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:00:53,253 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 00:00:59,577 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 00:01:05,496 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 00:01:06,605 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 00:01:06,674 - INFO - Write completed for OCN 58561723
+2024-03-24 00:01:06,675 - INFO - 7/8. Searching metadata for 58593680
+2024-03-24 00:01:06,675 - INFO - Querying database for OCN 58593680.
+2024-03-24 00:01:06,676 - INFO - No database record found for OCN 58593680.
+2024-03-24 00:01:06,676 - INFO - No LCCN data found for OCN 58593680.
+2024-03-24 00:01:12,191 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-24 00:01:18,376 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-24 00:01:24,717 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-24 00:01:25,837 - INFO - Updated data for 58593680 from Harvard Library
+2024-03-24 00:01:25,851 - INFO - Write completed for OCN 58593680
+2024-03-24 00:01:25,851 - INFO - Search thread completed successfully for 8 items.
+2024-03-24 00:01:25,887 - INFO - Search completed
+2024-03-24 00:06:12,506 - INFO - Application started
+2024-03-24 00:06:21,523 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:06:33,397 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:06:33,402 - INFO - 0/8. Searching metadata for 58561723
+2024-03-24 00:06:33,403 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:06:33,405 - INFO - No database record found for OCN 58561723.
+2024-03-24 00:06:33,407 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:06:39,422 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 00:06:46,543 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 00:07:21,831 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 00:07:23,185 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 00:07:23,200 - INFO - Write completed for OCN 58561723
+2024-03-24 00:07:23,200 - INFO - 1/8. Searching metadata for 49251460
+2024-03-24 00:07:23,200 - INFO - Querying database for OCN 49251460.
+2024-03-24 00:07:23,202 - INFO - No database record found for OCN 49251460.
+2024-03-24 00:07:23,203 - INFO - No LCCN data found for OCN 49251460.
+2024-03-24 00:07:28,748 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 00:07:35,100 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 00:07:44,789 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 00:07:45,424 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 00:07:52,445 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 00:07:52,856 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-24 00:07:52,862 - INFO - Write completed for OCN 49251460
+2024-03-24 00:07:52,863 - INFO - 2/8. Searching metadata for 22281914
+2024-03-24 00:07:52,863 - INFO - Querying database for OCN 22281914.
+2024-03-24 00:07:52,864 - INFO - No database record found for OCN 22281914.
+2024-03-24 00:07:52,865 - INFO - No LCCN data found for OCN 22281914.
+2024-03-24 00:07:58,500 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-24 00:08:05,092 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-24 00:08:12,560 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-24 00:08:13,221 - INFO - Updated data for 22281914 from Google Books
+2024-03-24 00:08:13,225 - INFO - Write completed for OCN 22281914
+2024-03-24 00:08:13,226 - INFO - 3/8. Searching metadata for 51868091
+2024-03-24 00:08:13,226 - INFO - Querying database for OCN 51868091.
+2024-03-24 00:08:13,229 - INFO - No database record found for OCN 51868091.
+2024-03-24 00:08:13,230 - INFO - No LCCN data found for OCN 51868091.
+2024-03-24 00:08:18,889 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-24 00:08:25,473 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-24 00:08:33,198 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-24 00:08:40,127 - INFO - No additional results found for OCN 51868091 from Indiana Library
+2024-03-24 00:08:49,066 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-24 00:08:49,535 - INFO - Updated data for 51868091 from Open Library
+2024-03-24 00:08:49,549 - INFO - Write completed for OCN 51868091
+2024-03-24 00:08:49,549 - INFO - 4/8. Searching metadata for 225374393
+2024-03-24 00:08:49,549 - INFO - Querying database for OCN 225374393.
+2024-03-24 00:08:49,552 - INFO - No database record found for OCN 225374393.
+2024-03-24 00:08:49,552 - INFO - No LCCN data found for OCN 225374393.
+2024-03-24 00:08:55,078 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 00:09:01,480 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 00:09:07,773 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 00:09:08,466 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 00:09:08,471 - INFO - Write completed for OCN 225374393
+2024-03-24 00:09:08,472 - INFO - 5/8. Searching metadata for 1056625215
+2024-03-24 00:09:08,472 - INFO - Querying database for OCN 1056625215.
+2024-03-24 00:09:08,474 - INFO - No database record found for OCN 1056625215.
+2024-03-24 00:09:08,475 - INFO - No LCCN data found for OCN 1056625215.
+2024-03-24 00:09:13,993 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-24 00:09:19,997 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-24 00:09:27,390 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-24 00:09:34,060 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-24 00:09:41,430 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-24 00:09:41,777 - INFO - Updated data for 1056625215 from Open Library
+2024-03-24 00:09:41,792 - INFO - Write completed for OCN 1056625215
+2024-03-24 00:09:41,793 - INFO - 6/8. Searching metadata for 58561723
+2024-03-24 00:09:41,793 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:09:41,796 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 00:09:41,799 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:09:47,287 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 00:09:53,712 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 00:09:59,754 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 00:10:00,862 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 00:10:01,002 - INFO - Write completed for OCN 58561723
+2024-03-24 00:10:01,002 - INFO - 7/8. Searching metadata for 58593680
+2024-03-24 00:10:01,002 - INFO - Querying database for OCN 58593680.
+2024-03-24 00:10:01,003 - INFO - No database record found for OCN 58593680.
+2024-03-24 00:10:01,003 - INFO - No LCCN data found for OCN 58593680.
+2024-03-24 00:10:06,478 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-24 00:10:12,430 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-24 00:10:18,339 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-24 00:10:19,432 - INFO - Updated data for 58593680 from Harvard Library
+2024-03-24 00:10:19,457 - INFO - Write completed for OCN 58593680
+2024-03-24 00:10:19,457 - INFO - Search thread completed successfully for 8 items.
+2024-03-24 00:10:19,588 - INFO - Search completed
+2024-03-24 00:27:33,199 - INFO - Application started
+2024-03-24 00:27:41,265 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:27:51,523 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:27:52,616 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:27:52,620 - INFO - 0/8. Searching metadata for 58561723
+2024-03-24 00:27:52,621 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:27:52,623 - INFO - No database record found for OCN 58561723.
+2024-03-24 00:27:52,625 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:27:58,685 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 00:28:05,777 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 00:28:12,525 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 00:28:13,687 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 00:28:13,707 - INFO - Write completed for OCN 58561723
+2024-03-24 00:28:13,708 - INFO - 1/8. Searching metadata for 49251460
+2024-03-24 00:28:13,708 - INFO - Querying database for OCN 49251460.
+2024-03-24 00:28:13,714 - INFO - No database record found for OCN 49251460.
+2024-03-24 00:28:13,716 - INFO - No LCCN data found for OCN 49251460.
+2024-03-24 00:28:19,189 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 00:28:25,609 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 00:28:34,447 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 00:28:35,171 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 00:28:43,102 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 00:28:52,555 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-24 00:29:01,477 - INFO - No additional results found for OCN 49251460 from North Carolina State Library
+2024-03-24 00:29:02,441 - INFO - Updated data for 49251460 from Open Library
+2024-03-24 00:29:02,453 - INFO - Write completed for OCN 49251460
+2024-03-24 00:29:02,455 - INFO - 2/8. Searching metadata for 22281914
+2024-03-24 00:29:02,455 - INFO - Querying database for OCN 22281914.
+2024-03-24 00:29:02,457 - INFO - No database record found for OCN 22281914.
+2024-03-24 00:29:02,458 - INFO - No LCCN data found for OCN 22281914.
+2024-03-24 00:29:08,027 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-24 00:29:14,409 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-24 00:29:23,448 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-24 00:29:24,142 - INFO - Updated data for 22281914 from Google Books
+2024-03-24 00:29:24,146 - INFO - Write completed for OCN 22281914
+2024-03-24 00:29:24,146 - INFO - 3/8. Searching metadata for 51868091
+2024-03-24 00:29:24,147 - INFO - Querying database for OCN 51868091.
+2024-03-24 00:29:24,148 - INFO - No database record found for OCN 51868091.
+2024-03-24 00:29:24,149 - INFO - No LCCN data found for OCN 51868091.
+2024-03-24 00:29:29,699 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-24 00:29:36,094 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-24 00:29:43,953 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-24 00:29:51,058 - INFO - No additional results found for OCN 51868091 from Indiana Library
+2024-03-24 00:29:56,631 - INFO - No additional results found for OCN 51868091 from Johns Hopkins Library
+2024-03-24 00:30:04,513 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-24 00:30:05,028 - INFO - Updated data for 51868091 from Open Library
+2024-03-24 00:30:05,047 - INFO - Write completed for OCN 51868091
+2024-03-24 00:30:05,048 - INFO - 4/8. Searching metadata for 225374393
+2024-03-24 00:30:05,048 - INFO - Querying database for OCN 225374393.
+2024-03-24 00:30:05,051 - INFO - No database record found for OCN 225374393.
+2024-03-24 00:30:05,052 - INFO - No LCCN data found for OCN 225374393.
+2024-03-24 00:30:10,581 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 00:30:17,398 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 00:30:23,503 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 00:30:24,151 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 00:30:24,156 - INFO - Write completed for OCN 225374393
+2024-03-24 00:30:24,157 - INFO - 5/8. Searching metadata for 1056625215
+2024-03-24 00:30:24,157 - INFO - Querying database for OCN 1056625215.
+2024-03-24 00:30:24,159 - INFO - No database record found for OCN 1056625215.
+2024-03-24 00:30:24,160 - INFO - No LCCN data found for OCN 1056625215.
+2024-03-24 00:30:29,666 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-24 00:30:35,874 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-24 00:30:43,132 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-24 00:30:50,066 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-24 00:30:55,289 - INFO - No additional results found for OCN 1056625215 from Johns Hopkins Library
+2024-03-24 00:31:03,071 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-24 00:31:03,451 - INFO - Updated data for 1056625215 from Open Library
+2024-03-24 00:31:03,468 - INFO - Write completed for OCN 1056625215
+2024-03-24 00:31:03,468 - INFO - 6/8. Searching metadata for 58561723
+2024-03-24 00:31:03,468 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:31:03,469 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 00:31:03,470 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:31:08,860 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 00:31:15,260 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 00:31:21,118 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 00:31:22,250 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 00:31:22,367 - INFO - Write completed for OCN 58561723
+2024-03-24 00:31:22,368 - INFO - 7/8. Searching metadata for 58593680
+2024-03-24 00:31:22,368 - INFO - Querying database for OCN 58593680.
+2024-03-24 00:31:22,368 - INFO - No database record found for OCN 58593680.
+2024-03-24 00:31:22,369 - INFO - No LCCN data found for OCN 58593680.
+2024-03-24 00:31:27,842 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-24 00:31:33,777 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-24 00:31:39,621 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-24 00:31:40,681 - INFO - Updated data for 58593680 from Harvard Library
+2024-03-24 00:31:40,700 - INFO - Write completed for OCN 58593680
+2024-03-24 00:31:40,701 - INFO - Search thread completed successfully for 8 items.
+2024-03-24 00:31:40,730 - INFO - Search completed
+2024-03-24 00:42:32,172 - INFO - Application started
+2024-03-24 00:42:42,532 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:42:52,635 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:42:52,639 - INFO - 0/8. Searching metadata for 58561723
+2024-03-24 00:42:52,639 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:42:52,642 - INFO - No database record found for OCN 58561723.
+2024-03-24 00:42:52,668 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:48:45,935 - INFO - Application started
+2024-03-24 00:49:02,206 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:49:02,625 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:49:02,628 - INFO - 0/8. Searching metadata for 58561723
+2024-03-24 00:49:02,629 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:49:02,630 - INFO - No database record found for OCN 58561723.
+2024-03-24 00:49:02,633 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:50:34,375 - INFO - Application started
+2024-03-24 00:50:41,375 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:50:48,012 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:50:48,015 - INFO - 0/8. Searching metadata for 58561723
+2024-03-24 00:50:48,016 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:50:48,017 - INFO - No database record found for OCN 58561723.
+2024-03-24 00:50:48,018 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:53:58,316 - INFO - Application started
+2024-03-24 00:54:04,999 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:54:11,830 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 00:54:11,834 - INFO - 0/8. Searching metadata for 58561723
+2024-03-24 00:54:11,835 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:54:11,836 - INFO - No database record found for OCN 58561723.
+2024-03-24 00:54:11,839 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:54:17,737 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 00:54:24,063 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 00:54:30,972 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 00:54:32,195 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 00:54:32,223 - INFO - Write completed for OCN 58561723
+2024-03-24 00:54:32,223 - INFO - 1/8. Searching metadata for 49251460
+2024-03-24 00:54:32,223 - INFO - Querying database for OCN 49251460.
+2024-03-24 00:54:32,226 - INFO - No database record found for OCN 49251460.
+2024-03-24 00:54:32,227 - INFO - No LCCN data found for OCN 49251460.
+2024-03-24 00:54:37,839 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 00:54:44,394 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 00:54:52,359 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 00:54:52,972 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 00:55:00,066 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 00:55:09,488 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-24 00:55:18,442 - INFO - No additional results found for OCN 49251460 from North Carolina State Library
+2024-03-24 00:55:19,283 - INFO - Updated data for 49251460 from Open Library
+2024-03-24 00:55:19,304 - INFO - Write completed for OCN 49251460
+2024-03-24 00:55:19,305 - INFO - 2/8. Searching metadata for 22281914
+2024-03-24 00:55:19,305 - INFO - Querying database for OCN 22281914.
+2024-03-24 00:55:19,306 - INFO - No database record found for OCN 22281914.
+2024-03-24 00:55:19,307 - INFO - No LCCN data found for OCN 22281914.
+2024-03-24 00:55:24,858 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-24 00:55:31,338 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-24 00:55:38,929 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-24 00:55:39,561 - INFO - Updated data for 22281914 from Google Books
+2024-03-24 00:55:39,566 - INFO - Write completed for OCN 22281914
+2024-03-24 00:55:39,567 - INFO - 3/8. Searching metadata for 51868091
+2024-03-24 00:55:39,567 - INFO - Querying database for OCN 51868091.
+2024-03-24 00:55:39,569 - INFO - No database record found for OCN 51868091.
+2024-03-24 00:55:39,570 - INFO - No LCCN data found for OCN 51868091.
+2024-03-24 00:55:45,108 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-24 00:55:51,416 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-24 00:55:59,660 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-24 00:56:06,462 - INFO - No additional results found for OCN 51868091 from Indiana Library
+2024-03-24 00:56:12,020 - INFO - No additional results found for OCN 51868091 from Johns Hopkins Library
+2024-03-24 00:56:20,561 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-24 00:56:21,114 - INFO - Updated data for 51868091 from Open Library
+2024-03-24 00:56:21,133 - INFO - Write completed for OCN 51868091
+2024-03-24 00:56:21,134 - INFO - 4/8. Searching metadata for 225374393
+2024-03-24 00:56:21,135 - INFO - Querying database for OCN 225374393.
+2024-03-24 00:56:21,141 - INFO - No database record found for OCN 225374393.
+2024-03-24 00:56:21,143 - INFO - No LCCN data found for OCN 225374393.
+2024-03-24 00:56:26,719 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 00:56:33,260 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 00:56:40,618 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 00:56:41,257 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 00:56:41,262 - INFO - Write completed for OCN 225374393
+2024-03-24 00:56:41,263 - INFO - 5/8. Searching metadata for 1056625215
+2024-03-24 00:56:41,263 - INFO - Querying database for OCN 1056625215.
+2024-03-24 00:56:41,265 - INFO - No database record found for OCN 1056625215.
+2024-03-24 00:56:41,266 - INFO - No LCCN data found for OCN 1056625215.
+2024-03-24 00:56:46,727 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-24 00:56:52,817 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-24 00:57:02,533 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-24 00:57:09,306 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-24 00:57:14,831 - INFO - No additional results found for OCN 1056625215 from Johns Hopkins Library
+2024-03-24 00:57:22,769 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-24 00:57:23,140 - INFO - Updated data for 1056625215 from Open Library
+2024-03-24 00:57:23,169 - INFO - Write completed for OCN 1056625215
+2024-03-24 00:57:23,169 - INFO - 6/8. Searching metadata for 58561723
+2024-03-24 00:57:23,170 - INFO - Querying database for OCN 58561723.
+2024-03-24 00:57:23,172 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 00:57:23,173 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 00:57:28,739 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 00:57:35,149 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 00:57:41,319 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 00:57:42,423 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 00:57:42,531 - INFO - Write completed for OCN 58561723
+2024-03-24 00:57:42,538 - INFO - 7/8. Searching metadata for 58593680
+2024-03-24 00:57:42,539 - INFO - Querying database for OCN 58593680.
+2024-03-24 00:57:42,540 - INFO - No database record found for OCN 58593680.
+2024-03-24 00:57:42,541 - INFO - No LCCN data found for OCN 58593680.
+2024-03-24 00:57:48,056 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-24 00:57:54,673 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-24 00:58:00,799 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-24 00:58:01,848 - INFO - Updated data for 58593680 from Harvard Library
+2024-03-24 00:58:01,868 - INFO - Write completed for OCN 58593680
+2024-03-24 00:58:01,868 - INFO - Search thread completed successfully for 8 items.
+2024-03-24 00:58:02,005 - INFO - Search completed
+2024-03-24 01:14:52,491 - INFO - Application started
+2024-03-24 01:15:03,525 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 01:15:09,374 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 01:15:09,387 - INFO - 0/8. Searching metadata for 58561723
+2024-03-24 01:15:09,387 - INFO - Querying database for OCN 58561723.
+2024-03-24 01:15:09,397 - INFO - No database record found for OCN 58561723.
+2024-03-24 01:15:09,404 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 01:15:15,415 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 01:15:22,538 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 01:15:30,022 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 01:15:31,131 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 01:15:31,145 - INFO - Write completed for OCN 58561723
+2024-03-24 01:15:31,145 - INFO - 1/8. Searching metadata for 49251460
+2024-03-24 01:15:31,146 - INFO - Querying database for OCN 49251460.
+2024-03-24 01:15:31,148 - INFO - No database record found for OCN 49251460.
+2024-03-24 01:15:31,149 - INFO - No LCCN data found for OCN 49251460.
+2024-03-24 01:15:36,752 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 01:15:43,343 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 01:15:52,284 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 01:15:52,870 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 01:16:02,495 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-24 01:16:02,889 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-24 01:16:02,901 - INFO - Write completed for OCN 49251460
+2024-03-24 01:16:02,901 - INFO - 2/8. Searching metadata for 22281914
+2024-03-24 01:16:02,904 - INFO - Querying database for OCN 22281914.
+2024-03-24 01:16:02,904 - INFO - No database record found for OCN 22281914.
+2024-03-24 01:16:02,905 - INFO - No LCCN data found for OCN 22281914.
+2024-03-24 01:16:08,540 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-24 01:16:14,921 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-24 01:16:22,522 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-24 01:16:23,196 - INFO - Updated data for 22281914 from Google Books
+2024-03-24 01:16:23,205 - INFO - Write completed for OCN 22281914
+2024-03-24 01:16:23,205 - INFO - 3/8. Searching metadata for 51868091
+2024-03-24 01:16:23,205 - INFO - Querying database for OCN 51868091.
+2024-03-24 01:16:23,207 - INFO - No database record found for OCN 51868091.
+2024-03-24 01:16:23,208 - INFO - No LCCN data found for OCN 51868091.
+2024-03-24 01:16:28,788 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-24 01:16:35,187 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-24 01:16:42,961 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-24 01:16:49,754 - INFO - No additional results found for OCN 51868091 from Johns Hopkins Library
+2024-03-24 01:16:59,106 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-24 01:16:59,648 - INFO - Updated data for 51868091 from Open Library
+2024-03-24 01:16:59,662 - INFO - Write completed for OCN 51868091
+2024-03-24 01:16:59,664 - INFO - 4/8. Searching metadata for 225374393
+2024-03-24 01:16:59,664 - INFO - Querying database for OCN 225374393.
+2024-03-24 01:16:59,666 - INFO - No database record found for OCN 225374393.
+2024-03-24 01:16:59,667 - INFO - No LCCN data found for OCN 225374393.
+2024-03-24 01:17:05,255 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 01:17:11,591 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 01:17:17,692 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 01:17:18,380 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 01:17:18,388 - INFO - Write completed for OCN 225374393
+2024-03-24 01:17:18,388 - INFO - 5/8. Searching metadata for 1056625215
+2024-03-24 01:17:18,388 - INFO - Querying database for OCN 1056625215.
+2024-03-24 01:17:18,391 - INFO - No database record found for OCN 1056625215.
+2024-03-24 01:17:18,392 - INFO - No LCCN data found for OCN 1056625215.
+2024-03-24 01:17:24,010 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-24 01:17:29,576 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-24 01:17:37,172 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-24 01:17:43,840 - INFO - No additional results found for OCN 1056625215 from Johns Hopkins Library
+2024-03-24 01:17:51,304 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-24 01:17:51,690 - INFO - Updated data for 1056625215 from Open Library
+2024-03-24 01:17:51,713 - INFO - Write completed for OCN 1056625215
+2024-03-24 01:17:51,714 - INFO - 6/8. Searching metadata for 58561723
+2024-03-24 01:17:51,714 - INFO - Querying database for OCN 58561723.
+2024-03-24 01:17:51,715 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 01:17:51,717 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 01:17:57,242 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 01:18:03,994 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 01:18:10,151 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 01:18:11,225 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 01:18:11,307 - INFO - Write completed for OCN 58561723
+2024-03-24 01:18:11,308 - INFO - 7/8. Searching metadata for 58593680
+2024-03-24 01:18:11,308 - INFO - Querying database for OCN 58593680.
+2024-03-24 01:18:11,309 - INFO - No database record found for OCN 58593680.
+2024-03-24 01:18:11,310 - INFO - No LCCN data found for OCN 58593680.
+2024-03-24 01:18:16,845 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-24 01:18:23,159 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-24 01:18:29,276 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-24 01:18:30,240 - INFO - Updated data for 58593680 from Harvard Library
+2024-03-24 01:18:30,253 - INFO - Write completed for OCN 58593680
+2024-03-24 01:18:30,254 - INFO - Search thread completed successfully for 8 items.
+2024-03-24 01:18:30,301 - INFO - Search completed
+2024-03-24 01:30:03,103 - INFO - Application started
+2024-03-24 01:30:10,496 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 01:30:18,364 - INFO - Search started for OCN with 8 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 01:30:18,368 - INFO - 0/8. Searching metadata for 58561723
+2024-03-24 01:30:18,369 - INFO - Querying database for OCN 58561723.
+2024-03-24 01:30:18,370 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 01:30:18,384 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 01:30:24,430 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 01:30:31,442 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 01:30:39,185 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 01:30:40,390 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 01:30:40,395 - INFO - Write completed for OCN 58561723
+2024-03-24 01:30:40,397 - INFO - 1/8. Searching metadata for 49251460
+2024-03-24 01:30:40,398 - INFO - Querying database for OCN 49251460.
+2024-03-24 01:30:40,399 - INFO - No database record found for OCN 49251460.
+2024-03-24 01:30:40,400 - INFO - No LCCN data found for OCN 49251460.
+2024-03-24 01:30:46,087 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 01:30:52,630 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 01:31:00,640 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 01:31:01,272 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 01:31:08,397 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 01:31:19,603 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-24 01:31:19,995 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-24 01:31:19,997 - INFO - Write completed for OCN 49251460
+2024-03-24 01:31:19,998 - INFO - 2/8. Searching metadata for 22281914
+2024-03-24 01:31:19,998 - INFO - Querying database for OCN 22281914.
+2024-03-24 01:31:19,999 - INFO - Found database record for OCN 22281914: ISBN=9781526124463, OCN=22281914
+2024-03-24 01:31:20,000 - INFO - No LCCN data found for OCN 22281914.
+2024-03-24 01:31:25,552 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-24 01:31:31,878 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-24 01:31:39,702 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-24 01:31:40,308 - INFO - Updated data for 22281914 from Google Books
+2024-03-24 01:31:40,310 - INFO - Write completed for OCN 22281914
+2024-03-24 01:31:40,310 - INFO - 3/8. Searching metadata for 51868091
+2024-03-24 01:31:40,311 - INFO - Querying database for OCN 51868091.
+2024-03-24 01:31:40,312 - INFO - Found database record for OCN 51868091: ISBN=9780805376135, OCN=51868091
+2024-03-24 01:31:40,312 - INFO - No LCCN data found for OCN 51868091.
+2024-03-24 01:31:45,861 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-24 01:31:52,183 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-24 01:32:00,135 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-24 01:32:06,905 - INFO - No additional results found for OCN 51868091 from Indiana Library
+2024-03-24 01:32:12,732 - INFO - No additional results found for OCN 51868091 from Johns Hopkins Library
+2024-03-24 01:32:21,784 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-24 01:32:22,320 - INFO - Updated data for 51868091 from Open Library
+2024-03-24 01:32:22,323 - INFO - Write completed for OCN 51868091
+2024-03-24 01:32:22,324 - INFO - 4/8. Searching metadata for 225374393
+2024-03-24 01:32:22,324 - INFO - Querying database for OCN 225374393.
+2024-03-24 01:32:22,325 - INFO - Found database record for OCN 225374393: ISBN=9780470090671, OCN=225374393
+2024-03-24 01:32:22,326 - INFO - No LCCN data found for OCN 225374393.
+2024-03-24 01:32:27,921 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 01:32:34,440 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 01:32:40,573 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 01:32:41,279 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 01:32:41,282 - INFO - Write completed for OCN 225374393
+2024-03-24 01:32:41,282 - INFO - 5/8. Searching metadata for 1056625215
+2024-03-24 01:32:41,283 - INFO - Querying database for OCN 1056625215.
+2024-03-24 01:32:41,283 - INFO - Found database record for OCN 1056625215: ISBN=9781269352079, OCN=1056625215
+2024-03-24 01:32:41,284 - INFO - No LCCN data found for OCN 1056625215.
+2024-03-24 01:32:46,804 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-24 01:32:53,063 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-24 01:33:00,291 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-24 01:33:07,081 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-24 01:33:12,601 - INFO - No additional results found for OCN 1056625215 from Johns Hopkins Library
+2024-03-24 01:33:20,545 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-24 01:33:20,936 - INFO - Updated data for 1056625215 from Open Library
+2024-03-24 01:33:20,939 - INFO - Write completed for OCN 1056625215
+2024-03-24 01:33:20,939 - INFO - 6/8. Searching metadata for 58561723
+2024-03-24 01:33:20,940 - INFO - Querying database for OCN 58561723.
+2024-03-24 01:33:20,940 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 01:33:20,941 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 01:33:26,433 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 01:33:32,810 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 01:33:38,759 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 01:33:39,719 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 01:33:39,722 - INFO - Write completed for OCN 58561723
+2024-03-24 01:33:39,722 - INFO - 7/8. Searching metadata for 58593680
+2024-03-24 01:33:39,722 - INFO - Querying database for OCN 58593680.
+2024-03-24 01:33:39,723 - INFO - Found database record for OCN 58593680: ISBN=9786610147755, OCN=58593680
+2024-03-24 01:33:39,723 - INFO - No LCCN data found for OCN 58593680.
+2024-03-24 01:33:45,223 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-24 01:33:51,524 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-24 01:33:57,401 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-24 01:33:58,446 - INFO - Updated data for 58593680 from Harvard Library
+2024-03-24 01:33:58,450 - INFO - Write completed for OCN 58593680
+2024-03-24 01:33:58,451 - INFO - Search thread completed successfully for 8 items.
+2024-03-24 01:33:58,518 - INFO - Search completed
+2024-03-24 01:35:53,208 - INFO - Application started
+2024-03-24 01:36:01,546 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 01:36:09,616 - INFO - Search started for OCN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 01:36:09,620 - INFO - 0/9. Searching metadata for 58561723
+2024-03-24 01:36:09,621 - INFO - Querying database for OCN 58561723.
+2024-03-24 01:36:09,622 - INFO - No database record found for OCN 58561723.
+2024-03-24 01:36:09,626 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 01:36:15,751 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 01:36:22,215 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 01:36:29,457 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 01:36:30,572 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 01:36:30,591 - INFO - Write completed for OCN 58561723
+2024-03-24 01:36:30,592 - INFO - 1/9. Searching metadata for 58561723
+2024-03-24 01:36:30,592 - INFO - Querying database for OCN 58561723.
+2024-03-24 01:36:30,594 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 01:36:30,598 - INFO - No LCCN data found for OCN 58561723.
+2024-03-24 01:36:36,193 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 01:36:42,820 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 01:36:48,840 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 01:36:49,901 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 01:36:49,905 - INFO - Write completed for OCN 58561723
+2024-03-24 01:36:49,906 - INFO - 2/9. Searching metadata for 49251460
+2024-03-24 01:36:49,907 - INFO - Querying database for OCN 49251460.
+2024-03-24 01:36:49,908 - INFO - No database record found for OCN 49251460.
+2024-03-24 01:36:49,910 - INFO - No LCCN data found for OCN 49251460.
+2024-03-24 01:36:55,438 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 01:37:01,905 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 01:37:16,535 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 01:37:17,127 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 01:37:24,154 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 01:37:28,250 - INFO - Search completed
+2024-03-24 01:53:17,305 - INFO - Application started
+2024-03-24 01:53:33,051 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 01:53:35,880 - INFO - Search started for OCN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 01:53:35,892 - INFO - 0/9. Searching metadata for 58561723
+2024-03-24 01:53:35,892 - INFO - Querying database for OCN 58561723.
+2024-03-24 01:53:35,893 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 01:53:35,894 - INFO - LCCN data found for OCN 58561723.
+2024-03-24 01:53:35,894 - INFO - LCCN Source data found for OCN 58561723.
+2024-03-24 01:53:35,938 - INFO - Write completed for OCN 58561723
+2024-03-24 01:53:35,938 - INFO - 1/9. Searching metadata for 58561723
+2024-03-24 01:53:35,938 - INFO - Querying database for OCN 58561723.
+2024-03-24 01:53:35,940 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 01:53:35,941 - INFO - LCCN data found for OCN 58561723.
+2024-03-24 01:53:35,941 - INFO - LCCN Source data found for OCN 58561723.
+2024-03-24 01:53:35,960 - INFO - Write completed for OCN 58561723
+2024-03-24 01:53:35,961 - INFO - 2/9. Searching metadata for 49251460
+2024-03-24 01:53:35,961 - INFO - Querying database for OCN 49251460.
+2024-03-24 01:53:35,964 - INFO - No database record found for OCN 49251460.
+2024-03-24 01:53:44,873 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 01:53:51,715 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 01:53:52,425 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 01:53:59,641 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 01:54:09,248 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-24 01:54:09,670 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-24 01:54:09,679 - INFO - Write completed for OCN 49251460
+2024-03-24 01:54:09,679 - INFO - 3/9. Searching metadata for 22281914
+2024-03-24 01:54:09,680 - INFO - Querying database for OCN 22281914.
+2024-03-24 01:54:09,681 - INFO - No database record found for OCN 22281914.
+2024-03-24 01:54:13,059 - INFO - Search completed
+2024-03-24 01:54:15,299 - INFO - 4/9. Searching metadata for 51868091
+2024-03-24 01:54:15,299 - INFO - Search thread stopped manually after processing 5 out of 9 items.
+2024-03-24 02:00:48,612 - INFO - Application started
+2024-03-24 02:00:54,829 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:01:01,545 - INFO - Search started for OCN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:01:01,556 - INFO - 0/9. Searching metadata for 58561723
+2024-03-24 02:01:01,556 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:01:01,558 - INFO - No database record found for OCN 58561723.
+2024-03-24 02:01:51,025 - INFO - Application started
+2024-03-24 02:02:00,653 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:02:07,014 - INFO - Search started for OCN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:02:07,020 - INFO - 0/9. Searching metadata for 58561723
+2024-03-24 02:02:07,022 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:02:07,023 - INFO - No database record found for OCN 58561723.
+2024-03-24 02:02:13,109 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 02:02:20,107 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 02:02:28,362 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 02:02:29,608 - INFO - Updated data for 58561723 from Harvard Library
+2024-03-24 02:02:29,629 - INFO - Write completed for OCN 58561723
+2024-03-24 02:02:29,630 - INFO - 1/9. Searching metadata for 58561723
+2024-03-24 02:02:29,630 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:02:29,645 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 02:02:29,647 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-24 02:02:29,647 - INFO - LCCN Source data found for OCN 58561723: ['Harvard']
+2024-03-24 02:02:29,652 - INFO - Write completed for OCN 58561723
+2024-03-24 02:02:29,653 - INFO - 2/9. Searching metadata for 49251460
+2024-03-24 02:02:29,653 - INFO - Querying database for OCN 49251460.
+2024-03-24 02:02:29,654 - INFO - No database record found for OCN 49251460.
+2024-03-24 02:02:35,278 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 02:02:41,840 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 02:02:51,230 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 02:02:51,843 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 02:02:58,839 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 02:03:08,593 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-24 02:03:08,996 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-24 02:03:09,006 - INFO - Write completed for OCN 49251460
+2024-03-24 02:03:09,006 - INFO - 3/9. Searching metadata for 22281914
+2024-03-24 02:03:09,007 - INFO - Querying database for OCN 22281914.
+2024-03-24 02:03:09,009 - INFO - No database record found for OCN 22281914.
+2024-03-24 02:03:14,663 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-24 02:03:21,381 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-24 02:03:28,963 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-24 02:03:29,758 - INFO - Updated data for 22281914 from Google Books
+2024-03-24 02:03:29,762 - INFO - Write completed for OCN 22281914
+2024-03-24 02:03:29,763 - INFO - 4/9. Searching metadata for 51868091
+2024-03-24 02:03:29,763 - INFO - Querying database for OCN 51868091.
+2024-03-24 02:03:29,765 - INFO - No database record found for OCN 51868091.
+2024-03-24 02:03:35,423 - INFO - No additional results found for OCN 51868091 from Columbia Library
+2024-03-24 02:03:41,798 - INFO - No additional results found for OCN 51868091 from Cornell Library
+2024-03-24 02:03:50,263 - INFO - No additional results found for OCN 51868091 from Duke Library
+2024-03-24 02:03:57,139 - INFO - No additional results found for OCN 51868091 from Indiana Library
+2024-03-24 02:04:02,694 - INFO - No additional results found for OCN 51868091 from Johns Hopkins Library
+2024-03-24 02:04:10,908 - INFO - No additional results found for OCN 51868091 from North Carolina State Library
+2024-03-24 02:04:11,538 - INFO - Updated data for 51868091 from Open Library
+2024-03-24 02:04:11,574 - INFO - Write completed for OCN 51868091
+2024-03-24 02:04:11,574 - INFO - 5/9. Searching metadata for 225374393
+2024-03-24 02:04:11,574 - INFO - Querying database for OCN 225374393.
+2024-03-24 02:04:11,577 - INFO - No database record found for OCN 225374393.
+2024-03-24 02:04:17,213 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 02:04:23,960 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 02:04:30,394 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 02:04:31,052 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 02:04:31,059 - INFO - Write completed for OCN 225374393
+2024-03-24 02:04:31,059 - INFO - 6/9. Searching metadata for 1056625215
+2024-03-24 02:04:31,059 - INFO - Querying database for OCN 1056625215.
+2024-03-24 02:04:31,061 - INFO - No database record found for OCN 1056625215.
+2024-03-24 02:04:36,528 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-24 02:04:42,746 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-24 02:04:50,023 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-24 02:04:56,794 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-24 02:05:02,307 - INFO - No additional results found for OCN 1056625215 from Johns Hopkins Library
+2024-03-24 02:05:11,346 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-24 02:05:11,722 - INFO - Updated data for 1056625215 from Open Library
+2024-03-24 02:05:11,739 - INFO - Write completed for OCN 1056625215
+2024-03-24 02:05:11,739 - INFO - 7/9. Searching metadata for 58561723
+2024-03-24 02:05:11,740 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:05:11,742 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 02:05:11,742 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-24 02:05:11,743 - INFO - LCCN Source data found for OCN 58561723: ['Harvard']
+2024-03-24 02:05:11,746 - INFO - Write completed for OCN 58561723
+2024-03-24 02:05:11,746 - INFO - 8/9. Searching metadata for 58593680
+2024-03-24 02:05:11,746 - INFO - Querying database for OCN 58593680.
+2024-03-24 02:05:11,747 - INFO - No database record found for OCN 58593680.
+2024-03-24 02:05:17,208 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-24 02:05:23,614 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-24 02:05:29,602 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-24 02:05:36,461 - INFO - No additional results found for OCN 58593680 from Indiana Library
+2024-03-24 02:05:51,985 - INFO - Updated data for 58593680 from Johns Hopkins Library
+2024-03-24 02:05:52,005 - INFO - Write completed for OCN 58593680
+2024-03-24 02:05:52,006 - INFO - Search thread completed successfully for 9 items.
+2024-03-24 02:05:52,097 - INFO - Search completed
+2024-03-24 02:07:09,989 - INFO - Application started
+2024-03-24 02:07:27,177 - INFO - Search started for ISBN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:07:27,181 - INFO - 0/9. Searching metadata for 9780805376135
+2024-03-24 02:07:27,182 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:07:27,183 - INFO - No database record found for ISBN 9780805376135.
+2024-03-24 02:07:33,275 - INFO - No additional results found for ISBN 9780805376135 from Columbia Library
+2024-03-24 02:07:40,202 - INFO - No additional results found for ISBN 9780805376135 from Cornell Library
+2024-03-24 02:07:48,290 - INFO - No additional results found for ISBN 9780805376135 from Duke Library
+2024-03-24 02:07:48,928 - INFO - No additional results found for ISBN 9780805376135 from Google Books
+2024-03-24 02:08:00,609 - INFO - No additional results found for ISBN 9780805376135 from Indiana Library
+2024-03-24 02:08:10,147 - INFO - No additional results found for ISBN 9780805376135 from Johns Hopkins Library
+2024-03-24 02:08:19,824 - INFO - No additional results found for ISBN 9780805376135 from North Carolina State Library
+2024-03-24 02:08:20,241 - INFO - Updated data for 9780805376135 from Open Library
+2024-03-24 02:08:20,259 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:08:20,259 - INFO - 1/9. Searching metadata for 9780805376135
+2024-03-24 02:08:20,260 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:08:20,262 - INFO - Found database record for ISBN 9780805376135: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:08:20,263 - INFO - LCCN data found for ISBN 9780805376135: ['QR41.2 .T67 2004']
+2024-03-24 02:08:20,264 - INFO - LCCN Source data found for ISBN 9780805376135: ['Open Library']
+2024-03-24 02:08:20,274 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:08:20,275 - INFO - 2/9. Searching metadata for 9780805368444
+2024-03-24 02:08:20,275 - INFO - Querying database for ISBN 9780805368444.
+2024-03-24 02:08:20,275 - INFO - No database record found for ISBN 9780805368444.
+2024-03-24 02:08:25,876 - INFO - No additional results found for ISBN 9780805368444 from Columbia Library
+2024-03-24 02:08:45,713 - INFO - Updated data for 9780805368444 from Cornell Library
+2024-03-24 02:08:45,736 - INFO - Write completed for ISBN 9780805368444
+2024-03-24 02:08:45,738 - INFO - 3/9. Searching metadata for 9781292092621
+2024-03-24 02:08:45,739 - INFO - Querying database for ISBN 9781292092621.
+2024-03-24 02:08:45,741 - INFO - No database record found for ISBN 9781292092621.
+2024-03-24 02:08:51,358 - INFO - No additional results found for ISBN 9781292092621 from Columbia Library
+2024-03-24 02:08:57,729 - INFO - No additional results found for ISBN 9781292092621 from Cornell Library
+2024-03-24 02:09:05,505 - INFO - No additional results found for ISBN 9781292092621 from Duke Library
+2024-03-24 02:09:06,145 - INFO - No additional results found for ISBN 9781292092621 from Google Books
+2024-03-24 02:09:15,671 - INFO - No additional results found for ISBN 9781292092621 from Indiana Library
+2024-03-24 02:09:21,258 - INFO - No additional results found for ISBN 9781292092621 from Johns Hopkins Library
+2024-03-24 02:09:29,689 - INFO - No additional results found for ISBN 9781292092621 from North Carolina State Library
+2024-03-24 02:09:30,107 - INFO - Updated data for 9781292092621 from Open Library
+2024-03-24 02:09:30,130 - INFO - Write completed for ISBN 9781292092621
+2024-03-24 02:09:30,131 - INFO - 4/9. Searching metadata for 9781009321686
+2024-03-24 02:09:30,138 - INFO - Querying database for ISBN 9781009321686.
+2024-03-24 02:09:30,140 - INFO - No database record found for ISBN 9781009321686.
+2024-03-24 02:09:46,790 - INFO - Updated data for 9781009321686 from Columbia Library
+2024-03-24 02:09:46,814 - INFO - Write completed for ISBN 9781009321686
+2024-03-24 02:09:46,814 - INFO - 5/9. Searching metadata for 9781009354653
+2024-03-24 02:09:46,821 - INFO - Querying database for ISBN 9781009354653.
+2024-03-24 02:09:46,823 - INFO - No database record found for ISBN 9781009354653.
+2024-03-24 02:09:52,539 - INFO - No additional results found for ISBN 9781009354653 from Columbia Library
+2024-03-24 02:09:59,097 - INFO - No additional results found for ISBN 9781009354653 from Cornell Library
+2024-03-24 02:10:06,559 - INFO - No additional results found for ISBN 9781009354653 from Duke Library
+2024-03-24 02:10:07,202 - INFO - No additional results found for ISBN 9781009354653 from Google Books
+2024-03-24 02:10:13,443 - INFO - No additional results found for ISBN 9781009354653 from Indiana Library
+2024-03-24 02:10:18,956 - INFO - No additional results found for ISBN 9781009354653 from Johns Hopkins Library
+2024-03-24 02:10:27,312 - INFO - No additional results found for ISBN 9781009354653 from North Carolina State Library
+2024-03-24 02:10:33,995 - INFO - No additional results found for ISBN 9781009354653 from Pennsylvania State Library
+2024-03-24 02:10:39,617 - INFO - No additional results found for ISBN 9781009354653 from Stanford Library
+2024-03-24 02:10:46,648 - INFO - No additional results found for ISBN 9781009354653 from Yale Library
+2024-03-24 02:10:46,659 - INFO - Write completed for ISBN 9781009354653
+2024-03-24 02:10:46,661 - INFO - 6/9. Searching metadata for 9780748693085
+2024-03-24 02:10:46,661 - INFO - Querying database for ISBN 9780748693085.
+2024-03-24 02:10:46,663 - INFO - No database record found for ISBN 9780748693085.
+2024-03-24 02:10:52,341 - INFO - No additional results found for ISBN 9780748693085 from Columbia Library
+2024-03-24 02:10:58,896 - INFO - No additional results found for ISBN 9780748693085 from Cornell Library
+2024-03-24 02:11:06,013 - INFO - No additional results found for ISBN 9780748693085 from Duke Library
+2024-03-24 02:11:12,777 - INFO - No additional results found for ISBN 9780748693085 from Indiana Library
+2024-03-24 02:11:18,288 - INFO - No additional results found for ISBN 9780748693085 from Johns Hopkins Library
+2024-03-24 02:11:27,492 - INFO - No additional results found for ISBN 9780748693085 from North Carolina State Library
+2024-03-24 02:11:27,788 - INFO - No additional results found for ISBN 9780748693085 from Open Library
+2024-03-24 02:11:33,344 - INFO - No additional results found for ISBN 9780748693085 from Pennsylvania State Library
+2024-03-24 02:11:39,237 - INFO - No additional results found for ISBN 9780748693085 from Stanford Library
+2024-03-24 02:11:46,661 - INFO - No additional results found for ISBN 9780748693085 from Yale Library
+2024-03-24 02:11:46,678 - INFO - Write completed for ISBN 9780748693085
+2024-03-24 02:11:46,678 - INFO - 7/9. Searching metadata for 9781009253598
+2024-03-24 02:11:46,678 - INFO - Querying database for ISBN 9781009253598.
+2024-03-24 02:11:46,691 - INFO - No database record found for ISBN 9781009253598.
+2024-03-24 02:12:18,055 - INFO - Application started
+2024-03-24 02:12:40,628 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:12:55,345 - INFO - Search started for ISBN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:12:55,349 - INFO - 0/9. Searching metadata for 9780805376135
+2024-03-24 02:12:55,349 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:12:55,351 - INFO - No database record found for ISBN 9780805376135.
+2024-03-24 02:13:01,380 - INFO - No additional results found for ISBN 9780805376135 from Columbia Library
+2024-03-24 02:13:08,251 - INFO - No additional results found for ISBN 9780805376135 from Cornell Library
+2024-03-24 02:13:23,785 - INFO - No additional results found for ISBN 9780805376135 from Duke Library
+2024-03-24 02:13:24,407 - INFO - No additional results found for ISBN 9780805376135 from Google Books
+2024-03-24 02:13:30,370 - INFO - No additional results found for ISBN 9780805376135 from Indiana Library
+2024-03-24 02:13:35,882 - INFO - No additional results found for ISBN 9780805376135 from Johns Hopkins Library
+2024-03-24 02:13:44,427 - INFO - No additional results found for ISBN 9780805376135 from North Carolina State Library
+2024-03-24 02:13:44,859 - INFO - Updated data for 9780805376135 from Open Library
+2024-03-24 02:13:44,875 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:13:44,876 - INFO - 1/9. Searching metadata for 9780805376135
+2024-03-24 02:13:44,876 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:13:44,878 - INFO - Found database record for ISBN 9780805376135: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:13:44,880 - INFO - LCCN data found for ISBN 9780805376135: ['QR41.2 .T67 2004']
+2024-03-24 02:13:44,880 - INFO - LCCN Source data found for ISBN 9780805376135: ['Open Library']
+2024-03-24 02:13:44,883 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:13:44,883 - INFO - 2/9. Searching metadata for 9780805368444
+2024-03-24 02:13:44,883 - INFO - Querying database for ISBN 9780805368444.
+2024-03-24 02:13:44,884 - INFO - No database record found for ISBN 9780805368444.
+2024-03-24 02:13:50,484 - INFO - No additional results found for ISBN 9780805368444 from Columbia Library
+2024-03-24 02:14:09,262 - INFO - Updated data for 9780805368444 from Cornell Library
+2024-03-24 02:14:09,275 - INFO - Write completed for ISBN 9780805368444
+2024-03-24 02:14:09,275 - INFO - 3/9. Searching metadata for 9781292092621
+2024-03-24 02:14:09,275 - INFO - Querying database for ISBN 9781292092621.
+2024-03-24 02:14:09,277 - INFO - No database record found for ISBN 9781292092621.
+2024-03-24 02:14:14,795 - INFO - No additional results found for ISBN 9781292092621 from Columbia Library
+2024-03-24 02:14:21,143 - INFO - No additional results found for ISBN 9781292092621 from Cornell Library
+2024-03-24 02:14:28,600 - INFO - No additional results found for ISBN 9781292092621 from Duke Library
+2024-03-24 02:14:29,233 - INFO - No additional results found for ISBN 9781292092621 from Google Books
+2024-03-24 02:14:35,479 - INFO - No additional results found for ISBN 9781292092621 from Indiana Library
+2024-03-24 02:14:41,091 - INFO - No additional results found for ISBN 9781292092621 from Johns Hopkins Library
+2024-03-24 02:14:49,018 - INFO - No additional results found for ISBN 9781292092621 from North Carolina State Library
+2024-03-24 02:14:54,522 - INFO - Updated data for 9781292092621 from Open Library
+2024-03-24 02:14:54,541 - INFO - Write completed for ISBN 9781292092621
+2024-03-24 02:14:54,541 - INFO - 4/9. Searching metadata for 9781009321686
+2024-03-24 02:14:54,542 - INFO - Querying database for ISBN 9781009321686.
+2024-03-24 02:14:54,543 - INFO - No database record found for ISBN 9781009321686.
+2024-03-24 02:15:11,002 - INFO - Updated data for 9781009321686 from Columbia Library
+2024-03-24 02:15:11,022 - INFO - Write completed for ISBN 9781009321686
+2024-03-24 02:15:11,023 - INFO - 5/9. Searching metadata for 9781009354653
+2024-03-24 02:15:11,023 - INFO - Querying database for ISBN 9781009354653.
+2024-03-24 02:15:11,025 - INFO - No database record found for ISBN 9781009354653.
+2024-03-24 02:15:16,473 - INFO - No additional results found for ISBN 9781009354653 from Columbia Library
+2024-03-24 02:15:23,000 - INFO - No additional results found for ISBN 9781009354653 from Cornell Library
+2024-03-24 02:15:30,558 - INFO - No additional results found for ISBN 9781009354653 from Duke Library
+2024-03-24 02:15:31,178 - INFO - No additional results found for ISBN 9781009354653 from Google Books
+2024-03-24 02:15:37,489 - INFO - No additional results found for ISBN 9781009354653 from Indiana Library
+2024-03-24 02:15:43,010 - INFO - No additional results found for ISBN 9781009354653 from Johns Hopkins Library
+2024-03-24 02:15:51,124 - INFO - No additional results found for ISBN 9781009354653 from North Carolina State Library
+2024-03-24 02:15:57,956 - INFO - No additional results found for ISBN 9781009354653 from Pennsylvania State Library
+2024-03-24 02:16:04,647 - INFO - No additional results found for ISBN 9781009354653 from Stanford Library
+2024-03-24 02:16:11,832 - INFO - No additional results found for ISBN 9781009354653 from Yale Library
+2024-03-24 02:16:11,837 - INFO - Write completed for ISBN 9781009354653
+2024-03-24 02:16:11,838 - INFO - 6/9. Searching metadata for 9780748693085
+2024-03-24 02:16:11,838 - INFO - Querying database for ISBN 9780748693085.
+2024-03-24 02:16:11,840 - INFO - No database record found for ISBN 9780748693085.
+2024-03-24 02:16:17,526 - INFO - No additional results found for ISBN 9780748693085 from Columbia Library
+2024-03-24 02:16:24,058 - INFO - No additional results found for ISBN 9780748693085 from Cornell Library
+2024-03-24 02:16:31,471 - INFO - No additional results found for ISBN 9780748693085 from Duke Library
+2024-03-24 02:16:38,282 - INFO - No additional results found for ISBN 9780748693085 from Indiana Library
+2024-03-24 02:16:43,775 - INFO - No additional results found for ISBN 9780748693085 from Johns Hopkins Library
+2024-03-24 02:16:51,809 - INFO - No additional results found for ISBN 9780748693085 from North Carolina State Library
+2024-03-24 02:16:52,154 - INFO - No additional results found for ISBN 9780748693085 from Open Library
+2024-03-24 02:16:57,688 - INFO - No additional results found for ISBN 9780748693085 from Pennsylvania State Library
+2024-03-24 02:17:03,703 - INFO - No additional results found for ISBN 9780748693085 from Stanford Library
+2024-03-24 02:17:09,807 - INFO - No additional results found for ISBN 9780748693085 from Yale Library
+2024-03-24 02:17:09,812 - INFO - Write completed for ISBN 9780748693085
+2024-03-24 02:17:09,813 - INFO - 7/9. Searching metadata for 9781009253598
+2024-03-24 02:17:09,813 - INFO - Querying database for ISBN 9781009253598.
+2024-03-24 02:17:09,815 - INFO - No database record found for ISBN 9781009253598.
+2024-03-24 02:17:26,580 - INFO - Updated data for 9781009253598 from Columbia Library
+2024-03-24 02:17:26,599 - INFO - Write completed for ISBN 9781009253598
+2024-03-24 02:17:26,600 - INFO - 8/9. Searching metadata for 9781009271813
+2024-03-24 02:17:26,600 - INFO - Querying database for ISBN 9781009271813.
+2024-03-24 02:17:26,602 - INFO - No database record found for ISBN 9781009271813.
+2024-03-24 02:17:43,757 - INFO - Updated data for 9781009271813 from Columbia Library
+2024-03-24 02:17:43,773 - INFO - Write completed for ISBN 9781009271813
+2024-03-24 02:17:43,773 - INFO - Search thread completed successfully for 9 items.
+2024-03-24 02:17:43,853 - INFO - Search completed
+2024-03-24 02:18:16,462 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:18:34,526 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:18:38,821 - INFO - Search started for ISBN with 5 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:18:38,835 - INFO - 0/5. Searching metadata for 9780805376135
+2024-03-24 02:18:38,835 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:18:38,838 - INFO - Found database record for ISBN 9780805376135: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:18:38,852 - INFO - LCCN data found for ISBN 9780805376135: ['QR41.2 .T67 2004']
+2024-03-24 02:18:38,852 - INFO - LCCN Source data found for ISBN 9780805376135: ['Open Library']
+2024-03-24 02:18:38,857 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:18:38,858 - INFO - 1/5. Searching metadata for 9780805376135
+2024-03-24 02:18:38,858 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:18:38,859 - INFO - Found database record for ISBN 9780805376135: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:18:38,861 - INFO - LCCN data found for ISBN 9780805376135: ['QR41.2 .T67 2004']
+2024-03-24 02:18:38,862 - INFO - LCCN Source data found for ISBN 9780805376135: ['Open Library']
+2024-03-24 02:18:38,865 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:18:38,866 - INFO - 2/5. Searching metadata for 9780805368444
+2024-03-24 02:18:38,866 - INFO - Querying database for ISBN 9780805368444.
+2024-03-24 02:18:38,867 - INFO - Found database record for ISBN 9780805368444: ISBN=9780805368444, OCN=174138981
+2024-03-24 02:18:38,867 - INFO - LCCN data found for ISBN 9780805368444: ['QH308.2.C34 2009']
+2024-03-24 02:18:38,869 - INFO - LCCN Source data found for ISBN 9780805368444: ['Cornell']
+2024-03-24 02:18:38,874 - INFO - Write completed for ISBN 9780805368444
+2024-03-24 02:18:38,875 - INFO - 3/5. Searching metadata for 9781292092621
+2024-03-24 02:18:38,876 - INFO - Querying database for ISBN 9781292092621.
+2024-03-24 02:18:38,876 - INFO - Found database record for ISBN 9781292092621: ISBN=9781292092621, OCN=917214539
+2024-03-24 02:18:38,883 - INFO - LCCN data found for ISBN 9781292092621: ['HF5415.13 .K64 2016']
+2024-03-24 02:18:38,883 - INFO - LCCN Source data found for ISBN 9781292092621: ['Open Library']
+2024-03-24 02:18:38,888 - INFO - Write completed for ISBN 9781292092621
+2024-03-24 02:18:38,888 - INFO - 4/5. Searching metadata for 9781009321686
+2024-03-24 02:18:38,889 - INFO - Querying database for ISBN 9781009321686.
+2024-03-24 02:18:38,890 - INFO - Found database record for ISBN 9781009321686: ISBN=9781009321686, OCN=1337944397
+2024-03-24 02:18:38,891 - INFO - LCCN data found for ISBN 9781009321686: ['PC5201.K38 2023']
+2024-03-24 02:18:38,891 - INFO - LCCN Source data found for ISBN 9781009321686: ['Columbia']
+2024-03-24 02:18:38,895 - INFO - Write completed for ISBN 9781009321686
+2024-03-24 02:18:38,896 - INFO - Search thread completed successfully for 5 items.
+2024-03-24 02:18:38,950 - INFO - Search completed
+2024-03-24 02:22:19,807 - INFO - Application started
+2024-03-24 02:22:26,980 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:22:34,423 - INFO - Search started for ISBN with 5 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:22:34,427 - INFO - 0/5. Searching metadata for 9780805376135
+2024-03-24 02:22:34,428 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:22:34,430 - INFO - Found database record for ISBN 9780805376135: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:22:34,432 - INFO - LCCN data found for ISBN 9780805376135: ['QR41.2 .T67 2004']
+2024-03-24 02:22:34,432 - INFO - LCCN Source data found for ISBN 9780805376135: ['Open Library']
+2024-03-24 02:22:34,436 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:22:34,436 - INFO - 1/5. Searching metadata for 9780805376135
+2024-03-24 02:22:34,437 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:22:34,438 - INFO - Found database record for ISBN 9780805376135: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:22:34,439 - INFO - LCCN data found for ISBN 9780805376135: ['QR41.2 .T67 2004']
+2024-03-24 02:22:34,439 - INFO - LCCN Source data found for ISBN 9780805376135: ['Open Library']
+2024-03-24 02:22:34,443 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:22:34,443 - INFO - 2/5. Searching metadata for 9780805368444
+2024-03-24 02:22:34,444 - INFO - Querying database for ISBN 9780805368444.
+2024-03-24 02:22:34,445 - INFO - Found database record for ISBN 9780805368444: ISBN=9780805368444, OCN=174138981
+2024-03-24 02:22:34,446 - INFO - LCCN data found for ISBN 9780805368444: ['QH308.2.C34 2009']
+2024-03-24 02:22:34,446 - INFO - LCCN Source data found for ISBN 9780805368444: ['Cornell']
+2024-03-24 02:22:34,449 - INFO - Write completed for ISBN 9780805368444
+2024-03-24 02:22:34,450 - INFO - 3/5. Searching metadata for 9781292092621
+2024-03-24 02:22:34,450 - INFO - Querying database for ISBN 9781292092621.
+2024-03-24 02:22:34,451 - INFO - Found database record for ISBN 9781292092621: ISBN=9781292092621, OCN=917214539
+2024-03-24 02:22:34,452 - INFO - LCCN data found for ISBN 9781292092621: ['HF5415.13 .K64 2016']
+2024-03-24 02:22:34,452 - INFO - LCCN Source data found for ISBN 9781292092621: ['Open Library']
+2024-03-24 02:22:34,454 - INFO - Write completed for ISBN 9781292092621
+2024-03-24 02:22:34,455 - INFO - 4/5. Searching metadata for 9781009321686
+2024-03-24 02:22:34,455 - INFO - Querying database for ISBN 9781009321686.
+2024-03-24 02:22:34,456 - INFO - Found database record for ISBN 9781009321686: ISBN=9781009321686, OCN=1337944397
+2024-03-24 02:22:34,456 - INFO - LCCN data found for ISBN 9781009321686: ['PC5201.K38 2023']
+2024-03-24 02:22:34,457 - INFO - LCCN Source data found for ISBN 9781009321686: ['Columbia']
+2024-03-24 02:22:34,460 - INFO - Write completed for ISBN 9781009321686
+2024-03-24 02:22:34,460 - INFO - Search thread completed successfully for 5 items.
+2024-03-24 02:22:34,482 - INFO - Search completed
+2024-03-24 02:27:05,461 - INFO - Application started
+2024-03-24 02:27:15,773 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:27:22,970 - INFO - Search started for OCN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:27:22,973 - INFO - 0/9. Searching metadata for 58561723
+2024-03-24 02:27:22,974 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:27:22,975 - INFO - No database record found for OCN 58561723.
+2024-03-24 02:27:29,334 - INFO - No additional results found for OCN 58561723 from Columbia Library
+2024-03-24 02:27:36,404 - INFO - No additional results found for OCN 58561723 from Cornell Library
+2024-03-24 02:27:43,281 - INFO - No additional results found for OCN 58561723 from Duke Library
+2024-03-24 02:27:51,338 - INFO - No additional results found for OCN 58561723 from Indiana Library
+2024-03-24 02:28:11,536 - INFO - Updated data for 58561723 from Johns Hopkins Library
+2024-03-24 02:28:11,554 - INFO - Write completed for OCN 58561723
+2024-03-24 02:28:11,555 - INFO - 1/9. Searching metadata for 58561723
+2024-03-24 02:28:11,555 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:28:11,558 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 02:28:11,560 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-24 02:28:11,560 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-24 02:28:11,565 - INFO - Write completed for OCN 58561723
+2024-03-24 02:28:11,566 - INFO - 2/9. Searching metadata for 49251460
+2024-03-24 02:28:11,566 - INFO - Querying database for OCN 49251460.
+2024-03-24 02:28:11,567 - INFO - No database record found for OCN 49251460.
+2024-03-24 02:28:17,203 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 02:28:23,752 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 02:28:31,490 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 02:28:32,157 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 02:28:38,474 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 02:28:44,035 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-24 02:28:44,440 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-24 02:28:44,447 - INFO - Write completed for OCN 49251460
+2024-03-24 02:28:44,448 - INFO - 3/9. Searching metadata for 22281914
+2024-03-24 02:28:44,448 - INFO - Querying database for OCN 22281914.
+2024-03-24 02:28:44,449 - INFO - No database record found for OCN 22281914.
+2024-03-24 02:28:50,218 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-24 02:28:56,730 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-24 02:29:04,236 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-24 02:29:04,840 - INFO - Updated data for 22281914 from Google Books
+2024-03-24 02:29:04,844 - INFO - Write completed for OCN 22281914
+2024-03-24 02:29:04,844 - INFO - 4/9. Searching metadata for 51868091
+2024-03-24 02:29:04,845 - INFO - Querying database for OCN 51868091.
+2024-03-24 02:29:04,846 - INFO - Found database record for OCN 51868091: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:29:04,847 - INFO - LCCN data found for OCN 51868091: ['QR41.2 .T67 2004']
+2024-03-24 02:29:04,848 - INFO - LCCN Source data found for OCN 51868091: ['Open Library']
+2024-03-24 02:29:04,851 - INFO - Write completed for OCN 51868091
+2024-03-24 02:29:04,851 - INFO - 5/9. Searching metadata for 225374393
+2024-03-24 02:29:04,851 - INFO - Querying database for OCN 225374393.
+2024-03-24 02:29:04,853 - INFO - No database record found for OCN 225374393.
+2024-03-24 02:29:10,400 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 02:29:16,665 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 02:29:22,664 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 02:29:23,277 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 02:29:23,282 - INFO - Write completed for OCN 225374393
+2024-03-24 02:29:23,283 - INFO - 6/9. Searching metadata for 1056625215
+2024-03-24 02:29:23,283 - INFO - Querying database for OCN 1056625215.
+2024-03-24 02:29:23,285 - INFO - No database record found for OCN 1056625215.
+2024-03-24 02:29:28,867 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-24 02:29:34,913 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-24 02:29:43,084 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-24 02:29:49,918 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-24 02:29:55,844 - INFO - No additional results found for OCN 1056625215 from Johns Hopkins Library
+2024-03-24 02:30:06,408 - INFO - Application started
+2024-03-24 02:30:09,584 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:30:30,261 - INFO - Search started for OCN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:30:30,265 - INFO - 0/9. Searching metadata for 58561723
+2024-03-24 02:30:30,267 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:30:30,269 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 02:30:30,300 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-24 02:30:30,300 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-24 02:30:30,309 - INFO - Write completed for OCN 58561723
+2024-03-24 02:30:30,310 - INFO - 1/9. Searching metadata for 58561723
+2024-03-24 02:30:30,310 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:30:30,311 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 02:30:30,312 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-24 02:30:30,312 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-24 02:30:30,320 - INFO - Write completed for OCN 58561723
+2024-03-24 02:30:30,320 - INFO - 2/9. Searching metadata for 49251460
+2024-03-24 02:30:30,321 - INFO - Querying database for OCN 49251460.
+2024-03-24 02:30:30,323 - INFO - No database record found for OCN 49251460.
+2024-03-24 02:30:36,821 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 02:30:43,681 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 02:30:52,065 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 02:30:52,846 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 02:30:59,850 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 02:31:10,747 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-24 02:31:11,211 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-24 02:31:11,213 - INFO - Write completed for OCN 49251460
+2024-03-24 02:31:11,214 - INFO - 3/9. Searching metadata for 22281914
+2024-03-24 02:31:11,214 - INFO - Querying database for OCN 22281914.
+2024-03-24 02:31:11,214 - INFO - Found database record for OCN 22281914: ISBN=9781526124463, OCN=22281914
+2024-03-24 02:31:11,215 - INFO - No LCCN data found for OCN 22281914.
+2024-03-24 02:31:16,883 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-24 02:31:23,601 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-24 02:31:31,090 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-24 02:31:31,872 - INFO - Updated data for 22281914 from Google Books
+2024-03-24 02:31:31,875 - INFO - Write completed for OCN 22281914
+2024-03-24 02:31:31,875 - INFO - 4/9. Searching metadata for 51868091
+2024-03-24 02:31:31,876 - INFO - Querying database for OCN 51868091.
+2024-03-24 02:31:31,877 - INFO - Found database record for OCN 51868091: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:31:31,877 - INFO - LCCN data found for OCN 51868091: ['QR41.2 .T67 2004']
+2024-03-24 02:31:31,878 - INFO - LCCN Source data found for OCN 51868091: ['Open Library']
+2024-03-24 02:31:31,881 - INFO - Write completed for OCN 51868091
+2024-03-24 02:31:31,881 - INFO - 5/9. Searching metadata for 225374393
+2024-03-24 02:31:31,881 - INFO - Querying database for OCN 225374393.
+2024-03-24 02:31:31,882 - INFO - Found database record for OCN 225374393: ISBN=9780470090671, OCN=225374393
+2024-03-24 02:31:31,883 - INFO - No LCCN data found for OCN 225374393.
+2024-03-24 02:31:37,494 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 02:31:44,350 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 02:31:50,503 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 02:31:51,328 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 02:31:51,329 - INFO - Write completed for OCN 225374393
+2024-03-24 02:31:51,329 - INFO - 6/9. Searching metadata for 1056625215
+2024-03-24 02:31:51,329 - INFO - Querying database for OCN 1056625215.
+2024-03-24 02:31:51,331 - INFO - No database record found for OCN 1056625215.
+2024-03-24 02:31:56,926 - INFO - No additional results found for OCN 1056625215 from Columbia Library
+2024-03-24 02:32:03,283 - INFO - No additional results found for OCN 1056625215 from Cornell Library
+2024-03-24 02:32:10,733 - INFO - No additional results found for OCN 1056625215 from Duke Library
+2024-03-24 02:32:17,596 - INFO - No additional results found for OCN 1056625215 from Indiana Library
+2024-03-24 02:32:23,151 - INFO - No additional results found for OCN 1056625215 from Johns Hopkins Library
+2024-03-24 02:32:31,694 - INFO - No additional results found for OCN 1056625215 from North Carolina State Library
+2024-03-24 02:32:32,080 - INFO - Updated data for 1056625215 from Open Library
+2024-03-24 02:32:32,102 - INFO - Write completed for OCN 1056625215
+2024-03-24 02:32:32,103 - INFO - 7/9. Searching metadata for 58561723
+2024-03-24 02:32:32,103 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:32:32,113 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 02:32:32,113 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-24 02:32:32,113 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-24 02:32:32,116 - INFO - Write completed for OCN 58561723
+2024-03-24 02:32:32,116 - INFO - 8/9. Searching metadata for 58593680
+2024-03-24 02:32:32,117 - INFO - Querying database for OCN 58593680.
+2024-03-24 02:32:32,117 - INFO - No database record found for OCN 58593680.
+2024-03-24 02:32:37,788 - INFO - No additional results found for OCN 58593680 from Columbia Library
+2024-03-24 02:32:44,332 - INFO - No additional results found for OCN 58593680 from Cornell Library
+2024-03-24 02:32:50,366 - INFO - No additional results found for OCN 58593680 from Duke Library
+2024-03-24 02:32:57,060 - INFO - No additional results found for OCN 58593680 from Indiana Library
+2024-03-24 02:33:12,600 - INFO - Updated data for 58593680 from Johns Hopkins Library
+2024-03-24 02:33:12,621 - INFO - Write completed for OCN 58593680
+2024-03-24 02:33:12,622 - INFO - Search thread completed successfully for 9 items.
+2024-03-24 02:33:12,715 - INFO - Search completed
+2024-03-24 02:33:23,960 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:33:31,608 - INFO - Search started for ISBN with 5 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:33:31,612 - INFO - 0/5. Searching metadata for 9780805376135
+2024-03-24 02:33:31,613 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:33:31,615 - INFO - Found database record for ISBN 9780805376135: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:33:31,617 - INFO - LCCN data found for ISBN 9780805376135: ['QR41.2 .T67 2004']
+2024-03-24 02:33:31,617 - INFO - LCCN Source data found for ISBN 9780805376135: ['Open Library']
+2024-03-24 02:33:31,622 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:33:31,622 - INFO - 1/5. Searching metadata for 9780805376135
+2024-03-24 02:33:31,623 - INFO - Querying database for ISBN 9780805376135.
+2024-03-24 02:33:31,623 - INFO - Found database record for ISBN 9780805376135: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:33:31,624 - INFO - LCCN data found for ISBN 9780805376135: ['QR41.2 .T67 2004']
+2024-03-24 02:33:31,625 - INFO - LCCN Source data found for ISBN 9780805376135: ['Open Library']
+2024-03-24 02:33:31,628 - INFO - Write completed for ISBN 9780805376135
+2024-03-24 02:33:31,628 - INFO - 2/5. Searching metadata for 9780805368444
+2024-03-24 02:33:31,629 - INFO - Querying database for ISBN 9780805368444.
+2024-03-24 02:33:31,630 - INFO - Found database record for ISBN 9780805368444: ISBN=9780805368444, OCN=174138981
+2024-03-24 02:33:31,630 - INFO - LCCN data found for ISBN 9780805368444: ['QH308.2.C34 2009']
+2024-03-24 02:33:31,630 - INFO - LCCN Source data found for ISBN 9780805368444: ['Cornell']
+2024-03-24 02:33:31,633 - INFO - Write completed for ISBN 9780805368444
+2024-03-24 02:33:31,634 - INFO - 3/5. Searching metadata for 9781292092621
+2024-03-24 02:33:31,634 - INFO - Querying database for ISBN 9781292092621.
+2024-03-24 02:33:31,635 - INFO - Found database record for ISBN 9781292092621: ISBN=9781292092621, OCN=917214539
+2024-03-24 02:33:31,635 - INFO - LCCN data found for ISBN 9781292092621: ['HF5415.13 .K64 2016']
+2024-03-24 02:33:31,636 - INFO - LCCN Source data found for ISBN 9781292092621: ['Open Library']
+2024-03-24 02:33:31,642 - INFO - Write completed for ISBN 9781292092621
+2024-03-24 02:33:31,643 - INFO - 4/5. Searching metadata for 9781009321686
+2024-03-24 02:33:31,643 - INFO - Querying database for ISBN 9781009321686.
+2024-03-24 02:33:31,644 - INFO - Found database record for ISBN 9781009321686: ISBN=9781009321686, OCN=1337944397
+2024-03-24 02:33:31,645 - INFO - LCCN data found for ISBN 9781009321686: ['PC5201.K38 2023']
+2024-03-24 02:33:31,645 - INFO - LCCN Source data found for ISBN 9781009321686: ['Columbia']
+2024-03-24 02:33:31,648 - INFO - Write completed for ISBN 9781009321686
+2024-03-24 02:33:31,649 - INFO - Search thread completed successfully for 5 items.
+2024-03-24 02:33:31,676 - INFO - Search completed
+2024-03-24 02:34:08,930 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:34:18,560 - INFO - Search started for OCN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-24 02:34:18,563 - INFO - 0/9. Searching metadata for 58561723
+2024-03-24 02:34:18,563 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:34:18,565 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 02:34:18,568 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-24 02:34:18,568 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-24 02:34:18,572 - INFO - Write completed for OCN 58561723
+2024-03-24 02:34:18,572 - INFO - 1/9. Searching metadata for 58561723
+2024-03-24 02:34:18,572 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:34:18,573 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 02:34:18,574 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-24 02:34:18,574 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-24 02:34:18,577 - INFO - Write completed for OCN 58561723
+2024-03-24 02:34:18,577 - INFO - 2/9. Searching metadata for 49251460
+2024-03-24 02:34:18,578 - INFO - Querying database for OCN 49251460.
+2024-03-24 02:34:18,578 - INFO - No database record found for OCN 49251460.
+2024-03-24 02:34:24,178 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-24 02:34:30,709 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-24 02:34:39,673 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-24 02:34:40,303 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-24 02:34:46,609 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-24 02:34:52,161 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-24 02:34:52,569 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-24 02:34:52,573 - INFO - Write completed for OCN 49251460
+2024-03-24 02:34:52,575 - INFO - 3/9. Searching metadata for 22281914
+2024-03-24 02:34:52,575 - INFO - Querying database for OCN 22281914.
+2024-03-24 02:34:52,577 - INFO - Found database record for OCN 22281914: ISBN=9781526124463, OCN=22281914
+2024-03-24 02:34:52,578 - INFO - No LCCN data found for OCN 22281914.
+2024-03-24 02:34:58,165 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-24 02:35:04,521 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-24 02:35:12,100 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-24 02:35:12,848 - INFO - Updated data for 22281914 from Google Books
+2024-03-24 02:35:12,850 - INFO - Write completed for OCN 22281914
+2024-03-24 02:35:12,850 - INFO - 4/9. Searching metadata for 51868091
+2024-03-24 02:35:12,850 - INFO - Querying database for OCN 51868091.
+2024-03-24 02:35:12,852 - INFO - Found database record for OCN 51868091: ISBN=9780805376135, OCN=51868091
+2024-03-24 02:35:12,853 - INFO - LCCN data found for OCN 51868091: ['QR41.2 .T67 2004']
+2024-03-24 02:35:12,853 - INFO - LCCN Source data found for OCN 51868091: ['Open Library']
+2024-03-24 02:35:12,857 - INFO - Write completed for OCN 51868091
+2024-03-24 02:35:12,858 - INFO - 5/9. Searching metadata for 225374393
+2024-03-24 02:35:12,861 - INFO - Querying database for OCN 225374393.
+2024-03-24 02:35:12,862 - INFO - Found database record for OCN 225374393: ISBN=9780470090671, OCN=225374393
+2024-03-24 02:35:12,864 - INFO - No LCCN data found for OCN 225374393.
+2024-03-24 02:35:20,172 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-24 02:35:26,567 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-24 02:35:32,602 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-24 02:35:33,171 - INFO - Updated data for 225374393 from Google Books
+2024-03-24 02:35:33,173 - INFO - Write completed for OCN 225374393
+2024-03-24 02:35:33,174 - INFO - 6/9. Searching metadata for 1056625215
+2024-03-24 02:35:33,174 - INFO - Querying database for OCN 1056625215.
+2024-03-24 02:35:33,175 - INFO - Found database record for OCN 1056625215: ISBN=9781269352079, OCN=1056625215
+2024-03-24 02:35:33,176 - INFO - LCCN data found for OCN 1056625215: ['QC23.2 .K649 2013b']
+2024-03-24 02:35:33,176 - INFO - LCCN Source data found for OCN 1056625215: ['Open Library']
+2024-03-24 02:35:33,196 - INFO - Write completed for OCN 1056625215
+2024-03-24 02:35:33,197 - INFO - 7/9. Searching metadata for 58561723
+2024-03-24 02:35:33,197 - INFO - Querying database for OCN 58561723.
+2024-03-24 02:35:33,198 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-24 02:35:33,199 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-24 02:35:33,199 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-24 02:35:33,215 - INFO - Write completed for OCN 58561723
+2024-03-24 02:35:33,215 - INFO - 8/9. Searching metadata for 58593680
+2024-03-24 02:35:33,215 - INFO - Querying database for OCN 58593680.
+2024-03-24 02:35:33,216 - INFO - Found database record for OCN 58593680: ISBN=9786610147755, OCN=58593680
+2024-03-24 02:35:33,217 - INFO - LCCN data found for OCN 58593680: ['RC321']
+2024-03-24 02:35:33,217 - INFO - LCCN Source data found for OCN 58593680: ['JHU']
+2024-03-24 02:35:33,219 - INFO - Write completed for OCN 58593680
+2024-03-24 02:35:33,221 - INFO - Search thread completed successfully for 9 items.
+2024-03-24 02:35:33,309 - INFO - Search completed

@@ -33,6 +33,8 @@ from webScraping.pennStateLibraryAPI import PennStateLibraryAPI
 from webScraping.yaleLibraryAPI import YaleLibraryAPI
 from webScraping.stanfordLibraryAPI import StanfordLibraryAPI
 
+import util.dictionaryValidationMethod as vd
+
 class LibraryMetadataHarvesterApp(tk.Tk):
     """A GUI application for harvesting library metadata from different sources.
 
@@ -69,6 +71,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.search_active = False
         self.total_identifiers = 0
         self.current_identifier = 0
+        self.search_start_time = None
+        self.search_total_time = None
 
 
     def configure_app(self):
@@ -239,10 +243,14 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         def update_message():
             dot_count = 0
             while self.search_in_progress:
-                # Update the status message with a rotating number of dots for a visual effect.
-                time.sleep(0.5)
-                self.search_status_var.set(f"{self.current_identifier}/{self.total_identifiers}\n{initial_message}{'.' * dot_count}")
-                dot_count = (dot_count + 1) % 4 
+                # Calculate elapsed time
+                elapsed_time = time.time() -self.search_start_time
+                elapsed_time_str = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
+
+                self.search_status_var.set(f"{self.current_identifier}/{self.total_identifiers}\n{initial_message}{'.' * dot_count}\nElapsed Time: {elapsed_time_str}")
+                dot_count = (dot_count + 1) % 4
+                time.sleep(0.5)  # Wait before updating again to avoid high CPU usage
+
         # Start the thread only if a search is in progress to avoid unnecessary threads.
         if self.search_in_progress:
             threading.Thread(target=update_message, daemon=True).start() 
@@ -289,7 +297,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         existing_data = {}
 
         # Format database query condition based on file type
-        condition = f"Isbn = {identifier}" if file_type == 'ISBN' else f"Ocn = {identifier}"
+        condition = f"Isbn = '{identifier}'" if file_type == 'ISBN' else f"Ocn = '{identifier}'"
         logging.info(f"Querying database for {file_type} {identifier}.")
 
         # Fetch and unpack book data
@@ -298,7 +306,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             isbn, ocn = book_data[0][:2]  # Unpack first row's ISBN and OCN
             found_items = []
             if isbn:
-                existing_data['isbn'] = isbn
+                existing_data['isbn'] = [isbn]
                 found_items.append(f"ISBN={isbn}")
             if ocn:
                 existing_data['ocn'] = ocn
@@ -310,24 +318,24 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         else:
             logging.info(f"No database record found for {file_type} {identifier}.")
 
+        # Determine correct ISBN identifier for LCCN data retrieval based on file_type
+        lccn_identifier = existing_data.get('isbn', [''])[0] if file_type == 'ISBN' or 'isbn' in existing_data else ''
+        if not lccn_identifier and file_type == 'OCN':  # Resolve ISBN for OCN if not already found
+            book_data_from_ocn = self.db_manager.fetch_data("books", f"WHERE Ocn = '{identifier}'")
+            if book_data_from_ocn:
+                lccn_identifier = book_data_from_ocn[0][0]  # Assuming ISBN is the first column
 
         # Fetch and compile LCCN data if necessary
-        if self.output_value_lccn.get() or self.output_value_lccn_source.get():
-            lccn_data = self.db_manager.fetch_data("book_lccn", f"JOIN lccn ON book_lccn.Lccn_id = lccn.Lccn_id WHERE book_lccn.Isbn = {identifier}")
+        if lccn_identifier and (self.output_value_lccn.get() or self.output_value_lccn_source.get()):
+            lccn_query = f"JOIN book_lccn ON lccn.Lccn_id = book_lccn.Lccn_id WHERE book_lccn.Isbn = '{lccn_identifier}'"
+            lccn_data = self.db_manager.fetch_data("lccn", lccn_query)
             if lccn_data:
-                existing_data['lccn'] = [str(row[1]) for row in lccn_data if row[1]]  
+                existing_data['lccn'] = [str(row[1]) for row in lccn_data if row[1]]
                 existing_data['lccn_source'] = [row[2] for row in lccn_data if row[2]]
-                if existing_data['lccn']:
-                    logging.info(f"LCCN data found for {file_type} {identifier}.")
-                else:
-                    logging.info(f"LCCN data record exists but no LCCN values found for {file_type} {identifier}.")
-                if existing_data['lccn_source']:
-                    logging.info(f"LCCN Source data found for {file_type} {identifier}.")
-                else:
-                    logging.info(f"LCCN Source data record exists but no LCCN Source values found for {file_type} {identifier}.")
+                logging.info(f"LCCN data found for {file_type} {identifier}: {[str(row[1]) for row in lccn_data if row[1]]}")
+                logging.info(f"LCCN Source data found for {file_type} {identifier}: {[row[2] for row in lccn_data if row[2]]}")
             else:
                 logging.info(f"No LCCN data found for {file_type} {identifier}.")
-
 
         return existing_data
     
@@ -353,7 +361,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         """
         if not hasattr(self, 'output_file_path') or not self.output_file_path:
             return
-
+        
         # Determine data type based on user selection
         input_type = 'ISBN' if self.input_file_type.get() == 1 else 'OCN'
 
@@ -381,21 +389,37 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             row_data = []
             for header in headers:
                 if header == 'ISBN':
+                    # Ensure isbn_data is a list; if identifier is a single ISBN (str), convert it to a list
                     isbn_data = [identifier] if input_type == 'ISBN' else data.get('isbn', [])
-                    formatted_data = '; '.join(map(str, isbn_data))
+                    # Remove any potential non-string or empty elements
+                    isbn_data = [str(isbn) for isbn in isbn_data if isbn]
+                    # Join the ISBN data, ensuring all elements are strings
+                    #formatted_data = '; '.join(isbn_data)
+                    formatted_data = isbn_data[0] if isbn_data else ''
                 elif header == 'OCN':
-                    ocn_data = [identifier] if input_type == 'OCN' else [data.get('ocn', [])]
-                    formatted_data = str(ocn_data[0]) if ocn_data else ''  # Assuming OCN is a single value
+                    # Ensure OCN data is extracted properly; default to an empty list if not found
+                    ocn_data = identifier if input_type == 'OCN' else data.get('ocn', '')
+                    # Assuming OCN is always a single value, take the first element, if available
+                    formatted_data = str(ocn_data) if ocn_data else ''
                 elif header == 'LCCN':
+                    # Extract LCCN data, ensuring it's in list form
                     lccn_data = data.get('lccn', [])
-                    formatted_data = '; '.join(map(str, lccn_data))
-                elif header == 'LCCN Source':
+                    # Remove any potential non-string or empty elements
+                    lccn_data = [str(lccn) for lccn in lccn_data if lccn]
+                    # Join the LCCN data
+                    #formatted_data = '; '.join(lccn_data)
+                    formatted_data = lccn_data[0] if lccn_data else ''
+                elif header == 'LCCN_Source':
+                    # Similarly handle LCCN source data
                     lccn_source_data = data.get('lccn_source', [])
-                    formatted_data = '; '.join(map(str, lccn_source_data))
+                    lccn_source_data = [str(source) for source in lccn_source_data if source]
+                    #formatted_data = '; '.join(lccn_source_data)
+                    formatted_data = lccn_source_data[0] if lccn_source_data else ''
                 else:
-                    continue  # Skip unknown headers
+                    continue 
                 
                 row_data.append(formatted_data)
+            
             row_data = [item if item not in [None, 'None'] else '' for item in row_data]
             # Check if all elements are empty, if not then write to the file
             if any(row_data):
@@ -426,6 +450,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         logging.info(f"Search started for {file_type} with {len(data)} items and priority list: {self.priority_list}")
 
         self.toggle_ui_for_search(True)
+        self.search_start_time = time.time()
         self.search_active = True
         self.search_in_progress = True
         self.search_thread = threading.Thread(target=self.perform_search, args=(data,), daemon=True)
@@ -481,8 +506,14 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         """Finalize the search operation by resetting states and notifying the user."""
         self.search_active = False
         self.toggle_ui_for_search(False)
-        logging.info("Search completed")
-        messagebox.showinfo("Search", "Search completed")
+        if self.search_start_time:
+            self.search_total_time = time.time() - self.search_start_time  # Calculate total time
+            total_time_str = time.strftime("%H:%M:%S", time.gmtime(self.search_total_time))
+            logging.info("Search completed")
+            messagebox.showinfo("Search", f"Search completed in {total_time_str}.")
+        else:
+            logging.info("Search completed")
+            messagebox.showinfo("Search", "Search completed.")
 
 
     def fetch_and_update_missing_data(self, existing_data, identifier, input_type, output_options):
@@ -521,7 +552,6 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 if not self.search_active: # Check if the search was stopped
                     return
                 if not result: continue
-                else: result = self.validate_and_format_metadata(result)
 
                 if input_type == 'isbn':
                     if not result.get('ocn') and not result.get('lccn'):
@@ -545,42 +575,6 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
                     if not missing_data:  # Exit early if all missing data has been found
                         break
-
-    def validate_and_format_metadata(self, metadata):
-        """
-        Ensures that metadata values are of the correct type.
-
-        Args:
-            metadata (dict): The metadata dictionary with potential keys 'isbn', 'ocn', 'lccn', and 'lccn_source'.
-
-        Returns:
-            dict: A new dictionary where 'isbn', 'lccn' and 'lccn_source' values are lists of strings, and 'ocn' is a  strings.
-        """
-        formatted_metadata = {}
-
-        # Ensure 'isbn' is a list of strings
-        isbn = metadata.get('isbn', [])
-        if isinstance(isbn, str):  # If single ISBN provided as string
-            isbn = [isbn]
-        formatted_metadata['isbn'] = [str(item) for item in isbn]  # Convert all elements to strings
-
-        # Ensure 'ocn' is a string
-        ocn = metadata.get('ocn', '')
-        formatted_metadata['ocn'] = str(ocn)
-
-        # Ensure 'lccn' is a list of strings
-        lccn = metadata.get('lccn', [])
-        if isinstance(lccn, str):  # If single LCCN provided as string
-            lccn = [lccn]
-        formatted_metadata['lccn'] = [str(item) for item in lccn]
-
-        # Ensure 'lccn_source' is a list of strings
-        lccn_source = metadata.get('lccn_source', [])
-        if isinstance(lccn_source, str):  # If single source provided as string
-            lccn_source = [lccn_source]
-        formatted_metadata['lccn_source'] = [str(item) for item in lccn_source]
-
-        return formatted_metadata
 
 
     def update_database_with_existing_data(self, identifier, data, input_type):
@@ -657,17 +651,18 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 if not self.db_manager.data_exists('book_lccn', f"Isbn = '{isbn}' AND Lccn_id = {lccn_id}"):
                     self.db_manager.insert_data('book_lccn', (isbn, lccn_id))
     def choose_output_file(self):
-        """Prompt the user to select a file path for saving the output data in CSV format."""
+        """Prompt the user to select a file path for saving the output data in TSV format."""
         file_options = {
             "mode": 'w',
-            "defaultextension": ".csv",
-            "filetypes": [("CSV Files", "*.csv"), ("All Files", "*.*")]
+            "defaultextension": ".tsv",
+            "filetypes": [("TSV Files", "*.tsv"), ("All Files", "*.*")]
         }
         file = asksaveasfile(**file_options)
         if file:  # True if the dialog is not canceled.
             self.output_file_path = file.name
-            messagebox.showinfo("Success", f"Output CSV file selected: {self.output_file_path}")
+            messagebox.showinfo("Success", f"Output TSV file selected: {self.output_file_path}")
             file.close()  # Close the file after saving the path.
+
 
     def set_priority(self):
         """Open a new window to set the search priority."""

@@ -1,8 +1,8 @@
 # apis/openLibrary_api.py
 import re
 import requests
-from src.apis.baseAPI import BaseAPI
-import src.util.dictionaryValidationMethod as vd
+from apis.baseAPI import BaseAPI
+import util.dictionaryValidationMethod as vd
 
 
 class OpenLibraryAPI(BaseAPI):

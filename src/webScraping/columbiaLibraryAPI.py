@@ -4,9 +4,8 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 from selenium.common.exceptions import WebDriverException
 
-import src.util.dictionaryValidationMethod as vd
-from src.webScraping.baseScraping import BaseScraping
-
+import util.dictionaryValidationMethod as vd
+from webScraping.baseScraping import BaseScraping
 
 # class NewColumbia(BaseScraping)
 class ColumbiaLibraryAPI(BaseScraping):

@@ -3,8 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import time
 from selenium.common.exceptions import WebDriverException
-from .baseScraping import BaseScraping
-import src.util.dictionaryValidationMethod as vd
+from webScraping.baseScraping import BaseScraping
+import util.dictionaryValidationMethod as vd
 
 
 class JohnsHopkinsLibraryAPI(BaseScraping):

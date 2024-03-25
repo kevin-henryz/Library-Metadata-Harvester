@@ -20,7 +20,6 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
         self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
 
     def send_dictionary(self):
-        print(self.catalog_data)
         self.catalog_data = vd.optimize_dictionary(self.catalog_data)
         return {k.lower(): v for k, v in self.catalog_data.items()}
 

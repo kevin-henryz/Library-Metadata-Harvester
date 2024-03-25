@@ -8317,3 +8317,74 @@
 2024-03-24 03:49:37,264 - INFO - Application started
 2024-03-24 03:50:59,732 - INFO - Application started
 2024-03-24 04:08:21,779 - INFO - Application started
+2024-03-25 02:26:24,474 - INFO - Application started
+2024-03-25 02:26:34,780 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-25 02:26:52,985 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-25 02:26:54,348 - INFO - Search started for OCN with 9 items and priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-25 02:26:54,352 - INFO - 0/9. Searching metadata for 58561723
+2024-03-25 02:26:54,352 - INFO - Querying database for OCN 58561723.
+2024-03-25 02:26:54,354 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-25 02:26:54,358 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-25 02:26:54,358 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-25 02:26:54,363 - INFO - Write completed for OCN 58561723
+2024-03-25 02:26:54,364 - INFO - 1/9. Searching metadata for 58561723
+2024-03-25 02:26:54,367 - INFO - Querying database for OCN 58561723.
+2024-03-25 02:26:54,368 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-25 02:26:54,370 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-25 02:26:54,370 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-25 02:26:54,372 - INFO - Write completed for OCN 58561723
+2024-03-25 02:26:54,372 - INFO - 2/9. Searching metadata for 49251460
+2024-03-25 02:26:54,372 - INFO - Querying database for OCN 49251460.
+2024-03-25 02:26:54,374 - INFO - No database record found for OCN 49251460.
+2024-03-25 02:27:03,140 - INFO - No additional results found for OCN 49251460 from Columbia Library
+2024-03-25 02:27:09,497 - INFO - No additional results found for OCN 49251460 from Cornell Library
+2024-03-25 02:27:20,160 - INFO - No additional results found for OCN 49251460 from Duke Library
+2024-03-25 02:27:20,998 - INFO - No additional results found for OCN 49251460 from Google Books
+2024-03-25 02:27:28,203 - INFO - No additional results found for OCN 49251460 from Indiana Library
+2024-03-25 02:27:38,091 - INFO - No additional results found for OCN 49251460 from Johns Hopkins Library
+2024-03-25 02:27:40,961 - INFO - Updated data for 49251460 from Library of Congress
+2024-03-25 02:27:40,966 - INFO - Write completed for OCN 49251460
+2024-03-25 02:27:40,967 - INFO - 3/9. Searching metadata for 22281914
+2024-03-25 02:27:40,967 - INFO - Querying database for OCN 22281914.
+2024-03-25 02:27:40,968 - INFO - Found database record for OCN 22281914: ISBN=9781526124463, OCN=22281914
+2024-03-25 02:27:40,969 - INFO - No LCCN data found for OCN 22281914.
+2024-03-25 02:27:46,575 - INFO - No additional results found for OCN 22281914 from Columbia Library
+2024-03-25 02:27:53,609 - INFO - No additional results found for OCN 22281914 from Cornell Library
+2024-03-25 02:28:01,032 - INFO - No additional results found for OCN 22281914 from Duke Library
+2024-03-25 02:28:01,824 - INFO - Updated data for 22281914 from Google Books
+2024-03-25 02:28:01,826 - INFO - Write completed for OCN 22281914
+2024-03-25 02:28:01,826 - INFO - 4/9. Searching metadata for 51868091
+2024-03-25 02:28:01,827 - INFO - Querying database for OCN 51868091.
+2024-03-25 02:28:01,828 - INFO - Found database record for OCN 51868091: ISBN=9780805376135, OCN=51868091
+2024-03-25 02:28:01,830 - INFO - LCCN data found for OCN 51868091: ['QR41.2 .T67 2004']
+2024-03-25 02:28:01,831 - INFO - LCCN Source data found for OCN 51868091: ['Open Library']
+2024-03-25 02:28:01,834 - INFO - Write completed for OCN 51868091
+2024-03-25 02:28:01,835 - INFO - 5/9. Searching metadata for 225374393
+2024-03-25 02:28:01,835 - INFO - Querying database for OCN 225374393.
+2024-03-25 02:28:01,836 - INFO - Found database record for OCN 225374393: ISBN=9780470090671, OCN=225374393
+2024-03-25 02:28:01,836 - INFO - No LCCN data found for OCN 225374393.
+2024-03-25 02:28:07,497 - INFO - No additional results found for OCN 225374393 from Columbia Library
+2024-03-25 02:28:13,622 - INFO - No additional results found for OCN 225374393 from Cornell Library
+2024-03-25 02:28:26,269 - INFO - No additional results found for OCN 225374393 from Duke Library
+2024-03-25 02:28:27,056 - INFO - Updated data for 225374393 from Google Books
+2024-03-25 02:28:27,058 - INFO - Write completed for OCN 225374393
+2024-03-25 02:28:27,059 - INFO - 6/9. Searching metadata for 1056625215
+2024-03-25 02:28:27,059 - INFO - Querying database for OCN 1056625215.
+2024-03-25 02:28:27,066 - INFO - Found database record for OCN 1056625215: ISBN=9781269352079, OCN=1056625215
+2024-03-25 02:28:27,067 - INFO - LCCN data found for OCN 1056625215: ['QC23.2 .K649 2013b']
+2024-03-25 02:28:27,067 - INFO - LCCN Source data found for OCN 1056625215: ['Open Library']
+2024-03-25 02:28:27,070 - INFO - Write completed for OCN 1056625215
+2024-03-25 02:28:27,070 - INFO - 7/9. Searching metadata for 58561723
+2024-03-25 02:28:27,070 - INFO - Querying database for OCN 58561723.
+2024-03-25 02:28:27,071 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-25 02:28:27,072 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-25 02:28:27,072 - INFO - LCCN Source data found for OCN 58561723: ['JHU']
+2024-03-25 02:28:27,075 - INFO - Write completed for OCN 58561723
+2024-03-25 02:28:27,075 - INFO - 8/9. Searching metadata for 58593680
+2024-03-25 02:28:27,076 - INFO - Querying database for OCN 58593680.
+2024-03-25 02:28:27,083 - INFO - Found database record for OCN 58593680: ISBN=9786610147755, OCN=58593680
+2024-03-25 02:28:27,084 - INFO - LCCN data found for OCN 58593680: ['RC321']
+2024-03-25 02:28:27,084 - INFO - LCCN Source data found for OCN 58593680: ['JHU']
+2024-03-25 02:28:27,087 - INFO - Write completed for OCN 58593680
+2024-03-25 02:28:27,087 - INFO - Search thread completed successfully for 9 items.
+2024-03-25 02:28:27,225 - INFO - Search completed

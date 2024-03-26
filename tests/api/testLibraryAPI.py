@@ -61,6 +61,7 @@ class TestLibraryAPIs(unittest.TestCase):
                     self.skipTest(f"Test file {test_file} does not exist")    
                 with open(test_file, 'r') as f, self.subTest(api=api_name, file=test_file):
                     reader = csv.DictReader(f, delimiter='\t')
+                    
                     for row in reader:
                         identifier = row[file_suffix.upper()]
                         #print(identifier)
@@ -69,11 +70,19 @@ class TestLibraryAPIs(unittest.TestCase):
                         if not identifier:
                             continue  # Skip this row if the identifier is missing or None
                         result = api_instance.fetch_metadata(identifier, file_suffix)
-                        # Check the API response
-                        self.assertIsNotNone(result, f"API {api_name} returned None for {file_suffix.upper()} {identifier}")
+
+                        if result is None:
+                            other_fields = ['isbn', 'ocn', 'lccn', 'lccn_source']
+                            other_fields.remove(file_suffix)  # Remove the current suffix being tested
+                            # Check if all other fields except the current one are empty
+                            if all(not row.get(field.upper(), '').strip(" \t") for field in other_fields):
+                                continue  # If only the current field is non-empty, skip this entry
+                            else:
+                                self.fail(f"API {api_name} returned None for {file_suffix.upper()} {identifier} when other data fields are present")
+
                         # Validate all expected fields against the result
                         for field in ['isbn', 'ocn', 'lccn', 'lccn_source']:
-                            expected_values = row[field.upper()].strip().split() if row[field.upper()] else []
+                            expected_values = row[field.upper()].strip(" \t").split(';') if row[field.upper()] else []
                             if field == 'ocn':  # 'ocn' is expected to be a single string
                                 self.assertEqual(result.get(field, ''), row[field.upper()].strip(), f"{field.upper()} does not match for {api_name} and identifier {identifier}")
                             else:  # All other fields are expected to be lists

@@ -11,14 +11,24 @@ from webScraping.baseScraping import BaseScraping
 class ColumbiaLibraryAPI(BaseScraping):
 
     def __init__(self):
+        self.initialize_driver()
+        self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
+
+    def initialize_driver(self):
+        """Initializes the Selenium WebDriver."""
         options = webdriver.ChromeOptions()
-        options.add_argument('--headless')  # Run Chrome in headless mode.
-        options.add_argument('--no-sandbox')  # Bypass OS security model.
-        options.add_argument('--disable-dev-shm-usage')  # Overcome limited resource problems.
+        options.add_argument('--headless')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--disable-gpu')
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         self.driver = webdriver.Chrome(options=options)
-        self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
+
+    def close_driver(self):
+        """Safely closes the driver and quits the browser session."""
+        if self.driver:
+            self.driver.quit()
+            self.driver = None
 
     def send_dictionary(self):
         self.catalog_data = vd.optimize_dictionary(self.catalog_data)
@@ -59,8 +69,10 @@ class ColumbiaLibraryAPI(BaseScraping):
     def fetch_metadata(self, identifier, input_type):
 
         try:
-
             self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
+            if not self.is_online():
+                print("No internet connection available at the start.")
+                return self.send_dictionary() 
             identifier = identifier.strip("\n")
             input_type = input_type.upper()
 
@@ -177,6 +189,11 @@ class ColumbiaLibraryAPI(BaseScraping):
                     return self.send_dictionary()
 
         except WebDriverException:
-            # print(f"Browser session has been closed or lost: {e}")
-            self.driver = webdriver.Chrome()
-            return {k.lower(): v for k, v in self.catalog_data.items()}
+            self.close_driver()  # Close the current driver due to the exception
+            self.initialize_driver()
+            print(f"Encountered a WebDriverException, possibly due to network issues: {e}")
+            return self.send_dictionary() 
+        
+        except Exception as e:
+            # Handle other generic exceptions if necessary
+            return self.send_dictionary() 

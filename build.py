@@ -14,13 +14,20 @@ def build():
         '--clean',  # Clean PyInstaller cache and remove temporary files before building
         '--onefile',  # Package the app into one file
         '--windowed',  # Windowed mode, no console
-        paths_arg, 
+        paths_arg,
         main_script  
     ]
 
-    # Run the command
-    if platform.system() in ['Windows', 'Darwin', 'Linux']:
-        subprocess.run(pyinstaller_command, shell=True)  # Using subprocess.run for better process handling
+    # Print command for debugging
+    print("Running command:", " ".join(pyinstaller_command))
+
+    # Adjusting command execution based on OS
+    if platform.system() == 'Windows':
+        # In Windows, don't use shell=True for security reasons; PyInstaller should be in PATH
+        subprocess.run(pyinstaller_command)
+    elif platform.system() in ['Darwin', 'Linux']:
+        # Unix-like systems
+        subprocess.run(' '.join(pyinstaller_command), shell=True, check=True, executable='/bin/bash')
     else:
         print("Unsupported OS")
 

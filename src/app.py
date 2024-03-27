@@ -561,15 +561,6 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                     return
                 if not result: continue
 
-                if input_type == 'isbn':
-                    if not result.get('ocn') and not result.get('lccn'):
-                        logging.info(f"No additional results found for ISBN {identifier} from {source_name}")
-                        continue
-                elif input_type == 'ocn':
-                    if not result.get('isbn') and not result.get('lccn'):
-                        logging.info(f"No additional results found for OCN {identifier} from {source_name}")
-                        continue
-
                 # Update the existing data if new data is found
                 updated = False
                 for data_type in missing_data.copy():  # Iterate over a copy to modify original safely

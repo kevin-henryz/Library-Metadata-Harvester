@@ -38,7 +38,7 @@ def best_clean_isbn(isbn_list):
 
 def clean_isbn_list(isbn_list):
     # Remove non-digit characters from the beginning and end of each string and filter out invalid ISBNs
-    # isbn_list = [item for item in isbn_list if item.isdigit()]
+    isbn_list = [item for item in isbn_list if item.isdigit()]
     isbn_list = [item for item in isbn_list if isbnlib.is_isbn10(item) or isbnlib.is_isbn13(item)]
     return isbn_list if isbn_list else []
 

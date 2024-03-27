@@ -2,29 +2,55 @@
 
 ## Description
 
-The Library Metadata Harvester is a cross-platform desktop application designed to facilitate the collection and management of library metadata. It assists librarians and researchers in efficiently retrieving metadata such as ISBNs, OCNs, LC call numbers, and DOIs.
+The Library Metadata Harvester is a versatile cross-platform desktop application designed to streamline the collection and management of library metadata. It is crafted to aid librarians and researchers in efficiently gathering critical data such as ISBNs, OCNs and LC call numbers, enhancing the organization and accessibility of library resources.
 
 ## Features
 
-- Cross-platform GUI compatible with Windows, Mac, and Linux.
-- Input and processing of metadata files containing ISBNs and OCNs.
-- Secure OCN key handling with encryption.
-- Integration with external APIs for comprehensive metadata retrieval.
-- Local SQLite database integration for data storage.
-- Export functionality for metadata in tab-delimited format.
+- Cross-platform compatibility: Works seamlessly on Windows, Mac, and Linux.
+- User-friendly GUI: Simplifies the process of metadata input and handling.
+- Direct integration with external APIs for extensive metadata retrieval.
+- Local SQLite database support for persistent data storage.
+- Metadata export capability in a user-friendly tab-delimited format.
 
 ## Installation
 
 ### Prerequisites
 
-- Python 3.x
-- Pip (Python package installer)
+Ensure you have the following installed:
 
-### Setup
+- Python 3.x: The core programming language used for the application.
+- Pip: The Python package installer, used for managing software packages.
 
-1. Clone the repository or download the source code.
-2. Navigate to the project directory.
-3. Install the required dependencies:
+### Setup Instructions
+
+1. Obtain the source code by cloning the repository or downloading the source files.
+2. Open a terminal or command prompt and navigate to the root directory of the project.
+3. Install the necessary Python dependencies by running:
+
    ```bash
    pip install -r requirements.txt
    ```
+
+4. For building the application into an executable, run the build script. The executable will be located in the `dist` directory after the script completes:
+
+   ```bash
+   python build.py
+   ```
+
+   The build script supports Linux, Windows, and macOS.
+
+## Running Tests
+
+For running tests, use the `run_tests.py` script:
+
+```bash
+python run_tests.py
+```
+
+## Supported Operating Systems
+
+The application and build scripts are supported on the following operating systems:
+
+- Linux
+- Windows
+- macOS

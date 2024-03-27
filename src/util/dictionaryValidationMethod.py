@@ -70,10 +70,11 @@ def clean_lccn(lccn_list):
     cleaned_lccn_list = []
     pattern = r'^[A-Za-z]{1,3}[0-9A-Za-z. ]*$'
     for lccn in lccn_list:
+        # Strip non-digit characters from the end of the string
+        lccn = re.sub(r'\D*$', '', lccn)
         if '-' in lccn:
             lccn = lccn.split('-')[0]
-        if len(lccn) <= 25 and re.match(pattern,
-                                        lccn):  # Check if the length of the string is less than or equal to 20 characters
+        if len(lccn) <= 25 and re.match(pattern, lccn):
             cleaned_lccn_list.append(lccn)
     return cleaned_lccn_list if cleaned_lccn_list else []
 

@@ -338,12 +338,17 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             lccn_query = f"JOIN book_lccn ON lccn.Lccn_id = book_lccn.Lccn_id WHERE book_lccn.Isbn = '{lccn_identifier}'"
             lccn_data = self.db_manager.fetch_data("lccn", lccn_query)
             if lccn_data:
-                existing_data['lccn'] = [str(row[1]) for row in lccn_data if row[1]]
-                existing_data['lccn_source'] = [row[2] for row in lccn_data if row[2]]
-                logging.info(f"LCCN data found for {file_type} {identifier}: {[str(row[1]) for row in lccn_data if row[1]]}")
-                logging.info(f"LCCN Source data found for {file_type} {identifier}: {[row[2] for row in lccn_data if row[2]]}")
+                # Update here to only fetch the first LCCN and LCCN source
+                first_lccn_row = lccn_data[0]  # Assuming the first row has the necessary data
+                existing_data['lccn'] = first_lccn_row[1] if first_lccn_row[1] else None
+                existing_data['lccn_source'] = first_lccn_row[2] if first_lccn_row[2] else None
+                if existing_data['lccn']:
+                    logging.info(f"LCCN data found for {file_type} {identifier}: {existing_data['lccn']}")
+                if existing_data['lccn_source']:
+                    logging.info(f"LCCN Source data found for {file_type} {identifier}: {existing_data['lccn_source']}")
             else:
                 logging.info(f"No LCCN data found for {file_type} {identifier}.")
+
 
         return existing_data
     
@@ -564,7 +569,10 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 # Update the existing data if new data is found
                 updated = False
                 for data_type in missing_data.copy():  # Iterate over a copy to modify original safely
-                    if data_type in result:
+                    if data_type in result and result[data_type]:
+                        if isinstance(result[data_type], (str, list)) and not result[data_type]:
+                            continue
+                        
                         existing_data[data_type] = result[data_type.lower()]
                         missing_data.remove(data_type)
                         updated = True

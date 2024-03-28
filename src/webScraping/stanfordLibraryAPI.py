@@ -24,8 +24,7 @@ class StanfordLibraryAPI(BaseScraping):
         options.add_argument('--disable-gpu')
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         options.add_argument('--log-level=3')
-        service = Service(log_path=os.devnull)
-        self.driver = webdriver.Chrome(service=service, options=options)
+        self.driver = webdriver.Chrome(options=options)
 
     def close_driver(self):
         """Safely closes the driver and quits the browser session."""

@@ -340,8 +340,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             if lccn_data:
                 # Update here to only fetch the first LCCN and LCCN source
                 first_lccn_row = lccn_data[0]  # Assuming the first row has the necessary data
-                existing_data['lccn'] = first_lccn_row[1] if first_lccn_row[1] else None
-                existing_data['lccn_source'] = first_lccn_row[2] if first_lccn_row[2] else None
+                existing_data['lccn'] = [str(first_lccn_row[1])] if first_lccn_row[1] else None
+                existing_data['lccn_source'] = [str(first_lccn_row[2])] if first_lccn_row[2] else None
                 if existing_data['lccn']:
                     logging.info(f"LCCN data found for {file_type} {identifier}: {existing_data['lccn']}")
                 if existing_data['lccn_source']:

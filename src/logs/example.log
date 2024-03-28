@@ -8524,3 +8524,6 @@
 2024-03-27 21:57:30,656 - INFO - Application started
 2024-03-27 22:01:18,192 - INFO - Application started
 2024-03-27 22:01:58,325 - INFO - Application started
+2024-03-28 13:28:25,351 - INFO - Application started
+2024-03-28 13:28:43,280 - INFO - Updated priority list: ['Columbia Library', 'Cornell Library', 'Duke Library', 'Google Books', 'Harvard Library', 'Indiana Library', 'Johns Hopkins Library', 'Library of Congress', 'North Carolina State Library', 'Open Library', 'Pennsylvania State Library', 'Stanford Library', 'Yale Library']
+2024-03-28 14:17:57,540 - INFO - Application started

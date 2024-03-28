@@ -52,27 +52,3 @@ class DatabaseManager:
         result = self.fetch_data(table_name, f"WHERE {condition}")
         return result is not None and len(result) > 0
 
-# Example Usage
-if __name__ == "__main__":
-    db = DatabaseManager()
-    db.create_table("book_data", "Isbn INTEGER PRIMARY KEY, Ocn INTEGER, Lccn TEXT, Source TEXT, Doi TEXT")
-
-    # Insert data
-    isbn_to_insert = 123456789
-    data_to_insert = (isbn_to_insert, 123, 'lccn123', 'source123', 'doi123')
-    db.insert_data("book_data", data_to_insert)
-
-    # Check if data was inserted
-    if db.data_exists("book_data", f"Isbn = {isbn_to_insert}"):
-        print("Insertion successful: Data exists")
-    else:
-        print("Insertion failed: Data does not exist")
-
-    # Delete the inserted data
-    db.delete_data("book_data", f"Isbn = {isbn_to_insert}")
-
-    # Check if data was deleted
-    if db.data_exists("book_data", f"Isbn = {isbn_to_insert}"):
-        print("Deletion failed: Data still exists")
-    else:
-        print("Deletion successful: Data does not exist")

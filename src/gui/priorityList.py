@@ -29,7 +29,7 @@ class PriorityList:
 
         self.up_button = tk.Button(master, text="Move Up", command=self.move_up)
         self.down_button = tk.Button(master, text="Move Down", command=self.move_down)
-        self.remove_button = tk.Button(master, text=" Delete ", command=self.delete_item)
+        self.remove_button = tk.Button(master, text="Remove", command=self.delete_item)
         self.add_button = tk.Button(master, text="  Add  ", command=self.add_item)
         self.confirm = tk.Button(master, text="Confirm", command=self.confirm_and_exit)
 

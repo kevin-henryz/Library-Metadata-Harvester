@@ -9,6 +9,8 @@ class PriorityList:
         self.entries = priorityList
         self.entries_right = []
 
+        self.label_left = tk.Label(master, text="Selected sources")
+        self.label_right = tk.Label(master, text="Unused sources")
         self.listbox = tk.Listbox(master, selectmode=tk.SINGLE)
         for entry in self.entries:
             self.listbox.insert(tk.END, entry)
@@ -27,19 +29,21 @@ class PriorityList:
 
         self.up_button = tk.Button(master, text="Move Up", command=self.move_up)
         self.down_button = tk.Button(master, text="Move Down", command=self.move_down)
-        self.remove_button = tk.Button(master, text="Delete", command=self.delete_item)
-        self.add_button = tk.Button(master, text="Add", command=self.add_item)
+        self.remove_button = tk.Button(master, text=" Delete ", command=self.delete_item)
+        self.add_button = tk.Button(master, text="  Add  ", command=self.add_item)
         self.confirm = tk.Button(master, text="Confirm", command=self.confirm_and_exit)
 
-        self.listbox.grid(row=0, column=0, padx=20, pady=5, sticky=tk.NSEW)
-        self.scrollbar.grid(row=0, column=1, padx=(0, 5), pady=5, sticky=tk.NS)
-        self.listbox_right.grid(row=0, column=2, padx=2, pady=5, sticky=tk.NSEW)
-        self.scrollbar_right.grid(row=0, column=3, padx=(0, 5), pady=5, sticky=tk.NS)
-        self.up_button.grid(row=1, column=0, padx=0, pady=5)
-        self.down_button.grid(row=1, column=1, padx=0, pady=5)
-        self.remove_button.grid(row=1, column=2, padx=20, pady=5)
-        self.add_button.grid(row=1, column=3, padx=20, pady=5)
-        self.confirm.grid(row=1, column=4, padx=20, pady=5)
+        self.label_left.grid(row=0, column=0, padx=20, pady=5, sticky="w")
+        self.listbox.grid(row=1, column=0, padx=20, pady=5, sticky=tk.NSEW)
+        self.scrollbar.grid(row=1, column=1, padx=(0, 5), pady=5, sticky=tk.NS)
+        self.label_right.grid(row=0, column=2, padx=5, pady=5, sticky="w")
+        self.listbox_right.grid(row=1, column=2, padx=2, pady=5, sticky=tk.NSEW)
+        self.scrollbar_right.grid(row=1, column=3, padx=(0, 5), pady=5, sticky=tk.NS)
+        self.up_button.grid(row=2, column=0, padx=20, pady=5, sticky="w")
+        self.down_button.grid(row=2, column=0, padx=0, pady=5, sticky="e")
+        self.remove_button.grid(row=2, column=2, padx=0, pady=5, sticky="w")
+        self.add_button.grid(row=2, column=2, padx=5, pady=5, sticky="e")
+        self.confirm.grid(row=2, column=3, padx=15, pady=5, sticky="w")
 
         master.rowconfigure(0, weight=1)
         master.columnconfigure(0, weight=1)

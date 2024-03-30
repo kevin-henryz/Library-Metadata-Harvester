@@ -1,13 +1,13 @@
 import tkinter as tk
 
 class PriorityList:
-    def __init__(self, master, callback, priorityList):
+    def __init__(self, master, callback, selected_sources, unused_sources):
         self.master = master
         self.callback = callback
         self.master.title("Priority List")
 
-        self.entries = priorityList
-        self.entries_right = []
+        self.entries = selected_sources
+        self.entries_right = unused_sources
 
         self.label_left = tk.Label(master, text="Selected sources")
         self.label_right = tk.Label(master, text="Unused sources")
@@ -86,7 +86,9 @@ class PriorityList:
 
     def confirm_and_exit(self):
         # Callback to update the priority list in the main app
-        self.callback(list(self.listbox.get(0, tk.END)))
+        updated_selected = list(self.listbox.get(0, tk.END))
+        updated_unused = list(self.listbox_right.get(0, tk.END))
+        self.callback(updated_selected, updated_unused)
         self.master.destroy()
 
     def update_listboxes(self):

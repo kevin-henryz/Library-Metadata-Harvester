@@ -8,6 +8,7 @@ import webbrowser
 import subprocess
 import queue
 from selenium.common.exceptions import WebDriverException
+import json
 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
@@ -73,6 +74,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                               'North Carolina State Library','Open Library',
                               'Pennsylvania State Library','Stanford Library',
                               'Yale Library']
+        self.unused_sources = []
+        self.load_source_lists()
         self.search_status_var = tk.StringVar(self)
         self.search_status_label = tk.Label(self, textvariable=self.search_status_var, font=("Helvetica", 16), bg='#202020', fg='white')
         self.search_active = False
@@ -741,12 +744,48 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def set_priority(self):
         """Open a new window to set the search priority."""
         priority_window = tk.Toplevel(self)
-        PriorityList(priority_window, self.update_priority_list,self.priority_list)
+        PriorityList(priority_window, self.update_priority_lists, self.priority_list, self.unused_sources)
 
-    def update_priority_list(self, updated_list):
+    def update_priority_lists(self, selected, unused):
         """Update the internal priority list for searches."""
-        self.priority_list = updated_list
-        logging.info(f"Updated priority list: {self.priority_list}")
+        self.priority_list = selected
+        self.unused_sources = unused
+        logging.info(f"Updated selected sources: {self.priority_list}")
+        logging.info(f"Updated unused sources: {self.unused_sources}")
+        self.save_source_lists()
+    
+
+    def save_source_lists(self):
+        data = {
+            'selected_sources': self.priority_list,
+            'unused_sources': self.unused_sources
+        }
+        filepath = self.resource_path(os.path.join('data', 'source_lists.json'))  # Define a data directory, for example
+        with open(filepath, 'w') as file:
+            json.dump(data, file)
+
+
+    def load_source_lists(self):
+        filepath = self.resource_path(os.path.join('data', 'source_lists.json'))
+        try:
+            with open(filepath, 'r') as file:
+                data = json.load(file)
+                selected_sources = data.get('selected_sources', [])
+                unused_sources = data.get('unused_sources', [])
+                # Safeguard to ensure all sources are included
+                all_sources = set(self.priority_list + self.unused_sources)
+                file_sources = set(selected_sources + unused_sources)
+                
+                if not all_sources == file_sources:
+                    # If not all sources are present, reinitialize the file
+                    self.save_source_lists()
+                else:
+                    self.priority_list = selected_sources
+                    self.unused_sources = unused_sources
+        except FileNotFoundError:
+            # If the file doesn't exist, save the initial lists to create the file.
+            self.save_source_lists()
+
 
     def open_log(self, log_path):
         """Open a new window to display the application's log file content."""

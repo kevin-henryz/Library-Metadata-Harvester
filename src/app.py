@@ -5,6 +5,7 @@ import threading
 import time
 import csv
 import webbrowser
+import subprocess
 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
@@ -705,10 +706,16 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def open_output_file(self):
         """Open the output file with the default application, cross-platform."""
         if self.output_file_path and os.path.exists(self.output_file_path):
-            webbrowser.open(self.output_file_path)
+            if sys.platform.startswith('darwin'):  # macOS
+                subprocess.run(['open', self.output_file_path], check=True)
+            elif sys.platform.startswith('win32'):  # Windows
+                os.startfile(self.output_file_path)
+            elif sys.platform.startswith('linux'):  # Linux
+                subprocess.run(['xdg-open', self.output_file_path], check=True)
+            else:
+                messagebox.showerror("Error", "Unsupported OS")
         else:
             messagebox.showwarning("Warning", "No output file has been set or the file does not exist.")
-
 
     def set_priority(self):
         """Open a new window to set the search priority."""

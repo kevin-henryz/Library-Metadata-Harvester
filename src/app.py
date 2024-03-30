@@ -6,6 +6,8 @@ import time
 import csv
 import webbrowser
 import subprocess
+import queue
+from selenium.common.exceptions import WebDriverException
 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
@@ -78,7 +80,22 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.current_identifier = 0
         self.search_start_time = None
         self.search_total_time = None
+        self.message_queue = queue.Queue()
+        self.after(100, self.check_message_queue)
 
+    def check_message_queue(self):
+        """
+        Check the message queue for messages and display them.
+        This method is called periodically via the Tkinter after method.
+        """
+        try:
+            while True:  # Keep checking for new messages
+                message = self.message_queue.get_nowait()
+                messagebox.showerror("Error", message)
+        except queue.Empty:
+            pass
+        finally:
+            self.after(100, self.check_message_queue)
 
     def configure_app(self):
         """Configure the main window settings and styles."""
@@ -310,8 +327,12 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
     def initialize_source(self, key, api_class):
         """Initialize a single source API object and add it to the source mapping."""
-        api_instance = api_class()  # Instantiate the API class
-        self.source_mapping[key] = api_instance  # Add instance to source mapping
+        try:
+            api_instance = api_class()  # Instantiate the API class
+            self.source_mapping[key] = api_instance  # Add instance to source mapping
+        except WebDriverException as e:
+            error_message = f"An error occurred initializing {key}. Please make sure Google Chrome is installed."
+            self.message_queue.put(error_message)
 
 
     def browse_file(self):

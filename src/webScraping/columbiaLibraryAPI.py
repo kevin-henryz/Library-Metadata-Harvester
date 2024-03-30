@@ -6,9 +6,8 @@ from selenium.common.exceptions import WebDriverException
 
 import util.dictionaryValidationMethod as vd
 from webScraping.baseScraping import BaseScraping
-from selenium.webdriver.chrome.service import Service
-import os
-
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 
 # class NewColumbia(BaseScraping)
 class ColumbiaLibraryAPI(BaseScraping):
@@ -26,7 +25,8 @@ class ColumbiaLibraryAPI(BaseScraping):
         options.add_argument('--disable-gpu')
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         options.add_argument('--log-level=3')
-        self.driver = webdriver.Chrome(options=options)
+        service = ChromeService(ChromeDriverManager().install())
+        self.driver = webdriver.Chrome(service=service, options=options)
 
     def close_driver(self):
         """Safely closes the driver and quits the browser session."""

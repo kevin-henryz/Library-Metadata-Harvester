@@ -4,6 +4,7 @@ import logging
 import threading
 import time
 import csv
+import webbrowser
 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
@@ -55,6 +56,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def __init__(self):
         """Initialize the application, its variables, and UI components."""
         super().__init__()
+        self.output_file_path = None
         self.source_mapping = {}
         self.source_threads = {}
         self.configure_app()
@@ -91,7 +93,16 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.style.configure('TLabel', background='#202020', foreground='white')
         self.style.configure('TEntry', background='#404040', foreground='white', fieldbackground='#404040', borderwidth=1)
         self.style.map('TEntry', fieldbackground=[('focus', '#404040')], foreground=[('focus', 'white')])
-
+        self.style.map('TButton',
+               background=[('active', '#606060')],
+               foreground=[('active', 'black')])
+        self.style.map('TCheckbutton',
+               background=[('active', '#404040')],
+               foreground=[('active', 'white')],
+               selectColor=[('active', '#202020')])
+        self.style.map('TRadioButton',
+               background=[('active', '#404040')],
+               foreground=[('active', 'white')])
 
     def setup_logging(self):
         """Setup application logging."""
@@ -175,15 +186,25 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
     def configure_buttons(self):
         """Configure the buttons and their actions in the buttons frame."""
-        self.start_button = ttk.Button(self.button_frame, text="Start Search", command=self.start_search)
-        self.start_button.pack(side='left', padx=5)
-        self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=self.finalize_search, state='disabled')
-        self.open_log_button = ttk.Button(self.button_frame, text="Open Log", command=lambda: self.open_log(LibraryMetadataHarvesterApp.resource_path(os.path.join('logs', 'example.log'))))
-        self.open_log_button.pack(side='left', padx=5)
         self.choose_output_file_button = ttk.Button(self.button_frame, text="Choose Output File", command=self.choose_output_file)
-        self.choose_output_file_button.pack(side='left', padx=5)
+        self.choose_output_file_button.pack(side='left', padx=5)        
+        
         self.set_priority_button = ttk.Button(self.button_frame, text="Set Searching Priority", command=self.set_priority)
         self.set_priority_button.pack(side='left', padx=5)
+
+        self.start_button = ttk.Button(self.button_frame, text="Start Search", command=self.start_search)
+        self.start_button.pack(side='left', padx=5)
+
+        self.open_output_file_button = ttk.Button(self.button_frame, text="Open Output File", command=self.open_output_file)
+        self.open_output_file_button.pack(side='left', padx=5)
+
+        self.open_log_button = ttk.Button(self.button_frame, text="Open Log", command=lambda: self.open_log(LibraryMetadataHarvesterApp.resource_path(os.path.join('logs', 'example.log'))))
+        self.open_log_button.pack(side='left', padx=5)
+
+        self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=self.finalize_search, state='disabled')
+
+
+
    
     def setup_output_options(self):
         """Setup the frame for output options."""
@@ -206,7 +227,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.ocn_checkbutton.pack(anchor='w', padx=5, pady=2)
         ttk.Checkbutton(self.output_frame, text="LCCN", variable=self.output_value_lccn, style='TCheckbutton').pack(anchor='w', padx=5, pady=2)
         ttk.Checkbutton(self.output_frame, text="LCCN Source", variable=self.output_value_lccn_source, style='TCheckbutton').pack(anchor='w', padx=5, pady=2)
-        self.output_file_path = None
+        #self.output_file_path = None
         
     def toggle_ui_for_search(self, is_searching):
         """
@@ -219,7 +240,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             # Hide all main UI elements to focus on the search.
             ui_elements = [self.top_frame, self.output_frame, self.start_button, 
                         self.open_log_button, self.choose_output_file_button, 
-                        self.set_priority_button]
+                        self.set_priority_button,self.open_output_file_button]
             for element in ui_elements:
                 element.pack_forget()
 
@@ -459,6 +480,17 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         if not self.output_file_path:
             messagebox.showwarning("Warning", "Please set the output file path")
             return
+        
+        if os.path.exists(self.output_file_path) and os.path.getsize(self.output_file_path) > 0:
+            # Prompt the user about overwriting the file
+            overwrite = messagebox.askyesno("Confirm Overwrite", "The output file already has content. Do you wish to overwrite it?")
+            if not overwrite:
+                # User chose not to overwrite; cancel the search start
+                messagebox.showinfo("Search Cancelled", "Search cancelled by user.")
+                return
+            else:
+                with open(self.output_file_path, 'w') as file:
+                    pass
 
         logging.info(f"Search started for {file_type} with {len(data)} items and priority list: {self.priority_list}")
 
@@ -669,6 +701,13 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             self.output_file_path = file.name
             messagebox.showinfo("Success", f"Output TSV file selected: {self.output_file_path}")
             file.close()  # Close the file after saving the path.
+
+    def open_output_file(self):
+        """Open the output file with the default application, cross-platform."""
+        if self.output_file_path and os.path.exists(self.output_file_path):
+            webbrowser.open(self.output_file_path)
+        else:
+            messagebox.showwarning("Warning", "No output file has been set or the file does not exist.")
 
 
     def set_priority(self):

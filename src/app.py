@@ -15,7 +15,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
 
 
 import tkinter as tk
-from tkinter import filedialog, messagebox, ttk
+from tkinter import filedialog, messagebox, ttk, scrolledtext
 from tkinter.filedialog import asksaveasfile
 
 # Importing custom modules for processing files and handling GUI elements
@@ -104,7 +104,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         """Configure the main window settings and styles."""
         self.title('Library Metadata Harvester')
         self.configure(bg='#202020') 
-        self.geometry('600x300') 
+        self.geometry('700x300')
         self.style = ttk.Style(self)
         self.style.theme_use('clam')
         self.style.configure('TButton', background='#404040', foreground='white', borderwidth=1)
@@ -221,6 +221,9 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
         self.open_log_button = ttk.Button(self.button_frame, text="Open Log", command=lambda: self.open_log(LibraryMetadataHarvesterApp.resource_path(os.path.join('logs', 'example.log'))))
         self.open_log_button.pack(side='left', padx=5)
+
+        self.clear_log_button = ttk.Button(self.button_frame, text="Clear Log", command=lambda: self.clear_log(LibraryMetadataHarvesterApp.resource_path(os.path.join('logs', 'example.log'))))
+        self.clear_log_button.pack(side='left', padx=5)
 
         self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=self.finalize_search, state='disabled')
 
@@ -794,11 +797,20 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 log_content = log_file.read()
                 log_window = tk.Toplevel(self)
                 log_window.title("Log Viewer")
-                text = tk.Text(log_window, wrap="word")
+                text = tk.scrolledtext.ScrolledText(log_window, wrap="word")
                 text.pack(fill="both", expand=True)
                 text.insert(tk.END, log_content)
+                text.see(tk.END)  # Scroll to the end
         except Exception as e:
             messagebox.showerror("Error", f"Failed to open log: {str(e)}")
+
+    def clear_log(self, log_path):
+        try:
+            with open(log_path, 'w') as file:
+                file.truncate(0)  # Clear the file contents
+                messagebox.showinfo("Success", "File cleaned successfully!")
+        except Exception as e:
+            messagebox.showerror("Error", str(e))
 
     @staticmethod
     def resource_path(relative_path):

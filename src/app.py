@@ -62,6 +62,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         """Initialize the application, its variables, and UI components."""
         super().__init__()
         self.output_file_path = None
+        self.log_window_open = False 
         self.source_mapping = {}
         self.configure_app()
         self.setup_logging()
@@ -89,7 +90,22 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         """Configure the main window settings and styles."""
         self.title('Library Metadata Harvester')
         self.configure(bg='#202020') 
-        self.geometry('700x300')
+        
+        # Get and store the screen width and height
+        self.screen_width = self.winfo_screenwidth()
+        self.screen_height = self.winfo_screenheight()
+        
+        # Calculate and store width and height as a percentage of the screen size
+        self.app_width = int(self.screen_width * 0.35) 
+        self.app_height = int(self.screen_height * 0.30)
+
+        # Calculate and store the position to center the window on the screen
+        self.app_x = (self.screen_width // 2) - (self.app_width // 2)
+        self.app_y = (self.screen_height // 2) - (self.app_height // 2)
+        
+        # Set the geometry of the window
+        self.geometry('{}x{}+{}+{}'.format(self.app_width, self.app_height, self.app_x, self.app_y))
+        
         self.style = ttk.Style(self)
         self.style.theme_use('clam')
         self.style.configure('TButton', background='#404040', foreground='white', borderwidth=1)
@@ -737,10 +753,21 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         else:
             messagebox.showwarning("Warning", "No output file has been set or the file does not exist.")
 
+
     def set_priority(self):
         """Open a new window to set the search priority."""
         priority_window = tk.Toplevel(self)
-        PriorityList(priority_window, self.update_priority_lists, self.priority_list, self.unused_sources)
+        window_attributes = {
+        'width': self.app_width,
+        'height': self.app_height,
+        'x': self.app_x,
+        'y': self.app_y,
+         }
+        # Then, pass these attributes to the PriorityList constructor
+        PriorityList(priority_window, self.update_priority_lists, self.priority_list, self.unused_sources, window_attributes)
+
+
+        
 
     def update_priority_lists(self, selected, unused):
         """Update the internal priority list for searches."""
@@ -785,17 +812,25 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
     def open_log(self):
         """Open a new window to display the application's log file content."""
+        if self.log_window_open:
+            return  # Exit the function if the log window is already open
+
         try:
-            log_window = tk.Toplevel(self)
-            log_window.title("Log Viewer")
-            self.log_text_widget = tk.scrolledtext.ScrolledText(log_window, wrap="word")
+            self.log_window = tk.Toplevel(self)
+            self.log_window.title("Log Viewer")
+            self.log_text_widget = tk.scrolledtext.ScrolledText(self.log_window, wrap="word")
             self.log_text_widget.pack(fill="both", expand=True)
             self.update_log_content()
+            self.log_window_open = True  # Indicate that the log window is now open
+
+            # Handle the log window's closure
+            self.log_window.protocol("WM_DELETE_WINDOW", self.on_log_window_close)
         except Exception as e:
             messagebox.showerror("Error", f"Failed to open log: {str(e)}")
 
     def update_log_content(self):
         """Update the content of the log file displayed in the text widget."""
+        
         try:
             with open(self.resource_path(os.path.join('logs', 'example.log')), 'r') as log_file:
                 log_content = log_file.read()
@@ -807,6 +842,11 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             self.log_text_widget.after(1000, self.update_log_content)
         except Exception as e:
             logging.error(f"Failed to update log content: {str(e)}")
+
+    def on_log_window_close(self):
+        """Handle the log window's closure."""
+        self.log_window_open = False  # Reset the flag when the window is closed
+        self.log_window.destroy()
 
 
     def clear_log(self):

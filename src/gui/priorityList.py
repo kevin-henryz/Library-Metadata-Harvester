@@ -1,49 +1,79 @@
 import tkinter as tk
 
 class PriorityList:
-    def __init__(self, master, callback, selected_sources, unused_sources):
+    def __init__(self, master, callback, selected_sources, unused_sources,window_attributes):
         self.master = master
         self.callback = callback
         self.selected_sources = selected_sources
         self.unused_sources = unused_sources
         self.master.title("Priority List")
 
+        self.set_size_and_position(window_attributes)
+
         self.setup_widgets()
         self.populate_listboxes()
 
+    def set_size_and_position(self, window_attributes):
+        # Decrease the width and height by a percentage or fixed value as needed
+        width = int(window_attributes['width'] * 0.6)  # Decrease width by 10%
+        height = int(window_attributes['height'] * 0.9)  # Decrease height by 10%
+
+        # Offset to the left by decreasing the 'x' position
+        # Adjust the offset value as needed
+        offset = 50  # Offset 50 pixels to the left
+        x = window_attributes['x'] - offset
+        
+        # Use the same 'y' position
+        y = window_attributes['y'] - offset
+
+        self.master.geometry(f"{width}x{height}+{x}+{y}")
+
  
-
-
     def setup_widgets(self):
-            
-            self.label_left = tk.Label(self.master, text="Selected sources")
-            self.label_right = tk.Label(self.master, text="Unused sources")
-            self.listbox = tk.Listbox(self.master, selectmode=tk.SINGLE)
-            self.listbox_right = tk.Listbox(self.master, selectmode=tk.SINGLE)
-            self.scrollbar = tk.Scrollbar(self.master, orient=tk.VERTICAL)
-            self.scrollbar.config(command=self.listbox.yview)
-            self.listbox.config(yscrollcommand=self.scrollbar.set)
-            self.scrollbar_right = tk.Scrollbar(self.master, orient=tk.VERTICAL)
-            self.scrollbar_right.config(command=self.listbox_right.yview)
-            self.listbox_right.config(yscrollcommand=self.scrollbar_right.set)
-            self.up_button = tk.Button(self.master, text="Move Up", command=self.move_up)
-            self.down_button = tk.Button(self.master, text="Move Down", command=self.move_down)
-            self.remove_button = tk.Button(self.master, text="Remove", command=self.delete_item)
-            self.add_button = tk.Button(self.master, text="  Add  ", command=self.add_item)
-            self.confirm = tk.Button(self.master, text="Confirm", command=self.confirm_and_exit)
+        # Setup grid options for uniformity and alignment
+        grid_options = {'padx': 5, 'pady': 5, 'sticky': tk.EW}
+        button_frame_options = {'padx': 10, 'pady': 10}  # Padding options for the buttons' frame
 
-            #Layout
-            self.label_left.grid(row=0, column=0, padx=20, pady=0, sticky="w")
-            self.listbox.grid(row=1, column=0, padx=20, pady=5, sticky=tk.NSEW)
-            self.scrollbar.grid(row=1, column=1, padx=(0, 5), pady=5, sticky=tk.NS)
-            self.label_right.grid(row=0, column=2, padx=5, pady=0, sticky="w")
-            self.listbox_right.grid(row=1, column=2, padx=2, pady=5, sticky=tk.NSEW)
-            self.scrollbar_right.grid(row=1, column=3, padx=(0, 5), pady=5, sticky=tk.NS)
-            self.up_button.grid(row=2, column=0, padx=20, pady=10, sticky="w")
-            self.down_button.grid(row=2, column=0, padx=0, pady=10, sticky="e")
-            self.remove_button.grid(row=2, column=2, padx=0, pady=10, sticky="w")
-            self.add_button.grid(row=2, column=2, padx=5, pady=10, sticky="e")
-            self.confirm.grid(row=2, column=3, padx=15, pady=10, sticky="w")
+        # Configure the master grid
+        self.master.grid_columnconfigure(0, weight=1)
+        self.master.grid_columnconfigure(2, weight=1)
+
+        # Labels
+        self.label_left = tk.Label(self.master, text="Selected Sources")
+        self.label_right = tk.Label(self.master, text="Unused Sources")
+        self.label_left.grid(row=0, column=0, **grid_options)
+        self.label_right.grid(row=0, column=2, **grid_options)
+        
+        # Listboxes and Scrollbars
+        self.listbox = tk.Listbox(self.master, selectmode=tk.SINGLE)
+        self.scrollbar = tk.Scrollbar(self.master, orient=tk.VERTICAL, command=self.listbox.yview)
+        self.listbox.config(yscrollcommand=self.scrollbar.set)
+        self.listbox.grid(row=1, column=0, **grid_options)
+        self.scrollbar.grid(row=1, column=1, sticky=tk.NS)
+        
+        self.listbox_right = tk.Listbox(self.master, selectmode=tk.SINGLE)
+        self.scrollbar_right = tk.Scrollbar(self.master, orient=tk.VERTICAL, command=self.listbox_right.yview)
+        self.listbox_right.config(yscrollcommand=self.scrollbar_right.set)
+        self.listbox_right.grid(row=1, column=2, **grid_options)
+        self.scrollbar_right.grid(row=1, column=3, sticky=tk.NS)
+
+        # Buttons Frame
+        self.buttons_frame = tk.Frame(self.master)
+        self.buttons_frame.grid(row=2, column=0, columnspan=4, **button_frame_options)
+        
+        # Buttons
+        self.up_button = tk.Button(self.buttons_frame, text="Move Up", command=self.move_up)
+        self.down_button = tk.Button(self.buttons_frame, text="Move Down", command=self.move_down)
+        self.remove_button = tk.Button(self.buttons_frame, text="Remove", command=self.delete_item)
+        self.add_button = tk.Button(self.buttons_frame, text="Add", command=self.add_item)
+        self.confirm_button = tk.Button(self.buttons_frame, text="Confirm", command=self.confirm_and_exit)
+
+        # Place buttons within the frame
+        self.up_button.pack(side=tk.LEFT, padx=5)
+        self.down_button.pack(side=tk.LEFT, padx=5)
+        self.remove_button.pack(side=tk.LEFT, padx=5)  
+        self.add_button.pack(side=tk.LEFT, padx=5)
+        self.confirm_button.pack(side=tk.RIGHT, padx=5)  # Align confirm to the right for distinction
 
 
     def populate_listboxes(self):
@@ -94,10 +124,3 @@ class PriorityList:
         self.callback(self.selected_sources, self.unused_sources)
         self.master.destroy()
 
-def main():
-    root = tk.Tk()
-    PriorityList(root, lambda: 1)
-    root.mainloop()
-
-if __name__ == "__main__":
-    main()

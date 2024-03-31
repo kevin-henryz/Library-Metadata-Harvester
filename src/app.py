@@ -11,11 +11,12 @@ from selenium.common.exceptions import WebDriverException
 import json
 
 
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
 
 
 import tkinter as tk
-from tkinter import filedialog, messagebox, ttk
+from tkinter import filedialog, messagebox, ttk, scrolledtext
 from tkinter.filedialog import asksaveasfile
 
 # Importing custom modules for processing files and handling GUI elements
@@ -88,7 +89,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         """Configure the main window settings and styles."""
         self.title('Library Metadata Harvester')
         self.configure(bg='#202020') 
-        self.geometry('600x300') 
+        self.geometry('700x300')
         self.style = ttk.Style(self)
         self.style.theme_use('clam')
         self.style.configure('TButton', background='#404040', foreground='white', borderwidth=1)
@@ -203,8 +204,11 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.open_output_file_button = ttk.Button(self.button_frame, text="Open Output File", command=self.open_output_file)
         self.open_output_file_button.pack(side='left', padx=5)
 
-        self.open_log_button = ttk.Button(self.button_frame, text="Open Log", command=lambda: self.open_log(LibraryMetadataHarvesterApp.resource_path(os.path.join('logs', 'example.log'))))
+        self.open_log_button = ttk.Button(self.button_frame, text="Open Log", command=self.open_log)
         self.open_log_button.pack(side='left', padx=5)
+
+        self.clear_log_button = ttk.Button(self.button_frame, text="Clear Log", command=self.clear_log)
+        self.clear_log_button.pack(side='left', padx=5)
 
         self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=self.finalize_search, state='disabled')
 
@@ -245,7 +249,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             # Hide all main UI elements to focus on the search.
             ui_elements = [self.top_frame, self.output_frame, self.start_button, 
                         self.open_log_button, self.choose_output_file_button, 
-                        self.set_priority_button,self.open_output_file_button]
+                        self.set_priority_button,self.open_output_file_button,self.clear_log_button]
             for element in ui_elements:
                 element.pack_forget()
 
@@ -779,18 +783,42 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             self.save_source_lists()
 
 
-    def open_log(self, log_path):
+    def open_log(self):
         """Open a new window to display the application's log file content."""
         try:
-            with open(log_path, 'r') as log_file:
-                log_content = log_file.read()
-                log_window = tk.Toplevel(self)
-                log_window.title("Log Viewer")
-                text = tk.Text(log_window, wrap="word")
-                text.pack(fill="both", expand=True)
-                text.insert(tk.END, log_content)
+            log_window = tk.Toplevel(self)
+            log_window.title("Log Viewer")
+            self.log_text_widget = tk.scrolledtext.ScrolledText(log_window, wrap="word")
+            self.log_text_widget.pack(fill="both", expand=True)
+            self.update_log_content()
         except Exception as e:
             messagebox.showerror("Error", f"Failed to open log: {str(e)}")
+
+    def update_log_content(self):
+        """Update the content of the log file displayed in the text widget."""
+        try:
+            with open(self.resource_path(os.path.join('logs', 'example.log')), 'r') as log_file:
+                log_content = log_file.read()
+                # Clear the current content and insert the new content
+                self.log_text_widget.delete("1.0", tk.END)  # Delete the current content
+                self.log_text_widget.insert(tk.END, log_content)  # Insert new content
+                self.log_text_widget.see(tk.END)  # Scroll to the end
+            # Schedule this function to run again after a specified time interval (e.g., 1000 milliseconds)
+            self.log_text_widget.after(1000, self.update_log_content)
+        except Exception as e:
+            logging.error(f"Failed to update log content: {str(e)}")
+
+
+    def clear_log(self):
+        try:
+            with open(self.resource_path(os.path.join('logs', 'example.log')), 'w') as log_file:
+                log_file.truncate(0)
+            logging.info("Log file cleared.")
+            messagebox.showinfo("Log Cleared", "The log file has been successfully cleared.")
+        except Exception as e:
+            logging.error(f"Failed to clear log: {str(e)}")
+            messagebox.showerror("Error", f"Failed to clear log: {str(e)}")
+
 
     @staticmethod
     def resource_path(relative_path):

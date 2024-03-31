@@ -333,14 +333,9 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         try:
             api_instance = api_class()  # Instantiate the API class
             self.source_mapping[key] = api_instance  # Add instance to source mapping
-        except WebDriverException as e:
-            error_message = f"An error occurred initializing {key}. Please make sure Google Chrome is installed."
+        except Exception as e:
+            error_message = f"An error occurred initializing {key}: {str(e)}.\n Please make sure Google Chrome is installed."
             self.message_queue.put(error_message)
-
-        except Exception as e:  # Broad catch for debugging
-            error_message = f"An error occurred initializing {key}: {str(e)}"
-            self.message_queue.put(error_message)
-            logging.error(error_message)
 
 
     def browse_file(self):

@@ -31,12 +31,13 @@ class PriorityList:
  
     def setup_widgets(self):
         # Setup grid options for uniformity and alignment
-        grid_options = {'padx': 5, 'pady': 5, 'sticky': tk.EW}
+        grid_options = {'padx': 5, 'pady': 5, 'sticky': tk.NSEW}
         button_frame_options = {'padx': 10, 'pady': 10}  # Padding options for the buttons' frame
 
         # Configure the master grid
         self.master.grid_columnconfigure(0, weight=1)
         self.master.grid_columnconfigure(2, weight=1)
+        self.master.grid_rowconfigure(1, weight=1)
 
         # Labels
         self.label_left = tk.Label(self.master, text="Selected Sources")
@@ -49,13 +50,13 @@ class PriorityList:
         self.scrollbar = tk.Scrollbar(self.master, orient=tk.VERTICAL, command=self.listbox.yview)
         self.listbox.config(yscrollcommand=self.scrollbar.set)
         self.listbox.grid(row=1, column=0, **grid_options)
-        self.scrollbar.grid(row=1, column=1, sticky=tk.NS)
+        self.scrollbar.grid(row=1, column=1, sticky=tk.NS + tk.E)
         
         self.listbox_right = tk.Listbox(self.master, selectmode=tk.SINGLE)
         self.scrollbar_right = tk.Scrollbar(self.master, orient=tk.VERTICAL, command=self.listbox_right.yview)
         self.listbox_right.config(yscrollcommand=self.scrollbar_right.set)
         self.listbox_right.grid(row=1, column=2, **grid_options)
-        self.scrollbar_right.grid(row=1, column=3, sticky=tk.NS)
+        self.scrollbar_right.grid(row=1, column=3, sticky=tk.NS + tk.E)
 
         # Buttons Frame
         self.buttons_frame = tk.Frame(self.master)
@@ -76,11 +77,15 @@ class PriorityList:
         self.confirm_button.pack(side=tk.RIGHT, padx=5)  # Align confirm to the right for distinction
 
 
+
+
     def populate_listboxes(self):
         for entry in self.selected_sources:
             self.listbox.insert(tk.END, entry)
         for entry in self.unused_sources:
             self.listbox_right.insert(tk.END, entry)
+    
+
 
 
     def move_up(self):

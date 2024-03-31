@@ -63,6 +63,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         super().__init__()
         self.output_file_path = None
         self.log_window_open = False 
+        self.last_processed = None
         self.source_mapping = {}
         self.configure_app()
         self.setup_logging()
@@ -226,7 +227,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.clear_log_button = ttk.Button(self.button_frame, text="Clear Log", command=self.clear_log)
         self.clear_log_button.pack(side='left', padx=5)
 
-        self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=self.finalize_search, state='disabled')
+        self.stop_button = ttk.Button(self.button_frame, text="Stop Search", command=lambda: self.finalize_search(manually_stopped=True), state='disabled')
 
 
 
@@ -488,6 +489,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             if any(row_data):
                 tsv_writer.writerow(row_data)
                 logging.info(f"Write completed for {input_type} {identifier}")
+                self.last_processed = identifier
     
     def start_search(self):
         """Validate output options and start the search process."""
@@ -576,19 +578,30 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         else:
             logging.info(f"Search thread stopped manually after processing {self.current_identifier} out of {len(data)} items.")
 
-    def finalize_search(self):
+    def finalize_search(self,manually_stopped=None):
         """Finalize the search operation by resetting states and notifying the user."""
         self.search_active = False
         self.toggle_ui_for_search(False)
         if self.search_start_time:
             self.search_total_time = time.time() - self.search_start_time  # Calculate total time
             total_time_str = time.strftime("%H:%M:%S", time.gmtime(self.search_total_time))
-            logging.info("Search completed")
-            messagebox.showinfo("Search", f"Search completed in {total_time_str}.")
+            if manually_stopped:
+                logging.info("Search stopped manually")
+                last_processed_info = f"\nLast identifier processed: {self.last_processed}." if self.last_processed else ""
+                messagebox.showinfo("Search Stopped", f"Search stopped manually at {total_time_str}.\nProcessed {self.current_identifier - 1}/{self.total_identifiers}.{last_processed_info}")
+            else:
+                logging.info("Search completed")
+                messagebox.showinfo("Search Completed", f"Search completed in {total_time_str}.")
         else:
-            logging.info("Search completed")
-            messagebox.showinfo("Search", "Search completed.")
-
+            if manually_stopped:
+                logging.info("Search stopped manually")
+                last_processed_info = f"\nLast identifier processed: {self.last_processed}." if self.last_processed else ""
+                messagebox.showinfo("Search Stopped", f"Search stopped manually.\nProcessed {self.current_identifier - 1}/{self.total_identifiers}.{last_processed_info}")
+            else:
+                logging.info("Search completed")
+                messagebox.showinfo("Search Completed", "Search completed.")
+        self.current_identifier = 0
+        self.last_processed = None
 
     def fetch_and_update_missing_data(self, existing_data, identifier, input_type, output_options):
         """

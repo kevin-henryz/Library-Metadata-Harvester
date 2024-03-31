@@ -68,7 +68,7 @@ class ColumbiaLibraryAPI(BaseScraping):
 
             if (input_type != "OCN") and (input_type != "ISBN"):
                 # print("Please select either 'ISBN' or 'OCN' as your second argument.")
-                return {k.lower(): v for k, v in self.catalog_data.items()}
+                return self.send_dictionary()
 
             elif input_type == "ISBN":
 
@@ -196,4 +196,4 @@ class ColumbiaLibraryAPI(BaseScraping):
         
         except Exception as e:
             logging.error(f"Encountered an unexpected exception: {e}") 
-            self.send_dictionary()  
+            return self.send_dictionary()

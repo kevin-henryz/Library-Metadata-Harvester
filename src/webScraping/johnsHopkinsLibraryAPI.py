@@ -38,7 +38,7 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
 
             if (input_type != "OCN") and (input_type != "ISBN"):
                 # print("Please select either 'ISBN' or 'OCN' as your second argument.")
-                return {k.lower(): v for k, v in self.catalog_data.items()}
+                return self.send_dictionary()
 
             elif input_type == "ISBN":
 
@@ -81,7 +81,7 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
                     # It is possible that it could be found manually through the previous tab.
                     # But as was mentioned before, that previous tab had web scraping limitations.
                     if "Record ID" and "was not found" in pre_text:
-                        return {k.lower(): v for k, v in self.catalog_data.items()}
+                       return self.send_dictionary()
 
                     try:
                         index_of_ocn = pre_text.index("(OCoLC)")
@@ -247,4 +247,4 @@ class JohnsHopkinsLibraryAPI(BaseScraping):
         
         except Exception as e:
             logging.error(f"Encountered an unexpected exception: {e}") 
-            self.send_dictionary()  
+            return self.send_dictionary()

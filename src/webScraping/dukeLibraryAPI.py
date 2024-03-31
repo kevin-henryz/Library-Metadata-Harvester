@@ -6,31 +6,20 @@ from selenium.common.exceptions import WebDriverException
 from webScraping.baseScraping import BaseScraping
 import util.dictionaryValidationMethod as vd
 from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
-
+from webScraping.webDriverManager import WebDriverManager
+import logging 
 
 class DukeLibraryAPI(BaseScraping):
 
     def __init__(self):
-        self.initialize_driver()
+        try:
+            self.driver = WebDriverManager.get_driver()
+        except RuntimeError as e:
+            logging.error("Failed to initialize DukeLibraryAPI due to WebDriver issue.")
+            logging.info(e)
+            raise
         self.catalog_data = {"ISBN": [], "OCN": "", "LCCN": [], "LCCN_Source": []}
 
-    def initialize_driver(self):
-        """Initializes the Selenium WebDriver."""
-        options = webdriver.ChromeOptions()
-        options.add_argument('--headless')
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--disable-gpu')
-        options.add_experimental_option('excludeSwitches', ['enable-logging'])
-        options.add_argument('--log-level=3')
-        service = ChromeService(ChromeDriverManager().install())
-        self.driver = webdriver.Chrome(service=service, options=options)
-    def close_driver(self):
-        """Safely closes the driver and quits the browser session."""
-        if self.driver:
-            self.driver.quit()
-            self.driver = None
 
     def send_dictionary(self):
         self.catalog_data = vd.optimize_dictionary(self.catalog_data)
@@ -139,12 +128,21 @@ class DukeLibraryAPI(BaseScraping):
                 except ValueError:
                     return self.send_dictionary()
 
-        except WebDriverException:
-            # print(f"Browser session has been closed or lost: {e}")
-            self.close_driver()  # Close the current driver due to the exception
-            self.initialize_driver()
-            print(f"Encountered a WebDriverException, possibly due to network issues: {e}")
+        except WebDriverException as e:
+            logging.error(f"Encountered a WebDriverException: {e}")
+
+            #Retry logic with reinitialization
+            for attempt in range(3):  # Retry up to 3 times
+                try:
+                    logging.info(f"Retrying Driver restart, attempt {attempt+1}")
+                    self.driver.restart_driver()  
+                    return self.send_dictionary() 
+                except WebDriverException as retry_exception:
+                    logging.error(f"Retry attempt {attempt+1} failed: {retry_exception}")
+                    time.sleep(5)  # Wait for 5 seconds before retrying
+            logging.error("All retry attempts failed. Moving on to the next task.")
             return self.send_dictionary() 
+        
         except Exception as e:
-            # Handle other generic exceptions if necessary
-            return self.send_dictionary() 
+            logging.error(f"Encountered an unexpected exception: {e}") 
+            self.send_dictionary()  

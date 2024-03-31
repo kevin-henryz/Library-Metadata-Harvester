@@ -46,7 +46,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     """A GUI application for harvesting library metadata from different sources.
 
     Attributes:
-        source_mapping (dict): An initially empty mapping that will be populated with library names as keys and their respective API class instances as values. These instances are initialized asynchronously.
+        source_mapping (dict): An initially empty mapping that will be populated with library names as keys and their respective API class instances as values.
         source_threads (dict): A dictionary holding threading objects corresponding to the initialization of each API class. This allows for asynchronous initialization and tracking of each API's loading status.
         db_manager (DatabaseManager): An object that handles interactions with the application's database for storing and retrieving metadata.
         priority_list (list): An ordered list of library names representing the user's preference order for metadata source selection.
@@ -61,14 +61,12 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         """Initialize the application, its variables, and UI components."""
         super().__init__()
         self.output_file_path = None
-        self.message_queue = queue.Queue()
         self.source_mapping = {}
-        self.source_threads = {}
         self.configure_app()
         self.setup_logging()
         self.initialize_database()
         self.setup_ui()
-        self.initialize_sources_async()
+        self.initialize_sources()
         self.priority_list = ['Columbia Library','Cornell Library','Duke Library',
                               'Google Books','Harvard Library','Indiana Library',
                               'Johns Hopkins Library','Library of Congress',
@@ -84,21 +82,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.current_identifier = 0
         self.search_start_time = None
         self.search_total_time = None
-        self.after(100, self.check_message_queue)
 
-    def check_message_queue(self):
-        """
-        Check the message queue for messages and display them.
-        This method is called periodically via the Tkinter after method.
-        """
-        try:
-            while True:  # Keep checking for new messages
-                message = self.message_queue.get_nowait()
-                messagebox.showerror("Error", message)
-        except queue.Empty:
-            pass
-        finally:
-            self.after(100, self.check_message_queue)
 
     def configure_app(self):
         """Configure the main window settings and styles."""
@@ -305,7 +289,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         if self.search_in_progress:
             threading.Thread(target=update_message, daemon=True).start() 
     
-    def initialize_sources_async(self):
+    def initialize_sources(self):
         """Initialize source API objects in separate threads."""
         sources = {
             "Harvard Library": HarvardLibraryAPI,
@@ -324,18 +308,18 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         }
         
         for key, api_class in sources.items():
-            thread = threading.Thread(target=self.initialize_source, args=(key, api_class))
-            thread.start()
-            self.source_threads[key] = thread
+            try:
+                api_instance = api_class()  # Instantiate the API class
+                self.source_mapping[key] = api_instance  # Add instance to source mapping
+            except RuntimeError as e:
+                logging.error(f"WebDriver error initializing {key}: {e}\nPlease make sure Google Chrome and ChromeDriver are installed and updated.")
+                messagebox.showerror("Initialization Error", f"An error occurred initializing {key}. Please make sure Google Chrome is installed and up to date.")
+                break  # Stop further initialization
+            except Exception as e:
+                logging.error(f"An error occurred initializing {key}: {e}")
+                messagebox.showerror("Initialization Error", f"An unspecified error occurred initializing {key}. Please check your setup.")
+                break  # Stop further initialization
 
-    def initialize_source(self, key, api_class):
-        """Initialize a single source API object and add it to the source mapping."""
-        try:
-            api_instance = api_class()  # Instantiate the API class
-            self.source_mapping[key] = api_instance  # Add instance to source mapping
-        except Exception as e:
-            error_message = f"An error occurred initializing {key}: {str(e)}.\n Please make sure Google Chrome is installed."
-            self.message_queue.put(error_message)
 
 
     def browse_file(self):
@@ -618,7 +602,15 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 if not source:
                     continue
 
-                result = source.fetch_metadata(identifier, input_type)
+                logging.info(f"Querying {source_name} for missing data for identifier: {identifier}")
+
+
+                try:
+                    result = source.fetch_metadata(identifier, input_type)
+                except Exception as e:
+                    logging.error(f"Error fetching metadata from {source_name} for {identifier}: {e}")
+                    continue  # Proceed to the next source if there's an error
+
                 if not self.search_active: # Check if the search was stopped
                     return
                 if not result: continue

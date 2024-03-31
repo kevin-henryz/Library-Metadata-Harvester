@@ -61,6 +61,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         """Initialize the application, its variables, and UI components."""
         super().__init__()
         self.output_file_path = None
+        self.message_queue = queue.Queue()
         self.source_mapping = {}
         self.source_threads = {}
         self.configure_app()
@@ -83,7 +84,6 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.current_identifier = 0
         self.search_start_time = None
         self.search_total_time = None
-        self.message_queue = queue.Queue()
         self.after(100, self.check_message_queue)
 
     def check_message_queue(self):

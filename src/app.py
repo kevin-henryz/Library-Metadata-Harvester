@@ -337,6 +337,11 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             error_message = f"An error occurred initializing {key}. Please make sure Google Chrome is installed."
             self.message_queue.put(error_message)
 
+        except Exception as e:  # Broad catch for debugging
+            error_message = f"An error occurred initializing {key}: {str(e)}"
+            self.message_queue.put(error_message)
+            logging.error(error_message)
+
 
     def browse_file(self):
         """Open a dialog for the user to select an input file."""

@@ -9627,3 +9627,136 @@
 2024-03-30 17:33:55,223 - INFO - Write completed for OCN 58593680
 2024-03-30 17:33:55,224 - INFO - Search thread completed successfully for 9 items.
 2024-03-30 17:33:55,252 - INFO - Search completed
+2024-03-30 17:38:25,946 - INFO - Application started
+2024-03-30 17:38:26,004 - INFO - ====== WebDriver manager ======
+2024-03-30 17:38:26,004 - INFO - ====== WebDriver manager ======
+2024-03-30 17:38:26,017 - INFO - ====== WebDriver manager ======
+2024-03-30 17:38:26,017 - INFO - ====== WebDriver manager ======
+2024-03-30 17:38:26,017 - INFO - ====== WebDriver manager ======
+2024-03-30 17:38:26,017 - INFO - ====== WebDriver manager ======
+2024-03-30 17:38:26,019 - INFO - ====== WebDriver manager ======
+2024-03-30 17:38:26,020 - INFO - ====== WebDriver manager ======
+2024-03-30 17:38:26,022 - INFO - ====== WebDriver manager ======
+2024-03-30 17:38:28,369 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:28,387 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:28,393 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:28,411 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:28,414 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:28,414 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:28,414 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:28,446 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:28,452 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,109 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,109 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,109 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,120 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,121 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,122 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,122 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,133 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,146 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:38:29,737 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:38:29,748 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:38:29,778 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:38:29,781 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:38:29,783 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:38:29,785 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:38:29,789 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:38:29,790 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:38:29,800 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:02,947 - INFO - Updated selected sources: ['Harvard Library']
+2024-03-30 17:39:02,948 - INFO - Updated unused sources: ['Library of Congress', 'Open Library', 'Johns Hopkins Library', 'Pennsylvania State Library', 'North Carolina State Library', 'Stanford Library', 'Indiana Library', 'Yale Library', 'Duke Library', 'Columbia Library', 'Google Books', 'Cornell Library']
+2024-03-30 17:39:11,977 - INFO - Application started
+2024-03-30 17:39:12,020 - INFO - ====== WebDriver manager ======
+2024-03-30 17:39:12,026 - INFO - ====== WebDriver manager ======
+2024-03-30 17:39:12,026 - INFO - ====== WebDriver manager ======
+2024-03-30 17:39:12,026 - INFO - ====== WebDriver manager ======
+2024-03-30 17:39:12,027 - INFO - ====== WebDriver manager ======
+2024-03-30 17:39:12,031 - INFO - ====== WebDriver manager ======
+2024-03-30 17:39:12,036 - INFO - ====== WebDriver manager ======
+2024-03-30 17:39:12,039 - INFO - ====== WebDriver manager ======
+2024-03-30 17:39:12,040 - INFO - ====== WebDriver manager ======
+2024-03-30 17:39:14,425 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:14,425 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:14,452 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:14,507 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:14,521 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:14,541 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:14,585 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:14,662 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:14,921 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,086 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,086 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,167 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,173 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,191 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,236 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,266 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,430 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,696 - INFO - Get LATEST chromedriver version for google-chrome
+2024-03-30 17:39:15,756 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:15,756 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:15,841 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:15,848 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:15,907 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:15,941 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:15,944 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:16,057 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:16,168 - INFO - Driver [C:\Users\drkev\.wdm\drivers\chromedriver\win64\123.0.6312.86\chromedriver-win32/chromedriver.exe] found in cache
+2024-03-30 17:39:31,453 - INFO - Search started for OCN with 9 items and priority list: ['Harvard Library']
+2024-03-30 17:39:31,458 - INFO - 0/9. Searching metadata for 58561723
+2024-03-30 17:39:31,459 - INFO - Querying database for OCN 58561723.
+2024-03-30 17:39:31,461 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-30 17:39:31,469 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-30 17:39:31,469 - INFO - LCCN Source data found for OCN 58561723: ['Harvard']
+2024-03-30 17:39:31,474 - INFO - Write completed for OCN 58561723
+2024-03-30 17:39:31,474 - INFO - 1/9. Searching metadata for 58561723
+2024-03-30 17:39:31,474 - INFO - Querying database for OCN 58561723.
+2024-03-30 17:39:31,475 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-30 17:39:31,477 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-30 17:39:31,477 - INFO - LCCN Source data found for OCN 58561723: ['Harvard']
+2024-03-30 17:39:31,480 - INFO - Write completed for OCN 58561723
+2024-03-30 17:39:31,480 - INFO - 2/9. Searching metadata for 49251460
+2024-03-30 17:39:31,481 - INFO - Querying database for OCN 49251460.
+2024-03-30 17:39:31,482 - INFO - Found database record for OCN 49251460: ISBN=0130648531, OCN=49251460
+2024-03-30 17:39:31,482 - INFO - LCCN data found for OCN 49251460: ['HF5415 .K63143 2001']
+2024-03-30 17:39:31,483 - INFO - LCCN Source data found for OCN 49251460: ['Library of Congress']
+2024-03-30 17:39:31,485 - INFO - Write completed for OCN 49251460
+2024-03-30 17:39:31,486 - INFO - 3/9. Searching metadata for 22281914
+2024-03-30 17:39:31,486 - INFO - Querying database for OCN 22281914.
+2024-03-30 17:39:31,487 - INFO - Found database record for OCN 22281914: ISBN=9781526124463, OCN=22281914
+2024-03-30 17:39:31,488 - INFO - LCCN data found for OCN 22281914: ['QA303.3 .E875 1996']
+2024-03-30 17:39:31,488 - INFO - LCCN Source data found for OCN 22281914: ['Library of Congress']
+2024-03-30 17:39:31,492 - INFO - Write completed for OCN 22281914
+2024-03-30 17:39:31,493 - INFO - 4/9. Searching metadata for 51868091
+2024-03-30 17:39:31,493 - INFO - Querying database for OCN 51868091.
+2024-03-30 17:39:31,494 - INFO - Found database record for OCN 51868091: ISBN=9780805376135, OCN=51868091
+2024-03-30 17:39:31,494 - INFO - LCCN data found for OCN 51868091: ['QR41.2 .T67 2004']
+2024-03-30 17:39:31,494 - INFO - LCCN Source data found for OCN 51868091: ['Open Library']
+2024-03-30 17:39:31,497 - INFO - Write completed for OCN 51868091
+2024-03-30 17:39:31,498 - INFO - 5/9. Searching metadata for 225374393
+2024-03-30 17:39:31,498 - INFO - Querying database for OCN 225374393.
+2024-03-30 17:39:31,499 - INFO - Found database record for OCN 225374393: ISBN=9780470090671, OCN=225374393
+2024-03-30 17:39:31,500 - INFO - LCCN data found for OCN 225374393: ['QH540']
+2024-03-30 17:39:31,500 - INFO - LCCN Source data found for OCN 225374393: ['Harvard']
+2024-03-30 17:39:31,503 - INFO - Write completed for OCN 225374393
+2024-03-30 17:39:31,503 - INFO - 6/9. Searching metadata for 1056625215
+2024-03-30 17:39:31,503 - INFO - Querying database for OCN 1056625215.
+2024-03-30 17:39:31,504 - INFO - Found database record for OCN 1056625215: ISBN=9781269352079, OCN=1056625215
+2024-03-30 17:39:31,505 - INFO - LCCN data found for OCN 1056625215: ['QC23.2 .K649 2013']
+2024-03-30 17:39:31,505 - INFO - LCCN Source data found for OCN 1056625215: ['Open Library']
+2024-03-30 17:39:31,508 - INFO - Write completed for OCN 1056625215
+2024-03-30 17:39:31,509 - INFO - 7/9. Searching metadata for 58561723
+2024-03-30 17:39:31,509 - INFO - Querying database for OCN 58561723.
+2024-03-30 17:39:31,510 - INFO - Found database record for OCN 58561723: ISBN=9786610147748, OCN=58561723
+2024-03-30 17:39:31,510 - INFO - LCCN data found for OCN 58561723: ['QC173.45']
+2024-03-30 17:39:31,511 - INFO - LCCN Source data found for OCN 58561723: ['Harvard']
+2024-03-30 17:39:31,513 - INFO - Write completed for OCN 58561723
+2024-03-30 17:39:31,513 - INFO - 8/9. Searching metadata for 58593680
+2024-03-30 17:39:31,514 - INFO - Querying database for OCN 58593680.
+2024-03-30 17:39:31,515 - INFO - Found database record for OCN 58593680: ISBN=9786610147755, OCN=58593680
+2024-03-30 17:39:31,515 - INFO - LCCN data found for OCN 58593680: ['RC321']
+2024-03-30 17:39:31,516 - INFO - LCCN Source data found for OCN 58593680: ['Harvard']
+2024-03-30 17:39:31,518 - INFO - Write completed for OCN 58593680
+2024-03-30 17:39:31,519 - INFO - Search thread completed successfully for 9 items.
+2024-03-30 17:39:31,549 - INFO - Search completed

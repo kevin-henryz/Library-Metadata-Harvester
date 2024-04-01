@@ -65,10 +65,11 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         super().__init__()
         self.app_data_dir = self.get_app_data_directory()
         self.output_file_path = None
-        self.log_window_open = False 
+        self.log_window_open = False
+        self.log_file_last_size = 0
+        self.update_log_task = None 
         self.priority_window_open = False
         self.last_processed = None
-        self.log_file_last_size = 0
         self.source_mapping = {}
         self.priority_list = [
         'Google Books (API)', 'Harvard Library (API)',
@@ -860,69 +861,61 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
 
     def open_log(self):
-        """Open a new window to display the application's log file content."""
         if self.log_window_open:
-            return  # Exit the function if the log window is already open
-
+            return
         try:
             self.log_window = tk.Toplevel(self)
             self.log_window.title("Log Viewer")
             self.log_text_widget = tk.scrolledtext.ScrolledText(self.log_window, wrap="word")
             self.log_text_widget.pack(fill="both", expand=True)
             self.update_log_content(initial=True)
-            self.log_window_open = True  # Indicate that the log window is now open
-
-            # Handle the log window's closure
+            self.log_window_open = True
             self.log_window.protocol("WM_DELETE_WINDOW", self.on_log_window_close)
         except Exception as e:
             messagebox.showerror("Error", f"Failed to open log: {str(e)}")
 
-    def update_log_content(self,initial=False):
-        """Append only new content to the log file displayed in the text widget."""
+    def update_log_content(self, initial=False):
         try:
             current_size = os.path.getsize(self.log_file_path)
-            new_content_size = current_size - self.log_file_last_size
-
-            if new_content_size > 0:
+            if initial or current_size > self.log_file_last_size:
                 with open(self.log_file_path, 'r') as log_file:
-                    log_file.seek(self.log_file_last_size)  # Move to the last known position
-                    new_content = log_file.read()  # Read only new content
-                    self.log_text_widget.config(state=tk.NORMAL)  # Ensure the widget is writable
-                    self.log_text_widget.insert(tk.END, new_content)  # Append new content
-                    if initial:
-                        self.log_text_widget.see(tk.END)
-                    self.log_text_widget.config(state=tk.DISABLED)  # Optional: make the widget readonly again
-                    self.log_file_last_size = current_size  # Update the last known size
-
+                    log_file.seek(0 if initial else self.log_file_last_size)
+                    new_content = log_file.read()
+                    if new_content:
+                        self.log_text_widget.config(state=tk.NORMAL)
+                        self.log_text_widget.insert(tk.END, new_content)
+                        if initial:
+                            self.log_text_widget.see(tk.END)
+                        self.log_text_widget.config(state=tk.DISABLED)
+                        self.log_file_last_size = current_size
         except Exception as e:
             logging.error(f"Failed to update log content: {str(e)}")
-
-        self.log_text_widget.after(1000, self.update_log_content)
+        
+        self.update_log_task = self.log_text_widget.after(1000, lambda: self.update_log_content())
 
     def on_log_window_close(self):
-        """Handle the log window's closure."""
-        self.log_window_open = False  # Reset the flag when the window is closed
+        if self.update_log_task is not None:
+            self.log_text_widget.after_cancel(self.update_log_task)
+            self.update_log_task = None
+        self.log_window_open = False
         self.log_window.destroy()
 
 
     def clear_log(self):
-        try:
-            with open(self.log_file_path, 'w') as log_file:
-                log_file.truncate(0)
-            self.log_file_last_size = 0
-
-            if self.log_window_open:
-                self.log_text_widget.config(state=tk.NORMAL)  # Temporarily make the text widget writable
-                self.log_text_widget.delete("1.0", tk.END)  # Clear the text widget content
-                self.log_text_widget.config(state=tk.DISABLED)  # Make the text widget read-only again
-
-            logging.info("Log file cleared.")
-            messagebox.showinfo("Log Cleared", "The log file has been successfully cleared.")
-        except Exception as e:
-            logging.error(f"Failed to clear log: {str(e)}")
-            messagebox.showerror("Error", f"Failed to clear log: {str(e)}")
-
-
+            try:
+                with open(self.log_file_path, 'w') as log_file:
+                    log_file.truncate(0)
+                self.log_file_last_size = 0
+                if self.log_window_open:
+                    self.log_text_widget.config(state=tk.NORMAL)
+                    self.log_text_widget.delete("1.0", tk.END)
+                    self.log_text_widget.config(state=tk.DISABLED)
+                logging.info("Log file cleared.")
+                messagebox.showinfo("Log Cleared", "The log file has been successfully cleared.")
+                #self.update_log_content(initial=True)
+            except Exception as e:
+                logging.error(f"Failed to clear log: {str(e)}")
+                messagebox.showerror("Error", f"Failed to clear log: {str(e)}")
     
 if __name__ == "__main__":
     app = LibraryMetadataHarvesterApp()

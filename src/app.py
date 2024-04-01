@@ -67,6 +67,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.output_file_path = None
         self.log_window_open = False 
         self.last_processed = None
+        self.log_file_last_size = 0
         self.source_mapping = {}
         self.priority_list = [
         'Google Books (API)', 'Harvard Library (API)',
@@ -156,7 +157,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                                 logging.StreamHandler()
                             ])
         logging.info("Application started")
-
+       
 
     def initialize_database(self):
         """Initialize the application's database and required tables."""
@@ -850,7 +851,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             self.log_window.title("Log Viewer")
             self.log_text_widget = tk.scrolledtext.ScrolledText(self.log_window, wrap="word")
             self.log_text_widget.pack(fill="both", expand=True)
-            self.update_log_content()
+            self.update_log_content(initial=True)
             self.log_window_open = True  # Indicate that the log window is now open
 
             # Handle the log window's closure
@@ -858,19 +859,27 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         except Exception as e:
             messagebox.showerror("Error", f"Failed to open log: {str(e)}")
 
-    def update_log_content(self):
-        """Update the content of the log file displayed in the text widget."""
+    def update_log_content(self,initial=False):
+        """Append only new content to the log file displayed in the text widget."""
         try:
-            with open(self.log_file_path, 'r') as log_file:
-                log_content = log_file.read()
-                # Clear the current content and insert the new content
-                self.log_text_widget.delete("1.0", tk.END)  # Delete the current content
-                self.log_text_widget.insert(tk.END, log_content)  # Insert new content
-                self.log_text_widget.see(tk.END)  # Scroll to the end
-            # Schedule this function to run again after a specified time interval (e.g., 1000 milliseconds)
-            self.log_text_widget.after(1000, self.update_log_content)
+            current_size = os.path.getsize(self.log_file_path)
+            new_content_size = current_size - self.log_file_last_size
+
+            if new_content_size > 0:
+                with open(self.log_file_path, 'r') as log_file:
+                    log_file.seek(self.log_file_last_size)  # Move to the last known position
+                    new_content = log_file.read()  # Read only new content
+                    self.log_text_widget.config(state=tk.NORMAL)  # Ensure the widget is writable
+                    self.log_text_widget.insert(tk.END, new_content)  # Append new content
+                    if initial:
+                        self.log_text_widget.see(tk.END)
+                    self.log_text_widget.config(state=tk.DISABLED)  # Optional: make the widget readonly again
+                    self.log_file_last_size = current_size  # Update the last known size
+
         except Exception as e:
             logging.error(f"Failed to update log content: {str(e)}")
+
+        self.log_text_widget.after(1000, self.update_log_content)
 
     def on_log_window_close(self):
         """Handle the log window's closure."""

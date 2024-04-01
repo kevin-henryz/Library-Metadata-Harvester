@@ -116,7 +116,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.screen_height = self.winfo_screenheight()
         
         # Calculate and store width and height as a percentage of the screen size
-        self.app_width = int(self.screen_width * 0.6) 
+        self.app_width = int(self.screen_width * 0.50) 
         self.app_height = int(self.screen_height * 0.4)
 
         # Calculate and store the position to center the window on the screen
@@ -169,8 +169,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def setup_ui(self):
         """Setup the user interface for the application."""
         self.setup_top_frame()
-        self.setup_output_options()
         self.setup_input_frame()
+        self.setup_output_options()
         self.setup_buttons_frame()
         self.search_in_progress = False
         self.search_status_var = tk.StringVar(value="")
@@ -187,7 +187,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def setup_input_frame(self):
         """Setup the frame for input options."""
         self.input_frame = ttk.Frame(self.top_frame, style='TFrame')
-        self.input_frame.pack(side='left', fill='x', padx=5, pady=5) 
+        self.input_frame.pack(side='left', fill='x', expand=True, padx=(0, 5)) 
         self.configure_input_frame_contents()
 
     def configure_input_frame_contents(self):
@@ -249,7 +249,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def setup_output_options(self):
         """Setup the frame for output options."""
         self.output_frame = ttk.Frame(self.top_frame, style='TFrame')
-        self.output_frame.pack(side='right', anchor='e', padx=10, pady=5)
+        self.output_frame.pack(side='left', fill='x', expand=True, padx=(0, 0))
         self.configure_output_options()
 
     def configure_output_options(self):

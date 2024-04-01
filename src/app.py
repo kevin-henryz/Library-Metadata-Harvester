@@ -909,6 +909,13 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         try:
             with open(self.log_file_path, 'w') as log_file:
                 log_file.truncate(0)
+            self.log_file_last_size = 0
+
+            if self.log_window_open:
+                self.log_text_widget.config(state=tk.NORMAL)  # Temporarily make the text widget writable
+                self.log_text_widget.delete("1.0", tk.END)  # Clear the text widget content
+                self.log_text_widget.config(state=tk.DISABLED)  # Make the text widget read-only again
+
             logging.info("Log file cleared.")
             messagebox.showinfo("Log Cleared", "The log file has been successfully cleared.")
         except Exception as e:

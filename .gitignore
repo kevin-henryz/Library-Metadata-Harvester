@@ -11,3 +11,6 @@ pip-delete-this-directory.txt
 build/
 dist/
 *.spec
+
+# Database files
+src/db/metadata.sqlite

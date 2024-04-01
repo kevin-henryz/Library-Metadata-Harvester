@@ -1,4 +1,6 @@
 import os
+import platform
+from pathlib import Path
 import sys
 import logging
 import threading
@@ -61,21 +63,26 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def __init__(self):
         """Initialize the application, its variables, and UI components."""
         super().__init__()
+        self.app_data_dir = self.get_app_data_directory()
         self.output_file_path = None
         self.log_window_open = False 
         self.last_processed = None
         self.source_mapping = {}
-        self.configure_app()
+        self.priority_list = [
+        'Google Books (API)', 'Harvard Library (API)',
+        'Library of Congress (API)', 'Open Library (API)',
+        'Columbia Library (Blacklight)', 'Cornell Library (Blacklight)',
+        'Duke Library (Blacklight)', 'Indiana Library (Blacklight)',
+        'Johns Hopkins Library (Blacklight)', 'North Carolina State Library (Blacklight)',
+        'Pennsylvania State Library (Blacklight)', 'Stanford Library (Blacklight)',
+        'Yale Library (Blacklight)'
+    ]
         self.setup_logging()
+        self.configure_app()
         self.initialize_database()
         self.setup_ui()
         self.initialize_sources()
-        self.priority_list = ['Columbia Library','Cornell Library','Duke Library',
-                              'Google Books','Harvard Library','Indiana Library',
-                              'Johns Hopkins Library','Library of Congress',
-                              'North Carolina State Library','Open Library',
-                              'Pennsylvania State Library','Stanford Library',
-                              'Yale Library']
+                
         self.unused_sources = []
         self.load_source_lists()
         self.search_status_var = tk.StringVar(self)
@@ -87,6 +94,18 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.search_total_time = None
 
 
+    def get_app_data_directory(self):
+        """Get the path to the application's data directory."""
+        if platform.system() == "Windows":
+            app_data_path = Path(os.getenv('APPDATA')) / 'LibraryMetadataHarvester'
+        elif platform.system() == "Darwin":
+            app_data_path = Path.home() / 'Library' / 'Application Support' / 'LibraryMetadataHarvester'
+        else:  # Linux and other Unix-like OSes
+            app_data_path = Path.home() / '.LibraryMetadataHarvester'
+
+        app_data_path.mkdir(parents=True, exist_ok=True)
+        return app_data_path
+
     def configure_app(self):
         """Configure the main window settings and styles."""
         self.title('Library Metadata Harvester')
@@ -97,8 +116,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.screen_height = self.winfo_screenheight()
         
         # Calculate and store width and height as a percentage of the screen size
-        self.app_width = int(self.screen_width * 0.35) 
-        self.app_height = int(self.screen_height * 0.30)
+        self.app_width = int(self.screen_width * 0.6) 
+        self.app_height = int(self.screen_height * 0.4)
 
         # Calculate and store the position to center the window on the screen
         self.app_x = (self.screen_width // 2) - (self.app_width // 2)
@@ -129,17 +148,11 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
     def setup_logging(self):
         """Setup application logging."""
-        # When bundled by PyInstaller, files are in a temporary folder referenced by _MEIPASS
-        base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
-        log_directory = os.path.join(base_path, 'logs')
-        os.makedirs(log_directory, exist_ok=True)  # Create the logs directory if it doesn't exist
-        log_file_path = os.path.join(log_directory, 'example.log')
-
-        logging.getLogger().handlers.clear()
+        self.log_file_path = self.app_data_dir / 'example.log'
         logging.basicConfig(level=logging.INFO,
                             format='%(asctime)s - %(levelname)s - %(message)s',
                             handlers=[
-                                logging.FileHandler(log_file_path),
+                                logging.FileHandler(self.log_file_path),
                                 logging.StreamHandler()
                             ])
         logging.info("Application started")
@@ -147,7 +160,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
     def initialize_database(self):
         """Initialize the application's database and required tables."""
-        self.db_manager = DatabaseManager()
+        db_path = self.get_app_data_directory()
+        self.db_manager = DatabaseManager(db_path=db_path)
         self.db_manager.create_table("books", "Isbn TEXT PRIMARY KEY, Ocn TEXT")
         self.db_manager.create_table("lccn", "Lccn_id INTEGER PRIMARY KEY AUTOINCREMENT, Lccn TEXT, Source TEXT")
         self.db_manager.create_table("book_lccn", "Isbn TEXT, Lccn_id INTEGER, FOREIGN KEY (Isbn) REFERENCES books (Isbn), FOREIGN KEY (Lccn_id) REFERENCES lccn (Lccn_id)")
@@ -313,19 +327,19 @@ class LibraryMetadataHarvesterApp(tk.Tk):
     def initialize_sources(self):
         """Initialize source API objects in separate threads."""
         sources = {
-            "Harvard Library": HarvardLibraryAPI,
-            "Library of Congress": LibraryOfCongressAPI,
-            "Google Books": GoogleBooksAPI,
-            "Open Library": OpenLibraryAPI,
-            "Columbia Library": ColumbiaLibraryAPI,
-            "Cornell Library": CornellLibraryAPI,
-            "Duke Library": DukeLibraryAPI,
-            "Indiana Library": IndianaLibraryAPI,
-            "Johns Hopkins Library": JohnsHopkinsLibraryAPI,
-            "North Carolina State Library": NorthCarolinaStateLibraryAPI,
-            "Pennsylvania State Library": PennStateLibraryAPI,
-            "Yale Library": YaleLibraryAPI,
-            "Stanford Library": StanfordLibraryAPI
+            "Google Books (API)": GoogleBooksAPI,
+            "Harvard Library (API)": HarvardLibraryAPI,
+            "Library of Congress (API)": LibraryOfCongressAPI,
+            "Open Library (API)": OpenLibraryAPI,
+            "Columbia Library (Blacklight)": ColumbiaLibraryAPI,
+            "Cornell Library (Blacklight)": CornellLibraryAPI,
+            "Duke Library (Blacklight)": DukeLibraryAPI,
+            "Indiana Library (Blacklight)": IndianaLibraryAPI,
+            "Johns Hopkins Library (Blacklight)": JohnsHopkinsLibraryAPI,
+            "North Carolina State Library (Blacklight)": NorthCarolinaStateLibraryAPI,
+            "Pennsylvania State Library (Blacklight)": PennStateLibraryAPI,
+            "Yale Library (Blacklight)": YaleLibraryAPI,
+            "Stanford Library (Blacklight)": StanfordLibraryAPI
         }
         
         for key, api_class in sources.items():
@@ -776,11 +790,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         'x': self.app_x,
         'y': self.app_y,
          }
-        # Then, pass these attributes to the PriorityList constructor
-        PriorityList(priority_window, self.update_priority_lists, self.priority_list, self.unused_sources, window_attributes)
-
-
         
+        PriorityList(priority_window, self.update_priority_lists, self.priority_list, self.unused_sources, window_attributes)
 
     def update_priority_lists(self, selected, unused):
         """Update the internal priority list for searches."""
@@ -796,14 +807,20 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             'selected_sources': self.priority_list,
             'unused_sources': self.unused_sources
         }
-        filepath = self.resource_path(os.path.join('data', 'source_lists.json'))  # Define a data directory, for example
+        app_data_dir = self.get_app_data_directory()
+        filepath = app_data_dir / 'source_lists.json'
         with open(filepath, 'w') as file:
             json.dump(data, file)
 
-
     def load_source_lists(self):
-        filepath = self.resource_path(os.path.join('data', 'source_lists.json'))
+        app_data_dir = self.get_app_data_directory()
+        filepath = app_data_dir / 'source_lists.json'
         try:
+
+            if os.path.getsize(filepath) == 0:
+                raise json.JSONDecodeError("File is empty", "", 0)
+
+
             with open(filepath, 'r') as file:
                 data = json.load(file)
                 selected_sources = data.get('selected_sources', [])
@@ -818,8 +835,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
                 else:
                     self.priority_list = selected_sources
                     self.unused_sources = unused_sources
-        except FileNotFoundError:
-            # If the file doesn't exist, save the initial lists to create the file.
+        except Exception as e:
+            # If the file doesn't exist or is empty, save the initial lists to create the file.
             self.save_source_lists()
 
 
@@ -843,9 +860,8 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
     def update_log_content(self):
         """Update the content of the log file displayed in the text widget."""
-        
         try:
-            with open(self.resource_path(os.path.join('logs', 'example.log')), 'r') as log_file:
+            with open(self.log_file_path, 'r') as log_file:
                 log_content = log_file.read()
                 # Clear the current content and insert the new content
                 self.log_text_widget.delete("1.0", tk.END)  # Delete the current content
@@ -864,7 +880,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
     def clear_log(self):
         try:
-            with open(self.resource_path(os.path.join('logs', 'example.log')), 'w') as log_file:
+            with open(self.log_file_path, 'w') as log_file:
                 log_file.truncate(0)
             logging.info("Log file cleared.")
             messagebox.showinfo("Log Cleared", "The log file has been successfully cleared.")
@@ -873,11 +889,6 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             messagebox.showerror("Error", f"Failed to clear log: {str(e)}")
 
 
-    @staticmethod
-    def resource_path(relative_path):
-        """ Get absolute path to resource, works for development and for PyInstaller """
-        base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
-        return os.path.join(base_path, relative_path)
     
 if __name__ == "__main__":
     app = LibraryMetadataHarvesterApp()

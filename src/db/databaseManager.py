@@ -3,14 +3,13 @@ import os
 import sys
 
 class DatabaseManager:
-    def __init__(self, db_name='metadata.sqlite'):
-        if getattr(sys, 'frozen', False):
-            application_path = sys._MEIPASS  # _MEIPASS is a special attribute set by PyInstaller at runtime
-        else:
+
+    def __init__(self, db_name='metadata.sqlite', db_path=None):
+        if not getattr(sys, 'frozen', False):
             application_path = os.path.dirname(os.path.abspath(__file__))
-        
-        # Construct the full path for the database file
-        self.db_path = os.path.join(application_path, db_name)
+            self.db_path = os.path.join(application_path, db_name)
+        else:
+            self.db_path = os.path.join(db_path, db_name)
 
     def execute_query(self, query, params=(), fetch=False):
         """General purpose method to execute database queries."""

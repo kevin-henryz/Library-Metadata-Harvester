@@ -15,8 +15,8 @@ class PriorityList:
 
     def set_size_and_position(self, window_attributes):
         # Decrease the width and height by a percentage or fixed value as needed
-        width = int(window_attributes['width'] * 0.6)  # Decrease width by 10%
-        height = int(window_attributes['height'] * 0.9)  # Decrease height by 10%
+        width = int(window_attributes['width'] * 0.80)  # Decrease width by 10%
+        height = int(window_attributes['height'] * 0.95)  # Decrease height by 10%
 
         # Offset to the left by decreasing the 'x' position
         # Adjust the offset value as needed

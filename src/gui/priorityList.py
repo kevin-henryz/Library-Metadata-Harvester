@@ -1,9 +1,10 @@
 import tkinter as tk
 
 class PriorityList:
-    def __init__(self, master, callback, selected_sources, unused_sources,window_attributes):
+    def __init__(self, master, callback, selected_sources, unused_sources,window_attributes, window_close_callback):
         self.master = master
         self.callback = callback
+        self.window_close_callback = window_close_callback
         self.selected_sources = selected_sources
         self.unused_sources = unused_sources
         self.master.title("Priority List")
@@ -127,5 +128,5 @@ class PriorityList:
         self.selected_sources = list(self.listbox.get(0, tk.END))
         self.unused_sources = list(self.listbox_right.get(0, tk.END))
         self.callback(self.selected_sources, self.unused_sources)
-        self.master.destroy()
+        self.window_close_callback()
 

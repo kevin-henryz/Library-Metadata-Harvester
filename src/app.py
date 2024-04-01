@@ -66,6 +66,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.app_data_dir = self.get_app_data_directory()
         self.output_file_path = None
         self.log_window_open = False 
+        self.priority_window_open = False
         self.last_processed = None
         self.log_file_last_size = 0
         self.source_mapping = {}
@@ -537,7 +538,10 @@ class LibraryMetadataHarvesterApp(tk.Tk):
             else:
                 with open(self.output_file_path, 'w') as file:
                     pass
+        
 
+        if self.priority_window_open:
+            self.on_priority_window_close()
         logging.info(f"Search started for {file_type} with {len(data)} items and priority list: {self.priority_list}")
 
         self.toggle_ui_for_search(True)
@@ -784,15 +788,20 @@ class LibraryMetadataHarvesterApp(tk.Tk):
 
     def set_priority(self):
         """Open a new window to set the search priority."""
-        priority_window = tk.Toplevel(self)
-        window_attributes = {
-        'width': self.app_width,
-        'height': self.app_height,
-        'x': self.app_x,
-        'y': self.app_y,
-         }
-        
-        PriorityList(priority_window, self.update_priority_lists, self.priority_list, self.unused_sources, window_attributes)
+        if not self.priority_window_open:
+            self.priority_window = tk.Toplevel(self)
+            window_attributes = {
+            'width': self.app_width,
+            'height': self.app_height,
+            'x': self.app_x,
+            'y': self.app_y,
+            }
+            
+            self.priority_list_instance = PriorityList(self.priority_window, self.update_priority_lists, self.priority_list, self.unused_sources, window_attributes, self.on_priority_window_close)
+
+            self.priority_window_open = True
+            # Handle the priority window's closure
+            self.priority_window.protocol("WM_DELETE_WINDOW", self.on_priority_window_close)
 
     def update_priority_lists(self, selected, unused):
         """Update the internal priority list for searches."""
@@ -801,6 +810,15 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         logging.info(f"Updated selected sources: {self.priority_list}")
         logging.info(f"Updated unused sources: {self.unused_sources}")
         self.save_source_lists()
+
+    def on_priority_window_close(self):
+        """Callback to handle the priority window's closure."""
+        self.priority_window_open = False
+        try:
+            self.priority_window.destroy()
+        except Exception as e:
+            logging.error(f"Error closing the priority window: {e}")
+
     
 
     def save_source_lists(self):

@@ -117,7 +117,7 @@ class LibraryMetadataHarvesterApp(tk.Tk):
         self.screen_height = self.winfo_screenheight()
         
         # Calculate and store width and height as a percentage of the screen size
-        self.app_width = int(self.screen_width * 0.50) 
+        self.app_width = int(self.screen_width * 0.55) 
         self.app_height = int(self.screen_height * 0.4)
 
         # Calculate and store the position to center the window on the screen

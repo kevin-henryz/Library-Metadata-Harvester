@@ -20,6 +20,16 @@ Ensure you have the following installed:
 
 - Python 3.x: The core programming language used for the application. On some systems, you may need to use `python3` instead of `python` to invoke Python 3.
 - Pip: The Python package installer, used for managing software packages. Depending on your system, you might need to use `pip3` if you have both Python 2 and Python 3 installed.
+- Google Chrome browser
+
+### Link to Executables
+- Click on your OS and download the executable located at the link
+
+   - **Windows**: [Download Windows Executables](https://drive.google.com/drive/folders/1XN9e6EUeQKbHZkrM7AIU404lcs2sS0OE?usp=drive_link)
+  
+   - **Linux**: [Download Linux Executables](https://drive.google.com/drive/folders/1qbhzticMvkSbts3eexqVF1R1NeaqH9nc?usp=drive_link)
+  
+   - **Mac**: [Download macOS Executables](https://drive.google.com/drive/folders/1m2Y8I4PRfFwA0lBsBIMksGaQsqv9voxf?usp=drive_link)
 
 ### Setup Instructions
 
